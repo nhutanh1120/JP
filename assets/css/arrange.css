@@ -1,0 +1,139 @@
+.dropp {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.dropp-items {
+    width: 80px;
+    height: 100px;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 0 20px 10px;
+}
+
+.dropp-items div {
+    height: 80px;
+    border: 1px dotted lightcoral;
+}
+
+.dropp-items span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: lightcoral;
+}
+
+.dragg {
+    position: relative;
+    width: 80px;
+    margin: auto;
+}
+
+.dragg-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 78px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 78px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.dropp-items.ui-state-highlight {
+    border-color: #5fc7a0;
+}
+
+.dropp-items.ui-state-highlight .character {
+    background-color: #5fc7a0;
+    border-color: #5fc7a0;
+    text-align: center;
+    line-height: 78px;
+    font-size: 2rem;
+}
+
+.dropp-items.ui-state-highlight span {
+    color: #5fc7a0;
+}
+
+.selector {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    z-index: 1000;
+}
+
+.selector .selector-title {
+    cursor: pointer;
+}
+
+.selector .selector-title span {
+    display: block;
+}
+
+.selector .selector-item {
+    position: absolute;
+    top: 0;
+    right: calc(100% + 10px);
+}
+
+.selector-item .border-animation {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    opacity: 0;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.selector .selector-item button {
+    width: 100px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 5px;
+    color: rgb(29, 26, 26);
+    cursor: pointer;
+    box-shadow: none;
+    z-index: 100;
+}
+
+.selector-item .active.border-animation::before {
+    content: "";
+    background-image: conic-gradient(yellow, red, white, white, white);
+    width: 250%;
+    height: 250%;
+    position: absolute;
+    animation: rotate 1.2s linear infinite;
+}
+
+.selector-item.active .border-animation {
+    margin-top: 0;
+    opacity: 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -6,21 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhut</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/class.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/pain.css">
 </head>
 
 <body>
-    <div class="mt-5 d-flex justify-content-center">
-        <button class="me-3" id="click">Click</button>
-        <button class="me-3" id="result">Result</button>
-        <audio controls>
-            <source id="audio" src="audio/fu.mp3" type="audio/mp3">
-        </audio>
+    <div class="filter">
+        <h1>Học bảng chữ cái</h1>
+        <div class="option">
+            <select name="type_character" id="type_character">
+                <option value="all">Tất cả</option>
+                <option value="hiragana" selected>Hiragana</option>
+                <option value="katakana">Katakana</option>
+                <option value="kanji">Kanji</option>
+                <option value="transfiguration">Biến âm</option>
+            </select>
+            <span>
+                <button id="click">Click</button>
+                <button id="result">Result</button>
+            </span>
+            <audio id="audio" controls>
+                <source src="audio/a.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <p id="text" class="text_show"></p>
     </div>
-    <h1 style="text-align:center; height: 50px;" id="text"></h1>
+
+    <!-- pain width canvas -->
     <main>
         <div class="left-block">
             <div class="colors">
@@ -72,38 +89,32 @@
         </div>
     </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        var data;
-        var global;
+    <footer class="w-100">
+        <p class="text-center">Copyright &copy;&nbsp;Lưu Trần Anh Nhựt</p>
+    </footer>
 
-        fetch('./data.json')
-            .then(response => response.json())
-            .then(result => {
-                data = result;
-            });
+    <div class="setting">
+        <div class="setting-icon">
+            <i class='bx bx-cog bx-sm'></i>
+            <span>Cài đặt</span>
+        </div>
+        <menu class="setting-items-menu">
+            <span class="menu-item">
+                <lord-icon src="./json/icon/home.json" trigger="hover" style="width:22px; height:22px">
+                </lord-icon>
+            </span>
+            <span class="menu-item" onclick="location.href = 'pages/arrange.html'">
+                <lord-icon src="./json/icon/book.json" trigger="hover" style="width:22px; height:22px">
+                </lord-icon>
+            </span>
+        </menu>
+    </div>
 
-        $('#click').click(function () {
-            let id = Math.floor(Math.random() * 44);
-            global = data.find(result => result.id == id);
-            if (typeof global !== 'undefined') {
-                $('#text').text(global.translate)
-                if (global.audio !== '') {
-                    $('#audio').attr({ 'src': './audio/' + global.audio });
-                    $('#audio').load();
-                    $('#audio').play();
-                }
-            }
-        })
-
-        $('#result').click(function () {
-            console.log(global)
-            if (typeof global !== 'undefined') {
-                $('#text').text(global.characters)
-            }
-        })
-    </script>
+    <script src="vendor/lordicon/lordicon.js"></script>
+    <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/setting.js"></script>
+    <script src="assets/js/pain.js"></script>
 </body>
 
 </html>

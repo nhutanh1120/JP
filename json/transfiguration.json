@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "transfiguration": "が",
+        "translate": "Ga",
+        "audio": "ga.mp3"
+    },
+    {
+        "id": 2,
+        "transfiguration": "ぎ",
+        "translate": "Gi",
+        "audio": "gi.mp3"
+    },
+    {
+        "id": 3,
+        "transfiguration": "ぐ",
+        "translate": "Gu",
+        "audio": "gu.mp3"
+    },
+    {
+        "id": 4,
+        "transfiguration": "げ",
+        "translate": "Ge",
+        "audio": "ge.mp3"
+    },
+    {
+        "id": 5,
+        "transfiguration": "ご",
+        "translate": "Go",
+        "audio": "go.mp3"
+    },
+    {
+        "id": 6,
+        "transfiguration": "ざ",
+        "translate": "Za",
+        "audio": "za.mp3"
+    },
+    {
+        "id": 7,
+        "transfiguration": "じ",
+        "translate": "Ji",
+        "audio": "ji.mp3"
+    },
+    {
+        "id": 8,
+        "transfiguration": "ず",
+        "translate": "Zu",
+        "audio": "zu.mp3"
+    },
+    {
+        "id": 9,
+        "transfiguration": "ぜ",
+        "translate": "Ze",
+        "audio": "ze.mp3"
+    },
+    {
+        "id": 10,
+        "transfiguration": "ぞ",
+        "translate": "Zo",
+        "audio": "zo.mp3"
+    },
+    {
+        "id": 11,
+        "transfiguration": "だ",
+        "translate": "Da",
+        "audio": "da.mp3"
+    },
+    {
+        "id": 12,
+        "transfiguration": "ぢ",
+        "translate": "Ji",
+        "audio": "ji.mp3"
+    },
+    {
+        "id": 13,
+        "transfiguration": "づ",
+        "translate": "Zu",
+        "audio": "zu.mp3"
+    },
+    {
+        "id": 14,
+        "transfiguration": "で",
+        "translate": "De",
+        "audio": "de.mp3"
+    },
+    {
+        "id": 15,
+        "transfiguration": "ど",
+        "translate": "Do",
+        "audio": "do.mp3"
+    },
+    {
+        "id": 16,
+        "transfiguration": "ば",
+        "translate": "Ba",
+        "audio": "ba.mp3"
+    },
+    {
+        "id": 17,
+        "transfiguration": "び",
+        "translate": "Bi",
+        "audio": "bi.mp3"
+    },
+    {
+        "id": 18,
+        "transfiguration": "ぶ",
+        "translate": "Bu",
+        "audio": "bu.mp3"
+    },
+    {
+        "id": 19,
+        "transfiguration": "べ",
+        "translate": "Be",
+        "audio": "be.mp3"
+    },
+    {
+        "id": 20,
+        "transfiguration": "ぼ",
+        "translate": "Bo",
+        "audio": "bo.mp3"
+    },
+    {
+        "id": 21,
+        "transfiguration": "ぱ",
+        "translate": "Pa",
+        "audio": "pa.mp3"
+    },
+    {
+        "id": 22,
+        "transfiguration": "ぴ",
+        "translate": "Pi",
+        "audio": "pi.mp3"
+    },
+    {
+        "id": 23,
+        "transfiguration": "ぷ",
+        "translate": "Pu",
+        "audio": "pu.mp3"
+    },
+    {
+        "id": 24,
+        "transfiguration": "ぺ",
+        "translate": "Pe",
+        "audio": "pe.mp3"
+    },
+    {
+        "id": 25,
+        "transfiguration": "ぽ",
+        "translate": "Po",
+        "audio": "po.mpe"
+    }
+]
