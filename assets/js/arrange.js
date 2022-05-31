@@ -44,7 +44,7 @@ $(function () {
         if (event.buttons == 2) {
             let character = event?.toElement?.innerText;
             event.preventDefault();
-            if (typeof character !== 'undefined') {
+            if (typeof character !== 'undefined' && event?.toElement?.localName == 'span') {
                 $(event.toElement).html(event.toElement.dataset.name);
                 event.toElement.dataset.name = character;
             }
@@ -65,7 +65,7 @@ $(function () {
         } else {
             fetchData();
         }
-        $('.selector-title').removeClass('active');
+        $('.selector-title').next().removeClass('active');
     });
 });
 

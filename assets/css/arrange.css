@@ -2,8 +2,6 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 1400px;
-    height: auto;
     margin: 0 auto;
 }
 
@@ -126,6 +124,10 @@
 .selector-item.active .border-animation {
     margin-top: 0;
     opacity: 1;
+}
+
+.selector-item.active .border-animation:hover {
+    filter: brightness(90%);
 }
 
 @keyframes rotate {
