@@ -3,6 +3,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-top: 10px;
 }
 
 .dropp-items {
@@ -11,6 +12,8 @@
     border: 1px solid red;
     padding: 5px;
     margin: 0 20px 10px;
+    background-color: var(--background-second);
+    box-shadow: var(--box-shadow);
 }
 
 .dropp-items div {
@@ -114,7 +117,7 @@
 
 .selector-item .active.border-animation::before {
     content: "";
-    background-image: conic-gradient(yellow, red, white, white, white);
+    background-image: conic-gradient(yellow, red, var(--background-primary), var(--background-primary), var(--background-primary));
     width: 250%;
     height: 250%;
     position: absolute;

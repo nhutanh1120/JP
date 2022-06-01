@@ -1,20 +1,35 @@
 .filter {
     width: 800px;
     margin: 0 auto;
+    padding: 20px 0 0;
 }
 
 .filter h1:first-child {
-    padding: 5px 10px;
+    color: var(--color-primary);
+    font: bold 24px Sans-Serif;
+    text-shadow: 0 1px 0 rgb(255 255 255 / 40%);
+    padding: 10px 15px;
     text-transform: uppercase;
     border-radius: 5px;
     border-left: 5px solid red;
-    box-shadow: 1px 1px 2px #bbb;
+    background-color: var(--background-second);
+    box-shadow: var(--box-shadow);
 }
 
 .option {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+}
+
+.option span button,
+.option select {
+    background-color: var(--background-second);
+    box-shadow: var(--box-shadow);
+    outline: none;
+    color: var(--color-second);
+    padding: 5px 8px;
 }
 
 .text_show {

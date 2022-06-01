@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhut</title>
+    <link rel="icon" href="/assets/img/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/theme.css">
@@ -16,82 +17,84 @@
 </head>
 
 <body>
-    <div class="filter">
-        <h1>Học bảng chữ cái</h1>
-        <div class="option">
-            <select name="type_character" id="type_character">
-                <option value="all">Tất cả</option>
-                <option value="hiragana" selected>Hiragana</option>
-                <option value="katakana">Katakana</option>
-                <option value="kanji">Kanji</option>
-                <option value="transfiguration">Biến âm</option>
-            </select>
-            <span>
-                <button id="click">Click</button>
-                <button id="result">Result</button>
-            </span>
-            <audio id="audio" controls>
-                <source src="audio/a.mp3" type="audio/mp3">
-            </audio>
+    <div class="app">
+        <div class="filter">
+            <h1>Học bảng chữ cái</h1>
+            <div class="option">
+                <select name="type_character" id="type_character">
+                    <option value="all">Tất cả</option>
+                    <option value="hiragana" selected>Hiragana</option>
+                    <option value="katakana">Katakana</option>
+                    <option value="kanji">Kanji</option>
+                    <option value="transfiguration">Biến âm</option>
+                </select>
+                <span>
+                    <button id="click">Click</button>
+                    <button id="result">Result</button>
+                </span>
+                <audio id="audio" controls>
+                    <source src="./audio/a.mp3" type="audio/mp3" style="background-color: #fff;">
+                </audio>
+            </div>
+            <p id="text" class="text_show"></p>
         </div>
-        <p id="text" class="text_show"></p>
+
+        <!-- pain width canvas -->
+        <main>
+            <div class="left-block">
+                <div class="colors">
+                    <button type="button" value="#0000ff"></button>
+                    <button type="button" value="#009fff"></button>
+                    <button type="button" value="#0fffff"></button>
+                    <button type="button" value="#bfffff"></button>
+                    <button type="button" value="#000000"></button>
+                    <button type="button" value="#333333"></button>
+                    <button type="button" value="#666666"></button>
+                    <button type="button" value="#999999"></button>
+                    <button type="button" value="#ffcc66"></button>
+                    <button type="button" value="#ffcc00"></button>
+                    <button type="button" value="#ffff00"></button>
+                    <button type="button" value="#ffff99"></button>
+                    <button type="button" value="#003300"></button>
+                    <button type="button" value="#555000"></button>
+                    <button type="button" value="#00ff00"></button>
+                    <button type="button" value="#99ff99"></button>
+                    <button type="button" value="#f00000"></button>
+                    <button type="button" value="#ff6600"></button>
+                    <button type="button" value="#ff9933"></button>
+                    <button type="button" value="#f5deb3"></button>
+                    <button type="button" value="#330000"></button>
+                    <button type="button" value="#663300"></button>
+                    <button type="button" value="#cc6600"></button>
+                    <button type="button" value="#deb887"></button>
+                    <button type="button" value="#aa0fff"></button>
+                    <button type="button" value="#cc66cc"></button>
+                    <button type="button" value="#ff66ff"></button>
+                    <button type="button" value="#ff99ff"></button>
+                    <button type="button" value="#e8c4e8"></button>
+                    <button type="button" value="#ffffff"></button>
+                </div>
+                <div class="brushes">
+                    <button type="button" value="1"></button>
+                    <button type="button" value="2"></button>
+                    <button type="button" value="3"></button>
+                    <button type="button" value="4"></button>
+                    <button type="button" value="5"></button>
+                </div>
+                <div class="buttons">
+                    <button id="clear" type="button">Clear</button>
+                    <button id="save" type="button">Save</button>
+                </div>
+            </div>
+            <div class="right-block">
+                <canvas id="paint-canvas" width="640" height="400"></canvas>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="text-center">Copyright &copy;&nbsp;Lưu Trần Anh Nhựt</p>
+        </footer>
     </div>
-
-    <!-- pain width canvas -->
-    <main>
-        <div class="left-block">
-            <div class="colors">
-                <button type="button" value="#0000ff"></button>
-                <button type="button" value="#009fff"></button>
-                <button type="button" value="#0fffff"></button>
-                <button type="button" value="#bfffff"></button>
-                <button type="button" value="#000000"></button>
-                <button type="button" value="#333333"></button>
-                <button type="button" value="#666666"></button>
-                <button type="button" value="#999999"></button>
-                <button type="button" value="#ffcc66"></button>
-                <button type="button" value="#ffcc00"></button>
-                <button type="button" value="#ffff00"></button>
-                <button type="button" value="#ffff99"></button>
-                <button type="button" value="#003300"></button>
-                <button type="button" value="#555000"></button>
-                <button type="button" value="#00ff00"></button>
-                <button type="button" value="#99ff99"></button>
-                <button type="button" value="#f00000"></button>
-                <button type="button" value="#ff6600"></button>
-                <button type="button" value="#ff9933"></button>
-                <button type="button" value="#f5deb3"></button>
-                <button type="button" value="#330000"></button>
-                <button type="button" value="#663300"></button>
-                <button type="button" value="#cc6600"></button>
-                <button type="button" value="#deb887"></button>
-                <button type="button" value="#aa0fff"></button>
-                <button type="button" value="#cc66cc"></button>
-                <button type="button" value="#ff66ff"></button>
-                <button type="button" value="#ff99ff"></button>
-                <button type="button" value="#e8c4e8"></button>
-                <button type="button" value="#ffffff"></button>
-            </div>
-            <div class="brushes">
-                <button type="button" value="1"></button>
-                <button type="button" value="2"></button>
-                <button type="button" value="3"></button>
-                <button type="button" value="4"></button>
-                <button type="button" value="5"></button>
-            </div>
-            <div class="buttons">
-                <button id="clear" type="button">Clear</button>
-                <button id="save" type="button">Save</button>
-            </div>
-        </div>
-        <div class="right-block">
-            <canvas id="paint-canvas" width="640" height="400"></canvas>
-        </div>
-    </main>
-
-    <footer class="w-100">
-        <p class="text-center">Copyright &copy;&nbsp;Lưu Trần Anh Nhựt</p>
-    </footer>
 
     <div class="setting">
         <div class="setting-icon">
@@ -105,6 +108,10 @@
             </span>
             <span class="menu-item" onclick="location.href = 'pages/arrange.html'">
                 <lord-icon src="./json/icon/book.json" trigger="hover" style="width:22px; height:22px">
+                </lord-icon>
+            </span>
+            <span class="menu-item" id="slidebar">
+                <lord-icon src="./json/icon/slidebar.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
         </menu>

@@ -6,34 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="/assets/img/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./../assets/css/grid.css">
+    <link rel="stylesheet" href="./../assets/css/theme.css">
     <link rel="stylesheet" href="./../assets/css/style.css">
     <link rel="stylesheet" href="./../assets/css/arrange.css">
 </head>
 
 <body>
-    <div class="dropp"></div>
-    <div class="dragg"></div>
+    <div class="app">
+        <div class="dropp"></div>
+        <div class="dragg"></div>
 
-    <div class="selector">
-        <div class="selector-title">
-            <lord-icon src="./../json/icon/selector.json" trigger="loop" style="width: 40px; height: 40px">
-            </lord-icon>
-            <span>Chọn</span>
-        </div>
-        <div class="selector-item">
-            <span class="border-animation" data-type="hiragana">
-                <button>hiragana</button>
-            </span>
-            <span class="border-animation" data-type="katakana">
-                <button>katakana</button>
-            </span>
-            <span class="border-animation active" data-type="transfiguration">
-                <button>biến âm</button>
-            </span>
-            <span class="border-animation" data-type="kanji">
-                <button>kanji</button>
-            </span>
+        <div class="selector">
+            <div class="selector-title">
+                <lord-icon src="./../json/icon/selector.json" trigger="loop" style="width: 40px; height: 40px">
+                </lord-icon>
+                <span>Chọn</span>
+            </div>
+            <div class="selector-item">
+                <span class="border-animation" data-type="hiragana">
+                    <button>hiragana</button>
+                </span>
+                <span class="border-animation" data-type="katakana">
+                    <button>katakana</button>
+                </span>
+                <span class="border-animation active" data-type="transfiguration">
+                    <button>biến âm</button>
+                </span>
+                <span class="border-animation" data-type="kanji">
+                    <button>kanji</button>
+                </span>
+            </div>
         </div>
     </div>
 
@@ -49,6 +54,10 @@
             </span>
             <span class="menu-item">
                 <lord-icon src="./../json/icon/book.json" trigger="hover" style="width:22px; height:22px">
+                </lord-icon>
+            </span>
+            <span class="menu-item" id="slidebar">
+                <lord-icon src="./../json/icon/slidebar.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
         </menu>

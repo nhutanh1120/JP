@@ -19,12 +19,12 @@ $('#click').click(function () {
     switch (key) {
         case 'all':
             id = Math.floor(Math.random() * 68);
-            let dataAll = [ ...furigana, ...transfiguration];
+            let dataAll = [...furigana, ...transfiguration];
             global = dataAll[id];
             break;
-        case 'kanji': 
+        case 'kanji':
             break;
-        case 'transfiguration': 
+        case 'transfiguration':
             id = Math.floor(Math.random() * 24);
             global = transfiguration.find(result => result.id == id);
             break;
@@ -47,7 +47,11 @@ $('#result').click(function () {
     if (typeof global !== 'undefined') {
         switch (key) {
             case 'all':
-                $('#text').text(`hiragana: ${global.hiragana}, katakana: ${global.katakana}`);
+                if (typeof global.transfiguration === 'undefined') {
+                    $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);
+                    break;
+                }
+                $('#text').text(global.transfiguration);
                 break;
             case 'hiragana':
                 $('#text').text(global.hiragana);

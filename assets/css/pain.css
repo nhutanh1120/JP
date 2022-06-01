@@ -4,10 +4,11 @@
 
 main {
     width: 800px;
-    border: 1px solid #e0e0e0;
     margin: 0 auto;
     display: flex;
     flex-grow: 1;
+    background-color: var(--background-second);
+    box-shadow: var(--box-shadow);
 }
 
 .left-block {
@@ -16,7 +17,7 @@ main {
 }
 
 .colors {
-    background-color: #ece8e8;
+    background-color: var(--background-third);
     text-align: center;
     padding-bottom: 5px;
     padding-top: 10px;
@@ -163,7 +164,7 @@ main {
     width: 100%;
     border: 0;
     border-radius: 0;
-    background-color: #ece8e8;
+    background-color: var(--background-third);
     margin-bottom: 5px;
     padding: 5px;
     height: 30px;
