@@ -5,7 +5,11 @@
   --color-primary: #121331;
   --color-second: #121331;
   --color-icon: #121331;
-  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --color-button: #ece8e8;
+  --box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.3);
+  --box-shadow-button: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.2);
+  --box-shadow-inset: inset -5px -5px 9px rgba(94, 104, 121, 0.2), inset 3px 3px 2px rgba(94, 104, 121, 0.2);
+  --border-loader: #c5ccdf;
 }
 
 [data-theme="dark"] {
@@ -15,5 +19,9 @@
   --color-primary: #fff;
   --color-second: #bbb;
   --color-icon: #121331;
-  --box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  --color-button: #fff;
+  --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  --box-shadow-button: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  --box-shadow-inset: inset -5px -5px 9px rgba(0, 0, 0), inset 3px 3px 2px rgba(0, 0, 0);
+  --border-loader: rgb(20, 20, 20);
 }

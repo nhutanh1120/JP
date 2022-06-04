@@ -11,6 +11,30 @@ body {
     background-color: var(--background-primary);
 }
 
+#loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1000;
+}
+
+#loader span {
+    width: 60px;
+    height: 60px;
+    border: 8px solid var(--background-second);
+    border-top: 8px solid var(--border-loader);
+    border-radius: 50%;
+    -webkit-animation: load 2s linear infinite;
+    animation: load 2s linear infinite;
+}
+
 .footer {
     position: absolute;
     width: 100%;
@@ -71,7 +95,7 @@ body {
 
 .setting-icon i {
     margin-top: 3px;
-    color: var(--color-icon);
+    color: var(--color-primary);
     transition: all .3s;
 }
 
@@ -108,4 +132,24 @@ body {
 .setting-items-menu.active .menu-item:nth-child(3) {
     transform: translate3d(-1em, -8em, 0);
     box-shadow: var(--box-shadow);
+}
+
+@-webkit-keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

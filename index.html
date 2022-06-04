@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhut</title>
-    <link rel="icon" href="/assets/img/logo.png">
+    <link rel="icon" href="./assets/img/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/class.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/pain.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/class.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/pain.css">
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader">
+        <span></span>
+    </div>
+
     <div class="app">
         <div class="filter">
             <h1>Học bảng chữ cái</h1>
@@ -29,11 +34,19 @@
                     <option value="transfiguration">Biến âm</option>
                 </select>
                 <span>
-                    <button id="click">Click</button>
-                    <button id="result">Result</button>
+                    <button id="click">
+                        <lord-icon src="https://cdn.lordicon.com/iifryyua.json" trigger="hover"
+                            style="width:20px; height:20px">
+                        </lord-icon>
+                    </button>
+                    <button id="result">
+                        <lord-icon src="https://cdn.lordicon.com/hjeefwhm.json" trigger="hover"
+                            style="width:20px; height:20px">
+                        </lord-icon>
+                    </button>
                 </span>
                 <audio id="audio" controls>
-                    <source src="./audio/a.mp3" type="audio/mp3" style="background-color: #fff;">
+                    <source src="./audio/a.mp3" type="audio/mp3">
                 </audio>
             </div>
             <p id="text" class="text_show"></p>
@@ -82,8 +95,8 @@
                     <button type="button" value="5"></button>
                 </div>
                 <div class="buttons">
-                    <button id="clear" type="button">Clear</button>
-                    <button id="save" type="button">Save</button>
+                    <button id="clear" type="button">Xóa</button>
+                    <button id="save" type="button">Lưu</button>
                 </div>
             </div>
             <div class="right-block">
@@ -117,11 +130,11 @@
         </menu>
     </div>
 
-    <script src="vendor/lordicon/lordicon.js"></script>
-    <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/setting.js"></script>
-    <script src="assets/js/pain.js"></script>
+    <script src="./vendor/lordicon/lordicon.js"></script>
+    <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/pain.js"></script>
+    <script src="./assets/js/setting.js"></script>
 </body>
 
 </html>

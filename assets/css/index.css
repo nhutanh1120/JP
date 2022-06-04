@@ -23,13 +23,23 @@
     margin-top: 20px;
 }
 
-.option span button,
-.option select {
+.option select, .option span button {
     background-color: var(--background-second);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-button);
     outline: none;
+    border: none;
+    border-radius: 10px;
     color: var(--color-second);
-    padding: 5px 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option span button:nth-child(2) {
+    margin-left: 10px;
+}
+
+.option span button:active {
+    box-shadow: var(--box-shadow-inset);
 }
 
 .text_show {
