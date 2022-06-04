@@ -4,11 +4,20 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .app {
     position: relative;
     margin: 0;
     min-height: 100vh;
     background-color: var(--background-primary);
+    overflow: hidden;
 }
 
 #loader {
@@ -35,13 +44,191 @@ body {
     animation: load 2s linear infinite;
 }
 
+.sidebar {
+    position: fixed;
+    width: 50px;
+    min-width: 50px;
+    height: 100%;
+    min-height: 100vh;
+    padding: 0 14px;
+    z-index: 199;
+    transition: all 0.5s ease;
+    background-color: var(--background-second);
+    box-shadow: var(--box-shadow);
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 60px;
+}
+
+.sidebar-logo i {
+    color: var(--color-primary);
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.sidebar .icon {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar-logo .logo-name {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open {
+    width: 250px !important;
+}
+
+.sidebar.open .icon,
+.sidebar.open .logo-name {
+    opacity: 1;
+}
+
+#btn-close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open #btn {
+    text-align: right;
+}
+
+.content {
+    position: relative;
+    background: var(--primary-background);
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.sidebar.open~.content {
+    left: 275px;
+    width: calc(100% - 275px);
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--background-second);
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+.section-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.section-search-input {
+    position: relative;
+    height: 50px;
+    background-color: var(--background-primary);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.section-search-input input {
+    border-color: transparent;
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px 60px 10px 20px;
+    font-size: 1rem;
+    color: var(--color-txt);
+    background-color: var(--background-primary);
+    border-radius: 15px;
+}
+
+.section-search-input i {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--color-txt);
+}
+
+.section-search-input i:hover {
+    transform: rotate(90deg);
+}
+
+.search-result {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+.search-result::-webkit-scrollbar {
+    display: none;
+}
+
+.search-result span {
+    display: block;
+    padding: 0 20px;
+}
+
+.search-result span:hover {
+    color: red;
+}
+
+.search-result.active {
+    display: block;
+}
+
+.search-result.active.data-none {
+    display: flex !important;
+    align-items: center;
+    height: 100px !important;
+}
+
+.search-result.data-none span {
+    width: 100%;
+    text-align: center;
+}
+
 .footer {
     position: absolute;
     width: 100%;
     bottom: 10px;
-}
-
-.footer {
     color: var(--color-primary);
 }
 
@@ -51,6 +238,7 @@ body {
     bottom: 20px;
     width: 50px;
     height: 50px;
+    z-index: 1000;
 }
 
 .setting-icon {
@@ -64,7 +252,7 @@ body {
     background-color: var(--background-second);
     box-shadow: var(--box-shadow);
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .setting-icon:hover i {

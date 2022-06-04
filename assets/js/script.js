@@ -1,76 +1,32 @@
-var furigana;
-var transfiguration;
-var global;
+$('#btn-close').click(function () {
+    $(this).parents('.sidebar').toggleClass('open');
+    $(this).toggleClass('bx bx-menu');
+    $(this).toggleClass('bx bx-menu-alt-right');
+})
 
-fetch('./json/furigana.json')
-    .then(response => response.json())
-    .then(result => {
-        furigana = result;
-    });
-fetch('./json/transfiguration.json')
-    .then(response => response.json())
-    .then(result => {
-        transfiguration = result;
-    });
-
-$('#click').click(function () {
-    let key = $('#type_character').val();
-    let id = 1;
-    switch (key) {
-        case 'all':
-            id = Math.floor(Math.random() * 68);
-            let dataAll = [...furigana, ...transfiguration];
-            global = dataAll[id];
-            break;
-        case 'kanji':
-            break;
-        case 'transfiguration':
-            id = Math.floor(Math.random() * 24);
-            global = transfiguration.find(result => result.id == id);
-            break;
-        default:
-            id = Math.floor(Math.random() * 43);
-            global = furigana.find(result => result.id == id);
-            break;
+$('.section-search-input input').keyup(async function () {
+    $(this).next().removeClass('bx-search');
+    $(this).next().addClass('bx-x');
+    $(this).parent().parent().find('.search-result').addClass('active');
+    $(this).parent().parent().find('.search-result').empty();
+    let keyword = $(this).val().replace(/^\s/g, "");
+    if (keyword === '') {
+        $(this).val(keyword);
+        return;
     }
-    if (typeof global !== 'undefined') {
-        $('#text').text(global.translate)
-        if (global.audio !== '') {
-            const src = './audio/' + global.audio;
-            loadAudio(src);
-        }
+    let result = await search(keyword);
+    $(this).parent().parent().find('.search-result').append(result.data);
+    if (result.success === false) {
+        $(this).parent().parent().find('.search-result').addClass('data-none');
+    } else {
+        $(this).parent().parent().find('.search-result').removeClass('data-none');
     }
 })
 
-$('#result').click(function () {
-    let key = $('#type_character').val();
-    if (typeof global !== 'undefined') {
-        switch (key) {
-            case 'all':
-                if (typeof global.transfiguration === 'undefined') {
-                    $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);
-                    break;
-                }
-                $('#text').text(global.transfiguration);
-                break;
-            case 'hiragana':
-                $('#text').text(global.hiragana);
-                break;
-            case 'katakana':
-                $('#text').text(global.katakana);
-                break;
-            case 'kanji':
-                break;
-            default:
-                $('#text').text(global.transfiguration);
-                break;
-        }
-    }
+$('#close-search').click(function () {
+    $(this).removeClass('bx-x');
+    $(this).addClass('bx-search');
+    $(this).parent().next().removeClass('active');
+    $(this).parent().next().empty();
+    $(this).prev().val('');
 })
-
-const loadAudio = async (src) => {
-    const audio = new Audio(src);
-    await audio.load();
-    audio.play();
-    $('#audio').html(`<source src="${src}" type="audio/mp3">`);
-}

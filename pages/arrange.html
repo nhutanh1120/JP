@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luu moments</title>
     <link rel="icon" href="/assets/img/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./../assets/css/grid.css">
     <link rel="stylesheet" href="./../assets/css/theme.css">
     <link rel="stylesheet" href="./../assets/css/style.css">
+    <link rel="stylesheet" href="./../assets/css/class.css">
     <link rel="stylesheet" href="./../assets/css/arrange.css">
 </head>
 
@@ -21,29 +22,51 @@
     </div>
 
     <div class="app">
-        <div class="dropp"></div>
-        <div class="dragg"></div>
+        <div class="sidebar open">
+            <div class="sidebar-logo">
+                <i class="bx bxs-heart-circle icon"></i>
+                <span class="logo-name">Luu Moments</span>
+                <i class="bx bx-menu-alt-right" id="btn-close"></i>
+            </div>
+        </div>
+        <div class="content">
+            <section class="content-section">
+                <div class="section-search">
+                    <div class="section-search-input">
+                        <input type="text" placeholder="Tìm kiếm..." value="">
+                        <i id="close-search" class="bx bx-search"></i>
+                    </div>
+                    <div class="search-result"></div>
+                </div>
+            </section>
+            <div class="dropp"></div>
+            <div class="dragg"></div>
 
-        <div class="selector">
-            <div class="selector-title">
-                <lord-icon src="./../json/icon/selector.json" trigger="loop" style="width: 40px; height: 40px">
-                </lord-icon>
-                <span>Chọn</span>
-            </div>
-            <div class="selector-item">
-                <span class="border-animation" data-type="hiragana">
-                    <button>hiragana</button>
-                </span>
-                <span class="border-animation" data-type="katakana">
-                    <button>katakana</button>
-                </span>
-                <span class="border-animation active" data-type="transfiguration">
-                    <button>biến âm</button>
-                </span>
-                <span class="border-animation" data-type="kanji">
-                    <button>kanji</button>
-                </span>
-            </div>
+            <footer class="footer">
+                <p class="text-center">Copyright &copy;&nbsp;Lưu Trần Anh Nhựt</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="selector">
+        <div class="selector-title">
+            <lord-icon src="./../json/icon/selector.json" trigger="loop" style="width: 40px; height: 40px">
+            </lord-icon>
+            <span>Chọn</span>
+        </div>
+        <div class="selector-item">
+            <span class="border-animation" data-type="hiragana">
+                <button>hiragana</button>
+            </span>
+            <span class="border-animation" data-type="katakana">
+                <button>katakana</button>
+            </span>
+            <span class="border-animation active" data-type="transfiguration">
+                <button>biến âm</button>
+            </span>
+            <span class="border-animation" data-type="kanji">
+                <button>kanji</button>
+            </span>
         </div>
     </div>
 
@@ -70,8 +93,10 @@
     <script src="./../vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./../vendor/jquery-ui/jquery-ui.js"></script>
     <script src="./../vendor/lordicon/lordicon.js"></script>
-    <script src="./../assets/js/setting.js"></script>
     <script src="./../assets/js/arrange.js"></script>
+    <script src="./../assets/js/search.js"></script>
+    <script src="./../assets/js/script.js"></script>
+    <script src="./../assets/js/setting.js"></script>
 </body>
 
 </html>

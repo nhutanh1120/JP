@@ -1,27 +1,32 @@
+var furigana;
+var transfiguration;
 $(function () {
     const fetchData = (url = 'transfiguration', type = null) => {
         fetch(`./../json/${url}.json`)
             .then(response => response.json())
             .then(result => {
-                result.map((item, index) => {
+                result.map((item) => {
                     $('.dropp').append(`<div class="dropp-items" data-id="${item.id}">
                                     <div class="character"></div>
                                     <span>${item.translate}</span>
                                 </div>`);
                 });
                 result.sort(function (a, b) { return 0.5 - Math.random() });
-                result.map((item, index) => {
+                result.map((item) => {
                     let character;
                     switch (type) {
                         case 'katakana':
+                            furigana = result;
                             character = item.katakana;
                             break;
                         case 'hiragana':
+                            furigana = result;
                             character = item.hiragana;
                             break;
                         case 'kanji':
                             break;
                         default:
+                            transfiguration = result;
                             character = item.transfiguration;
                             break;
                     }

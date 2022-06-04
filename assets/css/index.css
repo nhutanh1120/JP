@@ -1,17 +1,19 @@
 .filter {
-    width: 800px;
-    margin: 0 auto;
-    padding: 20px 0 0;
+    margin: 20px;
+    width: 1000px;
 }
 
-.filter h1:first-child {
+.filter h5:first-child {
     color: var(--color-primary);
-    font: bold 24px Sans-Serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Sans-Serif;
     text-shadow: 0 1px 0 rgb(255 255 255 / 40%);
     padding: 10px 15px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-radius: 5px;
     border-left: 5px solid red;
+    width: max-content;
     background-color: var(--background-second);
     box-shadow: var(--box-shadow);
 }
@@ -20,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .option select, .option span button {
@@ -49,4 +51,5 @@
     line-height: 1.5rem;
     text-align: center;
     height: 30px;
+    color: var(--color-primary);
 }
