@@ -111,7 +111,8 @@
     text-transform: capitalize;
     font-weight: 600;
     padding: 5px;
-    color: rgb(29, 26, 26);
+    color: var(--color-primary);
+    background-color: var(--background-second);
     box-shadow: none;
     z-index: 100;
 }
@@ -136,6 +137,23 @@
 
 .selector-item.active button {
     cursor: pointer;
+}
+
+#hand-up {
+    position: fixed;
+    top: 10px;
+    opacity: 0;
+    transition: all .3s;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#hand-up a {
+    text-decoration: none;
+}
+
+#hand-up a i {
+    color: var(--color-primary);
 }
 
 @keyframes rotate {

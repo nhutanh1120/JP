@@ -1,5 +1,6 @@
 var furigana;
 var transfiguration;
+var ligatures;
 $(function () {
     const fetchData = (url = 'transfiguration', type = null) => {
         fetch(`./../json/data/${url}.json`)
@@ -24,6 +25,10 @@ $(function () {
                             character = item.hiragana;
                             break;
                         case 'kanji':
+                            break;
+                        case 'ligatures':
+                            ligatures = result;
+                            character = item.hiragana;
                             break;
                         default:
                             transfiguration = result;
@@ -67,6 +72,8 @@ $(function () {
         $('.dragg').empty();
         if ($(this).data('type') == 'katakana' || $(this).data('type') == 'hiragana') {
             fetchData('furigana', $(this).data('type'));
+        } else if ($(this).data('type') == 'ligatures') {
+            fetchData('ligatures', 'ligatures');
         } else {
             fetchData();
         }
@@ -99,3 +106,13 @@ const dropp = () => {
         }
     });
 }
+
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 200) {
+        document.getElementById("hand-up").style.right = "40px";
+        document.getElementById("hand-up").style.opacity= "0.9";
+    }
+    if (window.pageYOffset < 200) {
+        document.getElementById("hand-up").style.right = "-60px";
+    }
+});

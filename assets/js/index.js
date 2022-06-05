@@ -1,5 +1,6 @@
 var furigana;
 var transfiguration;
+var ligatures;
 var global;
 
 fetch('./json/data/furigana.json')
@@ -12,14 +13,19 @@ fetch('./json/data/transfiguration.json')
     .then(result => {
         transfiguration = result;
     });
+fetch('./json/data/ligatures.json')
+    .then(response => response.json())
+    .then(result => {
+        ligatures = result;
+    });
 
 $('#click').click(function () {
     let key = $('#type_character').val();
     let id = 1;
     switch (key) {
         case 'all':
-            id = Math.floor(Math.random() * 68);
-            let dataAll = [...furigana, ...transfiguration];
+            id = Math.floor(Math.random() * 104);
+            let dataAll = [...furigana, ...transfiguration, ...ligatures];
             global = dataAll[id];
             break;
         case 'kanji':
@@ -27,6 +33,10 @@ $('#click').click(function () {
         case 'transfiguration':
             id = Math.floor(Math.random() * 24);
             global = transfiguration.find(result => result.id == id);
+            break;
+        case 'ligatures':
+            id = Math.floor(Math.random() * 24);
+            global = ligatures.find(result => result.id == id);
             break;
         default:
             id = Math.floor(Math.random() * 43);
@@ -60,6 +70,9 @@ $('#result').click(function () {
                 $('#text').text(global.katakana);
                 break;
             case 'kanji':
+                break;
+            case 'ligatures':
+                $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);
                 break;
             default:
                 $('#text').text(global.transfiguration);
