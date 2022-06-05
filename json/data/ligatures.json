@@ -4,230 +4,230 @@
         "hiragana": "きゃ",
         "katakana": "キャ",
         "translate": "Kya",
-        "audio": ""
+        "audio": "kya.mp3"
     },
     {
         "id": 2,
         "hiragana": "きゅ",
         "katakana": "キュ",
         "translate": "Kyu",
-        "audio": ""
+        "audio": "kyu.mp3"
     },
     {
         "id": 3,
         "hiragana": "きょ",
         "katakana": "キョ",
         "translate": "Kyo",
-        "audio": ""
+        "audio": "kyo.mp3"
     },
     {
         "id": 4,
         "hiragana": "しゃ",
         "katakana": "シャ",
         "translate": "Sha",
-        "audio": ""
+        "audio": "sha.mp3"
     },
     {
         "id": 5,
         "hiragana": "しゅ",
         "katakana": "シュ",
         "translate": "Shu",
-        "audio": ""
+        "audio": "shu.mp3"
     },
     {
         "id": 6,
         "hiragana": "しょ",
         "katakana": "ショ",
         "translate": "Sho",
-        "audio": ""
+        "audio": "sho.mp3"
     },
     {
         "id": 7,
         "hiragana": "ちゃ",
         "katakana": "チャ",
         "translate": "Cha",
-        "audio": ""
+        "audio": "cha.mp3"
     },
     {
         "id": 8,
         "hiragana": "ちゅ",
         "katakana": "チュ",
         "translate": "Chu",
-        "audio": ""
+        "audio": "chu.mp3"
     },
     {
         "id": 9,
         "hiragana": "ちょ",
         "katakana": "チョ",
         "translate": "Cho",
-        "audio": ""
+        "audio": "cho.mp3"
     },
     {
         "id": 10,
         "hiragana": "にゃ",
         "katakana": "ニャ",
         "translate": "Nya",
-        "audio": ""
+        "audio": "nya.mp3"
     },
     {
         "id": 11,
         "hiragana": "にゅ",
         "katakana": "ニュ",
         "translate": "Nyu",
-        "audio": ""
+        "audio": "nyu.mp3"
     },
     {
         "id": 12,
         "hiragana": "にょ",
         "katakana": "ニョ",
         "translate": "Nyo",
-        "audio": ""
+        "audio": "nyo.mp3"
     },
     {
         "id": 13,
         "hiragana": "ひゃ",
         "katakana": "ヒャ",
         "translate": "Hya",
-        "audio": ""
+        "audio": "hya.mp3"
     },
     {
         "id": 14,
         "hiragana": "ひゅ",
         "katakana": "ヒュ",
         "translate": "Hyu",
-        "audio": ""
+        "audio": "hyu.mp3"
     },
     {
         "id": 15,
         "hiragana": "ひょ",
         "katakana": "ヒョ",
         "translate": "Hyo",
-        "audio": ""
+        "audio": "hyo.mp3"
     },
     {
         "id": 16,
         "hiragana": "みゃ",
         "katakana": "ミャ",
         "translate": "Mya",
-        "audio": ""
+        "audio": "mya.mp3"
     },
     {
         "id": 17,
         "hiragana": "みゅ",
         "katakana": "ミュ",
         "translate": "Myu",
-        "audio": ""
+        "audio": "myu.mp3"
     },
     {
         "id": 18,
         "hiragana": "みょ",
         "katakana": "ミョ",
         "translate": "Myo",
-        "audio": ""
+        "audio": "myo.mp3"
     },
     {
         "id": 19,
         "hiragana": "りゃ",
         "katakana": "リャ",
         "translate": "Rya",
-        "audio": ""
+        "audio": "rya.mp3"
     },
     {
         "id": 20,
         "hiragana": "りゅ",
         "katakana": "リュ",
         "translate": "Ryu",
-        "audio": ""
+        "audio": "ryu.mp3"
     },
     {
         "id": 21,
         "hiragana": "りょ",
         "katakana": "リョ",
         "translate": "Ryo",
-        "audio": ""
+        "audio": "ryo.mp3"
     },
     {
         "id": 22,
         "hiragana": "ぎゃ",
         "katakana": "ギャ",
         "translate": "Gya",
-        "audio": ""
+        "audio": "gya.mp3"
     },
     {
         "id": 23,
         "hiragana": "ぎう",
         "katakana": "ギュ",
         "translate": "Gyu",
-        "audio": ""
+        "audio": "gyu.mp3"
     },
     {
         "id": 24,
         "hiragana": "ぎょ",
         "katakana": "ギョ",
         "translate": "Gyo",
-        "audio": ""
+        "audio": "gyo.mp3"
     },
     {
         "id": 25,
         "hiragana": "じゃ",
         "katakana": "ジャ",
         "translate": "Ja",
-        "audio": ""
+        "audio": "ja.mp3"
     },
     {
         "id": 26,
         "hiragana": "じゅ",
         "katakana": "ジュ",
         "translate": "Ju",
-        "audio": ""
+        "audio": "ju.mp3"
     },
     {
         "id": 27,
         "hiragana": "じょ",
         "katakana": "ジョ",
         "translate": "Jo",
-        "audio": ""
+        "audio": "jo.mp3"
     },
     {
         "id": 28,
         "hiragana": "びゃ",
         "katakana": "ビャ",
         "translate": "Bya",
-        "audio": ""
+        "audio": "bya.mp3"
     },
     {
         "id": 29,
         "hiragana": "びゅ",
         "katakana": "ビュ",
         "translate": "Byu",
-        "audio": ""
+        "audio": "byu.mp3"
     },
     {
         "id": 30,
         "hiragana": "びょ",
         "katakana": "ビョ",
         "translate": "Byo",
-        "audio": ""
+        "audio": "byo.mp3"
     },
     {
         "id": 31,
         "hiragana": "ぴゃ",
         "katakana": "ピャ",
         "translate": "Pya",
-        "audio": ""
+        "audio": "pya.mp3"
     },
     {
         "id": 32,
         "hiragana": "ぴゅ",
         "katakana": "ピュ",
         "translate": "Pyu",
-        "audio": ""
+        "audio": "pyu.mp3"
     },
     {
         "id": 33,
         "hiragana": "ぴょ",
         "katakana": "ピョ",
         "translate": "Pyo",
-        "audio": ""
+        "audio": "pyo.mp3"
     }
 ]
