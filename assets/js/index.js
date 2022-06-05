@@ -2,12 +2,12 @@ var furigana;
 var transfiguration;
 var global;
 
-fetch('./json/furigana.json')
+fetch('./json/data/furigana.json')
     .then(response => response.json())
     .then(result => {
         furigana = result;
     });
-fetch('./json/transfiguration.json')
+fetch('./json/data/transfiguration.json')
     .then(response => response.json())
     .then(result => {
         transfiguration = result;

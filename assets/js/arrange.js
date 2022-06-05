@@ -2,7 +2,7 @@ var furigana;
 var transfiguration;
 $(function () {
     const fetchData = (url = 'transfiguration', type = null) => {
-        fetch(`./../json/${url}.json`)
+        fetch(`./../json/data/${url}.json`)
             .then(response => response.json())
             .then(result => {
                 result.map((item) => {
