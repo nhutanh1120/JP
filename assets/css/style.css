@@ -177,6 +177,7 @@ body::-webkit-scrollbar {
 }
 
 .section-search-input i:hover {
+    color: var(--color-primary);
     transform: rotate(90deg);
 }
 
@@ -319,6 +320,11 @@ body::-webkit-scrollbar {
 
 .setting-items-menu.active .menu-item:nth-child(3) {
     transform: translate3d(-1em, -8em, 0);
+    box-shadow: var(--box-shadow);
+}
+
+.setting-items-menu.active .menu-item:nth-child(4) {
+    transform: translate3d(-1em, -13em, 0);
     box-shadow: var(--box-shadow);
 }
 

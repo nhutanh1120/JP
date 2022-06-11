@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./../assets/css/theme.css">
     <link rel="stylesheet" href="./../assets/css/style.css">
     <link rel="stylesheet" href="./../assets/css/class.css">
-    <link rel="stylesheet" href="./../assets/css/arrange.css">
+    <link rel="stylesheet" href="./../assets/css/message.css">
+    <link rel="stylesheet" href="./../assets/css/vocabulary.css">
 </head>
 
 <body>
@@ -47,49 +48,35 @@
                     </lord-icon>
                 </div>
             </section>
-            
             <main>
-                <div id="dropp" class="dropp"></div>
-                <div class="dragg"></div>
+                <div class="vocabulary">
+                    <h5 id="vocabulary-text">a</h5>
+                    <div class="group-vocabulary">
+                        <div class="input-vocabulary">
+                            <input type="text" id="vocabulary-input" placeholder="あいうえお。。。">
+                            <span id="vocabulary-result">
+                                <lord-icon src="./../json/icon/result.json" trigger="hover"
+                                    style="width:40px; height:40px">
+                                </lord-icon>
+                            </span>
+                            <span id="vocabulary-view">
+                                <lord-icon src="./../json/icon/result.json" trigger="hover"
+                                    style="width:40px; height:40px">
+                                </lord-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="vocabulary-result-view"></div>
+                </div>
             </main>
-
             <footer class="footer">
                 <p class="text-center">Copyright &copy;&nbsp;Lưu Trần Anh Nhựt</p>
             </footer>
         </div>
     </div>
 
-    <div class="selector">
-        <div class="selector-title">
-            <lord-icon src="./../json/icon/selector.json" trigger="loop" style="width: 40px; height: 40px">
-            </lord-icon>
-            <span>Chọn</span>
-        </div>
-        <div class="selector-item">
-            <span class="border-animation" data-type="hiragana">
-                <button>hiragana</button>
-            </span>
-            <span class="border-animation" data-type="katakana">
-                <button>katakana</button>
-            </span>
-            <span class="border-animation" data-type="kanji">
-                <button>kanji</button>
-            </span>
-            <span class="border-animation active" data-type="transfiguration">
-                <button>biến âm</button>
-            </span>
-            <span class="border-animation" data-type="ligatures">
-                <button>âm ghép</button>
-            </span>
-        </div>
-    </div>
-
-    <!-- hand up -->
-    <div id="hand-up">
-        <a href="#dropp" title="hand-up">
-            <i class="bx bxs-hand-up bx-sm"></i>
-        </a>
-    </div>
+    <!-- message -->
+    <div id="toast"></div>
 
     <!-- setting -->
     <div class="setting">
@@ -102,7 +89,7 @@
                 <lord-icon src="./../json/icon/home.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
-            <span class="menu-item" onclick="location.href = './vocabulary.html'">
+            <span class="menu-item">
                 <lord-icon src="./../json/icon/book.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
@@ -110,7 +97,7 @@
                 <lord-icon src="./../json/icon/slidebar.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
-            <span class="menu-item">
+            <span class="menu-item" onclick="location.href = './arrange.html'">
                 <lord-icon src="./../json/icon/heart.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
@@ -119,10 +106,11 @@
     <script src="./../vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./../vendor/jquery-ui/jquery-ui.js"></script>
     <script src="./../vendor/lordicon/lordicon.js"></script>
-    <script src="./../assets/js/arrange.js"></script>
     <script src="./../assets/js/search.js"></script>
     <script src="./../assets/js/script.js"></script>
     <script src="./../assets/js/setting.js"></script>
+    <script src="./../assets/js/message.js"></script>
+    <script src="./../assets/js/vocabulary.js"></script>
 </body>
 
 </html>

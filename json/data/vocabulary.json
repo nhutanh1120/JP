@@ -1,0 +1,83 @@
+[
+    {
+        "topic": "exercise_1",
+        "japanese": "わたし",
+        "spelling": "watashi",
+        "translate": "tôi",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "あなた",
+        "spelling": "anata",
+        "translate": "anh/chị, ông/bà, bạn",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "あのみと",
+        "spelling": "anomito",
+        "translate": "người nào đó",
+        "description": null,
+        "synonyms": "people",
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "あのかた",
+        "spelling": "anokata",
+        "translate": "vị kia",
+        "description": null,
+        "synonyms": "people",
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "さん",
+        "spelling": "san",
+        "translate": "anh/chị/ông/bà",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "ちゃん",
+        "spelling": "chan",
+        "translate": "trẻ em/người đặc biệt",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "～じん",
+        "spelling": "jin",
+        "translate": "Người ~",
+        "description": "ví dụ: アメリカじん: người mỹ",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "もも",
+        "spelling": "momo",
+        "translate": "hoa đào",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "もも",
+        "spelling": "momo",
+        "translate": "hoa đào",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    }
+]

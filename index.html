@@ -32,12 +32,22 @@
         </div>
         <div class="content">
             <section class="content-section">
+                <div class="section-left">
+                    <lord-icon src="./../json/icon/accessibility.json" trigger="loop"
+                        style="width:50px;height:50px">
+                    </lord-icon>
+                </div>
                 <div class="section-search">
                     <div class="section-search-input">
                         <input type="text" placeholder="Tìm kiếm..." value="">
                         <i id="close-search" class="bx bx-search"></i>
                     </div>
                     <div class="search-result"></div>
+                </div>
+                <div class="section-right">
+                    <lord-icon src="./../json/icon/accessibility.json" trigger="loop"
+                        style="width:50px;height:50px">
+                    </lord-icon>
                 </div>
             </section>
             <div class="filter">
@@ -53,13 +63,11 @@
                     </select>
                     <span>
                         <button id="click">
-                            <lord-icon src="./json/icon/next.json" trigger="hover"
-                                style="width:20px; height:20px">
+                            <lord-icon src="./json/icon/next.json" trigger="hover" style="width:20px; height:20px">
                             </lord-icon>
                         </button>
                         <button id="result">
-                            <lord-icon src="./json/icon/result.json" trigger="hover"
-                                style="width:20px; height:20px">
+                            <lord-icon src="./json/icon/result.json" trigger="hover" style="width:20px; height:20px">
                             </lord-icon>
                         </button>
                     </span>
@@ -138,12 +146,16 @@
                 <lord-icon src="./json/icon/home.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
-            <span class="menu-item" onclick="location.href = 'pages/arrange.html'">
+            <span class="menu-item" onclick="location.href = 'pages/vocabulary.html'">
                 <lord-icon src="./json/icon/book.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
             <span class="menu-item" id="slidebar">
                 <lord-icon src="./json/icon/slidebar.json" trigger="hover" style="width:22px; height:22px">
+                </lord-icon>
+            </span>
+            <span class="menu-item" onclick="location.href = 'pages/arrange.html'">
+                <lord-icon src="./json/icon/heart.json" trigger="hover" style="width:22px; height:22px">
                 </lord-icon>
             </span>
         </menu>
