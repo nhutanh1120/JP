@@ -49,25 +49,50 @@
                 </div>
             </section>
             <main>
-                <div class="vocabulary">
-                    <h5 id="vocabulary-text">a</h5>
-                    <div class="group-vocabulary">
-                        <div class="input-vocabulary">
-                            <input type="text" id="vocabulary-input" placeholder="あいうえお。。。">
-                            <span id="vocabulary-result">
-                                <lord-icon src="./../json/icon/result.json" trigger="hover"
-                                    style="width:40px; height:40px">
-                                </lord-icon>
-                            </span>
-                            <span id="vocabulary-view">
-                                <lord-icon src="./../json/icon/result.json" trigger="hover"
-                                    style="width:40px; height:40px">
-                                </lord-icon>
+                <article class="article-left">
+                    <div class="main-title">
+                        <h5>Từ vựng</h5>
+                    </div>
+                    <div class="vocabulary">
+                        <div class="option">
+                            <select name="topic" id="topic">
+                                <option value="all">Tất cả</option>
+                            </select>
+                            <h5 id="vocabulary-text"></h5>
+                            <span>
+                                <button id="result">
+                                    <lord-icon src="./../json/icon/next.json" trigger="hover"
+                                        style="width:20px; height:20px">
+                                    </lord-icon>
+                                </button>
+                                <button id="view-result">
+                                    <lord-icon src="./../json/icon/result.json" trigger="hover"
+                                        style="width:20px; height:20px">
+                                    </lord-icon>
+                                </button>
                             </span>
                         </div>
+                        <div class="group-vocabulary">
+                            <div class="input-vocabulary">
+                                <input type="text" id="vocabulary-input" placeholder="あいうえお。。。">
+                            </div>
+                        </div>
+                        <div class="vocabulary-result-view"></div>
                     </div>
-                    <div class="vocabulary-result-view"></div>
-                </div>
+                </article>
+                <article class="article-right">
+                    <div class="list-vocabulary">
+                        <div class="list-vocabulary-title">Danh sách</div>
+                        <div class="list-vocabulary-content">
+                            <select name="" id="">
+                                <option value="">Tất cả</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </article>
             </main>
             <footer class="footer">
                 <p class="text-center">Copyright &copy;&nbsp;Lưu Trần Anh Nhựt</p>

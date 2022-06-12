@@ -13,7 +13,7 @@
         "japanese": "あなた",
         "spelling": "anata",
         "translate": "anh/chị, ông/bà, bạn",
-        "description": null,
+        "description": "ngôi thứ II số ít",
         "synonyms": null,
         "audio": null
     },
@@ -21,7 +21,7 @@
         "topic": "exercise_1",
         "japanese": "あのみと",
         "spelling": "anomito",
-        "translate": "người nào đó",
+        "translate": "người kia/người đó",
         "description": null,
         "synonyms": "people",
         "audio": null
@@ -31,7 +31,7 @@
         "japanese": "あのかた",
         "spelling": "anokata",
         "translate": "vị kia",
-        "description": null,
+        "description": "cách nói lịch sự của あのみと",
         "synonyms": "people",
         "audio": null
     },
@@ -39,8 +39,8 @@
         "topic": "exercise_1",
         "japanese": "さん",
         "spelling": "san",
-        "translate": "anh/chị/ông/bà",
-        "description": null,
+        "translate": "anh/chị/ông/bà (hậu tố)",
+        "description": "hậu tố thêm vào phía sau tên của người khác khi gọi thể hiện tính lịch sự",
         "synonyms": null,
         "audio": null
     },
@@ -48,17 +48,89 @@
         "topic": "exercise_1",
         "japanese": "ちゃん",
         "spelling": "chan",
-        "translate": "trẻ em/người đặc biệt",
+        "translate": "trẻ em (hậu tố)",
+        "description": "hậu tố thêm vào phía sau tên của trẻ em, cách gọi một người thân thiết",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "じん",
+        "spelling": "jin",
+        "translate": "hậu tố mang nghĩa người ~",
+        "description": "ví dụ: アメリカじん: người mỹ",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "せんせい",
+        "spelling": "sensei",
+        "translate": "thầy/cô",
+        "description": "không dùng khi giới thiệu về nghề giáo viên của chính mình",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "きょうし",
+        "spelling": "kyoushi",
+        "translate": "giáo viên",
         "description": null,
         "synonyms": null,
         "audio": null
     },
     {
-        "topic": null,
-        "japanese": "じん",
-        "spelling": "jin",
-        "translate": "Người ~",
-        "description": "ví dụ: アメリカじん: người mỹ",
+        "topic": "exercise_1",
+        "japanese": "がくせい",
+        "spelling": "gakusei",
+        "translate": "học sinh, sinh viên",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "かいしゃいん",
+        "spelling": "kaishain",
+        "translate": "nhân viên công ty",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "しゃいん",
+        "spelling": "shain",
+        "translate": "nhân viên công ty (hậu tố)",
+        "description": "dùng kèm theo tên công ty ví dụ: IMC しゃいん",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "ざんこういん",
+        "spelling": "zancouin",
+        "translate": "nhân viên ngân hàng",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "いしゃ",
+        "spelling": "isha",
+        "translate": "bác sĩ",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "けんきゅうしゃ",
+        "spelling": "kenkyuusha",
+        "translate": "nhà nghiên cứu",
+        "description": null,
         "synonyms": null,
         "audio": null
     },
