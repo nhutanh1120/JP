@@ -135,6 +135,222 @@
         "audio": null
     },
     {
+        "topic": "exercise_1",
+        "japanese": "だいがく",
+        "spelling": "daigaku",
+        "translate": "đại học, trường đại học",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "びょういん",
+        "spelling": "byouin",
+        "translate": "bệnh viện",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "だれ",
+        "spelling": "dare",
+        "translate": "ai",
+        "description": null,
+        "synonyms": "who",
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "どなた",
+        "spelling": "donata",
+        "translate": "ai",
+        "description": "cách nói lịch sự của だれ, vị nào",
+        "synonyms": "who",
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "さい",
+        "spelling": "sai",
+        "translate": "-tuổi",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "なんさい",
+        "spelling": "nansai",
+        "translate": "mấy tuổi",
+        "description": null,
+        "synonyms": "",
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "あいくつ",
+        "spelling": "aikutsu",
+        "translate": "bao nhiêu tuổi",
+        "description": "cách nói lịch sự của なんさい",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "はい",
+        "spelling": "hai",
+        "translate": "vâng, dạ",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "いいえ",
+        "spelling": "iie",
+        "translate": "không",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "アメリカ",
+        "spelling": "amerika",
+        "translate": "nước mỹ",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "イギリス",
+        "spelling": "igirisu",
+        "translate": "nước anh",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "インド",
+        "spelling": "indo",
+        "translate": "ấn độ",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "イインドネシア",
+        "spelling": "indonesia",
+        "translate": "in-đô-nê-xi-a",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "タイ",
+        "spelling": "tai",
+        "translate": "thái lan",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_1",
+        "japanese": "ベトナム",
+        "spelling": "betonamu",
+        "translate": "việt nam",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "あい",
+        "spelling": "ai",
+        "translate": "tình yêu",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "あう",
+        "spelling": "au",
+        "translate": "gặp gỡ",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "いえ",
+        "spelling": "ie",
+        "translate": "nhà",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "あおい",
+        "spelling": "aoi",
+        "translate": "màu xanh",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "かお",
+        "spelling": "kao",
+        "translate": "gương mặt",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "えき",
+        "spelling": "eki",
+        "translate": "nhà ga",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "いく",
+        "spelling": "iku",
+        "translate": "đi lại",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "いけ",
+        "spelling": "ike",
+        "translate": "hồ nước",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "こんばんは",
+        "spelling": "conbanwa",
+        "translate": "chào buổi tối",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
         "topic": null,
         "japanese": "もも",
         "spelling": "momo",

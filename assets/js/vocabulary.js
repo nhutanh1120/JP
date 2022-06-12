@@ -8,8 +8,83 @@ fetch('./../json/data/vocabulary.json')
     .then(result => {
         randomVocabulary(result);
         vocabulary = result;
-        result.map(item => $('.list-vocabulary-content ul').append(`<li>${item.japanese}: ${item.translate}</li>`));
+
+        let different = result.filter(item => item.topic == null);
+        let exercise_1 = result.filter(item => item.topic == 'exercise_1');
+        $('#list-vocabulary-option').append(`<option value='all'>Tất cả (${result.length})</option>`);
+        $('#list-vocabulary-option').append(`<option value='${exercise_1[0].topic}'>Bài 1 (${exercise_1.length})</option>`);
+        $('#list-vocabulary-option').append(`<option value='${different[0].topic}'>Khác (${different.length})</option>`);
+
+        result.map(item => {
+            let strDescription = '';
+            if (item.description !== null) {
+                strDescription = `<span class="description">-
+                                    <span>${item.description}</span>
+                                </span>`;
+            }
+            $('.list-vocabulary-content ul').append(
+                `<li>
+                    ${item.japanese}: ${item.translate} 
+                    <span class="spelling">+
+                        <span>${item.spelling}</span>
+                    </span>
+                    ${strDescription}
+                </li>`);
+        });
     });
+
+$(document).on('click', '.list-vocabulary-content ul li .spelling', function () {
+    $('.list-vocabulary-content ul').find('.show-spelling').removeClass('show-spelling');
+    $('.list-vocabulary-content ul').find('.active').removeClass('active');
+    $(this).addClass('show-spelling');
+})
+
+$(document).on('click', '.list-vocabulary-content ul li .description', function () {
+    $('.list-vocabulary-content ul').find('.show-spelling').removeClass('show-spelling');
+    $('.list-vocabulary-content ul').find('.active').removeClass('active');
+    $(this).addClass('active');
+})
+
+$(document).on('change', '#list-vocabulary-option', function () {
+    $('.list-vocabulary-content ul').empty();
+    if ($(this).val() === 'all') {
+        vocabulary.map(item => {
+            let strDescription = '';
+            if (item.description !== null) {
+                strDescription = `<span class="description">-
+                                    <span>${item.description}</span>
+                                </span>`;
+            }
+            $('.list-vocabulary-content ul').append(
+                `<li>
+                    ${item.japanese}: ${item.translate} 
+                    <span class="spelling">+
+                        <span>${item.spelling}</span>
+                    </span>
+                    ${strDescription}
+                </li>`);
+        });
+    }
+    vocabulary.map(item => {
+        value = item.topic == null ? 'null' : item.topic;
+        if (value === $(this).val()) {
+            let strDescription = '';
+            if (item.description !== null) {
+                strDescription = `<span class="description">-
+                                    <span>${item.description}</span>
+                                </span>`;
+            }
+            $('.list-vocabulary-content ul').append(
+                `<li>
+                    ${item.japanese}: ${item.translate} 
+                    <span class="spelling">+
+                        <span>${item.spelling}</span>
+                    </span>
+                    ${strDescription}
+                </li>`);
+        }
+    });
+})
 
 $('#vocabulary-input').keyup(function (event) {
     let check = false;
@@ -99,7 +174,7 @@ $('#view-result').click(function () {
     viewResult();
 });
 
-$('.list-vocabulary-title').click(function() {
+$('.list-vocabulary-title').click(function () {
     $(".list-vocabulary-content").slideToggle('fast');
 });
 
