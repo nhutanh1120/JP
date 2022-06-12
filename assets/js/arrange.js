@@ -116,3 +116,39 @@ window.addEventListener('scroll', function () {
         document.getElementById("hand-up").style.right = "-60px";
     }
 });
+
+const searchByChar = (keyword, type) => {
+    let result = '';
+    if (type == 'alphabet') {
+        if(typeof furigana !== 'undefined') {
+            furigana.map((item) => {
+                if (item.translate.toLowerCase().search(keyword.toLowerCase()) !== -1) {
+                    result = result + `<span>${item.translate}: ${item.katakana}, ${item.hiragana}</span>`;
+                }
+            });
+        }
+        if(typeof transfiguration !== 'undefined') {
+            transfiguration.map((item) => {
+                if (item.translate.toLowerCase().search(keyword.toLowerCase()) !== -1) {
+                    result = result + `<span>${item.translate}: ${item.transfiguration}</span>`;
+                }
+            });
+        }
+    } else if (type == 'hiragana') {
+        if(typeof furigana !== 'undefined') {
+            furigana.map((item) => {
+                if (item.katakana.search(keyword) !== -1 || item.hiragana.search(keyword) !== -1) {
+                    result = result + `<span>${item.translate}: ${item.katakana}, ${item.hiragana}</span>`;
+                }
+            });
+        }
+        if(typeof transfiguration !== 'undefined') {
+            transfiguration.map((item) => {
+                if (item.transfiguration.search(keyword) !== -1) {
+                    result = result + `<span>${item.translate}: ${item.transfiguration}</span>`;
+                }
+            });
+        }
+    }
+    return result;
+}

@@ -4,7 +4,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80%;
+    height: 60%;
     padding: 10px;
 }
 
@@ -42,6 +42,7 @@ main {
 .vocabulary-result-view {
     margin-top: 5px;
     color: var(--color-txt);
+    border-top: 5px solid transparent;
 }
 
 .vocabulary-result-view span {
@@ -52,10 +53,6 @@ main {
     text-transform: capitalize;
 }
 
-.vocabulary-result-view.success span {
-    border-top: 5px solid var(--color-primary);
-}
-
-.vocabulary-result-view.error span {
-    border-top: 5px solid #ff623d;
+.vocabulary-result-view.success {
+    border-color: var(--color-primary);
 }

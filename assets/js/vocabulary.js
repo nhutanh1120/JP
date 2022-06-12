@@ -9,14 +9,17 @@ fetch('./../json/data/vocabulary.json')
         randomVocabulary(result);
         vocabulary = result;
     });
+
 $('#vocabulary-input').keyup(function (event) {
     let check = false;
-    if ($(this).val() === global.japanese) {
+    let result = null;
+    $('.vocabulary-result-view').removeClass('success');
+    $('.vocabulary-result-view').empty();
+    if (global.length !== undefined) {
+        result = vocabulary.find(item => item.japanese === $(this).val());
+    }
+    if ($(this).val() === global.japanese || (typeof result !== 'undefined' && result !== null)) {
         check = true;
-        viewResult();
-    } else {
-        $('.vocabulary-result-view').removeClass('success');
-        $('.vocabulary-result-view').empty();
     }
     if (event.which === 13) {
         message(check, true)
@@ -30,7 +33,11 @@ $('#vocabulary-result').click(function () {
 const randomVocabulary = (array) => {
     const id = Math.floor(Math.random() * (array.length - 1));
     let objectVocabulary = array[id];
-    global = objectVocabulary;
+    if(objectVocabulary.synonyms !== null) {
+        global = array.filter(item => (item.synonyms === objectVocabulary.synonyms && item.synonyms !== null));
+    } else {
+        global = objectVocabulary;
+    }
     $('#vocabulary-text').text(objectVocabulary.translate);
     return objectVocabulary;
 }
@@ -44,7 +51,7 @@ const message = (data, value) => {
             duration: 5000
         });
         if ((countSuccess + 1) % 5 === 0) {
-            const number = ((countSuccess + 1) % 5) * 5;
+            const number = countSuccess + 1;
             setTimeout(function () {
                 toast({
                     title: 'Giỏi quá!',
@@ -57,6 +64,7 @@ const message = (data, value) => {
         randomVocabulary(vocabulary);
         $('#vocabulary-input').val('');
         $('.vocabulary-result-view').empty();
+        $('.vocabulary-result-view').removeClass('success');
         countError = 0;
         countSuccess++;
     } else {
@@ -67,7 +75,7 @@ const message = (data, value) => {
             duration: 5000
         });
         if ((countError + 1) % 5 === 0) {
-            const number = ((countError + 1) % 5) * 5;
+            const number = countError + 1;
             setTimeout(function () {
                 toast({
                     title: 'Thông tin!',
@@ -88,13 +96,10 @@ $('#vocabulary-view').click(function () {
 
 const viewResult = () => {
     $('.vocabulary-result-view').addClass('success');
-    if (global.synonyms === null) {
+    if (global.length === undefined) {
         $('.vocabulary-result-view').html(`<span>${global.translate}: ${global.japanese}</span>`);
     } else {
-        vocabulary.map(item => {
-            if (item.synonyms === global.synonyms) {
-                $('.vocabulary-result-view').html(`<span>${item.translate}: ${item.japanese}</span>`);
-            }
-        });
+        $('.vocabulary-result-view').empty();
+        global.map(item => $('.vocabulary-result-view').append(`<span>${item.translate}: ${item.japanese}</span>`));
     }
 }
