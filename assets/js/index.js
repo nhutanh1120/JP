@@ -20,6 +20,16 @@ fetch('./json/data/ligatures.json')
     });
 
 $('#click').click(function () {
+    handleRandomVocabulary();
+});
+
+$(document).keyup(function (event) {
+    if (event.which === 37 || event.which === 38 || event.which === 39 || event.which === 40) {
+        handleRandomVocabulary();
+    }
+});
+
+const handleRandomVocabulary = () => {
     let key = $('#type_character').val();
     let id = 1;
     switch (key) {
@@ -50,7 +60,7 @@ $('#click').click(function () {
             loadAudio(src);
         }
     }
-})
+}
 
 $('#result').click(function () {
     let key = $('#type_character').val();
@@ -91,14 +101,14 @@ const loadAudio = async (src) => {
 const searchByChar = (keyword, type) => {
     let result = '';
     if (type == 'alphabet') {
-        if(typeof furigana !== 'undefined') {
+        if (typeof furigana !== 'undefined') {
             furigana.map((item) => {
                 if (item.translate.toLowerCase().search(keyword.toLowerCase()) !== -1) {
                     result = result + `<span>${item.translate}: ${item.katakana}, ${item.hiragana}</span>`;
                 }
             });
         }
-        if(typeof transfiguration !== 'undefined') {
+        if (typeof transfiguration !== 'undefined') {
             transfiguration.map((item) => {
                 if (item.translate.toLowerCase().search(keyword.toLowerCase()) !== -1) {
                     result = result + `<span>${item.translate}: ${item.transfiguration}</span>`;
@@ -106,14 +116,14 @@ const searchByChar = (keyword, type) => {
             });
         }
     } else if (type == 'hiragana') {
-        if(typeof furigana !== 'undefined') {
+        if (typeof furigana !== 'undefined') {
             furigana.map((item) => {
                 if (item.katakana.search(keyword) !== -1 || item.hiragana.search(keyword) !== -1) {
                     result = result + `<span>${item.translate}: ${item.katakana}, ${item.hiragana}</span>`;
                 }
             });
         }
-        if(typeof transfiguration !== 'undefined') {
+        if (typeof transfiguration !== 'undefined') {
             transfiguration.map((item) => {
                 if (item.transfiguration.search(keyword) !== -1) {
                     result = result + `<span>${item.translate}: ${item.transfiguration}</span>`;

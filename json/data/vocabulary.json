@@ -352,6 +352,141 @@
     },
     {
         "topic": null,
+        "japanese": "ゼロ",
+        "spelling": "zero",
+        "translate": "Số 0",
+        "description": null,
+        "synonyms": 0,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "れい",
+        "spelling": "rei",
+        "translate": "Số 0",
+        "description": null,
+        "synonyms": 0,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "いち",
+        "spelling": "ichi",
+        "translate": "Số 1",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "に",
+        "spelling": "ni",
+        "translate": "Số 2",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "さん",
+        "spelling": "rei",
+        "translate": "Số 3",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "よん",
+        "spelling": "yon",
+        "translate": "4",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "し",
+        "spelling": "shi",
+        "translate": "Số 4",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "ご",
+        "spelling": "go",
+        "translate": "Số 5",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "ろく",
+        "spelling": "roku",
+        "translate": "Số 6",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "なな",
+        "spelling": "nana",
+        "translate": "Số 7",
+        "description": null,
+        "synonyms": 7,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "しち",
+        "spelling": "shichi",
+        "translate": "Số 7",
+        "description": null,
+        "synonyms": 7,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "はち",
+        "spelling": "hachi",
+        "translate": "Số 8",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "きゅう",
+        "spelling": "kyuu",
+        "translate": "Số 9",
+        "description": null,
+        "synonyms": 9,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "く",
+        "spelling": "ku",
+        "translate": "Số 9",
+        "description": null,
+        "synonyms": 9,
+        "audio": null
+    },
+    {
+        "topic": null,
+        "japanese": "じゆう",
+        "spelling": "ku",
+        "translate": "Số 10",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": null,
         "japanese": "もも",
         "spelling": "momo",
         "translate": "hoa đào",
