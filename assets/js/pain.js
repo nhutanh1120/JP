@@ -66,6 +66,12 @@ window.onload = function () {
         context.clearRect(0, 0, canvas.width, canvas.height);
     });
 
+    document.addEventListener('keyup', function (event) {
+        if (event.key === 'Backspace' || event.key === 'Delete') {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    });
+
     // Handle Save Button
     var saveButton = document.getElementById('save');
 

@@ -27,6 +27,9 @@ $(document).keyup(function (event) {
     if (event.which === 37 || event.which === 38 || event.which === 39 || event.which === 40) {
         handleRandomVocabulary();
     }
+    if (event.which === 13) {
+        handleResult();
+    }
 });
 
 const handleRandomVocabulary = () => {
@@ -63,6 +66,10 @@ const handleRandomVocabulary = () => {
 }
 
 $('#result').click(function () {
+    handleResult();
+})
+
+const handleResult = () => {
     let key = $('#type_character').val();
     if (typeof global !== 'undefined') {
         switch (key) {
@@ -89,7 +96,7 @@ $('#result').click(function () {
                 break;
         }
     }
-})
+}
 
 const loadAudio = async (src) => {
     const audio = new Audio(src);
