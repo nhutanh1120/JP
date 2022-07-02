@@ -33,13 +33,44 @@ $('#click').click(function () {
 });
 
 $(document).keyup(function (event) {
-    if (event.which === 37 || event.which === 38 || event.which === 39 || event.which === 40) {
-        handleRandomVocabulary();
-    }
-    if (event.which === 13) {
-        handleResult();
+    switch (event.which) {
+        case 13:
+            handleResult();
+            break;
+        case 37:
+            handleRandomVocabulary();
+            break;
+        case 38:
+            handleSelectType(true);
+            break;
+        case 39:
+            handleRandomVocabulary();
+            break;
+        case 40:
+            handleSelectType(false);
+            break;
+        default:
+            break;
     }
 });
+
+const handleSelectType = (button) => {
+    let key = $('#type_character option:selected');
+    key.attr('selected', false);
+    if (button == true) {
+        if (typeof key.prev()[0] !== 'undefined') {
+            key.prev().attr('selected', true);
+        } else {
+            $('#type_character option').eq($('#type_character option').length - 1).attr('selected', true);
+        }
+    } else {
+        if (typeof key.next()[0] !== 'undefined') {
+            key.next().attr('selected', true);
+        } else {
+            $('#type_character option').eq(0).attr('selected', true);
+        }
+    }
+}
 
 const handleRandomVocabulary = () => {
     let key = $('#type_character').val();
