@@ -46,7 +46,7 @@ const handleRandomVocabulary = () => {
     let id = 1;
     switch (key) {
         case 'all':
-            let dataAll = [...furigana, ...transfiguration, ...ligatures];
+            let dataAll = [...furigana, ...transfiguration, ...ligatures, ...kanji];
             id = Math.floor(Math.random() * dataAll.length);
             global = dataAll[id];
             break;
@@ -98,7 +98,7 @@ const handleResult = () => {
                 $('#text').text(global.katakana);
                 break;
             case 'kanji':
-                $('#text').text(`Kanji: ${global.kanji}`);
+                $('#text').text(`Kanji: ${global.kanji}, vietnamese: ${global.vietnamese}`);
                 break;
             case 'ligatures':
                 $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);

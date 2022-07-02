@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "kanji": "一",
+        "translate": "ichi",
+        "vietnamese": "1",
+        "audio": null
+    },
+    {
+        "id": 2,
+        "kanji": "二",
+        "translate": "ni",
+        "vietnamese": "2",
+        "audio": null
+    },
+    {
+        "id": 3,
+        "kanji": "三",
+        "translate": "san",
+        "vietnamese": "3",
+        "audio": null
+    },
+    {
+        "id": 4,
+        "kanji": "四",
+        "translate": "yon, shi",
+        "vietnamese": "4",
+        "audio": null
+    },
+    {
+        "id": 5,
+        "kanji": "五",
+        "translate": "go",
+        "vietnamese": "5",
+        "audio": null
+    },
+    {
+        "id": 6,
+        "kanji": "六",
+        "translate": "roku",
+        "vietnamese": "6",
+        "audio": null
+    },
+    {
+        "id": 7,
+        "kanji": "七",
+        "translate": "nana, shichi",
+        "vietnamese": "7",
+        "audio": null
+    },
+    {
+        "id": 8,
+        "kanji": "八",
+        "translate": "hachi",
+        "vietnamese": "8",
+        "audio": null
+    },
+    {
+        "id": 9,
+        "kanji": "九",
+        "translate": "kyuu, ku",
+        "vietnamese": "9",
+        "audio": null
+    },
+    {
+        "id": 10,
+        "kanji": "十",
+        "translate": "juu",
+        "vietnamese": "10",
+        "audio": null
+    },
+    {
+        "id": 11,
+        "kanji": "百",
+        "translate": "hyaku",
+        "vietnamese": "100",
+        "audio": null
+    },
+    {
+        "id": 11,
+        "kanji": "千",
+        "translate": "sen",
+        "vietnamese": "1.000",
+        "audio": null
+    },
+    {
+        "id": 12,
+        "kanji": "万",
+        "translate": "man",
+        "vietnamese": "10.000",
+        "audio": null
+    },
+    {
+        "id": 13,
+        "kanji": "億",
+        "translate": "oku",
+        "vietnamese": "100.000.000",
+        "audio": null
+    },
+    {
+        "id": 14,
+        "kanji": "円",
+        "translate": "en",
+        "vietnamese": "yen",
+        "audio": null
+    },
+    {
+        "id": 15,
+        "kanji": "月",
+        "translate": "tsuki",
+        "vietnamese": "tháng",
+        "audio": null
+    },
+    {
+        "id": 16,
+        "kanji": "本",
+        "translate": "hon",
+        "vietnamese": "sách",
+        "audio": null
+    }
+]
