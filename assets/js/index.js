@@ -1,6 +1,7 @@
 var furigana;
 var transfiguration;
 var ligatures;
+var kanji;
 var global;
 
 fetch('./json/data/furigana.json')
@@ -8,15 +9,23 @@ fetch('./json/data/furigana.json')
     .then(result => {
         furigana = result;
     });
+
 fetch('./json/data/transfiguration.json')
     .then(response => response.json())
     .then(result => {
         transfiguration = result;
     });
+
 fetch('./json/data/ligatures.json')
     .then(response => response.json())
     .then(result => {
         ligatures = result;
+    });
+
+fetch('./json/data/kanji.json')
+    .then(response => response.json())
+    .then(result => {
+        kanji = result;
     });
 
 $('#click').click(function () {
@@ -37,28 +46,30 @@ const handleRandomVocabulary = () => {
     let id = 1;
     switch (key) {
         case 'all':
-            id = Math.floor(Math.random() * 104);
             let dataAll = [...furigana, ...transfiguration, ...ligatures];
+            id = Math.floor(Math.random() * dataAll.length);
             global = dataAll[id];
             break;
         case 'kanji':
+            id = Math.floor(Math.random() * kanji.length);
+            global = kanji[id];
             break;
         case 'transfiguration':
-            id = Math.floor(Math.random() * 24);
-            global = transfiguration.find(result => result.id == id);
+            id = Math.floor(Math.random() * transfiguration.length);
+            global = transfiguration[id];
             break;
         case 'ligatures':
-            id = Math.floor(Math.random() * 24);
-            global = ligatures.find(result => result.id == id);
+            id = Math.floor(Math.random() * ligatures.length);
+            global = ligatures[id];
             break;
         default:
-            id = Math.floor(Math.random() * 43);
-            global = furigana.find(result => result.id == id);
+            id = Math.floor(Math.random() * furigana.length);
+            global = furigana[id];
             break;
     }
     if (typeof global !== 'undefined') {
         $('#text').text(global.translate)
-        if (global.audio !== '') {
+        if (global.audio !== null) {
             const src = './audio/' + global.audio;
             loadAudio(src);
         }
@@ -87,6 +98,7 @@ const handleResult = () => {
                 $('#text').text(global.katakana);
                 break;
             case 'kanji':
+                $('#text').text(`Kanji: ${global.kanji}`);
                 break;
             case 'ligatures':
                 $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);
