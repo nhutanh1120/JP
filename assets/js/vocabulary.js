@@ -4,52 +4,57 @@ var global;
 var countError = 0;
 var countSuccess = 0;
 
-fetch('./../json/data/vocabulary.json')
+fetch('./../json/data/topic.json')
     .then(response => response.json())
-    .then(result => {
-        randomVocabulary(result);
+    .then(lstTopic => {
+        fetch('./../json/data/vocabulary.json')
+            .then(response => response.json())
+            .then(result => {
+                randomVocabulary(result);
 
-        // append option all
-        $('#list-vocabulary-option').append(`<option value='all'>Tất cả (${result.length})</option>`);
-        $('#topic').append('<option value="all" selected>Tất cả</option>');
+                // append option all
+                $('#list-vocabulary-option').append(`<option value='all'>Tất cả (${result.length})</option>`);
+                $('#topic').append('<option value="all" selected>Tất cả</option>');
 
-        const listTopic = uniqueTopic(result);
+                const listTopic = uniqueTopic(result);
 
-        listTopic.sort(function (a, b) { return a - b });
-        swapFirstToLast(listTopic, 0, listTopic.length);
+                listTopic.sort(function (a, b) { return a - b });
+                swapFirstToLast(listTopic, 0, listTopic.length);
 
-        listTopic.slice(1).map((topic) => {
-            let arrTopic = result.filter(item => item.topic == topic);
-            if (topic !== null) {
-                $('#list-vocabulary-option').append(`<option value='${topic}'>Bài ${topic} (${arrTopic.length})</option>`);
-                $('#topic').append(`<option value='${topic}'>Bài ${topic}</option>`);
-            } else {
-                $('#list-vocabulary-option').append(`<option value='${topic}'>Khác (${arrTopic.length})</option>`);
-                $('#topic').append(`<option value='${topic}'>Khác</option>`);
-            }
-        })
+                listTopic.slice(1).map((topic) => {
+                    let arrTopic = result.filter(item => item.topic == topic);
+                    let titleName = lstTopic[0][topic];
+                    if (topic !== null) {
+                        $('#list-vocabulary-option').append(`<option value='${topic}'>${titleName} (${arrTopic.length})</option>`);
+                        $('#topic').append(`<option value='${topic}'>${titleName}</option>`);
+                    } else {
+                        $('#list-vocabulary-option').append(`<option value='${topic}'>${titleName} (${arrTopic.length})</option>`);
+                        $('#topic').append(`<option value='${topic}'>${titleName}</option>`);
+                    }
+                })
 
-        // render all vocabulary items
-        result.map(item => {
-            let strDescription = '';
-            if (item.description !== null) {
-                strDescription = `<span class="description">-
-                                    <span>${item.description}</span>
-                                </span>`;
-            }
-            $('.list-vocabulary-content ul').append(
-                `<li>
-                    ${item.japanese}: ${item.translate} 
-                    <span class="spelling">+
-                        <span>${item.spelling}</span>
-                    </span>
-                    ${strDescription}
-                </li>`);
-        });
+                // render all vocabulary items
+                result.map(item => {
+                    let strDescription = '';
+                    if (item.description !== null) {
+                        strDescription = `<span class="description">-
+                                            <span>${item.description}</span>
+                                        </span>`;
+                    }
+                    $('.list-vocabulary-content ul').append(
+                        `<li>
+                            ${item.japanese}: ${item.translate} 
+                            <span class="spelling">+
+                                <span>${item.spelling}</span>
+                            </span>
+                            ${strDescription}
+                        </li>`);
+                });
 
-        // set list vocabulary
-        vocabulary = result;
-        lstFilterVocabulary = result;
+                // set list vocabulary
+                vocabulary = result;
+                lstFilterVocabulary = result;
+            });
     });
 
 $(document).on('click', '.list-vocabulary-content ul li .spelling', function () {
