@@ -41,36 +41,18 @@ $(document).keyup(function (event) {
             handleRandomVocabulary();
             break;
         case 38:
-            handleSelectType(true);
+            handleSelectType(true, '#type_character');
             break;
         case 39:
             handleRandomVocabulary();
             break;
         case 40:
-            handleSelectType(false);
+            handleSelectType(false, '#type_character');
             break;
         default:
             break;
     }
 });
-
-const handleSelectType = (button) => {
-    let key = $('#type_character option:selected');
-    key.attr('selected', false);
-    if (button == true) {
-        if (typeof key.prev()[0] !== 'undefined') {
-            key.prev().attr('selected', true);
-        } else {
-            $('#type_character option').eq($('#type_character option').length - 1).attr('selected', true);
-        }
-    } else {
-        if (typeof key.next()[0] !== 'undefined') {
-            key.next().attr('selected', true);
-        } else {
-            $('#type_character option').eq(0).attr('selected', true);
-        }
-    }
-}
 
 const handleRandomVocabulary = () => {
     let key = $('#type_character').val();

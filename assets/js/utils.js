@@ -35,3 +35,21 @@ function unique(arr) {
     })
     return newArr;
 }
+
+const handleSelectType = (button, element) => {
+    let key = $(element + ' option:selected');
+    key.attr('selected', false);
+    if (button == true) {
+        if (typeof key.prev()[0] !== 'undefined') {
+            key.prev().attr('selected', true);
+        } else {
+            $(element + ' option').eq($(element + ' option').length - 1).attr('selected', true);
+        }
+    } else {
+        if (typeof key.next()[0] !== 'undefined') {
+            key.next().attr('selected', true);
+        } else {
+            $(element + ' option').eq(0).attr('selected', true);
+        }
+    }
+}

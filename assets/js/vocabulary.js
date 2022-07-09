@@ -1,4 +1,5 @@
 var vocabulary;
+var lstFilterVocabulary;
 var global;
 var countError = 0;
 var countSuccess = 0;
@@ -10,6 +11,7 @@ fetch('./../json/data/vocabulary.json')
 
         // append option all
         $('#list-vocabulary-option').append(`<option value='all'>Tất cả (${result.length})</option>`);
+        $('#topic').append('<option value="all" selected>Tất cả</option>');
 
         const listTopic = uniqueTopic(result);
 
@@ -20,8 +22,10 @@ fetch('./../json/data/vocabulary.json')
             let arrTopic = result.filter(item => item.topic == topic);
             if (topic !== null) {
                 $('#list-vocabulary-option').append(`<option value='${topic}'>Bài ${topic} (${arrTopic.length})</option>`);
+                $('#topic').append(`<option value='${topic}'>Bài ${topic}</option>`);
             } else {
                 $('#list-vocabulary-option').append(`<option value='${topic}'>Khác (${arrTopic.length})</option>`);
+                $('#topic').append(`<option value='${topic}'>Khác</option>`);
             }
         })
 
@@ -45,6 +49,7 @@ fetch('./../json/data/vocabulary.json')
 
         // set list vocabulary
         vocabulary = result;
+        lstFilterVocabulary = result;
     });
 
 $(document).on('click', '.list-vocabulary-content ul li .spelling', function () {
@@ -79,9 +84,9 @@ $(document).on('change', '#list-vocabulary-option', function () {
                 </li>`);
         });
     }
+    let value = $(this).val() === 'null' ? null : $(this).val();
     vocabulary.map(item => {
-        value = item.topic == null ? 'null' : item.topic;
-        if (value == $(this).val()) {
+        if (value == item.topic) {
             let strDescription = '';
             if (item.description !== null) {
                 strDescription = `<span class="description">-
@@ -119,9 +124,13 @@ $('#vocabulary-input').keyup(function (event) {
 })
 
 $('#result').click(function () {
-    let value = $('#vocabulary-input').val();
-    if (value.trim() === '') return;
-    message(value, global.japanese);
+    let value = $('#topic').val() === 'null' ? null : $('#topic').val();
+    if (value === 'all') {
+        randomVocabulary(vocabulary);
+    } else {
+        let lstData = filterVocabulary(value);
+        randomVocabulary(lstData);
+    }
 })
 
 const randomVocabulary = (array) => {
@@ -155,7 +164,7 @@ const message = (data, value) => {
                 });
             }, 1000);
         }
-        randomVocabulary(vocabulary);
+        randomVocabulary(lstFilterVocabulary);
         $('#vocabulary-input').val('');
         $('.vocabulary-result-view').empty();
         $('.vocabulary-result-view').removeClass('success');
@@ -185,14 +194,58 @@ const message = (data, value) => {
 }
 
 $('#view-result').click(function () {
-    viewResult();
+    handleResult();
 });
 
 $('.list-vocabulary-title').click(function () {
     $(".list-vocabulary-content").slideToggle('fast');
 });
 
-const viewResult = () => {
+$('#topic').change(function () {
+    let value = $(this).val() == 'null' ? null : $(this).val();
+    let lstData = filterVocabulary(value);
+    randomVocabulary(lstData);
+});
+
+$(document).keyup(function (event) {
+    let value = $('#topic').val() === 'null' ? null : $('#topic').val();
+    switch (event.which) {
+        case 13:
+            handleResult();
+            break;
+        case 37:
+            if (value === 'all') {
+                randomVocabulary(vocabulary);
+            } else {
+                let lstData = filterVocabulary(value);
+                randomVocabulary(lstData);
+            }
+            break;
+        case 38:
+            handleSelectType(true, '#topic');
+            break;
+        case 39:
+            if (value === 'all') {
+                randomVocabulary(vocabulary);
+            } else {
+                let lstData = filterVocabulary(value);
+                randomVocabulary(lstData);
+            }
+            break;
+        case 40:
+            handleSelectType(false, '#topic');
+            break;
+        default:
+            break;
+    }
+})
+
+const filterVocabulary = (topic) => {
+    lstFilterVocabulary = vocabulary.filter(item => item.topic == topic);
+    return lstFilterVocabulary;
+}
+
+const handleResult = () => {
     $('.vocabulary-result-view').addClass('success');
     if (global.length === undefined) {
         $('.vocabulary-result-view').html(`<span>${global.translate}: ${global.japanese}, phiên âm: ${global.spelling}</span>`);
