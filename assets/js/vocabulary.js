@@ -36,6 +36,7 @@ fetch('./../json/data/topic.json')
                 // render all vocabulary items
                 result.map(item => {
                     let strDescription = '';
+                    let special = item.special !== null ? '<span style="color: red">*</span>' : '';
                     if (item.description !== null) {
                         strDescription = `<span class="description">-
                                             <span>${item.description}</span>
@@ -43,7 +44,7 @@ fetch('./../json/data/topic.json')
                     }
                     $('.list-vocabulary-content ul').append(
                         `<li>
-                            ${item.japanese}: ${item.translate} 
+                            ${item.japanese}: ${item.translate} ${special}
                             <span class="spelling">+
                                 <span>${item.spelling}</span>
                             </span>
@@ -74,6 +75,7 @@ $(document).on('change', '#list-vocabulary-option', function () {
     if ($(this).val() === 'all') {
         vocabulary.map(item => {
             let strDescription = '';
+            let special = item.special !== null ? '<span style="color: red">*</span>' : '';
             if (item.description !== null) {
                 strDescription = `<span class="description">-
                                     <span>${item.description}</span>
@@ -81,7 +83,7 @@ $(document).on('change', '#list-vocabulary-option', function () {
             }
             $('.list-vocabulary-content ul').append(
                 `<li>
-                    ${item.japanese}: ${item.translate} 
+                    ${item.japanese}: ${item.translate} ${special}
                     <span class="spelling">+
                         <span>${item.spelling}</span>
                     </span>
@@ -93,6 +95,7 @@ $(document).on('change', '#list-vocabulary-option', function () {
     vocabulary.map(item => {
         if (value == item.topic) {
             let strDescription = '';
+            let special = item.special !== null ? '<span style="color: red">*</span>' : '';
             if (item.description !== null) {
                 strDescription = `<span class="description">-
                                     <span>${item.description}</span>
@@ -100,7 +103,7 @@ $(document).on('change', '#list-vocabulary-option', function () {
             }
             $('.list-vocabulary-content ul').append(
                 `<li>
-                    ${item.japanese}: ${item.translate} 
+                    ${item.japanese}: ${item.translate} ${special}
                     <span class="spelling">+
                         <span>${item.spelling}</span>
                     </span>
