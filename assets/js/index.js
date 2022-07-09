@@ -98,11 +98,15 @@ const handleResult = () => {
     if (typeof global !== 'undefined') {
         switch (key) {
             case 'all':
-                if (typeof global.transfiguration === 'undefined') {
+                if (typeof global.transfiguration === 'undefined' && typeof global.kanji === 'undefined') {
                     $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);
                     break;
+                }else if (typeof global.kanji !== 'undefined') {
+                    $('#text').text(global.kanji);
+                    break;
+                } else {
+                    $('#text').text(global.transfiguration);
                 }
-                $('#text').text(global.transfiguration);
                 break;
             case 'hiragana':
                 $('#text').text(global.hiragana);
