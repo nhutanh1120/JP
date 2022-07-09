@@ -7,14 +7,25 @@ fetch('./../json/data/vocabulary.json')
     .then(response => response.json())
     .then(result => {
         randomVocabulary(result);
-        vocabulary = result;
 
-        let different = result.filter(item => item.topic == null);
-        let exercise_1 = result.filter(item => item.topic == 'exercise_1');
+        // append option all
         $('#list-vocabulary-option').append(`<option value='all'>Tất cả (${result.length})</option>`);
-        $('#list-vocabulary-option').append(`<option value='${exercise_1[0].topic}'>Bài 1 (${exercise_1.length})</option>`);
-        $('#list-vocabulary-option').append(`<option value='${different[0].topic}'>Khác (${different.length})</option>`);
 
+        const listTopic = uniqueTopic(result);
+
+        listTopic.sort(function (a, b) { return a - b });
+        swapFirstToLast(listTopic, 0, listTopic.length);
+
+        listTopic.slice(1).map((topic) => {
+            let arrTopic = result.filter(item => item.topic == topic);
+            if (topic !== null) {
+                $('#list-vocabulary-option').append(`<option value='${topic}'>Bài ${topic} (${arrTopic.length})</option>`);
+            } else {
+                $('#list-vocabulary-option').append(`<option value='${topic}'>Khác (${arrTopic.length})</option>`);
+            }
+        })
+
+        // render all vocabulary items
         result.map(item => {
             let strDescription = '';
             if (item.description !== null) {
@@ -31,6 +42,9 @@ fetch('./../json/data/vocabulary.json')
                     ${strDescription}
                 </li>`);
         });
+
+        // set list vocabulary
+        vocabulary = result;
     });
 
 $(document).on('click', '.list-vocabulary-content ul li .spelling', function () {
@@ -67,7 +81,7 @@ $(document).on('change', '#list-vocabulary-option', function () {
     }
     vocabulary.map(item => {
         value = item.topic == null ? 'null' : item.topic;
-        if (value === $(this).val()) {
+        if (value == $(this).val()) {
             let strDescription = '';
             if (item.description !== null) {
                 strDescription = `<span class="description">-
@@ -181,7 +195,7 @@ $('.list-vocabulary-title').click(function () {
 const viewResult = () => {
     $('.vocabulary-result-view').addClass('success');
     if (global.length === undefined) {
-        $('.vocabulary-result-view').html(`<span>${global.translate}: ${global.japanese}</span>`);
+        $('.vocabulary-result-view').html(`<span>${global.translate}: ${global.japanese}, phiên âm: ${global.spelling}</span>`);
     } else {
         $('.vocabulary-result-view').empty();
         global.map(item => $('.vocabulary-result-view').append(`<span>${item.translate}: ${item.japanese}</span>`));
@@ -208,4 +222,16 @@ const searchByChar = (keyword, type) => {
         }
     }
     return result;
+}
+
+const uniqueTopic = (arr) => {
+    let arrTopic = [];
+    arr.filter((item) => {
+        return arrTopic.includes(item.topic) ? '' : arrTopic.push(item.topic);
+    });
+    return arrTopic;
+}
+
+const swapFirstToLast = (array, a, b) => {
+    array[b] = array[a];
 }
