@@ -197,3 +197,7 @@ main {
 .list-vocabulary-content ul li .active.description span {
     transform: scale(1);
 }
+
+select#list-vocabulary-option, select#topic {
+    text-transform: capitalize;
+}
