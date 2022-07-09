@@ -493,5 +493,221 @@
         "description": null,
         "synonyms": null,
         "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "ここ",
+        "spelling": "koko",
+        "translate": "chỗ này, đằng này, đây",
+        "description": "gần người nói",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "そこ",
+        "spelling": "soko",
+        "translate": "chỗ đó, đó",
+        "description": "gần người nghe",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "おそこ",
+        "spelling": "osoko",
+        "translate": "chỗ kia, đằng kia, kia",
+        "description": "xa cả người nói và người nghe",
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "どこ",
+        "spelling": "doko",
+        "translate": "chỗ nào, đâu",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "こちら",
+        "spelling": "kochira",
+        "translate": "phía này, đằng này, chỗ này, đây",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "そちら",
+        "spelling": "sochira",
+        "translate": "phía đó, đằng đó, chỗ đó, đó",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "おちら",
+        "spelling": "ochira",
+        "translate": "phía kia, đằng kia, chỗ kia, kia",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "どちら",
+        "spelling": "dochira",
+        "translate": "phía nào, đằng nào, chỗ nào, đâu",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "きょうしつ",
+        "spelling": "kyoushitsu",
+        "translate": "lớp học, phòng học",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "しょくどう",
+        "spelling": "shokudou",
+        "translate": "nhà ăn",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "じむしょ",
+        "spelling": "jimusho",
+        "translate": "văn phòng",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "かいぎしつ",
+        "spelling": "kaigishitsu",
+        "translate": "phòng họp",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "うけつけ",
+        "spelling": "uketsuke",
+        "translate": "Quầy lể tân, phòng thường trực",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+        {
+            "topic": "exercise_3",
+        "japanese": "ロビー",
+        "spelling": "robi",
+        "translate": "hành lang",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "へや",
+        "spelling": "heya",
+        "translate": "căn phòng",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "トイレ",
+        "spelling": "toire",
+        "translate": "toa-lét",
+        "description": "nhà vệ sinh, phòng vệ sinh",
+        "synonyms": "tolet",
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "おてあらい",
+        "spelling": "odoarai",
+        "translate": "toa-lét",
+        "description": "nhà vệ sinh, phòng vệ sinh",
+        "synonyms": "tolet",
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "かいだん",
+        "spelling": "kaidan",
+        "translate": "cầu thang",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "エレベーター",
+        "spelling": "erebe-ta-",
+        "translate": "thang máy",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "エスカレーター",
+        "spelling": "esukare-ta-",
+        "translate": "thang cuốn",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "じどうはんばいき",
+        "spelling": "jidouhonbaiki",
+        "translate": "máy bán hàng tự động",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "どんわ",
+        "spelling": "donwa",
+        "translate": "điện thoại",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "かいしゃ",
+        "spelling": "kaisha",
+        "translate": "công ty",
+        "description": null,
+        "synonyms": null,
+        "audio": null
+    },
+    {
+        "topic": "exercise_3",
+        "japanese": "うち",
+        "spelling": "uchi",
+        "translate": "nhà",
+        "description": null,
+        "synonyms": null,
+        "audio": null
     }
 ]
