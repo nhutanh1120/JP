@@ -1,272 +1,302 @@
 [
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "わたし",
         "spelling": "watashi",
         "translate": "tôi",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "あなた",
         "spelling": "anata",
         "translate": "anh/chị, ông/bà, bạn",
         "description": "ngôi thứ II số ít",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "あのみと",
         "spelling": "anomito",
         "translate": "người kia/người đó",
         "description": null,
         "synonyms": "people",
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "あのかた",
         "spelling": "anokata",
         "translate": "vị kia",
         "description": "cách nói lịch sự của あのみと",
         "synonyms": "people",
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "さん",
         "spelling": "san",
         "translate": "anh/chị/ông/bà (hậu tố)",
         "description": "hậu tố thêm vào phía sau tên của người khác khi gọi thể hiện tính lịch sự",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "ちゃん",
         "spelling": "chan",
         "translate": "trẻ em (hậu tố)",
         "description": "hậu tố thêm vào phía sau tên của trẻ em, cách gọi một người thân thiết",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "じん",
         "spelling": "jin",
         "translate": "hậu tố mang nghĩa người ~",
         "description": "ví dụ: アメリカじん: người mỹ",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "せんせい",
         "spelling": "sensei",
         "translate": "thầy/cô",
         "description": "không dùng khi giới thiệu về nghề giáo viên của chính mình",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "きょうし",
         "spelling": "kyoushi",
         "translate": "giáo viên",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "がくせい",
         "spelling": "gakusei",
         "translate": "học sinh, sinh viên",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "かいしゃいん",
         "spelling": "kaishain",
         "translate": "nhân viên công ty",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "しゃいん",
         "spelling": "shain",
         "translate": "nhân viên công ty (hậu tố)",
         "description": "dùng kèm theo tên công ty ví dụ: IMC しゃいん",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "ざんこういん",
         "spelling": "zancouin",
         "translate": "nhân viên ngân hàng",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "いしゃ",
         "spelling": "isha",
         "translate": "bác sĩ",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "けんきゅうしゃ",
         "spelling": "kenkyuusha",
         "translate": "nhà nghiên cứu",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "だいがく",
         "spelling": "daigaku",
         "translate": "đại học, trường đại học",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "びょういん",
         "spelling": "byouin",
         "translate": "bệnh viện",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "だれ",
         "spelling": "dare",
         "translate": "ai",
         "description": null,
         "synonyms": "who",
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "どなた",
         "spelling": "donata",
         "translate": "ai",
         "description": "cách nói lịch sự của だれ, vị nào",
         "synonyms": "who",
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "さい",
         "spelling": "sai",
         "translate": "-tuổi",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "なんさい",
         "spelling": "nansai",
         "translate": "mấy tuổi",
         "description": null,
         "synonyms": "",
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "あいくつ",
         "spelling": "aikutsu",
         "translate": "bao nhiêu tuổi",
         "description": "cách nói lịch sự của なんさい",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "はい",
         "spelling": "hai",
         "translate": "vâng, dạ",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "いいえ",
         "spelling": "iie",
         "translate": "không",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "アメリカ",
         "spelling": "amerika",
         "translate": "nước mỹ",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "イギリス",
         "spelling": "igirisu",
         "translate": "nước anh",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "インド",
         "spelling": "indo",
         "translate": "ấn độ",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "イインドネシア",
         "spelling": "indonesia",
         "translate": "in-đô-nê-xi-a",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "タイ",
         "spelling": "tai",
         "translate": "thái lan",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_1",
+        "topic": 1,
         "japanese": "ベトナム",
         "spelling": "betonamu",
         "translate": "việt nam",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -276,6 +306,7 @@
         "translate": "tình yêu",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -285,6 +316,7 @@
         "translate": "gặp gỡ",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -294,6 +326,7 @@
         "translate": "nhà",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -303,6 +336,7 @@
         "translate": "màu xanh",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -312,6 +346,7 @@
         "translate": "gương mặt",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -321,6 +356,7 @@
         "translate": "nhà ga",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -330,6 +366,7 @@
         "translate": "đi lại",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -339,6 +376,7 @@
         "translate": "hồ nước",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -348,141 +386,157 @@
         "translate": "chào buổi tối",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "ゼロ",
         "spelling": "zero",
         "translate": "Số 0",
         "description": null,
         "synonyms": 0,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "れい",
         "spelling": "rei",
         "translate": "Số 0",
         "description": null,
         "synonyms": 0,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "いち",
         "spelling": "ichi",
         "translate": "Số 1",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "に",
         "spelling": "ni",
         "translate": "Số 2",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "さん",
         "spelling": "rei",
         "translate": "Số 3",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "よん",
         "spelling": "yon",
         "translate": "4",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "し",
         "spelling": "shi",
         "translate": "Số 4",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "ご",
         "spelling": "go",
         "translate": "Số 5",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "ろく",
         "spelling": "roku",
         "translate": "Số 6",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "なな",
         "spelling": "nana",
         "translate": "Số 7",
         "description": null,
         "synonyms": 7,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "しち",
         "spelling": "shichi",
         "translate": "Số 7",
         "description": null,
         "synonyms": 7,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "はち",
         "spelling": "hachi",
         "translate": "Số 8",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "きゅう",
         "spelling": "kyuu",
         "translate": "Số 9",
         "description": null,
         "synonyms": 9,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "く",
         "spelling": "ku",
         "translate": "Số 9",
         "description": null,
         "synonyms": 9,
+        "special": null,
         "audio": null
     },
     {
-        "topic": null,
+        "topic": "number",
         "japanese": "じゆう",
         "spelling": "ku",
         "translate": "Số 10",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
@@ -492,222 +546,717 @@
         "translate": "hoa đào",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 2,
+        "japanese": "これ",
+        "spelling": "kore",
+        "translate": "cái này, đây",
+        "description": "vật gần người nói",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "それ",
+        "spelling": "sore",
+        "translate": "cái đó, đó",
+        "description": "vật gần người nghe",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "あれ",
+        "spelling": "are",
+        "translate": "cái kia, kia",
+        "description": "vật ở xa người nói và người nghe",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "この",
+        "spelling": "kono",
+        "translate": "~ này",
+        "description": "gần người nói",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "その",
+        "spelling": "sono",
+        "translate": "~ đó",
+        "description": "gần người nghe",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "おの",
+        "spelling": "ono",
+        "translate": "~ kia",
+        "description": "xa cả người nói và người nghe",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "ほん",
+        "spelling": "hon",
+        "translate": "sách",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "じしょ",
+        "spelling": "jisho",
+        "translate": "từ điển",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "ざっし",
+        "spelling": "zasshi",
+        "translate": "tạp chí",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "しんぶん",
+        "spelling": "shinbun",
+        "translate": "báo",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "ノート",
+        "spelling": "no-to",
+        "translate": "vở",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "てちょう",
+        "spelling": "techou",
+        "translate": "sổ tay",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "めいし",
+        "spelling": "meishi",
+        "translate": "danh thiếp",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "カード",
+        "spelling": "ka-do",
+        "translate": "thẻ (tín dụng), cạc",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "えんびつ",
+        "spelling": "enpitsu",
+        "translate": "bút chì",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "ボールベン",
+        "spelling": "bo-rupen",
+        "translate": "bút bi",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "シャープベンツル",
+        "spelling": "sha-pubentsuru",
+        "translate": "bút chì kim, bút chì bấm",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "かぎ",
+        "spelling": "kagi",
+        "translate": "chìa khóa",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "とけい",
+        "spelling": "tokei",
+        "translate": "đồng hồ",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "かさ",
+        "spelling": "kasa",
+        "translate": "ô, dù",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "かばん",
+        "spelling": "kaban",
+        "translate": "cặp sách, túi sách",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "CD",
+        "spelling": "CD",
+        "translate": "đĩa CD",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "テレビ",
+        "spelling": "terebi",
+        "translate": "tivi",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "ラジオ",
+        "spelling": "radio",
+        "translate": "radio",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "カメラ",
+        "spelling": "kamera",
+        "translate": "máy ảnh",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "コンピューター",
+        "spelling": "konpyu-ta-",
+        "translate": "máy vi tính",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "くろま",
+        "spelling": "kuroma",
+        "translate": "ô tô, xe hơi",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "つくえ",
+        "spelling": "tsukue",
+        "translate": "bàn",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "いす",
+        "spelling": "isu",
+        "translate": "ghế",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "チョコレート",
+        "spelling": "chokore-to-",
+        "translate": "sôcôla",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "コーヒー",
+        "spelling": "ko-hi-",
+        "translate": "cà phê",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "おみやげ",
+        "spelling": "[o]miyage",
+        "translate": "quà",
+        "description": "mua khi đi xa về hoặc mang đi khi thăm nhà người nào đó",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "えいご",
+        "spelling": "eigo",
+        "translate": "tiếng anh",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "にほんご",
+        "spelling": "nihongo",
+        "translate": "tiếng nhật",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "ご",
+        "spelling": "~ go",
+        "translate": "tiếng ~",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "なん",
+        "spelling": "nan",
+        "translate": "gì, cái gì",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 2,
+        "japanese": "そう",
+        "spelling": "sou",
+        "translate": "vậy",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": 3,
         "japanese": "ここ",
         "spelling": "koko",
         "translate": "chỗ này, đằng này, đây",
         "description": "gần người nói",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "そこ",
         "spelling": "soko",
         "translate": "chỗ đó, đó",
         "description": "gần người nghe",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "おそこ",
         "spelling": "osoko",
         "translate": "chỗ kia, đằng kia, kia",
         "description": "xa cả người nói và người nghe",
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "どこ",
         "spelling": "doko",
         "translate": "chỗ nào, đâu",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "こちら",
         "spelling": "kochira",
         "translate": "phía này, đằng này, chỗ này, đây",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "そちら",
         "spelling": "sochira",
         "translate": "phía đó, đằng đó, chỗ đó, đó",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "おちら",
         "spelling": "ochira",
         "translate": "phía kia, đằng kia, chỗ kia, kia",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "どちら",
         "spelling": "dochira",
         "translate": "phía nào, đằng nào, chỗ nào, đâu",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "きょうしつ",
         "spelling": "kyoushitsu",
         "translate": "lớp học, phòng học",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "しょくどう",
         "spelling": "shokudou",
         "translate": "nhà ăn",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "じむしょ",
         "spelling": "jimusho",
         "translate": "văn phòng",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "かいぎしつ",
         "spelling": "kaigishitsu",
         "translate": "phòng họp",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "うけつけ",
         "spelling": "uketsuke",
         "translate": "Quầy lể tân, phòng thường trực",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
         {
-            "topic": "exercise_3",
+            "topic": 3,
         "japanese": "ロビー",
         "spelling": "robi",
         "translate": "hành lang",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "へや",
         "spelling": "heya",
         "translate": "căn phòng",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "トイレ",
         "spelling": "toire",
         "translate": "toa-lét",
         "description": "nhà vệ sinh, phòng vệ sinh",
         "synonyms": "tolet",
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "おてあらい",
         "spelling": "odoarai",
         "translate": "toa-lét",
         "description": "nhà vệ sinh, phòng vệ sinh",
         "synonyms": "tolet",
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "かいだん",
         "spelling": "kaidan",
         "translate": "cầu thang",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "エレベーター",
         "spelling": "erebe-ta-",
         "translate": "thang máy",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "エスカレーター",
         "spelling": "esukare-ta-",
         "translate": "thang cuốn",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "じどうはんばいき",
         "spelling": "jidouhonbaiki",
         "translate": "máy bán hàng tự động",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "どんわ",
         "spelling": "donwa",
         "translate": "điện thoại",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "かいしゃ",
         "spelling": "kaisha",
         "translate": "công ty",
         "description": null,
         "synonyms": null,
+        "special": null,
         "audio": null
     },
     {
-        "topic": "exercise_3",
+        "topic": 3,
         "japanese": "うち",
         "spelling": "uchi",
         "translate": "nhà",
         "description": null,
         "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "ひゃく",
+        "spelling": "hyaku",
+        "translate": "số 100",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "せん",
+        "spelling": "sen",
+        "translate": "số 1.000",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "まん",
+        "spelling": "man",
+        "translate": "số 10.000",
+        "description": "1 vạn",
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "おく",
+        "spelling": "oku",
+        "translate": "số 100.000.000",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "さんびゃく",
+        "spelling": "sanbyaku",
+        "translate": "số 300",
+        "description": null,
+        "synonyms": null,
+        "special": true,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "ろっぴゃく",
+        "spelling": "roppyaku",
+        "translate": "số 600",
+        "description": null,
+        "synonyms": null,
+        "special": true,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "はっぴゃく",
+        "spelling": "happyaku",
+        "translate": "số 800",
+        "description": null,
+        "synonyms": null,
+        "special": true,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "さんぜん",
+        "spelling": "sanzen",
+        "translate": "số 3.000",
+        "description": null,
+        "synonyms": null,
+        "special": true,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "ろくせん",
+        "spelling": "rokusen",
+        "translate": "số 6.000",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "number",
+        "japanese": "はっせん",
+        "spelling": "hassen",
+        "translate": "số 8.000",
+        "description": null,
+        "synonyms": null,
+        "special": true,
         "audio": null
     }
 ]
