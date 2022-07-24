@@ -1049,8 +1049,8 @@
         "special": null,
         "audio": null
     },
-        {
-            "topic": 3,
+    {
+        "topic": 3,
         "japanese": "ロビー",
         "spelling": "robi",
         "translate": "hành lang",
@@ -1258,5 +1258,219 @@
         "synonyms": null,
         "special": true,
         "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "おととい",
+        "spelling": "ototoi",
+        "translate": "hôm kia",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "きのう",
+        "spelling": "kinou",
+        "translate": "hôm qua",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "きょう",
+        "spelling": "kyou",
+        "translate": "hôm nay",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "あした",
+        "spelling": "ashita",
+        "translate": "ngày mai",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "あさって",
+        "spelling": "asatte",
+        "translate": "ngày kia",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "けさ",
+        "spelling": "kesa",
+        "translate": "sáng nay",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "こんばん",
+        "spelling": "konban",
+        "translate": "tối nay",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null
+    },
+    {
+        "topic": "4",
+        "japanese": "いま",
+        "spelling": "ima",
+        "translate": "bây giờ",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "じ",
+        "spelling": "-ji",
+        "translate": "giờ",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "ふん",
+        "spelling": "-fun(pun)",
+        "translate": "phút",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "はん",
+        "spelling": "han",
+        "translate": "nữa giờ(rưỡi)",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "月曜日",
+        "spelling": "getsuyoubi",
+        "translate": "thứ hai",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "火曜日",
+        "spelling": "kayoubi",
+        "translate": "thứ ba",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "水曜日",
+        "spelling": "suiyoubi",
+        "translate": "thứ tư",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "木曜日",
+        "spelling": "mokuyoubi",
+        "translate": "thứ năm",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "金曜日",
+        "spelling": "kinyoubi",
+        "translate": "thứ sáu",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "土曜日",
+        "spelling": "doyoubi",
+        "translate": "thứ bảy",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "日曜日",
+        "spelling": "nichiyoubi",
+        "translate": "chủ nhật",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
+    },
+    {
+        "topic": "4",
+        "japanese": "何曜日",
+        "spelling": "nanyoubi",
+        "translate": "thứ mấy",
+        "description": null,
+        "synonyms": null,
+        "special": null,
+        "audio": null,
+        "kunyomi": null,
+        "onyomi": null
     }
 ]
