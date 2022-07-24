@@ -127,7 +127,7 @@ $('#vocabulary-input').keyup(function (event) {
         check = true;
     }
     if (event.which === 13) {
-        message(check, true)
+        message(check, true);
     }
 })
 
@@ -218,8 +218,9 @@ $('#topic').change(function () {
 $(document).keyup(function (event) {
     let value = $('#topic').val() === 'null' ? null : $('#topic').val();
     switch (event.which) {
-        case 13:
+        case 32:
             handleResult();
+            $('#vocabulary-input').val('');
             break;
         case 37:
             if (value === 'all') {
