@@ -142,7 +142,7 @@ $('#result').click(function () {
 })
 
 const randomVocabulary = (array) => {
-    const id = Math.floor(Math.random() * (array.length - 1));
+    const id = Math.floor(Math.random() * array.length);
     let objectVocabulary = array[id];
     if (objectVocabulary.synonyms !== null) {
         global = array.filter(item => (item.synonyms === objectVocabulary.synonyms && item.synonyms !== null));
