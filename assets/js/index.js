@@ -1,171 +1,146 @@
-var furigana;
-var transfiguration;
-var ligatures;
-var kanji;
-var global;
+// Các biến toàn cục để lưu trữ dữ liệu từ API
+var furiganaData;
+var transfigurationData;
+var ligaturesData;
+var kanjiData;
 
-fetch('./json/data/furigana.json')
-    .then(response => response.json())
-    .then(result => {
-        furigana = result;
+// Hàm fetch dữ liệu từ API và trả về promise
+const fetchData = (url) => {
+    return fetch(url).then((response) => response.json());
+};
+
+// Sử dụng Promise.all để chờ tất cả các promise hoàn thành
+Promise.all([
+    fetchData("./json/data/furigana.json"),
+    fetchData("./json/data/transfiguration.json"),
+    fetchData("./json/data/ligatures.json"),
+    fetchData("./json/data/kanji.json"),
+])
+    .then(([furigana, transfiguration, ligatures, kanji]) => {
+        furiganaData = furigana;
+        transfigurationData = transfiguration;
+        ligaturesData = ligatures;
+        kanjiData = kanji;
+    })
+    .catch((error) => {
+        console.error("Error fetching data:", error);
     });
-
-fetch('./json/data/transfiguration.json')
-    .then(response => response.json())
-    .then(result => {
-        transfiguration = result;
-    });
-
-fetch('./json/data/ligatures.json')
-    .then(response => response.json())
-    .then(result => {
-        ligatures = result;
-    });
-
-fetch('./json/data/kanji.json')
-    .then(response => response.json())
-    .then(result => {
-        kanji = result;
-    });
-
-$('#click').click(function () {
-    handleRandomVocabulary();
-});
 
 $(document).keyup(function (event) {
     switch (event.which) {
+        // Nếu phím "Enter" được nhấn
         case 13:
+            // Xử lý hiển thị kết quả
             handleResult();
             break;
+
+        // Nếu phím mũi tên bên trái hoặc bên phải được nhấn
         case 37:
-            handleRandomVocabulary();
-            break;
-        case 38:
-            handleSelectType(true, '#type_character');
-            break;
         case 39:
+            // Xử lý lấy từ vựng ngẫu nhiên
             handleRandomVocabulary();
             break;
+
+        // Nếu phím mũi tên lên hoặc xuống được nhấn
+        case 38:
         case 40:
-            handleSelectType(false, '#type_character');
+            // Xử lý chọn loại ký tự
+            handleSelectType(event.which === 38, "#type_character");
             break;
+
+        // Trường hợp mặc định
         default:
             break;
     }
 });
 
+// Hàm xử lý lấy từ vựng ngẫu nhiên
 const handleRandomVocabulary = () => {
-    let key = $('#type_character').val();
-    let id = 1;
-    switch (key) {
-        case 'all':
-            let dataAll = [...furigana, ...transfiguration, ...ligatures, ...kanji];
-            id = Math.floor(Math.random() * dataAll.length);
-            global = dataAll[id];
+    let selectedType = $("#type_character").val();
+    let randomIndex = 1;
+
+    switch (selectedType) {
+        case "all":
+            let allData = [...furiganaData, ...transfigurationData, ...ligaturesData, ...kanjiData];
+            randomIndex = Math.floor(Math.random() * allData.length);
+            currentVocabulary = allData[randomIndex];
             break;
-        case 'kanji':
-            id = Math.floor(Math.random() * kanji.length);
-            global = kanji[id];
+        case "kanji":
+            randomIndex = Math.floor(Math.random() * kanjiData.length);
+            currentVocabulary = kanjiData[randomIndex];
             break;
-        case 'transfiguration':
-            id = Math.floor(Math.random() * transfiguration.length);
-            global = transfiguration[id];
+        case "transfiguration":
+            randomIndex = Math.floor(Math.random() * transfigurationData.length);
+            currentVocabulary = transfigurationData[randomIndex];
             break;
-        case 'ligatures':
-            id = Math.floor(Math.random() * ligatures.length);
-            global = ligatures[id];
+        case "ligatures":
+            randomIndex = Math.floor(Math.random() * ligaturesData.length);
+            currentVocabulary = ligaturesData[randomIndex];
             break;
         default:
-            id = Math.floor(Math.random() * furigana.length);
-            global = furigana[id];
+            randomIndex = Math.floor(Math.random() * furiganaData.length);
+            currentVocabulary = furiganaData[randomIndex];
             break;
     }
-    if (typeof global !== 'undefined') {
-        $('#text').text(global.translate)
-        if (global.audio !== null) {
-            const src = './audio/' + global.audio;
-            loadAudio(src);
+
+    if (typeof currentVocabulary !== "undefined") {
+        $("#text").text(currentVocabulary.translate);
+        if (currentVocabulary.audio !== null) {
+            const audioSrc = "./audio/" + currentVocabulary.audio;
+            loadAudio(audioSrc);
         }
     }
-}
+};
 
-$('#result').click(function () {
-    handleResult();
-})
-
+// Hàm xử lý hiển thị kết quả
 const handleResult = () => {
-    let key = $('#type_character').val();
-    if (typeof global !== 'undefined') {
-        switch (key) {
-            case 'all':
-                if (typeof global.transfiguration === 'undefined' && typeof global.kanji === 'undefined') {
-                    $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);
+    let selectedType = $("#type_character").val();
+
+    if (typeof currentVocabulary !== "undefined") {
+        switch (selectedType) {
+            case "all":
+                if (
+                    typeof currentVocabulary.transfiguration === "undefined" &&
+                    typeof currentVocabulary.kanji === "undefined"
+                ) {
+                    $("#text").text(`Hiragana: ${currentVocabulary.hiragana}, Katakana: ${currentVocabulary.katakana}`);
                     break;
-                }else if (typeof global.kanji !== 'undefined') {
-                    $('#text').text(global.kanji);
+                } else if (typeof currentVocabulary.kanji !== "undefined") {
+                    $("#text").text(currentVocabulary.kanji);
                     break;
                 } else {
-                    $('#text').text(global.transfiguration);
+                    $("#text").text(currentVocabulary.transfiguration);
                 }
                 break;
-            case 'hiragana':
-                $('#text').text(global.hiragana);
+            case "hiragana":
+                $("#text").text(currentVocabulary.hiragana);
                 break;
-            case 'katakana':
-                $('#text').text(global.katakana);
+            case "katakana":
+                $("#text").text(currentVocabulary.katakana);
                 break;
-            case 'kanji':
-                $('#text').text(`Kanji: ${global.kanji}, vietnamese: ${global.vietnamese}`);
+            case "kanji":
+                $("#text").text(`Kanji: ${currentVocabulary.kanji}, Vietnamese: ${currentVocabulary.vietnamese}`);
                 break;
-            case 'ligatures':
-                $('#text').text(`Hiragana: ${global.hiragana}, Katakana: ${global.katakana}`);
+            case "ligatures":
+                $("#text").text(`Hiragana: ${currentVocabulary.hiragana}, Katakana: ${currentVocabulary.katakana}`);
                 break;
             default:
-                $('#text').text(global.transfiguration);
+                $("#text").text(currentVocabulary.transfiguration);
                 break;
         }
     }
-}
+};
 
+// Hàm tải và phát audio
 const loadAudio = async (src) => {
     const audio = new Audio(src);
     await audio.load();
     audio.play();
-    $('#audio').html(`<source src="${src}" type="audio/mp3">`);
-}
+    $("#audio").html(`<source src="${src}" type="audio/mp3">`);
+};
 
-const searchByChar = (keyword, type) => {
-    let result = '';
-    if (type == 'alphabet') {
-        if (typeof furigana !== 'undefined') {
-            furigana.map((item) => {
-                if (item.translate.toLowerCase().search(keyword.toLowerCase()) !== -1) {
-                    result = result + `<span>${item.translate}: ${item.katakana}, ${item.hiragana}</span>`;
-                }
-            });
-        }
-        if (typeof transfiguration !== 'undefined') {
-            transfiguration.map((item) => {
-                if (item.translate.toLowerCase().search(keyword.toLowerCase()) !== -1) {
-                    result = result + `<span>${item.translate}: ${item.transfiguration}</span>`;
-                }
-            });
-        }
-    } else if (type == 'hiragana') {
-        if (typeof furigana !== 'undefined') {
-            furigana.map((item) => {
-                if (item.katakana.search(keyword) !== -1 || item.hiragana.search(keyword) !== -1) {
-                    result = result + `<span>${item.translate}: ${item.katakana}, ${item.hiragana}</span>`;
-                }
-            });
-        }
-        if (typeof transfiguration !== 'undefined') {
-            transfiguration.map((item) => {
-                if (item.transfiguration.search(keyword) !== -1) {
-                    result = result + `<span>${item.translate}: ${item.transfiguration}</span>`;
-                }
-            });
-        }
-    }
-    return result;
-}
+// Xử lý sự kiện click của button và phím mũi tên
+$("#click").click(handleRandomVocabulary);
+
+// Xử lý sự kiện click cho nút "result"
+$("#result").click(handleResult);
