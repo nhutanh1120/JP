@@ -1,60 +1,71 @@
 const search = (keyword) => {
-    let result = {
+    // Khởi tạo đối tượng kết quả
+    const result = {
         success: true,
         data: "",
     };
+
+    // Định nghĩa các biểu thức chính quy cho kiểm tra kiểu
     const alphabet = /^[a-zA-Z0-9\s]+$/;
     const hiragana = /^[ぁ-んァ-ン]+$/;
+
+    // Khởi tạo mảng từ khóa và kiểu tìm kiếm
     let arrKeywords = [];
     let type = "";
-    if (alphabet.test(keyword) == true) {
+
+    // Kiểm tra kiểu từ khóa và phân tách thành mảng
+    if (alphabet.test(keyword)) {
         type = "alphabet";
         arrKeywords = keyword.trim().split(" ");
-    } else if (hiragana.test(keyword) == true) {
+    } else if (hiragana.test(keyword)) {
         type = "hiragana";
-        arrKeywords = keyword.trim().split("");
+        arrKeywords = [...keyword.trim()];
     }
 
+    // Thực hiện tìm kiếm dựa trên từng từ khóa
     if (type !== "") {
         unique(arrKeywords).map((item) => {
-            let stringResult = searchByChar(item, type);
-            result.data = result.data + stringResult;
+            result.data += searchByChar(item, type);
         });
     }
-    if (result.data === "") {
+
+    // Kiểm tra nếu không tìm thấy dữ liệu
+    if (!result.data) {
         result.success = false;
-        result.data = "<span>Không tìm thấy dử liệu!</span>";
+        result.data = "<span>Không tìm thấy dữ liệu!</span>";
     }
+
+    // Trả về kết quả
     return result;
 };
 
 function unique(arr) {
-    var newArr = [];
-    newArr = arr.filter(function (item) {
-        return newArr.includes(item) ? "" : newArr.push(item);
-    });
+    // Sử dụng Set để lọc giá trị duy nhất
+    const uniqueSet = new Set(arr);
+
+    // Chuyển Set thành mảng
+    const newArr = [...uniqueSet];
+
+    // Trả về mảng mới chứa các giá trị duy nhất
     return newArr;
 }
 
 const handleSelectType = (button, element) => {
+    // Lấy tùy chọn hiện tại đang được chọn
     let key = $(element + " option:selected");
-    key.attr("selected", false);
-    if (button == true) {
-        if (typeof key.prev()[0] !== "undefined") {
-            key.prev().attr("selected", true);
-        } else {
-            $(element + " option")
-                .eq($(element + " option").length - 1)
-                .attr("selected", true);
-        }
+    key.prop("selected", false); // Bỏ chọn tùy chọn hiện tại
+
+    // Lấy tất cả tùy chọn
+    const options = $(element + " option");
+    const lastIndex = options.length - 1;
+
+    // Xác định tùy chọn tiếp theo dựa trên hướng của nút
+    if (button) {
+        const prevOption = key.prev()[0] || options.eq(lastIndex)[0];
+        $(prevOption).prop("selected", true); // Chọn tùy chọn trước đó hoặc cuối cùng nếu không có trước đó
     } else {
-        if (typeof key.next()[0] !== "undefined") {
-            key.next().attr("selected", true);
-        } else {
-            $(element + " option")
-                .eq(0)
-                .attr("selected", true);
-        }
+        const nextOption = key.next()[0] || options.eq(0)[0];
+        $(nextOption).prop("selected", true); // Chọn tùy chọn tiếp theo hoặc đầu tiên nếu không có tiếp theo
     }
 };
 

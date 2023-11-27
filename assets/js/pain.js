@@ -1,45 +1,45 @@
 window.onload = function () {
-
-    // Definitions
+    // Định nghĩa các phần tử trên trang
     var canvas = document.getElementById("paint-canvas");
     var context = canvas.getContext("2d");
-    var boundings = canvas.getBoundingClientRect();
+    var canvasBounds = canvas.getBoundingClientRect();
 
-    // Specifications
+    // Đặt giá trị mặc định cho tọa độ chuột
     var mouseX = 0;
     var mouseY = 0;
-    context.strokeStyle = 'black'; // initial brush color
-    context.lineWidth = 1; // initial brush width
+
+    // Màu sắc và độ dày bút mặc định
+    context.strokeStyle = "black";
+    context.lineWidth = 1;
+
+    // Trạng thái vẽ
     var isDrawing = false;
 
-
-    // Handle Colors
-    var colors = document.getElementsByClassName('colors')[0];
-
-    colors.addEventListener('click', function (event) {
-        context.strokeStyle = event.target.value || 'black';
+    // Xử lý sự kiện chọn màu
+    var colorPalette = document.getElementsByClassName("colors")[0];
+    colorPalette.addEventListener("click", function (event) {
+        context.strokeStyle = event.target.value || "black";
     });
 
-    // Handle Brushes
-    var brushes = document.getElementsByClassName('brushes')[0];
-
-    brushes.addEventListener('click', function (event) {
+    // Xử lý sự kiện chọn độ dày bút
+    var brushOptions = document.getElementsByClassName("brushes")[0];
+    brushOptions.addEventListener("click", function (event) {
         context.lineWidth = event.target.value || 1;
     });
 
-    // Mouse Down Event
-    canvas.addEventListener('mousedown', function (event) {
-        setMouseCoordinates(event);
+    // Sự kiện nhấn chuột để bắt đầu vẽ
+    canvas.addEventListener("mousedown", function (event) {
+        updateMouseCoordinates(event);
         isDrawing = true;
 
-        // Start Drawing
+        // Bắt đầu vẽ
         context.beginPath();
         context.moveTo(mouseX, mouseY);
     });
 
-    // Mouse Move Event
-    canvas.addEventListener('mousemove', function (event) {
-        setMouseCoordinates(event);
+    // Sự kiện di chuyển chuột để vẽ
+    canvas.addEventListener("mousemove", function (event) {
+        updateMouseCoordinates(event);
 
         if (isDrawing) {
             context.lineTo(mouseX, mouseY);
@@ -47,40 +47,32 @@ window.onload = function () {
         }
     });
 
-    // Mouse Up Event
-    canvas.addEventListener('mouseup', function (event) {
-        setMouseCoordinates(event);
+    // Sự kiện nhả chuột để kết thúc vẽ
+    canvas.addEventListener("mouseup", function (event) {
+        updateMouseCoordinates(event);
         isDrawing = false;
     });
 
-    // Handle Mouse Coordinates
-    function setMouseCoordinates(event) {
-        mouseX = event.clientX - boundings.left;
-        mouseY = event.clientY - boundings.top;
+    // Hàm cập nhật tọa độ chuột
+    function updateMouseCoordinates(event) {
+        mouseX = event.clientX - canvasBounds.left;
+        mouseY = event.clientY - canvasBounds.top;
     }
 
-    // Handle Clear Button
-    var clearButton = document.getElementById('clear');
-
-    clearButton.addEventListener('click', function () {
+    // Xử lý sự kiện nút Xóa
+    var clearButton = document.getElementById("clear");
+    clearButton.addEventListener("click", function () {
         context.clearRect(0, 0, canvas.width, canvas.height);
     });
 
-    document.addEventListener('keyup', function (event) {
-        if (event.key === 'Backspace' || event.key === 'Delete') {
-            context.clearRect(0, 0, canvas.width, canvas.height);
-        }
-    });
-
-    // Handle Save Button
-    var saveButton = document.getElementById('save');
-
-    saveButton.addEventListener('click', function () {
-        var imageName = prompt('Please enter image name');
+    // Xử lý sự kiện nút Lưu
+    var saveButton = document.getElementById("save");
+    saveButton.addEventListener("click", function () {
+        var imageName = prompt("Vui lòng nhập tên ảnh");
         var canvasDataURL = canvas.toDataURL();
-        var a = document.createElement('a');
-        a.href = canvasDataURL;
-        a.download = imageName || 'drawing';
-        a.click();
+        var downloadLink = document.createElement("a");
+        downloadLink.href = canvasDataURL;
+        downloadLink.download = imageName || "drawing";
+        downloadLink.click();
     });
 };

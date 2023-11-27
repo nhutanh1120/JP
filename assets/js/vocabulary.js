@@ -1,212 +1,224 @@
 var vocabulary;
 var lstFilterVocabulary;
-var global;
+var currentVocabulary;
 var countError = 0;
 var countSuccess = 0;
 
-fetch("./../json/data/topic.json")
-    .then((response) => response.json())
-    .then((lstTopic) => {
-        fetch("./../json/data/vocabulary.json")
-            .then((response) => response.json())
-            .then((result) => {
-                randomVocabulary(result);
+// Fetch dữ liệu từ tệp topic.json và vocabulary.json cùng một lúc
+Promise.all([
+    fetch("./../json/data/topic.json").then((response) => response.json()),
+    fetch("./../json/data/vocabulary.json").then((response) => response.json()),
+]).then(([lstTopic, result]) => {
+    randomVocabulary(result);
 
-                // append option all
-                $("#list-vocabulary-option").append(`<option value='all'>Tất cả (${result.length})</option>`);
-                $("#topic").append('<option value="all" selected>Tất cả</option>');
+    const listVocabularyOption = $("#list-vocabulary-option");
+    const topicDropdown = $("#topic");
+    const listVocabularyContent = $(".list-vocabulary-content ul");
 
-                const listTopic = uniqueTopic(result);
+    // Thêm tùy chọn "Tất cả" vào dropdown
+    listVocabularyOption.append(`<option value='all'>Tất cả (${result.length})</option>`);
+    topicDropdown.append('<option value="all" selected>Tất cả</option>');
 
-                listTopic.sort(function (a, b) {
-                    return a - b;
-                });
-                swapFirstToLast(listTopic, 0, listTopic.length);
+    // Lấy danh sách các chủ đề duy nhất từ kết quả
+    const listTopic = uniqueTopic(result);
 
-                listTopic.slice(1).map((topic) => {
-                    let arrTopic = result.filter((item) => item.topic == topic);
-                    let titleName = lstTopic[0][topic];
-                    if (topic !== null) {
-                        $("#list-vocabulary-option").append(
-                            `<option value='${topic}'>${titleName} (${arrTopic.length})</option>`,
-                        );
-                        $("#topic").append(`<option value='${topic}'>${titleName}</option>`);
-                    } else {
-                        $("#list-vocabulary-option").append(
-                            `<option value='${topic}'>${titleName} (${arrTopic.length})</option>`,
-                        );
-                        $("#topic").append(`<option value='${topic}'>${titleName}</option>`);
-                    }
-                });
+    // Sắp xếp danh sách chủ đề
+    listTopic.sort((a, b) => a - b);
 
-                // render all vocabulary items
-                result.map((item) => {
-                    let strDescription = "";
-                    let special = item.special !== null ? '<span style="color: red">*</span>' : "";
-                    if (item.description !== null) {
-                        strDescription = `<span class="description">-
-                                            <span>${item.description}</span>
-                                        </span>`;
-                    }
-                    $(".list-vocabulary-content ul").append(
-                        `<li>
-                            ${item.japanese}: ${item.translate} ${special}
-                            <span class="spelling">+
-                                <span>${item.spelling}</span>
-                            </span>
-                            ${strDescription}
-                        </li>`,
-                    );
-                });
+    // Chuyển đổi chủ đề đầu tiên thành chủ đề cuối cùng
+    swapFirstToLast(listTopic, 0, listTopic.length);
 
-                // set list vocabulary
-                vocabulary = result;
-                lstFilterVocabulary = result;
-            });
+    // Thêm các tùy chọn chủ đề vào dropdown
+    listTopic.slice(1).forEach((topic) => {
+        const arrTopic = result.filter((item) => item.topic === topic);
+        const titleName = lstTopic[0][topic];
+
+        // Thêm tùy chọn chủ đề vào dropdown
+        listVocabularyOption.append(`<option value='${topic}'>${titleName} (${arrTopic.length})</option>`);
+        topicDropdown.append(`<option value='${topic}'>${titleName}</option>`);
     });
 
+    // Hiển thị tất cả các mục từ vựng
+    result.forEach((item) => {
+        let strDescription = "";
+        let special = item.special !== null ? '<span style="color: red">*</span>' : "";
+        if (item.description !== null) {
+            strDescription = `<span class="description">-
+                                <span>${item.description}</span>
+                            </span>`;
+        }
+
+        // Thêm từng mục từ vựng vào danh sách từ vựng
+        listVocabularyContent.append(
+            `<li>
+                ${item.japanese}: ${item.translate} ${special}
+                <span class="spelling">+
+                    <span>${item.spelling}</span>
+                </span>
+                ${strDescription}
+            </li>`,
+        );
+    });
+
+    // Thiết lập danh sách từ vựng
+    vocabulary = result;
+    lstFilterVocabulary = result;
+});
+
+// Đăng ký sự kiện click cho các phần tử có class ".spelling" trong danh sách từ vựng
 $(document).on("click", ".list-vocabulary-content ul li .spelling", function () {
-    $(".list-vocabulary-content ul").find(".show-spelling").removeClass("show-spelling");
-    $(".list-vocabulary-content ul").find(".active").removeClass("active");
+    const listVocabularyContent = $(".list-vocabulary-content ul");
+    const allShowSpelling = listVocabularyContent.find(".show-spelling");
+    const allActive = listVocabularyContent.find(".active");
+
+    allShowSpelling.removeClass("show-spelling");
+    allActive.removeClass("active");
+
     $(this).addClass("show-spelling");
 });
 
 $(document).on("click", ".list-vocabulary-content ul li .description", function () {
-    $(".list-vocabulary-content ul").find(".show-spelling").removeClass("show-spelling");
-    $(".list-vocabulary-content ul").find(".active").removeClass("active");
+    const listVocabularyContent = $(".list-vocabulary-content ul");
+    listVocabularyContent.find(".show-spelling").removeClass("show-spelling");
+    listVocabularyContent.find(".active").removeClass("active");
+
     $(this).addClass("active");
 });
 
 $(document).on("change", "#list-vocabulary-option", function () {
-    $(".list-vocabulary-content ul").empty();
-    if ($(this).val() === "all") {
-        vocabulary.map((item) => {
-            let strDescription = "";
-            let special = item.special !== null ? '<span style="color: red">*</span>' : "";
-            if (item.description !== null) {
-                strDescription = `<span class="description">-
-                                    <span>${item.description}</span>
-                                </span>`;
-            }
-            $(".list-vocabulary-content ul").append(
-                `<li>
-                    ${item.japanese}: ${item.translate} ${special}
-                    <span class="spelling">+
-                        <span>${item.spelling}</span>
-                    </span>
-                    ${strDescription}
-                </li>`,
-            );
-        });
-    }
-    let value = $(this).val() === "null" ? null : $(this).val();
-    vocabulary.map((item) => {
-        if (value == item.topic) {
-            let strDescription = "";
-            let special = item.special !== null ? '<span style="color: red">*</span>' : "";
-            if (item.description !== null) {
-                strDescription = `<span class="description">-
-                                    <span>${item.description}</span>
-                                </span>`;
-            }
-            $(".list-vocabulary-content ul").append(
-                `<li>
-                    ${item.japanese}: ${item.translate} ${special}
-                    <span class="spelling">+
-                        <span>${item.spelling}</span>
-                    </span>
-                    ${strDescription}
-                </li>`,
-            );
-        }
+    // Lưu trữ tham chiếu đến danh sách từ vựng
+    const listVocabularyContent = $(".list-vocabulary-content ul");
+
+    // Xóa nội dung hiện tại của danh sách từ vựng
+    listVocabularyContent.empty();
+
+    // Lấy giá trị được chọn từ dropdown
+    const selectedValue = $(this).val();
+
+    // Lọc từ vựng dựa trên giá trị được chọn
+    const filteredVocabulary =
+        selectedValue === "all" ? vocabulary : vocabulary.filter((item) => item.topic === selectedValue);
+
+    // Lặp qua từng từ vựng trong danh sách đã lọc và thêm chúng vào danh sách từ vựng hiển thị
+    filteredVocabulary.forEach((item) => {
+        // Tạo biến strDescription chứa mô tả nếu tồn tại
+        const strDescription = item.description
+            ? `<span class="description">-<span>${item.description}</span></span>`
+            : "";
+
+        // Tạo biến special chứa dấu * nếu từ vựng đặc biệt
+        const special = item.special ? '<span style="color: red">*</span>' : "";
+
+        // Thêm từ vựng vào danh sách từ vựng hiển thị
+        listVocabularyContent.append(
+            `<li>
+                ${item.japanese}: ${item.translate} ${special}
+                <span class="spelling">+
+                    <span>${item.spelling}</span>
+                </span>
+                ${strDescription}
+            </li>`,
+        );
     });
 });
 
 $("#vocabulary-input").keyup(function (event) {
-    let check = false;
-    let result = null;
-    let value = $(this).val();
-    if (value.trim() === "") return;
-    $(".vocabulary-result-view").removeClass("success");
-    $(".vocabulary-result-view").empty();
-    if (global.length !== undefined) {
-        result = vocabulary.find((item) => item.japanese === value);
+    const value = $(this).val().trim();
+
+    // Kiểm tra nếu giá trị trống
+    if (value === "") {
+        return;
     }
-    if (value === global.japanese || (typeof result !== "undefined" && result !== null)) {
-        check = true;
-    }
+
+    const vocabularyResultView = $(".vocabulary-result-view");
+    vocabularyResultView.removeClass("success").empty();
+
+    // Kiểm tra xem currentVocabulary  có phải là mảng hay không
+    const result = Array.isArray(currentVocabulary) ? currentVocabulary.find((item) => item.japanese === value) : null;
+
+    // Kiểm tra giá trị nhập có phù hợp với currentVocabulary  hay không
+    const check = value === currentVocabulary.japanese || (result !== undefined && result !== null);
+
+    // Nếu nhấn phím Enter, gọi hàm message
     if (event.which === 13) {
         message(check, true);
     }
 });
 
+// Xử lý sự kiện khi click vào phần tử có id là "result"
 $("#result").click(function () {
-    let value = $("#topic").val() === "null" ? null : $("#topic").val();
-    if (value === "all") {
-        randomVocabulary(vocabulary);
-    } else {
-        let lstData = filterVocabulary(value);
-        randomVocabulary(lstData);
-    }
+    // Lấy giá trị hiện tại của dropdown có id là "topic"
+    const value = $("#topic").val();
+
+    // Tạo danh sách dữ liệu để truyền vào hàm randomVocabulary
+    const lstData = value === "all" || value === null ? vocabulary : filterVocabulary(value);
+
+    // Gọi hàm randomVocabulary với danh sách dữ liệu đã xác định
+    randomVocabulary(lstData);
 });
 
+// Hàm chọn một từ vựng ngẫu nhiên từ một mảng
 const randomVocabulary = (array) => {
+    // Tạo một số ngẫu nhiên từ 0 đến độ dài của mảng
     const id = Math.floor(Math.random() * array.length);
-    let objectVocabulary = array[id];
-    if (objectVocabulary.synonyms !== null) {
-        global = array.filter((item) => item.synonyms === objectVocabulary.synonyms && item.synonyms !== null);
-    } else {
-        global = objectVocabulary;
-    }
+
+    // Lấy đối tượng từ vựng tại vị trí ngẫu nhiên
+    const objectVocabulary = array[id];
+
+    // Kiểm tra và lọc từ vựng có thuộc tính synonyms không và không phải là null
+    currentVocabulary =
+        objectVocabulary.synonyms !== null
+            ? array.filter((item) => item.synonyms === objectVocabulary.synonyms && item.synonyms !== null)
+            : objectVocabulary;
+
+    // Hiển thị từ vựng được chọn lên giao diện
     $("#vocabulary-text").text(objectVocabulary.translate);
+
+    // Trả về đối tượng từ vựng được chọn
     return objectVocabulary;
 };
 
 const message = (data, value) => {
-    if (data === value) {
+    // Tạo hàm innerMessage để tái sử dụng code hiển thị toast
+    const innerMessage = (title, message, type, duration) => {
         toast({
-            title: "Chính xác!",
-            message: "Bạn đã nhập chính xác.",
-            type: "success",
-            duration: 5000,
+            title,
+            message,
+            type,
+            duration,
         });
-        if ((countSuccess + 1) % 5 === 0) {
-            const number = countSuccess + 1;
+    };
+
+    // Kiểm tra và hiển thị toast thông báo khi nhập đúng hoặc sai
+    if (data === value) {
+        countError = 0;
+        countSuccess++;
+
+        innerMessage("Chính xác!", "Bạn đã nhập chính xác.", "success", 5000);
+
+        // Kiểm tra và hiển thị toast thông báo nếu số lần nhập đúng là bội số của 5
+        if (countSuccess % 5 === 0) {
             setTimeout(function () {
-                toast({
-                    title: "Giỏi quá!",
-                    message: `Bạn đã nhập đúng ${number} từ liên tiếp.`,
-                    type: "info",
-                    duration: 5000,
-                });
+                innerMessage("Giỏi quá!", `Bạn đã nhập đúng ${countSuccess} từ liên tiếp.`, "info", 5000);
             }, 1000);
         }
+        // Gọi hàm randomVocabulary và làm sạch dữ liệu
         randomVocabulary(lstFilterVocabulary);
         $("#vocabulary-input").val("");
         $(".vocabulary-result-view").empty();
         $(".vocabulary-result-view").removeClass("success");
-        countError = 0;
-        countSuccess++;
     } else {
-        toast({
-            title: "Sai rồi!",
-            message: "Từ bạn nhập không chính xác.",
-            type: "error",
-            duration: 5000,
-        });
-        if ((countError + 1) % 5 === 0) {
-            const number = countError + 1;
-            setTimeout(function () {
-                toast({
-                    title: "Thông tin!",
-                    message: `Bạn đã nhập sai ${number} từ liên tiếp.`,
-                    type: "warning",
-                    duration: 5000,
-                });
-            }, 1000);
-        }
         countSuccess = 0;
         countError++;
+
+        innerMessage("Sai rồi!", "Từ bạn nhập không chính xác.", "error", 5000);
+
+        // Kiểm tra và hiển thị toast thông báo nếu số lần nhập sai là bội số của 5
+        if (countError % 5 === 0) {
+            setTimeout(function () {
+                innerMessage("Thông tin!", `Bạn đã nhập sai ${countError} từ liên tiếp.`, "warning", 5000);
+            }, 1000);
+        }
     }
 };
 
@@ -218,63 +230,75 @@ $(".list-vocabulary-title").click(function () {
     $(".list-vocabulary-content").slideToggle("fast");
 });
 
+// Bắt sự kiện khi giá trị của dropdown có id là "topic" thay đổi
 $("#topic").change(function () {
-    let value = $(this).val() == "null" ? null : $(this).val();
-    let lstData = filterVocabulary(value);
-    randomVocabulary(lstData);
+    // Lấy giá trị hiện tại của dropdown và kiểm tra nếu là "null" thì gán giá trị null, ngược lại giữ nguyên giá trị
+    const filteredValue = $(this).val() === "null" ? null : $(this).val();
+
+    // Gọi hàm randomVocabulary với danh sách từ vựng đã được lọc
+    randomVocabulary(filterVocabulary(filteredValue));
 });
 
 $(document).keyup(function (event) {
-    let value = $("#topic").val() === "null" ? null : $("#topic").val();
+    // Lấy giá trị hiện tại của dropdown có id là "topic"
+    const value = $("#topic").val();
+
     switch (event.which) {
         case 32:
+            // Khi nhấn phím Space, gọi hàm xử lý kết quả và làm sạch ô nhập liệu
             handleResult();
             $("#vocabulary-input").val("");
             break;
         case 37:
+        case 39:
+            // Khi nhấn mũi tên trái (37) hoặc mũi tên phải (39),
+            // gọi hàm randomVocabulary với dữ liệu đã lọc dựa trên giá trị dropdown
             if (value === "all") {
                 randomVocabulary(vocabulary);
             } else {
-                let lstData = filterVocabulary(value);
-                randomVocabulary(lstData);
+                randomVocabulary(filterVocabulary(value));
             }
             break;
         case 38:
+            // Khi nhấn mũi tên lên (38), gọi hàm handleSelectType với tham số là true và id là "topic"
             handleSelectType(true, "#topic");
             break;
-        case 39:
-            if (value === "all") {
-                randomVocabulary(vocabulary);
-            } else {
-                let lstData = filterVocabulary(value);
-                randomVocabulary(lstData);
-            }
-            break;
         case 40:
+            // Khi nhấn mũi tên xuống (40), gọi hàm handleSelectType với tham số là false và id là "topic"
             handleSelectType(false, "#topic");
             break;
         default:
+            // Bất kỳ trường hợp nào khác không thực hiện hành động gì cả
             break;
     }
 });
 
 const filterVocabulary = (topic) => {
-    lstFilterVocabulary = vocabulary.filter((item) => item.topic == topic);
-    return lstFilterVocabulary;
+    return vocabulary.filter((item) => item.topic == topic);
 };
 
 const handleResult = () => {
-    $(".vocabulary-result-view").addClass("success");
-    if (global.length === undefined) {
-        $(".vocabulary-result-view").html(
-            `<span>${global.translate}: ${global.japanese}, phiên âm: ${global.spelling}</span>`,
+    const vocabularyResultView = $(".vocabulary-result-view");
+
+    // Thêm lớp "success" vào thành phần chứa kết quả
+    vocabularyResultView.addClass("success");
+
+    // Kiểm tra xem currentVocabulary  có phải là một mảng hay không
+    if (Array.isArray(currentVocabulary)) {
+        // Nếu là mảng, xóa nội dung hiện tại của thành phần và thêm mỗi mục từ currentVocabulary
+        vocabularyResultView.empty();
+        currentVocabulary.forEach((item) =>
+            vocabularyResultView.append(`<span>${item.translate}: ${item.japanese}</span>`),
         );
     } else {
-        $(".vocabulary-result-view").empty();
-        global.map((item) => $(".vocabulary-result-view").append(`<span>${item.translate}: ${item.japanese}</span>`));
+        // Nếu không phải là mảng, thêm nội dung vào thành phần
+        vocabularyResultView.html(
+            `<span>${currentVocabulary.translate}: ${currentVocabulary.japanese}, phiên âm: ${currentVocabulary.spelling}</span>`,
+        );
     }
 };
 
+// Hàm trả về danh sách chủ đề duy nhất từ mảng
 const uniqueTopic = (arr) => {
     let arrTopic = [];
     arr.filter((item) => {
@@ -283,6 +307,7 @@ const uniqueTopic = (arr) => {
     return arrTopic;
 };
 
+// Hàm hoán đổi vị trí giữa phần tử đầu tiên và cuối cùng của mảng
 const swapFirstToLast = (array, a, b) => {
     array[b] = array[a];
 };
