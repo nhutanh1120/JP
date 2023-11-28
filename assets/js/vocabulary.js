@@ -3,67 +3,57 @@ var lstFilterVocabulary;
 var currentVocabulary;
 var countError = 0;
 var countSuccess = 0;
+var listTopic;
 
-// Fetch dữ liệu từ tệp topic.json và vocabulary.json cùng một lúc
-Promise.all([
-    fetch("./../json/data/topic.json").then((response) => response.json()),
-    fetch("./../json/data/vocabulary.json").then((response) => response.json()),
-]).then(([lstTopic, result]) => {
-    randomVocabulary(result);
+// Fetch dữ liệu từ tệp vocabulary.json cùng một lúc
+fetch("./../json/data/vocabulary.json")
+    .then((response) => response.json())
+    .then((result) => {
+        randomVocabulary(result);
 
-    const listVocabularyOption = $("#list-vocabulary-option");
-    const topicDropdown = $("#topic");
-    const listVocabularyContent = $(".list-vocabulary-content ul");
+        const listVocabularyOption = $("#list-vocabulary-option");
+        const topicDropdown = $("#topic");
+        const listVocabularyContent = $(".list-vocabulary-content ul");
 
-    // Thêm tùy chọn "Tất cả" vào dropdown
-    listVocabularyOption.append(`<option value='all'>Tất cả (${result.length})</option>`);
-    topicDropdown.append('<option value="all" selected>Tất cả</option>');
+        // Lấy danh sách các chủ đề duy nhất từ kết quả
+        listTopic = sortByTopic(result);
 
-    // Lấy danh sách các chủ đề duy nhất từ kết quả
-    const listTopic = uniqueTopic(result);
+        // Thêm các tùy chọn chủ đề vào dropdown
+        listTopic.forEach((obj, index) => {
+            // Thêm tùy chọn chủ đề vào dropdown
+            listVocabularyOption.append(`<option value='${index}'>${obj.titleName} (${obj.titleCount})</option>`);
+            topicDropdown.append(`<option value='${index}'>${obj.titleName}</option>`);
+        });
 
-    // Sắp xếp danh sách chủ đề
-    listTopic.sort((a, b) => a - b);
-
-    // Chuyển đổi chủ đề đầu tiên thành chủ đề cuối cùng
-    swapFirstToLast(listTopic, 0, listTopic.length);
-
-    // Thêm các tùy chọn chủ đề vào dropdown
-    listTopic.slice(1).forEach((topic) => {
-        const arrTopic = result.filter((item) => item.topic === topic);
-        const titleName = lstTopic[0][topic];
-
-        // Thêm tùy chọn chủ đề vào dropdown
-        listVocabularyOption.append(`<option value='${topic}'>${titleName} (${arrTopic.length})</option>`);
-        topicDropdown.append(`<option value='${topic}'>${titleName}</option>`);
-    });
-
-    // Hiển thị tất cả các mục từ vựng
-    result.forEach((item) => {
-        let strDescription = "";
-        let special = item.special !== null ? '<span style="color: red">*</span>' : "";
-        if (item.description !== null) {
-            strDescription = `<span class="description">-
+        // Hiển thị tất cả các mục từ vựng
+        result.forEach((item) => {
+            let strDescription = "";
+            let special = item.special !== null ? '<span style="color: red">*</span>' : "";
+            if (item.description !== null) {
+                strDescription = `<span class="description">-
                                 <span>${item.description}</span>
                             </span>`;
-        }
+            }
 
-        // Thêm từng mục từ vựng vào danh sách từ vựng
-        listVocabularyContent.append(
-            `<li>
+            // Thêm từng mục từ vựng vào danh sách từ vựng
+            listVocabularyContent.append(
+                `<li>
                 ${item.japanese}: ${item.translate} ${special}
                 <span class="spelling">+
                     <span>${item.spelling}</span>
                 </span>
                 ${strDescription}
             </li>`,
-        );
-    });
+            );
+        });
 
-    // Thiết lập danh sách từ vựng
-    vocabulary = result;
-    lstFilterVocabulary = result;
-});
+        // Thiết lập danh sách từ vựng
+        vocabulary = result;
+        lstFilterVocabulary = result;
+    })
+    .catch((error) => {
+        console.error("Error fetching vocabulary data:", error);
+    });
 
 // Đăng ký sự kiện click cho các phần tử có class ".spelling" trong danh sách từ vựng
 $(document).on("click", ".list-vocabulary-content ul li .spelling", function () {
@@ -97,7 +87,9 @@ $(document).on("change", "#list-vocabulary-option", function () {
 
     // Lọc từ vựng dựa trên giá trị được chọn
     const filteredVocabulary =
-        selectedValue === "all" ? vocabulary : vocabulary.filter((item) => item.topic === selectedValue);
+        selectedValue === "0"
+            ? vocabulary
+            : vocabulary.filter((item) => item.topic === listTopic[selectedValue].titleName);
 
     // Lặp qua từng từ vựng trong danh sách đã lọc và thêm chúng vào danh sách từ vựng hiển thị
     filteredVocabulary.forEach((item) => {
@@ -151,7 +143,7 @@ $("#result").click(function () {
     const value = $("#topic").val();
 
     // Tạo danh sách dữ liệu để truyền vào hàm randomVocabulary
-    const lstData = value === "all" || value === null ? vocabulary : filterVocabulary(value);
+    const lstData = value === "0" || value === null ? vocabulary : filterVocabulary(value);
 
     // Gọi hàm randomVocabulary với danh sách dữ liệu đã xác định
     randomVocabulary(lstData);
@@ -253,7 +245,7 @@ $(document).keyup(function (event) {
         case 39:
             // Khi nhấn mũi tên trái (37) hoặc mũi tên phải (39),
             // gọi hàm randomVocabulary với dữ liệu đã lọc dựa trên giá trị dropdown
-            if (value === "all") {
+            if (value === "0") {
                 randomVocabulary(vocabulary);
             } else {
                 randomVocabulary(filterVocabulary(value));
@@ -273,8 +265,8 @@ $(document).keyup(function (event) {
     }
 });
 
-const filterVocabulary = (topic) => {
-    return vocabulary.filter((item) => item.topic == topic);
+const filterVocabulary = (index) => {
+    return vocabulary.filter((item) => item.topic == listTopic[index].titleName);
 };
 
 const handleResult = () => {
@@ -298,16 +290,38 @@ const handleResult = () => {
     }
 };
 
-// Hàm trả về danh sách chủ đề duy nhất từ mảng
-const uniqueTopic = (arr) => {
-    let arrTopic = [];
-    arr.filter((item) => {
-        return arrTopic.includes(item.topic) ? "" : arrTopic.push(item.topic);
-    });
-    return arrTopic;
-};
+// Hàm sắp xếp mảng theo các quy tắc
+function sortByTopic(array) {
+    // Lọc những phần tử có topic không phải là số
+    const validTopics = array.filter((item) => typeof item.topic !== "number");
 
-// Hàm hoán đổi vị trí giữa phần tử đầu tiên và cuối cùng của mảng
-const swapFirstToLast = (array, a, b) => {
-    array[b] = array[a];
-};
+    // Kiểm tra nếu không có phần tử nào có topic không phải là số, trả về mảng rỗng
+    if (validTopics.length === 0) {
+        return [];
+    }
+
+    // Lấy danh sách các topic duy nhất
+    const uniqueTopics = Array.from(new Set(validTopics.map((item) => item.topic)));
+
+    // Sắp xếp topic theo quy tắc đặc biệt
+    const sortedArray = uniqueTopics
+        .sort((a, b) => {
+            // Ưu tiên sắp xếp theo "Bài" và số theo thứ tự
+            const topicA = a.startsWith("Bài") ? -1 : 1;
+            const topicB = b.startsWith("Bài") ? -1 : 1;
+            return topicA - topicB || Number(a.replace("Bài ", "")) - Number(b.replace("Bài ", ""));
+        })
+        .sort((a, b) => a.localeCompare(b)); // Sắp xếp theo thứ tự chữ cái
+
+    // Tạo mảng kết quả với đối tượng có thuộc tính titleName và titleCount
+    const resultArray = sortedArray.map((topic) => {
+        const topicCount = array.filter((item) => item.topic === topic).length;
+        return { titleName: topic, titleCount: topicCount };
+    });
+
+    // Thêm phần tử có topic là "Tất cả" và đưa lên đầu mảng
+    resultArray.unshift({ titleName: "Tất cả", titleCount: array.length });
+
+    // Trả về mảng kết quả
+    return resultArray;
+}
