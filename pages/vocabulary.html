@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./../assets/css/class.css" />
         <link rel="stylesheet" href="./../assets/css/message.css" />
         <link rel="stylesheet" href="./../assets/css/vocabulary.css" />
+        <link rel="stylesheet" href="./../assets/css/clock.css" />
     </head>
 
     <body>
@@ -27,6 +28,10 @@
                     <i class="bx bxs-heart-circle icon"></i>
                     <span class="logo-name">Luu Moments</span>
                     <i class="bx bx-menu-alt-right" id="btn-close"></i>
+                </div>
+                <div class="sidebar-body"></div>
+                <div class="sidebar-footer">
+                    <div class="clock-footer" id="clock-footer"></div>
                 </div>
             </div>
             <div class="content">
@@ -54,6 +59,11 @@
                         >
                         </lord-icon>
                     </div>
+                    <div class="clock">
+                        <div class="hour" id="hour"></div>
+                        <div class="minute" id="minute"></div>
+                        <div class="second" id="second"></div>
+                    </div>
                 </section>
                 <main>
                     <article class="article-left">
@@ -62,9 +72,12 @@
                         </div>
                         <div class="vocabulary">
                             <div class="option">
-                                <select name="topic" id="topic"></select>
+                                <span class="group">
+                                    <select name="topic" id="topic"></select>
+                                    <button id="type">a</button>
+                                </span>
                                 <h5 id="vocabulary-text"></h5>
-                                <span>
+                                <span class="group">
                                     <button id="result">
                                         <lord-icon
                                             src="./../json/icon/next.json"
@@ -138,10 +151,10 @@
         <script src="./../vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./../vendor/jquery-ui/jquery-ui.js"></script>
         <script src="./../vendor/lordicon/lordicon.js"></script>
-        <script src="./../assets/js/message.js"></script>
-        <script src="./../assets/js/utils.js"></script>
-        <script src="./../assets/js/vocabulary.js"></script>
-        <script src="./../assets/js/script.js"></script>
-        <script src="./../assets/js/setting.js"></script>
+        <script src="./../assets/scripts/message.js"></script>
+        <script src="./../assets/scripts/utils.js"></script>
+        <script src="./../assets/scripts/vocabulary.js"></script>
+        <script src="./../assets/scripts/script.js"></script>
+        <script src="./../assets/scripts/setting.js"></script>
     </body>
 </html>

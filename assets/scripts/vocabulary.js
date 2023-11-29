@@ -4,6 +4,7 @@ var currentVocabulary;
 var countError = 0;
 var countSuccess = 0;
 var listTopic;
+var isAlpha = true;
 
 // Fetch dữ liệu từ tệp vocabulary.json cùng một lúc
 fetch("./../json/data/vocabulary.json")
@@ -128,12 +129,12 @@ $("#vocabulary-input").keyup(function (event) {
     // Kiểm tra xem currentVocabulary  có phải là mảng hay không
     const result = Array.isArray(currentVocabulary) ? currentVocabulary.find((item) => item.japanese === value) : null;
 
-    // Kiểm tra giá trị nhập có phù hợp với currentVocabulary  hay không
-    const check = value === currentVocabulary.japanese || (result !== undefined && result !== null);
-
     // Nếu nhấn phím Enter, gọi hàm message
     if (event.which === 13) {
-        message(check, true);
+        // Kiểm tra giá trị nhập có phù hợp với currentVocabulary  hay không
+        const data = isAlpha ? currentVocabulary.spelling : currentVocabulary.japanese;
+        const isValid = value === data || (result !== undefined && result !== null);
+        message(isValid);
     }
 });
 
@@ -170,7 +171,7 @@ const randomVocabulary = (array) => {
     return objectVocabulary;
 };
 
-const message = (data, value) => {
+const message = (data) => {
     // Tạo hàm innerMessage để tái sử dụng code hiển thị toast
     const innerMessage = (title, message, type, duration) => {
         toast({
@@ -182,7 +183,7 @@ const message = (data, value) => {
     };
 
     // Kiểm tra và hiển thị toast thông báo khi nhập đúng hoặc sai
-    if (data === value) {
+    if (data) {
         countError = 0;
         countSuccess++;
 
@@ -325,3 +326,14 @@ function sortByTopic(array) {
     // Trả về mảng kết quả
     return resultArray;
 }
+
+$("#type").click(function () {
+    if (isAlpha) {
+        $(this).html("あ");
+        $("#vocabulary-input").attr("placeholder", "あいうえお。。。");
+    } else {
+        $(this).html("a");
+        $("#vocabulary-input").attr("placeholder", "a b c . . .");
+    }
+    isAlpha = !isAlpha;
+});
