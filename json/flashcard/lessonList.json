@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Bài 1 - Từ vựng cơ bản",
+        "fileName": "lesson1"
+    },
+    {
+        "id": 2,
+        "name": "Bài 2 - これから　お世話に　なります",
+        "fileName": "lesson2"
+    },
+    {
+        "id": 3,
+        "name": "Bài 3 - これを　ください",
+        "fileName": "lesson3"
+    },
+    {
+        "id": 4,
+        "name": "Bài 4 - そちらは　何時までですか",
+        "fileName": "lesson5"
+    },
+    {
+        "id": 5,
+        "name": "Bài 5 - この電車は　甲子園へ　行きますか",
+        "fileName": "lesson5"
+    },
+    {
+        "id": 6,
+        "name": "Bài 6 - いっしょに　行きませんか",
+        "fileName": "lesson6"
+    }
+]

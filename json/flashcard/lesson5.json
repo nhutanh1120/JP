@@ -1,0 +1,361 @@
+[
+    {
+        "jp": "いきます",
+        "kanji": "行きます",
+        "sino": "HÀNH",
+        "vi": "đi"
+    },
+    {
+        "jp": "きます",
+        "kanji": "来ます",
+        "sino": "LAI",
+        "vi": "đến"
+    },
+    {
+        "jp": "かえります",
+        "kanji": "帰ります",
+        "sino": "QUY",
+        "vi": "về"
+    },
+    {
+        "jp": "がっこう",
+        "kanji": "学校",
+        "sino": "HỌC HIỆU",
+        "vi": "trường học"
+    },
+    {
+        "jp": "スーパー",
+        "kanji": "",
+        "sino": "",
+        "vi": "siêu thị"
+    },
+    {
+        "jp": "えき",
+        "kanji": "駅",
+        "sino": "DỊCH",
+        "vi": "ga, nhà ga"
+    },
+    {
+        "jp": "ひこうき",
+        "kanji": "飛行機",
+        "sino": "PHI HÀNH CƠ",
+        "vi": "máy bay"
+    },
+    {
+        "jp": "ふね",
+        "kanji": "船",
+        "sino": "THUYỀN",
+        "vi": "thuyền, tàu thủy"
+    },
+    {
+        "jp": "でんしゃ",
+        "kanji": "電車",
+        "sino": "ĐIỆN XA",
+        "vi": "tàu điện"
+    },
+    {
+        "jp": "ちかてつ",
+        "kanji": "地下鉄",
+        "sino": "ĐỊA HẠ THIẾT",
+        "vi": "tàu điện ngầm"
+    },
+    {
+        "jp": "しんかんせん",
+        "kanji": "新幹線",
+        "sino": "TÂN CÁN TUYẾN",
+        "vi": "tàu Shinkansen (tàu điện siêu tốc của Nhật)"
+    },
+    {
+        "jp": "バス",
+        "kanji": "",
+        "sino": "",
+        "vi": "xe buýt"
+    },
+    {
+        "jp": "タクシー",
+        "kanji": "",
+        "sino": "",
+        "vi": "tắc-xi"
+    },
+    {
+        "jp": "じてんしゃ",
+        "kanji": "自転車",
+        "sino": "TỰ CHUYỂN XA",
+        "vi": "xe đạp"
+    },
+    {
+        "jp": "あるいて",
+        "kanji": "歩いて",
+        "sino": "BỘ",
+        "vi": "đi bộ"
+    },
+    {
+        "jp": "ひと",
+        "kanji": "人",
+        "sino": "NHÂN",
+        "vi": "người"
+    },
+    {
+        "jp": "ともだち",
+        "kanji": "友達",
+        "sino": "HỮU ĐẠT",
+        "vi": "bạn, bạn bè"
+    },
+    {
+        "jp": "かれ",
+        "kanji": "彼",
+        "sino": "BỈ",
+        "vi": "anh ấy, bạn trai"
+    },
+    {
+        "jp": "かのじょ",
+        "kanji": "彼女",
+        "sino": "BỈ NỮ",
+        "vi": "chị ấy, bạn gái"
+    },
+    {
+        "jp": "かぞく",
+        "kanji": "家族",
+        "sino": "GIA TỘC",
+        "vi": "gia đình"
+    },
+    {
+        "jp": "ひとりで",
+        "kanji": "一人で",
+        "sino": "NHẤT NHÂN",
+        "vi": "một mình"
+    },
+    {
+        "jp": "せんしゅう",
+        "kanji": "先週",
+        "sino": "TIÊN CHU",
+        "vi": "tuần trước"
+    },
+    {
+        "jp": "こんしゅう",
+        "kanji": "今週",
+        "sino": "KIM CHU",
+        "vi": "tuần này"
+    },
+    {
+        "jp": "らいしゅう",
+        "kanji": "来週",
+        "sino": "LAI CHU",
+        "vi": "tuần sau"
+    },
+    {
+        "jp": "せんげつ",
+        "kanji": "先月",
+        "sino": "TIÊN NGUYỆT",
+        "vi": "tháng trước"
+    },
+    {
+        "jp": "こんげつ",
+        "kanji": "今月",
+        "sino": "KIM NGUYỆT",
+        "vi": "tháng này"
+    },
+    {
+        "jp": "らいげつ",
+        "kanji": "来月",
+        "sino": "LAI NGUYỆT",
+        "vi": "tháng sau"
+    },
+    {
+        "jp": "きょねん",
+        "kanji": "去年",
+        "sino": "KHỨ NIÊN",
+        "vi": "năm ngoái"
+    },
+    {
+        "jp": "ことし",
+        "kanji": "",
+        "sino": "",
+        "vi": "năm nay"
+    },
+    {
+        "jp": "らいねん",
+        "kanji": "来年",
+        "sino": "LAI NIÊN",
+        "vi": "năm sau"
+    },
+    {
+        "jp": "ーねん",
+        "kanji": "ー年",
+        "sino": "NIÊN",
+        "vi": "năm -"
+    },
+    {
+        "jp": "なんねん",
+        "kanji": "何年",
+        "sino": "HÀ NIÊN",
+        "vi": "mấy năm"
+    },
+    {
+        "jp": "ーがつ",
+        "kanji": "ー月",
+        "sino": "NGUYỆT",
+        "vi": "tháng -"
+    },
+    {
+        "jp": "なんがつ",
+        "kanji": "何月",
+        "sino": "HÀ NGUYỆT",
+        "vi": "tháng mấy"
+    },
+    {
+        "jp": "ついたち",
+        "kanji": "１日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 1"
+    },
+    {
+        "jp": "ふつか",
+        "kanji": "２日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 2, 2 ngày"
+    },
+    {
+        "jp": "みっか",
+        "kanji": "３日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 3, 3 ngày"
+    },
+    {
+        "jp": "よっか",
+        "kanji": "４日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 4, 4 ngày"
+    },
+    {
+        "jp": "いつか",
+        "kanji": "５日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 5, 5 ngày"
+    },
+    {
+        "jp": "むいか",
+        "kanji": "６日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 6, 6 ngày"
+    },
+    {
+        "jp": "なのか",
+        "kanji": "７日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 7, 7 ngày"
+    },
+    {
+        "jp": "ようか",
+        "kanji": "８日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 8, 8 ngày"
+    },
+    {
+        "jp": "ここのか",
+        "kanji": "９日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 9, 9 ngày"
+    },
+    {
+        "jp": "とおか",
+        "kanji": "１０日",
+        "sino": "NHẬT",
+        "vi": "ngày mồng 10, 10 ngày"
+    },
+    {
+        "jp": "じゅうよっか",
+        "kanji": "１４日",
+        "sino": "NHẬT",
+        "vi": "ngày 14, 14 ngày"
+    },
+    {
+        "jp": "はつか",
+        "kanji": "２０日",
+        "sino": "NHẬT",
+        "vi": "ngày 20, 20 ngày"
+    },
+    {
+        "jp": "にじゅうよっか",
+        "kanji": "２４日",
+        "sino": "NHẬT",
+        "vi": "ngày 24, 24 ngày"
+    },
+    {
+        "jp": "―にち",
+        "kanji": "―日",
+        "sino": "NHẬT",
+        "vi": "ngày -, - ngày"
+    },
+    {
+        "jp": "なんにち",
+        "kanji": "何日",
+        "sino": "HÀ NHẬT",
+        "vi": "ngày mấy, ngày bao nhiêu, mấy ngày, bao nhiêu ngày"
+    },
+    {
+        "jp": "いつ",
+        "kanji": "",
+        "sino": "",
+        "vi": "bao giờ, khi nào"
+    },
+    {
+        "jp": "たんじょうび",
+        "kanji": "誕生日",
+        "sino": "ĐẢN SINH NHẬT",
+        "vi": "sinh nhật"
+    },
+    {
+        "jp": "そうですね。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Ừ, nhỉ."
+    },
+    {
+        "jp": "[どうも]ありがとうございました。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Xin cám ơn anh/chị rất nhiều."
+    },
+    {
+        "jp": "どういたしまして",
+        "kanji": "",
+        "sino": "",
+        "vi": "Không có gì."
+    },
+    {
+        "jp": "―番線",
+        "hiragana": "ばんせん",
+        "kanji": "―番線",
+        "sino": "",
+        "vi": "sân ga số -"
+    },
+    {
+        "jp": "次",
+        "hiragana": "つぎの",
+        "kanji": "次",
+        "sino": "",
+        "vi": "tiếp theo"
+    },
+    {
+        "jp": "普通",
+        "hiragana": "ふつう",
+        "kanji": "普通",
+        "sino": "",
+        "vi": "tàu thường (dừng cả ở các ga lẻ)"
+    },
+    {
+        "jp": "急行",
+        "hiragana": "きゅうこう",
+        "kanji": "急行",
+        "sino": "",
+        "vi": "tàu tốc hành"
+    },
+    {
+        "jp": "特急",
+        "hiragana": "とっきゅう",
+        "kanji": "特急",
+        "sino": "",
+        "vi": "tàu tốc hành đặc biệt"
+    }
+]

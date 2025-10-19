@@ -1,0 +1,296 @@
+[
+    {
+        "jp": "ここ",
+        "kanji": "",
+        "sino": "",
+        "vi": "chỗ này, đây"
+    },
+    {
+        "jp": "そこ",
+        "kanji": "",
+        "sino": "",
+        "vi": "chỗ đó, đó"
+    },
+    {
+        "jp": "あそこ",
+        "kanji": "",
+        "sino": "",
+        "vi": "chỗ kia, kia"
+    },
+    {
+        "jp": "どこ",
+        "kanji": "",
+        "sino": "",
+        "vi": "chỗ nào, đâu"
+    },
+    {
+        "jp": "こちら",
+        "kanji": "",
+        "sino": "",
+        "vi": "phía này, đằng này, chỗ này, đây"
+    },
+    {
+        "jp": "そちら",
+        "kanji": "",
+        "sino": "",
+        "vi": "phía đó, đằng đó, chỗ đó, đó"
+    },
+    {
+        "jp": "あちら",
+        "kanji": "",
+        "sino": "",
+        "vi": "phía kia, đằng kia, chỗ kia, kia"
+    },
+    {
+        "jp": "どちら",
+        "kanji": "",
+        "sino": "",
+        "vi": "phía nào, đằng nào, chỗ nào, đâu"
+    },
+    {
+        "jp": "きょうしつ",
+        "kanji": "教室",
+        "sino": "GIÁO THẤT",
+        "vi": "lớp học, phòng học"
+    },
+    {
+        "jp": "しょくどう",
+        "kanji": "食堂",
+        "sino": "THỰC ĐƯỜNG",
+        "vi": "nhà ăn"
+    },
+    {
+        "jp": "じむしょ",
+        "kanji": "事務所",
+        "sino": "SỰ VỤ SỞ",
+        "vi": "văn phòng"
+    },
+    {
+        "jp": "かいぎしつ",
+        "kanji": "会議室",
+        "sino": "HỘI NGHỊ THẤT",
+        "vi": "phòng họp"
+    },
+    {
+        "jp": "うけつけ",
+        "kanji": "受付",
+        "sino": "THỤ PHÓ",
+        "vi": "bộ phận tiếp tân, phòng thường trực"
+    },
+    {
+        "jp": "ロビー",
+        "kanji": "",
+        "sino": "",
+        "vi": "hành lang, đại sảnh"
+    },
+    {
+        "jp": "へや",
+        "kanji": "部屋",
+        "sino": "BỘ ỐC",
+        "vi": "căn phòng"
+    },
+    {
+        "jp": "トイレ",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhà vệ sinh, phòng vệ sinh, toa-lét"
+    },
+    {
+        "jp": "（おてあらい）",
+        "kanji": "(お手洗い)",
+        "sino": "THỦ TẨY",
+        "vi": "nhà vệ sinh, phòng vệ sinh, toa-lét"
+    },
+    {
+        "jp": "かいだん",
+        "kanji": "階段",
+        "sino": "GIAI ĐOẠN",
+        "vi": "cầu thang"
+    },
+    {
+        "jp": "エレベーター",
+        "kanji": "",
+        "sino": "",
+        "vi": "thang máy"
+    },
+    {
+        "jp": "エスカレーター",
+        "kanji": "",
+        "sino": "",
+        "vi": "thang cuốn"
+    },
+    {
+        "jp": "じどうはんばいき",
+        "kanji": "自動販売機",
+        "sino": "TỰ ĐỘNG PHIẾN MẠI CƠ",
+        "vi": "máy bán hàng tự động"
+    },
+    {
+        "jp": "でんわ",
+        "kanji": "電話",
+        "sino": "ĐIỆN THOẠI",
+        "vi": "máy điện thoại, điện thoại"
+    },
+    {
+        "jp": "[お]くに",
+        "kanji": "[お]国",
+        "sino": "QUỐC",
+        "vi": "đất nước (của anh/chị)"
+    },
+    {
+        "jp": "かいしゃ",
+        "kanji": "会社",
+        "sino": "HỘI XÃ",
+        "vi": "công ty"
+    },
+    {
+        "jp": "うち",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhà"
+    },
+    {
+        "jp": "くつ",
+        "kanji": "靴",
+        "sino": "NGOA",
+        "vi": "giầy"
+    },
+    {
+        "jp": "ネクタイ",
+        "kanji": "",
+        "sino": "",
+        "vi": "cà vạt"
+    },
+    {
+        "jp": "ワイン",
+        "kanji": "",
+        "sino": "",
+        "vi": "rượu vang"
+    },
+    {
+        "jp": "うりば",
+        "kanji": "売り場",
+        "sino": "MẠI TRƯỜNG",
+        "vi": "quầy bán (trong một cửa hàng bách hóa)"
+    },
+    {
+        "jp": "ちか",
+        "kanji": "地下",
+        "sino": "ĐỊA HẠ",
+        "vi": "tầng hầm, dưới mặt đất"
+    },
+    {
+        "jp": "―かい（－がい）",
+        "kanji": "－階",
+        "sino": "GIAI",
+        "vi": "tầng thứ -"
+    },
+    {
+        "jp": "なんがい",
+        "kanji": "何階",
+        "sino": "HÀ GIAI",
+        "vi": "tầng mấy"
+    },
+    {
+        "jp": "―えん",
+        "kanji": "―円",
+        "sino": "VIÊN",
+        "vi": "-yên"
+    },
+    {
+        "jp": "いくら",
+        "kanji": "",
+        "sino": "",
+        "vi": "bao nhiêu tiền"
+    },
+    {
+        "jp": "ひゃく",
+        "kanji": "百",
+        "sino": "BÁCH",
+        "vi": "trăm"
+    },
+    {
+        "jp": "せん",
+        "kanji": "千",
+        "sino": "THIÊN",
+        "vi": "nghìn"
+    },
+    {
+        "jp": "まん",
+        "kanji": "万",
+        "sino": "VẠN",
+        "vi": "mười nghìn, vạn"
+    },
+    {
+        "jp": "すみません",
+        "kanji": "",
+        "sino": "",
+        "vi": "Xin lỗi"
+    },
+    {
+        "jp": "～どうも。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Cám ơn"
+    },
+    {
+        "jp": "いらっしゃいませ。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Xin chào quý khách, mời quý khách vào."
+    },
+    {
+        "jp": "[を]を見せてください",
+        "kanji": "",
+        "sino": "",
+        "vi": "cho tôi xem [~]"
+    },
+    {
+        "jp": "じゃ",
+        "kanji": "",
+        "sino": "",
+        "vi": "thế thì, vậy thì"
+    },
+    {
+        "jp": "[～を]ください",
+        "kanji": "",
+        "sino": "",
+        "vi": "cho tôi [~]"
+    },
+    {
+        "jp": "イタリア",
+        "kanji": "",
+        "sino": "",
+        "vi": "Ý"
+    },
+    {
+        "jp": "スイス",
+        "kanji": "",
+        "sino": "",
+        "vi": "Thụy Sĩ"
+    },
+    {
+        "jp": "フランス",
+        "kanji": "",
+        "sino": "",
+        "vi": "Pháp"
+    },
+    {
+        "jp": "ジャカルタ",
+        "kanji": "",
+        "sino": "",
+        "vi": "Gia-các-ta"
+    },
+    {
+        "jp": "バンコク",
+        "kanji": "",
+        "sino": "",
+        "vi": "Băng-cốc"
+    },
+    {
+        "jp": "ベルリン",
+        "kanji": "",
+        "sino": "",
+        "vi": "Béc-lin"
+    }
+]

@@ -1,0 +1,338 @@
+[
+    {
+        "jp": "おきます",
+        "kanji": "起きます",
+        "sino": "KHỞI",
+        "vi": "dậy, thức dậy"
+    },
+    {
+        "jp": "ねます",
+        "kanji": "寝ます",
+        "sino": "TẨM",
+        "vi": "ngủ, đi ngủ"
+    },
+    {
+        "jp": "はたらきます",
+        "kanji": "働きます",
+        "sino": "ĐỘNG",
+        "vi": "làm việc"
+    },
+    {
+        "jp": "やすみます",
+        "kanji": "休みます",
+        "sino": "HƯU",
+        "vi": "nghỉ, nghỉ ngơi"
+    },
+    {
+        "jp": "べんきょうします",
+        "kanji": "勉強します",
+        "sino": "MIỄN CƯỜNG",
+        "vi": "học"
+    },
+    {
+        "jp": "おわります",
+        "kanji": "終わります",
+        "sino": "CHUNG",
+        "vi": "hết, kết thúc, xong"
+    },
+    {
+        "jp": "デパート",
+        "kanji": "",
+        "sino": "",
+        "vi": "bách hóa"
+    },
+    {
+        "jp": "ぎんこう",
+        "kanji": "銀行",
+        "sino": "NGÂN HÀNH",
+        "vi": "ngân hàng"
+    },
+    {
+        "jp": "ゆうびんきょく",
+        "kanji": "郵便局",
+        "sino": "BƯU TIỆN CỤC",
+        "vi": "bưu điện"
+    },
+    {
+        "jp": "としょかん",
+        "kanji": "図書館",
+        "sino": "ĐỒ THƯ QUÁN",
+        "vi": "thư viện"
+    },
+    {
+        "jp": "びじゅつかん",
+        "kanji": "美術館",
+        "sino": "MỸ THUẬT QUÁN",
+        "vi": "bảo tàng mỹ thuật"
+    },
+    {
+        "jp": "いま",
+        "kanji": "今",
+        "sino": "KIM",
+        "vi": "bây giờ"
+    },
+    {
+        "jp": "―じ",
+        "kanji": "－時",
+        "sino": "THỜI",
+        "vi": "-giờ"
+    },
+    {
+        "jp": "―ふん（－ぷん）",
+        "kanji": "―分",
+        "sino": "PHÂN",
+        "vi": "- phút"
+    },
+    {
+        "jp": "はん",
+        "kanji": "半",
+        "sino": "BÁN",
+        "vi": "rưỡi, nửa"
+    },
+    {
+        "jp": "なんじ",
+        "kanji": "何時",
+        "sino": "HÀ THỜI",
+        "vi": "mấy giờ"
+    },
+    {
+        "jp": "なんぷん",
+        "kanji": "何分",
+        "sino": "HÀ PHÂN",
+        "vi": "mấy phút"
+    },
+    {
+        "jp": "ごぜん",
+        "kanji": "午前",
+        "sino": "NGỌ TIỀN",
+        "vi": "sáng, trước 12 giờ trưa"
+    },
+    {
+        "jp": "ごご",
+        "kanji": "午後",
+        "sino": "NGỌ HẬU",
+        "vi": "chiều, sau 12 giờ trưa"
+    },
+    {
+        "jp": "あさ",
+        "kanji": "朝",
+        "sino": "TRIỀU",
+        "vi": "buổi sáng, sáng"
+    },
+    {
+        "jp": "ひる",
+        "kanji": "昼",
+        "sino": "TRÚ",
+        "vi": "buổi trưa, trưa"
+    },
+    {
+        "jp": "ばん（よる）",
+        "kanji": "晩(夜)",
+        "sino": "VÃN(DẠ)",
+        "vi": "buổi tối, tối"
+    },
+    {
+        "jp": "おととい",
+        "kanji": "",
+        "sino": "",
+        "vi": "hôm kia"
+    },
+    {
+        "jp": "きのう",
+        "kanji": "",
+        "sino": "",
+        "vi": "hôm qua"
+    },
+    {
+        "jp": "きょう",
+        "kanji": "",
+        "sino": "",
+        "vi": "hôm nay"
+    },
+    {
+        "jp": "あした",
+        "kanji": "",
+        "sino": "",
+        "vi": "ngày mai"
+    },
+    {
+        "jp": "あさって",
+        "kanji": "",
+        "sino": "",
+        "vi": "ngày kia"
+    },
+    {
+        "jp": "けさ",
+        "kanji": "",
+        "sino": "",
+        "vi": "sáng nay"
+    },
+    {
+        "jp": "こんばん",
+        "kanji": "今晩",
+        "sino": "KIM VÃN",
+        "vi": "tối nay"
+    },
+    {
+        "jp": "やすみ",
+        "kanji": "休み",
+        "sino": "HƯU",
+        "vi": "nghỉ, nghỉ phép, ngày nghỉ"
+    },
+    {
+        "jp": "ひるやすみ",
+        "kanji": "昼休み",
+        "sino": "TRÚ HƯU",
+        "vi": "nghỉ trưa"
+    },
+    {
+        "jp": "試験",
+        "kanji": "試験",
+        "sino": "THÍ NGHIỆM",
+        "vi": "thi, kỳ thi, kiểm tra"
+    },
+    {
+        "jp": "会議",
+        "kanji": "会議",
+        "sino": "HỘI NGHỊ",
+        "vi": "cuộc họp, hội nghị (～を　します： tổ chức cuộc họp, hội nghị)"
+    },
+    {
+        "jp": "映画",
+        "kanji": "映画",
+        "sino": "ÁNH HỌA",
+        "vi": "phim, điện ảnh"
+    },
+    {
+        "jp": "まいあさ",
+        "kanji": "毎朝",
+        "sino": "MỖI TRIỀU",
+        "vi": "hàng sáng, mỗi sáng"
+    },
+    {
+        "jp": "まいばん",
+        "kanji": "毎晩",
+        "sino": "MỖI VÃN",
+        "vi": "hàng tối, mỗi tối"
+    },
+    {
+        "jp": "まいにち",
+        "kanji": "毎日",
+        "sino": "MỖI NHẬT",
+        "vi": "hàng ngày, mỗi ngày"
+    },
+    {
+        "jp": "げつようび",
+        "kanji": "月曜日",
+        "sino": "NGUYỆT DIỆU NHẬT",
+        "vi": "thứ hai"
+    },
+    {
+        "jp": "かようび",
+        "kanji": "火曜日",
+        "sino": "HỎA DIỆU NHẬT",
+        "vi": "thứ ba"
+    },
+    {
+        "jp": "すいようび",
+        "kanji": "水曜日",
+        "sino": "THỦY DIỆU NHẬT",
+        "vi": "thứ tư"
+    },
+    {
+        "jp": "もくようび",
+        "kanji": "木曜日",
+        "sino": "MỘC DIỆU NHẬT",
+        "vi": "thứ năm"
+    },
+    {
+        "jp": "きんようび",
+        "kanji": "金曜日",
+        "sino": "KIM DIỆU NHẬT",
+        "vi": "thứ sáu"
+    },
+    {
+        "jp": "どようび",
+        "kanji": "土曜日",
+        "sino": "THỔ DIỆU NHẬT",
+        "vi": "thứ bảy"
+    },
+    {
+        "jp": "にちようび",
+        "kanji": "日曜日",
+        "sino": "NHẬT DIỆU NHẬT",
+        "vi": "chủ nhật"
+    },
+    {
+        "jp": "なんようび",
+        "kanji": "何曜日",
+        "sino": "HÀ DIỆU NHẬT",
+        "vi": "thứ mấy"
+    },
+    {
+        "jp": "～から",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ từ"
+    },
+    {
+        "jp": "～まで",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ đến"
+    },
+    {
+        "jp": "～と",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ và (dùng để nối hai danh từ)"
+    },
+    {
+        "jp": "大変ですね",
+        "kanji": "",
+        "sino": "",
+        "vi": "Anh/chị vất vả quá."
+    },
+    {
+        "jp": "番号",
+        "kanji": "",
+        "sino": "",
+        "vi": "số (số điện thoại, số phòng)"
+    },
+    {
+        "jp": "何番",
+        "kanji": "",
+        "sino": "",
+        "vi": "số bao nhiêu, số mấy"
+    },
+    {
+        "jp": "そちら",
+        "kanji": "",
+        "sino": "",
+        "vi": "ông/bà, phía ông/ phía bà"
+    },
+    {
+        "jp": "ニューヨーク",
+        "kanji": "",
+        "sino": "",
+        "vi": "New York"
+    },
+    {
+        "jp": "ペキン",
+        "kanji": "",
+        "sino": "",
+        "vi": "Bắc Kinh"
+    },
+    {
+        "jp": "ロサンゼルス",
+        "kanji": "",
+        "sino": "",
+        "vi": "Los Angeles"
+    },
+    {
+        "jp": "ロンドン",
+        "kanji": "",
+        "sino": "",
+        "vi": "Luân Đôn"
+    }
+]

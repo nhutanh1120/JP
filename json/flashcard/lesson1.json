@@ -1,0 +1,218 @@
+[
+  {
+    "jp": "わたし",
+    "kanji": "",
+    "sino": "",
+    "vi": "tôi"
+  },
+  {
+    "jp": "あなた",
+    "kanji": "",
+    "sino": "",
+    "vi": "anh/ chị/ ông/ bà"
+  },
+  {
+    "jp": "あのひと",
+    "kanji": "あの人",
+    "sino": "NHÂN",
+    "vi": "người kia, người đó"
+  },
+  {
+    "jp": "あのかた",
+    "kanji": "あの方",
+    "sino": "PHƯƠNG",
+    "vi": "vị kia (cách nói lịch sự của あのひと)"
+  },
+  {
+    "jp": "～さん",
+    "kanji": "",
+    "sino": "",
+    "vi": "anh, chị, ông, bà"
+  },
+  {
+    "jp": "～ちゃん",
+    "kanji": "",
+    "sino": "",
+    "vi": "(hậu tố thêm vào sau tên của trẻ em thay cho 「～さん」)"
+  },
+  {
+    "jp": "～じん",
+    "kanji": "～人",
+    "sino": "NHÂN",
+    "vi": "người (nước)~ (ví dụ: アメリカじん: người Mỹ)"
+  },
+  {
+    "jp": "せんせい",
+    "kanji": "先生",
+    "sino": "TIÊN SINH",
+    "vi": "thầy/ cô"
+  },
+  {
+    "jp": "きょうし",
+    "kanji": "教師",
+    "sino": "GIÁO SƯ",
+    "vi": "giáo viên"
+  },
+  {
+    "jp": "がくせい",
+    "kanji": "学生",
+    "sino": "HỌC SINH",
+    "vi": "học sinh, sinh viên"
+  },
+  {
+    "jp": "かいしゃいん",
+    "kanji": "会社員",
+    "sino": "HỘI XÃ VIÊN",
+    "vi": "nhân viên công ty"
+  },
+  {
+    "jp": "しゃいん",
+    "kanji": "社員",
+    "sino": "XÃ VIÊN",
+    "vi": "nhân viên công ty ~ (ví dụ: ＩＭＣのしゃいん)"
+  },
+  {
+    "jp": "ぎんこういん",
+    "kanji": "銀行員",
+    "sino": "NGÂN HÀNH VIÊN",
+    "vi": "nhân viên ngân hàng"
+  },
+  {
+    "jp": "いしゃ",
+    "kanji": "医者",
+    "sino": "Y GIẢ",
+    "vi": "bác sĩ"
+  },
+  {
+    "jp": "けんきゅうしゃ",
+    "kanji": "研究者",
+    "sino": "NGHIÊN CỨU GIẢ",
+    "vi": "nhà nghiên cứu"
+  },
+  {
+    "jp": "だいがく",
+    "kanji": "大学",
+    "sino": "ĐẠI HỌC",
+    "vi": "đại học, trường đại học"
+  },
+  {
+    "jp": "びょういん",
+    "kanji": "病院",
+    "sino": "BỆNH VIỆN",
+    "vi": "bệnh viện"
+  },
+  {
+    "jp": "だれ（どなた）",
+    "kanji": "",
+    "sino": "",
+    "vi": "ai (「どなた」 là cách nói lịch sự của 「だれ」, vị nào)"
+  },
+  {
+    "jp": "―さい",
+    "kanji": "－歳",
+    "sino": "NHẤT TUẾ",
+    "vi": "―tuổi"
+  },
+  {
+    "jp": "なんさい（おいくつ）",
+    "kanji": "何歳",
+    "sino": "HÀ TUẾ",
+    "vi": "mấy tuổi, bao nhiêu tuổi (「おいくつ」 là cách nói lịch sự của 「なんさい」)"
+  },
+  {
+    "jp": "はい",
+    "kanji": "",
+    "sino": "",
+    "vi": "vâng, dạ"
+  },
+  {
+    "jp": "いいえ",
+    "kanji": "",
+    "sino": "",
+    "vi": "không"
+  },
+  {
+    "jp": "初めまして。",
+    "vi": "Rất hân hạnh được gặp anh/chị"
+  },
+  {
+    "jp": "～から来ました。",
+    "vi": "(tôi) đến từ ~."
+  },
+  {
+    "jp": "どうぞよろしく [お願いします]。",
+    "vi": "Rất vui khi được làm quen"
+  },
+  {
+    "jp": "失礼ですが",
+    "vi": "xin lỗi,…"
+  },
+  {
+    "jp": "お名前は？",
+    "vi": "Tên anh/chị là gì?"
+  },
+  {
+    "jp": "こちらは～さんです。",
+    "vi": "Đây là anh/chị/ông/bà ~"
+  },
+  {
+    "jp": "アメリカ",
+    "kanji": "",
+    "sino": "",
+    "vi": "Mỹ"
+  },
+  {
+    "jp": "イギリス",
+    "kanji": "",
+    "sino": "",
+    "vi": "Anh"
+  },
+  {
+    "jp": "インド",
+    "kanji": "",
+    "sino": "",
+    "vi": "Ấn Độ"
+  },
+  {
+    "jp": "インドネシア",
+    "kanji": "",
+    "sino": "",
+    "vi": "Indonesia"
+  },
+  {
+    "jp": "韓国",
+    "kanji": "韓国",
+    "sino": "HÀN QUỐC",
+    "vi": "Hàn Quốc"
+  },
+  {
+    "jp": "タイ",
+    "kanji": "",
+    "sino": "",
+    "vi": "Thái Lan"
+  },
+  {
+    "jp": "中国",
+    "kanji": "中国",
+    "sino": "TRUNG QUỐC",
+    "vi": "Trung Quốc"
+  },
+  {
+    "jp": "ドイツ",
+    "kanji": "",
+    "sino": "",
+    "vi": "Đức"
+  },
+  {
+    "jp": "日本",
+    "kanji": "日本",
+    "sino": "NHẬT BẢN",
+    "vi": "Nhật Bản"
+  },
+  {
+    "jp": "ブラジル",
+    "kanji": "",
+    "sino": "",
+    "vi": "Braxin"
+  }
+]

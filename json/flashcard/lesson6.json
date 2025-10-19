@@ -1,0 +1,309 @@
+[
+    {
+        "jp": "たべます",
+        "kanji": "食べます",
+        "sino": "THỰC",
+        "vi": "ăn"
+    },
+    {
+        "jp": "のみます",
+        "kanji": "飲みます",
+        "sino": "ẨM",
+        "vi": "uống"
+    },
+    {
+        "jp": "すいます [たばこを～]",
+        "kanji": "吸います [たばこを～]",
+        "sino": "HẤP",
+        "vi": "hút [thuốc lá]"
+    },
+    {
+        "jp": "みます",
+        "kanji": "見ます",
+        "sino": "KIẾN",
+        "vi": "xem, nhìn, trông"
+    },
+    {
+        "jp": "ききます",
+        "kanji": "聞きます",
+        "sino": "VĂN",
+        "vi": "nghe"
+    },
+    {
+        "jp": "よみます",
+        "kanji": "読みます",
+        "sino": "ĐỘC",
+        "vi": "đọc"
+    },
+    {
+        "jp": "かきます",
+        "kanji": "書きます",
+        "sino": "THƯ",
+        "vi": "viết, vẽ"
+    },
+    {
+        "jp": "かいます",
+        "kanji": "買います",
+        "sino": "MÃI",
+        "vi": "mua"
+    },
+    {
+        "jp": "とります [しゃしんを～]",
+        "kanji": "撮ります [写真を～]",
+        "sino": "TOÁT",
+        "vi": "chụp [ảnh]"
+    },
+    {
+        "jp": "します",
+        "kanji": "",
+        "sino": "",
+        "vi": "làm"
+    },
+    {
+        "jp": "あいます [ともだちに～]",
+        "kanji": "会います [友達に～]",
+        "sino": "HỘI",
+        "vi": "gặp [bạn]"
+    },
+    {
+        "jp": "ごはん",
+        "kanji": "",
+        "sino": "",
+        "vi": "cơm, bữa ăn"
+    },
+    {
+        "jp": "あさごはん",
+        "kanji": "朝ごはん",
+        "sino": "TRIỀU",
+        "vi": "cơm sáng"
+    },
+    {
+        "jp": "ひるごはん",
+        "kanji": "昼ごはん",
+        "sino": "TRÚ",
+        "vi": "cơm trưa"
+    },
+    {
+        "jp": "ばんごはん",
+        "kanji": "晩ごはん",
+        "sino": "VÃN",
+        "vi": "cơm tối"
+    },
+    {
+        "jp": "パン",
+        "kanji": "",
+        "sino": "",
+        "vi": "bánh mì"
+    },
+    {
+        "jp": "たまご",
+        "kanji": "卵",
+        "sino": "NOÃN",
+        "vi": "trứng"
+    },
+    {
+        "jp": "にく",
+        "kanji": "肉",
+        "sino": "NHỤC",
+        "vi": "thịt"
+    },
+    {
+        "jp": "さかな",
+        "kanji": "魚",
+        "sino": "NGƯ",
+        "vi": "cá"
+    },
+    {
+        "jp": "やさい",
+        "kanji": "野菜",
+        "sino": "DÃ THÁI",
+        "vi": "rau"
+    },
+    {
+        "jp": "くだもの",
+        "kanji": "果物",
+        "sino": "QUẢ VẬT",
+        "vi": "hoa quả, trái cây"
+    },
+    {
+        "jp": "みず",
+        "kanji": "水",
+        "sino": "THỦY",
+        "vi": "nước"
+    },
+    {
+        "jp": "おちゃ",
+        "kanji": "お茶",
+        "sino": "TRÀ",
+        "vi": "trà (nói chung)"
+    },
+    {
+        "jp": "こうちゃ",
+        "kanji": "紅茶",
+        "sino": "HỒNG TRÀ",
+        "vi": "trà đen"
+    },
+    {
+        "jp": "ぎゅうにゅう(ミルク)",
+        "kanji": "牛乳",
+        "sino": "NGƯU NHŨ",
+        "vi": "sữa bò (sữa)"
+    },
+    {
+        "jp": "ジュース",
+        "kanji": "",
+        "sino": "",
+        "vi": "nước hoa quả"
+    },
+    {
+        "jp": "ビール",
+        "kanji": "",
+        "sino": "",
+        "vi": "bia"
+    },
+    {
+        "jp": "[お]さけ",
+        "kanji": "[お]酒",
+        "sino": "TỬU",
+        "vi": "rượu, rượu sake"
+    },
+    {
+        "jp": "たばこ",
+        "kanji": "",
+        "sino": "",
+        "vi": "thuốc lá"
+    },
+    {
+        "jp": "てがみ",
+        "kanji": "手紙",
+        "sino": "THỦ CHỈ",
+        "vi": "thư"
+    },
+    {
+        "jp": "レポート",
+        "kanji": "",
+        "sino": "",
+        "vi": "báo cáo"
+    },
+    {
+        "jp": "しゃしん",
+        "kanji": "写真",
+        "sino": "TẢ CHÂN",
+        "vi": "ảnh"
+    },
+    {
+        "jp": "ビデオ",
+        "kanji": "",
+        "sino": "",
+        "vi": "video, băng video, đầu video"
+    },
+    {
+        "jp": "みせ",
+        "kanji": "店",
+        "sino": "ĐIẾM",
+        "vi": "cửa hàng, tiệm"
+    },
+    {
+        "jp": "にわ",
+        "kanji": "庭",
+        "sino": "ĐÌNH",
+        "vi": "vườn"
+    },
+    {
+        "jp": "しゅくだい",
+        "kanji": "宿題",
+        "sino": "TÚC ĐỀ",
+        "vi": "bài tập về nhà (～をします: làm bài tập)"
+    },
+    {
+        "jp": "テニス",
+        "kanji": "",
+        "sino": "",
+        "vi": "quần vợt (～をします: đánh quần vợt)"
+    },
+    {
+        "jp": "サッカー",
+        "kanji": "",
+        "sino": "",
+        "vi": "bóng đá (～をします: chơi bóng đá)"
+    },
+    {
+        "jp": "[お]はなみ",
+        "kanji": "[お]花見",
+        "sino": "HOA KIẾN",
+        "vi": "việc ngắm hoa anh đào (～をします: ngắm hoa anh đào)"
+    },
+    {
+        "jp": "なに",
+        "kanji": "何",
+        "sino": "HÀ",
+        "vi": "cái gì, gì"
+    },
+    {
+        "jp": "いっしょに",
+        "kanji": "",
+        "sino": "",
+        "vi": "cùng, cùng nhau"
+    },
+    {
+        "jp": "ちょっと",
+        "kanji": "",
+        "sino": "",
+        "vi": "một chút"
+    },
+    {
+        "jp": "いつも",
+        "kanji": "",
+        "sino": "",
+        "vi": "luôn luôn, lúc nào cũng"
+    },
+    {
+        "jp": "ときどき",
+        "kanji": "時々",
+        "sino": "THÌ (KÉP)",
+        "vi": "thỉnh thoảng"
+    },
+    {
+        "jp": "それから",
+        "kanji": "",
+        "sino": "",
+        "vi": "sau đó, tiếp theo"
+    },
+    {
+        "jp": "ええ",
+        "kanji": "",
+        "sino": "",
+        "vi": "vâng, được (cách nói thân mật của 「はい」)"
+    },
+    {
+        "jp": "いいですね。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Được đấy nhỉ./ hay quá."
+    },
+    {
+        "jp": "わかりました。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Tôi hiểu rồi/ vâng ạ."
+    },
+    {
+        "jp": "何ですか。",
+        "hiragana": "なんですか。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Có gì đấy ạ?/ cái gì vậy?"
+    },
+    {
+        "jp": "じゃ、また[あした]。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Hẹn gặp lại [ngày mai]."
+    },
+    {
+        "jp": "メキシコ",
+        "kanji": "",
+        "sino": "",
+        "vi": "Mexico"
+    }
+]

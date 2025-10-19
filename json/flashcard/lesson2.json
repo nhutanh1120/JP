@@ -1,0 +1,260 @@
+[
+    {
+        "jp": "これ",
+        "kanji": "",
+        "sino": "",
+        "vi": "cái này, đây (vật ở gần người nói)"
+    },
+    {
+        "jp": "それ",
+        "kanji": "",
+        "sino": "",
+        "vi": "cái đó, đó (vật ở gần người nghe)"
+    },
+    {
+        "jp": "あれ",
+        "kanji": "",
+        "sino": "",
+        "vi": "cái kia, kia (vật ở xa cả người nói và người nghe)"
+    },
+    {
+        "jp": "この～",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ này"
+    },
+    {
+        "jp": "その～",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ đó"
+    },
+    {
+        "jp": "あの～",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ kia"
+    },
+    {
+        "jp": "ほん",
+        "kanji": "本",
+        "sino": "BẢN/BỔN",
+        "vi": "sách"
+    },
+    {
+        "jp": "じしょ",
+        "kanji": "辞書",
+        "sino": "TỪ THƯ",
+        "vi": "từ điển"
+    },
+    {
+        "jp": "ざっし",
+        "kanji": "雑誌",
+        "sino": "TẠP CHÍ",
+        "vi": "tạp chí"
+    },
+    {
+        "jp": "しんぶん",
+        "kanji": "新聞",
+        "sino": "TÂN VĂN",
+        "vi": "báo"
+    },
+    {
+        "jp": "ノート",
+        "kanji": "",
+        "sino": "",
+        "vi": "vở"
+    },
+    {
+        "jp": "てちょう",
+        "kanji": "手帳",
+        "sino": "THỦ TRƯƠNG",
+        "vi": "sổ tay"
+    },
+    {
+        "jp": "めいし",
+        "kanji": "名刺",
+        "sino": "DANH THÍCH",
+        "vi": "danh thiếp"
+    },
+    {
+        "jp": "カード",
+        "kanji": "",
+        "sino": "",
+        "vi": "thẻ, cạc"
+    },
+    {
+        "jp": "えんぴつ",
+        "kanji": "鉛筆",
+        "sino": "DUYÊN BÚT",
+        "vi": "bút chì"
+    },
+    {
+        "jp": "ボールペン",
+        "kanji": "",
+        "sino": "",
+        "vi": "bút bi"
+    },
+    {
+        "jp": "シャープペンシル",
+        "kanji": "",
+        "sino": "",
+        "vi": "bút chì kim, bút chì bấm"
+    },
+    {
+        "jp": "かぎ",
+        "kanji": "",
+        "sino": "",
+        "vi": "chìa khóa"
+    },
+    {
+        "jp": "とけい",
+        "kanji": "時計",
+        "sino": "THỜI KẾ",
+        "vi": "đồng hồ"
+    },
+    {
+        "jp": "かさ",
+        "kanji": "傘",
+        "sino": "TẢN",
+        "vi": "ô, dù"
+    },
+    {
+        "jp": "かばん",
+        "kanji": "",
+        "sino": "",
+        "vi": "cặp sách, túi sách"
+    },
+    {
+        "jp": "CD",
+        "kanji": "",
+        "sino": "",
+        "vi": "đĩa CD"
+    },
+    {
+        "jp": "テレビ",
+        "kanji": "",
+        "sino": "",
+        "vi": "tivi"
+    },
+    {
+        "jp": "ラジオ",
+        "kanji": "",
+        "sino": "",
+        "vi": "Radio"
+    },
+    {
+        "jp": "カメラ",
+        "kanji": "",
+        "sino": "",
+        "vi": "máy ảnh"
+    },
+    {
+        "jp": "コンピューター",
+        "kanji": "",
+        "sino": "",
+        "vi": "máy vi tính"
+    },
+    {
+        "jp": "くるま",
+        "kanji": "車",
+        "sino": "XA",
+        "vi": "ô tô, xe hơi"
+    },
+    {
+        "jp": "つくえ",
+        "kanji": "机",
+        "sino": "KỶ",
+        "vi": "cái bàn"
+    },
+    {
+        "jp": "いす",
+        "kanji": "",
+        "sino": "",
+        "vi": "cái ghế"
+    },
+    {
+        "jp": "チョコレート",
+        "kanji": "",
+        "sino": "",
+        "vi": "Socola"
+    },
+    {
+        "jp": "コーヒー",
+        "kanji": "",
+        "sino": "",
+        "vi": "cà phê"
+    },
+    {
+        "jp": "[お]みやげ",
+        "kanji": "[お]土産",
+        "sino": "THỔ SẢN",
+        "vi": "quà( mua khi đi xa về hoặc mang đi thăm nhà người nào đó)"
+    },
+    {
+        "jp": "えいご",
+        "kanji": "英語",
+        "sino": "ANH NGỮ",
+        "vi": "tiếng Anh"
+    },
+    {
+        "jp": "にほんご",
+        "kanji": "日本語",
+        "sino": "NHẬT BẢN NGỮ",
+        "vi": "tiếng Nhật"
+    },
+    {
+        "jp": "～ご",
+        "kanji": "～語",
+        "sino": "NGỮ",
+        "vi": "tiếng ~"
+    },
+    {
+        "jp": "なに",
+        "kanji": "何",
+        "sino": "HÀ",
+        "vi": "cái gì"
+    },
+    {
+        "jp": "そう",
+        "kanji": "",
+        "sino": "",
+        "vi": "đúng rồi"
+    },
+    {
+        "jp": "あのう",
+        "vi": "à, ờ (dùng để biểu thị sự ngại ngùng, do dự)"
+    },
+    {
+        "jp": "えっ",
+        "vi": "hả?"
+    },
+    {
+        "jp": "どうぞ",
+        "vi": "Xin mời (dùng khi mời ai đó cái gì)"
+    },
+    {
+        "jp": "[どうも]ありがとう[ございます]",
+        "vi": "Xin chân thành cám ơn"
+    },
+    {
+        "jp": "そうですか",
+        "vi": "Thế à, vậy à"
+    },
+    {
+        "jp": "違います",
+        "vi": "Không phải, không đúng, sai rồi"
+    },
+    {
+        "jp": "あ",
+        "vi": "Ôi! (Dùng khi nhận ra điều gì)"
+    },
+    {
+        "jp": "これからお世話になります",
+        "vi": "Từ nay tôi rất mong sự giúp đỡ của anh chị"
+    },
+    {
+        "jp": "こちらこそ[どうぞ]　よろしく[お願いします]。",
+        "vi": "Chính tôi mới phải xin ông giúp đỡ cho"
+    }
+]
