@@ -1,0 +1,344 @@
+[
+    {
+        "jp": "ハンサム[な]",
+        "kanji": "",
+        "sino": "",
+        "vi": "đẹp trai"
+    },
+    {
+        "jp": "きれい[な]",
+        "kanji": "",
+        "sino": "",
+        "vi": "đẹp, sạch"
+    },
+    {
+        "jp": "しずか[な]",
+        "kanji": "静か[な]",
+        "sino": "TĨNH",
+        "vi": "yên tĩnh"
+    },
+    {
+        "jp": "にぎやか[な]",
+        "kanji": "",
+        "sino": "",
+        "vi": "náo nhiệt"
+    },
+    {
+        "jp": "ゆうめい[な]",
+        "kanji": "有名[な]",
+        "sino": "HỮU DANH",
+        "vi": "nổi tiếng"
+    },
+    {
+        "jp": "しんせつ[な]",
+        "kanji": "親切[な]",
+        "sino": "THÂN THIẾT",
+        "vi": "tốt bụng, thân thiện"
+    },
+    {
+        "jp": "げんき[な]",
+        "kanji": "元気[な]",
+        "sino": "NGUYÊN KHÍ",
+        "vi": "khỏe"
+    },
+    {
+        "jp": "ひま[な]",
+        "kanji": "暇[な]",
+        "sino": "HẠ",
+        "vi": "rảnh rỗi"
+    },
+    {
+        "jp": "べんり[な]",
+        "kanji": "便利[な]",
+        "sino": "TIỆN LỢI",
+        "vi": "tiện lợi"
+    },
+    {
+        "jp": "すてき[な]",
+        "kanji": "",
+        "sino": "",
+        "vi": "đẹp, hay"
+    },
+    {
+        "jp": "おおきい",
+        "kanji": "大きい",
+        "sino": "ĐẠI",
+        "vi": "lớn, to"
+    },
+    {
+        "jp": "ちいさい",
+        "kanji": "小さい",
+        "sino": "TIỂU",
+        "vi": "bé, nhỏ"
+    },
+    {
+        "jp": "あたらしい",
+        "kanji": "新しい",
+        "sino": "TÂN",
+        "vi": "mới"
+    },
+    {
+        "jp": "ふるい",
+        "kanji": "古い",
+        "sino": "CỔ",
+        "vi": "cũ"
+    },
+    {
+        "jp": "いい（よい）",
+        "kanji": "",
+        "sino": "",
+        "vi": "tốt"
+    },
+    {
+        "jp": "わるい",
+        "kanji": "悪い",
+        "sino": "ÁC",
+        "vi": "xấu"
+    },
+    {
+        "jp": "あつい",
+        "kanji": "暑い, 熱い",
+        "sino": "THỬ, NHIỆT",
+        "vi": "nóng"
+    },
+    {
+        "jp": "さむい",
+        "kanji": "寒い",
+        "sino": "HÀN",
+        "vi": "lạnh, rét (dùng cho thời tiết)"
+    },
+    {
+        "jp": "つめたい",
+        "kanji": "冷たい",
+        "sino": "LÃNH",
+        "vi": "lạnh, buốt (dùng cho cảm giác)"
+    },
+    {
+        "jp": "むずかしい",
+        "kanji": "難しい",
+        "sino": "NAN",
+        "vi": "khó"
+    },
+    {
+        "jp": "やさしい",
+        "kanji": "易しい",
+        "sino": "DỊ",
+        "vi": "dễ"
+    },
+    {
+        "jp": "たかい",
+        "kanji": "高い",
+        "sino": "CAO",
+        "vi": "đắt, cao"
+    },
+    {
+        "jp": "やすい",
+        "kanji": "安い",
+        "sino": "AN",
+        "vi": "rẻ"
+    },
+    {
+        "jp": "ひくい",
+        "kanji": "低い",
+        "sino": "ĐÊ",
+        "vi": "thấp"
+    },
+    {
+        "jp": "おもしろい",
+        "kanji": "",
+        "sino": "",
+        "vi": "thú vị, hay"
+    },
+    {
+        "jp": "おいしい",
+        "kanji": "",
+        "sino": "",
+        "vi": "ngon"
+    },
+    {
+        "jp": "いそがしい",
+        "kanji": "忙しい",
+        "sino": "MANG",
+        "vi": "bận"
+    },
+    {
+        "jp": "たのしい",
+        "kanji": "楽しい",
+        "sino": "LẠC, NHẠC",
+        "vi": "vui"
+    },
+    {
+        "jp": "しろい",
+        "kanji": "白い",
+        "sino": "BẠCH",
+        "vi": "trắng"
+    },
+    {
+        "jp": "くろい",
+        "kanji": "黒い",
+        "sino": "HẮC",
+        "vi": "đen"
+    },
+    {
+        "jp": "あかい",
+        "kanji": "赤い",
+        "sino": "XÍCH",
+        "vi": "đỏ"
+    },
+    {
+        "jp": "あおい",
+        "kanji": "青い",
+        "sino": "THANH",
+        "vi": "xanh da trời"
+    },
+    {
+        "jp": "さくら",
+        "kanji": "桜",
+        "sino": "ANH",
+        "vi": "anh đào (hoa, cây)"
+    },
+    {
+        "jp": "やま",
+        "kanji": "山",
+        "sino": "SƠN, SAN",
+        "vi": "núi"
+    },
+    {
+        "jp": "まち",
+        "kanji": "町",
+        "sino": "ĐINH",
+        "vi": "thị trấn, thị xã, thành phố"
+    },
+    {
+        "jp": "たべもの",
+        "kanji": "食べ物",
+        "sino": "THỰC VẬT",
+        "vi": "đồ ăn"
+    },
+    {
+        "jp": "ところ",
+        "kanji": "所",
+        "sino": "SỞ",
+        "vi": "nơi, chỗ"
+    },
+    {
+        "jp": "りょう",
+        "kanji": "寮",
+        "sino": "LIÊU",
+        "vi": "kí túc xá"
+    },
+    {
+        "jp": "レストラン",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhà hàng"
+    },
+    {
+        "jp": "せいかつ",
+        "kanji": "生活",
+        "sino": "SINH HOẠT",
+        "vi": "cuộc sống, sinh hoạt"
+    },
+    {
+        "jp": "[お]しごと",
+        "kanji": "[お]仕事",
+        "sino": "SĨ SỰ",
+        "vi": "công việc (～をします：làm việc)"
+    },
+    {
+        "jp": "どう",
+        "kanji": "",
+        "sino": "",
+        "vi": "thế nào"
+    },
+    {
+        "jp": "どんな～",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ như thế nào"
+    },
+    {
+        "jp": "とても",
+        "kanji": "",
+        "sino": "",
+        "vi": "rất, lắm"
+    },
+    {
+        "jp": "あまり",
+        "kanji": "",
+        "sino": "",
+        "vi": "không ~ lắm"
+    },
+    {
+        "jp": "そして",
+        "kanji": "",
+        "sino": "",
+        "vi": "và, thêm nữa (dùng để nối 2 câu)"
+    },
+    {
+        "jp": "～が、～",
+        "kanji": "",
+        "sino": "",
+        "vi": "~, nhưng ~"
+    },
+    {
+        "jp": "お元気ですか。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Anh/chị có khỏe không?"
+    },
+    {
+        "jp": "そうですね。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Thế à. Như vậy nhỉ"
+    },
+    {
+        "jp": "[～、]もう一杯いかがですか。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Anh/ chị dùng thêm một chén/ly [~] nữa được không ạ?"
+    },
+    {
+        "jp": "いいえ、けっこうです。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Không, đủ rồi ạ."
+    },
+    {
+        "jp": "もう～です[ね]。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Đã ~ rồi nhỉ./ Đã ~ rồi, đúng không ạ?"
+    },
+    {
+        "jp": "そろそろ失礼します。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Sắp đến lúc tôi phải xin phép rồi. / Đã đến lúc tôi phải về."
+    },
+    {
+        "jp": "いいえ。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Không có gì./ Không sao cả."
+    },
+    {
+        "jp": "また　いらっしゃってください。",
+        "kanji": "",
+        "sino": "",
+        "vi": "Lần sau anh/ chị lại đến chơi nhé."
+    },
+    {
+        "jp": "かっこいい",
+        "kanji": "",
+        "sino": "",
+        "vi": "đẹp trai"
+    },
+    {
+        "jp": "イケメン",
+        "kanji": "",
+        "sino": "",
+        "vi": "đẹp trai"
+    }
+]

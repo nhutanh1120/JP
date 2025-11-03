@@ -1,0 +1,262 @@
+[
+    {
+        "jp": "きります",
+        "kanji": "切ります",
+        "sino": "THIẾT",
+        "vi": "cắt"
+    },
+    {
+        "jp": "おくります",
+        "kanji": "送ります",
+        "sino": "TỐNG",
+        "vi": "gửi"
+    },
+    {
+        "jp": "あげます",
+        "kanji": "",
+        "sino": "",
+        "vi": "cho, tặng"
+    },
+    {
+        "jp": "もらいます",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhận"
+    },
+    {
+        "jp": "かします",
+        "kanji": "貸します",
+        "sino": "THẢI",
+        "vi": "cho mượn, cho vay"
+    },
+    {
+        "jp": "かります",
+        "kanji": "借ります",
+        "sino": "TÁ",
+        "vi": "mượn, vay"
+    },
+    {
+        "jp": "おしえます",
+        "kanji": "教えます",
+        "sino": "GIÁO",
+        "vi": "dạy"
+    },
+    {
+        "jp": "ならいます",
+        "kanji": "習います",
+        "sino": "TẬP",
+        "vi": "học, tập"
+    },
+    {
+        "jp": "かけます [でんわを～]",
+        "kanji": "かけます [電話を～]",
+        "sino": "ĐIỆN THOẠI",
+        "vi": "gọi [điện thoại]"
+    },
+    {
+        "jp": "て",
+        "kanji": "手",
+        "sino": "THỦ",
+        "vi": "tay"
+    },
+    {
+        "jp": "はし",
+        "kanji": "",
+        "sino": "",
+        "vi": "đũa"
+    },
+    {
+        "jp": "スプーン",
+        "kanji": "",
+        "sino": "",
+        "vi": "thìa"
+    },
+    {
+        "jp": "ナイフ",
+        "kanji": "",
+        "sino": "",
+        "vi": "dao"
+    },
+    {
+        "jp": "フォーク",
+        "kanji": "",
+        "sino": "",
+        "vi": "nĩa"
+    },
+    {
+        "jp": "はさみ",
+        "kanji": "",
+        "sino": "",
+        "vi": "kéo"
+    },
+    {
+        "jp": "パソコン",
+        "kanji": "",
+        "sino": "",
+        "vi": "máy vi tính cá nhân"
+    },
+    {
+        "jp": "ケータイ",
+        "kanji": "",
+        "sino": "",
+        "vi": "điện thoại di động"
+    },
+    {
+        "jp": "メール",
+        "kanji": "",
+        "sino": "",
+        "vi": "thư điện tử, email"
+    },
+    {
+        "jp": "ねんがじょう",
+        "kanji": "年賀状",
+        "sino": "NIÊN HẠ TRẠNG",
+        "vi": "thiệp mừng năm mới"
+    },
+    {
+        "jp": "パンチ",
+        "kanji": "",
+        "sino": "",
+        "vi": "cái đục lỗ"
+    },
+    {
+        "jp": "ホッチキス",
+        "kanji": "",
+        "sino": "",
+        "vi": "cái dập ghim"
+    },
+    {
+        "jp": "セロテープ",
+        "kanji": "",
+        "sino": "",
+        "vi": "băng dính"
+    },
+    {
+        "jp": "けしゴム",
+        "kanji": "",
+        "sino": "",
+        "vi": "cái tẩy"
+    },
+    {
+        "jp": "かみ",
+        "kanji": "紙",
+        "sino": "CHỈ",
+        "vi": "giấy"
+    },
+    {
+        "jp": "はな",
+        "kanji": "花",
+        "sino": "HOA",
+        "vi": "hoa"
+    },
+    {
+        "jp": "シャツ",
+        "kanji": "",
+        "sino": "",
+        "vi": "áo sơ mi"
+    },
+    {
+        "jp": "プレゼント",
+        "kanji": "",
+        "sino": "",
+        "vi": "quà tặng, tặng phẩm"
+    },
+    {
+        "jp": "にもつ",
+        "kanji": "荷物",
+        "sino": "HÀ VẬT",
+        "vi": "đồ đạc, hành lý"
+    },
+    {
+        "jp": "おかね",
+        "kanji": "お金",
+        "sino": "KIM",
+        "vi": "tiền"
+    },
+    {
+        "jp": "きっぷ",
+        "kanji": "切符",
+        "sino": "THIẾT PHÙ",
+        "vi": "vé"
+    },
+    {
+        "jp": "クリスマス",
+        "kanji": "",
+        "sino": "",
+        "vi": "Giáng sinh"
+    },
+    {
+        "jp": "ちち",
+        "kanji": "父",
+        "sino": "PHỤ",
+        "vi": "bố (dùng khi nói về bố mình)"
+    },
+    {
+        "jp": "はは",
+        "kanji": "母",
+        "sino": "MẪU",
+        "vi": "mẹ (dùng khi nói về mẹ mình)"
+    },
+    {
+        "jp": "おとうさん",
+        "kanji": "お父さん",
+        "sino": "PHỤ",
+        "vi": "bố (dùng khi nói về bố người khác và dùng khi xưng hô với bố mình)"
+    },
+    {
+        "jp": "おかあさん",
+        "kanji": "お母さん",
+        "sino": "MẪU",
+        "vi": "mẹ (dùng khi nói về mẹ người khác và dùng khi xưng hô với mẹ mình)"
+    },
+    {
+        "jp": "もう",
+        "kanji": "",
+        "sino": "",
+        "vi": "đã, rồi"
+    },
+    {
+        "jp": "まだ",
+        "kanji": "",
+        "sino": "",
+        "vi": "chưa"
+    },
+    {
+        "jp": "これから",
+        "kanji": "",
+        "sino": "",
+        "vi": "từ bây giờ, sau đây"
+    },
+    {
+        "jp": "[～、]すてきですね。",
+        "vi": "[~] hay nhỉ./ đẹp nhỉ."
+    },
+    {
+        "jp": "いらっしゃい。",
+        "vi": "Chào mừng anh/chị đã đến chơi."
+    },
+    {
+        "jp": "どうぞ　おあがりください。",
+        "vi": "Mời anh/chị vào."
+    },
+    {
+        "jp": "しつれいします。",
+        "vi": "Xin thất lễ"
+    },
+    {
+        "jp": "[～は]いかがですか。",
+        "vi": "Anh/chị dùng [~] có được không?"
+    },
+    {
+        "jp": "いただきます。",
+        "vi": "Xin nhận ~. (cách nói dùng trước khi ăn hoặc uống)"
+    },
+    {
+        "jp": "ごちそうさま［でした］",
+        "vi": "Xin cám ơn anh/chị đã đãi tôi bữa ăn ngon (cách nói dùng sau khi ăn xong)"
+    },
+    {
+        "jp": "スペイン",
+        "vi": "Tây Ban Nha"
+    }
+]

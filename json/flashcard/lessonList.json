@@ -28,5 +28,15 @@
         "id": 6,
         "name": "Bài 6 - いっしょに　行きませんか",
         "fileName": "lesson6"
+    },
+    {
+        "id": 7,
+        "name": "Bài 7 - いらっしゃい",
+        "fileName": "lesson7"
+    },
+    {
+        "id": 8,
+        "name": "Bài 8 - そろそろ　失礼します",
+        "fileName": "lesson8"
     }
 ]

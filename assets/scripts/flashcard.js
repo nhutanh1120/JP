@@ -24,9 +24,10 @@ async function loadLessonList() {
         option.textContent = lesson.name;
         lessonSelect.appendChild(option);
     });
+    lessonSelect.selectedIndex = list.length - 1;
 
     // load bài đầu tiên mặc định
-    loadLesson(list[0].fileName, list[0].name);
+    loadLesson(list.at(-1).fileName, list.at(-1).name);
 
     // khi người dùng chọn bài khác
     lessonSelect.addEventListener("change", (e) => {
@@ -96,7 +97,7 @@ function nextWord() {
     const randomIndex = pickRandomUnusedIndex();
     if (randomIndex === null) {
         frontText.textContent = "Đã hết từ!";
-        backText.textContent = "";
+        backText.textContent = "Đã hết từ!";
         counter.textContent = "";
         return;
     }
@@ -128,7 +129,7 @@ function renderTable(list) {
 
         // Nếu chỉ có jp và vi → jp chiếm 3 cột
         if (Object.keys(item).length <= 3) {
-              row.classList.add("colspan");
+            row.classList.add("colspan");
             row.innerHTML = `
                 <td colspan="3" ${item.hiragana ? `data-tooltip="${item.hiragana}"` : ""}>${item.jp}</td>
                 <td>${item.vi}</td>
@@ -151,6 +152,8 @@ nextBtn.addEventListener("click", nextWord);
 prevBtn.addEventListener("click", prevWord);
 document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") flipCard();
+    if (e.key === "ArrowUp") flipCard();
+    if (e.key === "ArrowDown") flipCard();
     if (e.key === "ArrowRight") nextWord();
     if (e.key === "ArrowLeft") prevWord();
 });
