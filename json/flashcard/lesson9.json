@@ -1,0 +1,300 @@
+[
+    {
+        "jp": "わかります",
+        "kanji": "",
+        "sino": "",
+        "vi": "hiểu, nắm được"
+    },
+    {
+        "jp": "あります",
+        "kanji": "",
+        "sino": "",
+        "vi": "có (sở hữu)"
+    },
+    {
+        "jp": "すき[な]",
+        "kanji": "好き[な]",
+        "sino": "HIẾU/HẢO",
+        "vi": "thích"
+    },
+    {
+        "jp": "きらい[な]",
+        "kanji": "嫌い[な]",
+        "sino": "HIỀM",
+        "vi": "ghét, không thích"
+    },
+    {
+        "jp": "じょうず[な]",
+        "kanji": "上手[な]",
+        "sino": "THƯỢNG THỦ",
+        "vi": "giỏi, khéo"
+    },
+    {
+        "jp": "へた[な]",
+        "kanji": "下手[な]",
+        "sino": "HẠ THỦ",
+        "vi": "kém"
+    },
+    {
+        "jp": "のみもの",
+        "kanji": "飲み物",
+        "sino": "ẨM VẬT",
+        "vi": "đồ uống"
+    },
+    {
+        "jp": "りょうり",
+        "kanji": "料理",
+        "sino": "LIỆU LÝ",
+        "vi": "món ăn, việc nấu ăn"
+    },
+    {
+        "jp": "スポーツ",
+        "kanji": "",
+        "sino": "",
+        "vi": "thể thao (～をします: chơi thể thao)"
+    },
+    {
+        "jp": "やきゅう",
+        "kanji": "野球",
+        "sino": "DÃ CẦU",
+        "vi": "bóng chày (～をします: chơi bóng chày)"
+    },
+    {
+        "jp": "ダンス",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhảy, khiêu vũ (～をします)"
+    },
+    {
+        "jp": "りょこう",
+        "kanji": "旅行",
+        "sino": "LỮ HÀNH",
+        "vi": "du lịch, chuyến du lịch"
+    },
+    {
+        "jp": "おんがく",
+        "kanji": "音楽",
+        "sino": "ÂM NHẠC/LẠC",
+        "vi": "âm nhạc"
+    },
+    {
+        "jp": "うた",
+        "kanji": "歌",
+        "sino": "CA",
+        "vi": "bài hát"
+    },
+    {
+        "jp": "クラシック",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhạc cổ điển"
+    },
+    {
+        "jp": "ジャズ",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhạc jazz"
+    },
+    {
+        "jp": "コンサート",
+        "kanji": "",
+        "sino": "",
+        "vi": "buổi hòa nhạc"
+    },
+    {
+        "jp": "カラオケ",
+        "kanji": "",
+        "sino": "",
+        "vi": "karaoke"
+    },
+    {
+        "jp": "かぶき",
+        "kanji": "歌舞伎",
+        "sino": "CA VŨ KỸ",
+        "vi": "Kabuki (một loại ca kịch truyền thống của Nhật)"
+    },
+    {
+        "jp": "え",
+        "kanji": "絵",
+        "sino": "HỘI",
+        "vi": "tranh, hội họa"
+    },
+    {
+        "jp": "じ",
+        "kanji": "字",
+        "sino": "TỰ",
+        "vi": "chữ"
+    },
+    {
+        "jp": "かんじ",
+        "kanji": "漢字",
+        "sino": "HÁN TỰ",
+        "vi": "chữ Hán"
+    },
+    {
+        "jp": "ひらがな",
+        "kanji": "",
+        "sino": "",
+        "vi": "chữ Hiragana"
+    },
+    {
+        "jp": "かたかな",
+        "kanji": "",
+        "sino": "",
+        "vi": "chữ Katakana"
+    },
+    {
+        "jp": "ローマじ",
+        "kanji": "ローマ字",
+        "sino": "TỰ",
+        "vi": "chữ La Mã"
+    },
+    {
+        "jp": "こまかいおかね",
+        "kanji": "細かいお金",
+        "sino": "TẾ KIM",
+        "vi": "tiền lẻ"
+    },
+    {
+        "jp": "チケット",
+        "kanji": "",
+        "sino": "",
+        "vi": "vé (xem hòa nhạc, xem phim)"
+    },
+    {
+        "jp": "じかん",
+        "kanji": "時間",
+        "sino": "THÌ/THỜI GIAN",
+        "vi": "thời gian"
+    },
+    {
+        "jp": "ようじ",
+        "kanji": "用事",
+        "sino": "DỤNG SỰ",
+        "vi": "việc bận, công chuyện"
+    },
+    {
+        "jp": "やくそく",
+        "kanji": "約束",
+        "sino": "ƯỚC THÚC",
+        "vi": "cuộc hẹn, lời hứa"
+    },
+    {
+        "jp": "アルバイト",
+        "kanji": "",
+        "sino": "",
+        "vi": "việc làm thêm"
+    },
+    {
+        "jp": "ごしゅじん",
+        "kanji": "ご主人",
+        "sino": "CHỦ NHÂN",
+        "vi": "chồng (nói về chồng người khác)"
+    },
+    {
+        "jp": "おっと/しゅじん",
+        "kanji": "夫/主人",
+        "sino": "PHU / CHỦ NHÂN",
+        "vi": "chồng (nói về chồng mình)"
+    },
+    {
+        "jp": "おくさん",
+        "kanji": "奥さん",
+        "sino": "ÁO",
+        "vi": "vợ (nói về vợ người khác)"
+    },
+    {
+        "jp": "つま/かない",
+        "kanji": "妻/家内",
+        "sino": "THÊ / GIA NỘI",
+        "vi": "vợ (nói về vợ mình)"
+    },
+    {
+        "jp": "こども",
+        "kanji": "子ども",
+        "sino": "TỬ",
+        "vi": "con cái"
+    },
+    {
+        "jp": "よく",
+        "kanji": "",
+        "sino": "",
+        "vi": "tốt, rõ (chỉ mức độ)"
+    },
+    {
+        "jp": "だいたい",
+        "kanji": "",
+        "sino": "",
+        "vi": "đại khái, đại thể"
+    },
+    {
+        "jp": "たくさん",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhiều"
+    },
+    {
+        "jp": "すこし",
+        "kanji": "少し",
+        "sino": "THIẾU/THIỂU",
+        "vi": "ít, một ít"
+    },
+    {
+        "jp": "ぜんぜん",
+        "kanji": "全然",
+        "sino": "TOÀN NHIÊN",
+        "vi": "hoàn toàn ~ không"
+    },
+    {
+        "jp": "はやく",
+        "kanji": "早く/速く",
+        "sino": "TẢO/TỐC",
+        "vi": "sớm, nhanh"
+    },
+    {
+        "jp": "～から",
+        "kanji": "",
+        "sino": "",
+        "vi": "vì ~"
+    },
+    {
+        "jp": "どうして",
+        "kanji": "",
+        "sino": "",
+        "vi": "tại sao"
+    },
+    {
+        "jp": "貸してください",
+        "vi": "hãy cho tôi mượn"
+    },
+    {
+        "jp": "いいですよ。",
+        "vi": "được chứ / được ạ"
+    },
+    {
+        "jp": "残念ですね。",
+        "kanji": "残念",
+        "sino": "",
+        "vi": "thật đáng tiếc nhỉ / buồn nhỉ"
+    },
+    {
+        "jp": "ああ",
+        "vi": "à / ah (cách nói khi đã gặp được đúng người trên điện thoại)"
+    },
+    {
+        "jp": "いっしょにいかがですか。",
+        "vi": "anh/chị cùng ~ (làm gì đó) với chúng tôi được không?"
+    },
+    {
+        "jp": "[～は]ちょっと…。",
+        "vi": "[~ thì] có lẽ không được rồi"
+    },
+    {
+        "jp": "だめですか。",
+        "vi": "không được à?"
+    },
+    {
+        "jp": "また 今度 お願いします",
+        "vi": "hẹn anh/chị lần sau vậy"
+    }
+]

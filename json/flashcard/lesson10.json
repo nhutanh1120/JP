@@ -1,0 +1,276 @@
+[
+    {
+        "jp": "あります",
+        "kanji": "",
+        "sino": "",
+        "vi": "có (tồn tại, dùng cho đồ vật)"
+    },
+    {
+        "jp": "います",
+        "kanji": "",
+        "sino": "",
+        "vi": "có, ở (tồn tại, dùng cho người và động vật)"
+    },
+    {
+        "jp": "いろいろ[な]",
+        "kanji": "",
+        "sino": "",
+        "vi": "nhiều, đa dạng"
+    },
+    {
+        "jp": "おとこのひと",
+        "kanji": "男の人",
+        "sino": "NAM NHÂN",
+        "vi": "người đàn ông"
+    },
+    {
+        "jp": "おんなのひと",
+        "kanji": "女の人",
+        "sino": "NỮ NHÂN",
+        "vi": "người đàn bà"
+    },
+    {
+        "jp": "おとこのこ",
+        "kanji": "男の子",
+        "sino": "NAM TỬ",
+        "vi": "cậu con trai"
+    },
+    {
+        "jp": "おんなのこ",
+        "kanji": "女の子",
+        "sino": "NỮ TỬ",
+        "vi": "cô con gái"
+    },
+    {
+        "jp": "いぬ",
+        "kanji": "犬",
+        "sino": "KHUYỂN",
+        "vi": "chó"
+    },
+    {
+        "jp": "ねこ",
+        "kanji": "猫",
+        "sino": "MIÊU",
+        "vi": "mèo"
+    },
+    {
+        "jp": "パンダ",
+        "kanji": "",
+        "sino": "",
+        "vi": "gấu trúc"
+    },
+    {
+        "jp": "ぞう",
+        "kanji": "象",
+        "sino": "TƯỢNG",
+        "vi": "voi"
+    },
+    {
+        "jp": "き",
+        "kanji": "木",
+        "sino": "MỘC",
+        "vi": "cây, gỗ"
+    },
+    {
+        "jp": "もの",
+        "kanji": "物",
+        "sino": "VẬT",
+        "vi": "vật, đồ vật"
+    },
+    {
+        "jp": "でんち",
+        "kanji": "電池",
+        "sino": "ĐIỆN TRÌ",
+        "vi": "pin"
+    },
+    {
+        "jp": "はこ",
+        "kanji": "箱",
+        "sino": "TƯƠNG",
+        "vi": "hộp"
+    },
+    {
+        "jp": "スイッチ",
+        "kanji": "",
+        "sino": "",
+        "vi": "công tắc"
+    },
+    {
+        "jp": "れいぞうこ",
+        "kanji": "冷蔵庫",
+        "sino": "LÃNH TÀN KHỐ",
+        "vi": "tủ lạnh"
+    },
+    {
+        "jp": "テーブル",
+        "kanji": "",
+        "sino": "",
+        "vi": "bàn"
+    },
+    {
+        "jp": "ベッド",
+        "kanji": "",
+        "sino": "",
+        "vi": "giường"
+    },
+    {
+        "jp": "たな",
+        "kanji": "棚",
+        "sino": "BẰNG",
+        "vi": "giá sách"
+    },
+    {
+        "jp": "ドア",
+        "kanji": "",
+        "sino": "",
+        "vi": "cửa"
+    },
+    {
+        "jp": "まど",
+        "kanji": "窓",
+        "sino": "SONG",
+        "vi": "cửa sổ"
+    },
+    {
+        "jp": "ポスト",
+        "kanji": "",
+        "sino": "",
+        "vi": "hộp thư, hòm thư"
+    },
+    {
+        "jp": "ビル",
+        "kanji": "",
+        "sino": "",
+        "vi": "toà nhà"
+    },
+    {
+        "jp": "ATM",
+        "kanji": "",
+        "sino": "",
+        "vi": "máy rút tiền tự động ATM"
+    },
+    {
+        "jp": "コンビニ",
+        "kanji": "",
+        "sino": "",
+        "vi": "cửa hàng tiện lợi (mở 24/24)"
+    },
+    {
+        "jp": "こうえん",
+        "kanji": "公園",
+        "sino": "CÔNG VIÊN",
+        "vi": "công viên"
+    },
+    {
+        "jp": "きっさてん",
+        "kanji": "喫茶店",
+        "sino": "KHIẾT TRÀ ĐIẾM",
+        "vi": "quán giải khát, quán cà phê"
+    },
+    {
+        "jp": "～や",
+        "kanji": "～屋",
+        "sino": "ỐC",
+        "vi": "hiệu ~, cửa hàng ~"
+    },
+    {
+        "jp": "のりば",
+        "kanji": "乗り場",
+        "sino": "THỪA TRƯỜNG",
+        "vi": "bến xe, điểm lên xuống xe"
+    },
+    {
+        "jp": "けん",
+        "kanji": "県",
+        "sino": "HUYỆN",
+        "vi": "tỉnh"
+    },
+    {
+        "jp": "うえ",
+        "kanji": "上",
+        "sino": "THƯỢNG",
+        "vi": "trên"
+    },
+    {
+        "jp": "した",
+        "kanji": "下",
+        "sino": "HẠ",
+        "vi": "dưới"
+    },
+    {
+        "jp": "まえ",
+        "kanji": "前",
+        "sino": "TIỀN",
+        "vi": "trước"
+    },
+    {
+        "jp": "うしろ",
+        "kanji": "",
+        "sino": "",
+        "vi": "sau"
+    },
+    {
+        "jp": "みぎ",
+        "kanji": "右",
+        "sino": "HUỮ",
+        "vi": "phải"
+    },
+    {
+        "jp": "ひだり",
+        "kanji": "左",
+        "sino": "TẢ",
+        "vi": "trái"
+    },
+    {
+        "jp": "なか",
+        "kanji": "中",
+        "sino": "TRUNG",
+        "vi": "trong, giữa"
+    },
+    {
+        "jp": "そと",
+        "kanji": "外",
+        "sino": "NGOẠI",
+        "vi": "ngoài"
+    },
+    {
+        "jp": "となり",
+        "kanji": "隣",
+        "sino": "LÂN",
+        "vi": "bên cạnh"
+    },
+    {
+        "jp": "ちかく",
+        "kanji": "近く",
+        "sino": "CẬN",
+        "vi": "gần"
+    },
+    {
+        "jp": "あいだ",
+        "kanji": "間",
+        "sino": "GIAN",
+        "vi": "giữa"
+    },
+    {
+        "jp": "～や～[など]",
+        "kanji": "",
+        "sino": "",
+        "vi": "~ và ~, v.v."
+    },
+    {
+        "jp": "[どうも]すみません。",
+        "vi": "cám ơn"
+    },
+    {
+        "jp": "ナンプラー",
+        "vi": "nước mắm"
+    },
+    {
+        "jp": "コーナー",
+        "vi": "góc, khu vực"
+    },
+    {
+        "jp": "いちばん下",
+        "vi": "ở dưới cùng"
+    }
+]

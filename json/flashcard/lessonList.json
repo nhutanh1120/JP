@@ -38,5 +38,15 @@
         "id": 8,
         "name": "Bài 8 - そろそろ　失礼します",
         "fileName": "lesson8"
+    },
+    {
+        "id": 9,
+        "name": "Bài 9 - 残念ですが",
+        "fileName": "lesson9"
+    },
+    {
+        "id": 10,
+        "name": "Bài 10 - ナンプラー、ありますか",
+        "fileName": "lesson10"
     }
 ]
