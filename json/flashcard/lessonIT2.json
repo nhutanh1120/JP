@@ -1,0 +1,62 @@
+[
+  {
+    "jp": "更新してよろしいですか？",
+    "kanji": null,
+    "sino": "kōshin shite yoroshii desu ka?",
+    "vi": "Có update không?"
+  },
+  {
+    "jp": "実行してよろしいですか？",
+    "kanji": null,
+    "sino": "jikkō shite yoroshii desu ka?",
+    "vi": "Có thực thi không?"
+  },
+  {
+    "jp": "データを削除してよろしいですか。",
+    "kanji": null,
+    "sino": "dēta o sakujo shite yoroshii desu ka?",
+    "vi": "Có xóa data không?"
+  },
+  {
+    "jp": "この項目に入力できません。",
+    "kanji": null,
+    "sino": "kono kōmoku ni nyūryoku dekimasen.",
+    "vi": "Không thể nhập vào item này"
+  },
+  {
+    "jp": "実行できません。",
+    "kanji": null,
+    "sino": "jikkō dekimasen.",
+    "vi": "Không thể thực thi"
+  },
+  {
+    "jp": "製品ではありません。",
+    "kanji": null,
+    "sino": "seihin de wa arimasen.",
+    "vi": "Không phải thành phẩm"
+  },
+  {
+    "jp": "データが存在しません。",
+    "kanji": null,
+    "sino": "dēta ga sonzai shimasen.",
+    "vi": "Data không tồn tại"
+  },
+  {
+    "jp": "プリンターを確認してください。",
+    "kanji": null,
+    "sino": "purintā o kakunin shite kudasai.",
+    "vi": "Hãy kiểm tra printer"
+  },
+  {
+    "jp": "文字を入力してください。",
+    "kanji": null,
+    "sino": "moji o nyūryoku shite kudasai.",
+    "vi": "Hãy nhập ký tự"
+  },
+  {
+    "jp": "この項目に入力してください。",
+    "kanji": null,
+    "sino": "kono kōmoku ni nyūryoku shite kudasai.",
+    "vi": "Hãy nhập vào item này"
+  }
+]

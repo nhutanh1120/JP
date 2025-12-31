@@ -48,5 +48,25 @@
         "id": 10,
         "name": "Bài 10 - ナンプラー、ありますか",
         "fileName": "lesson10"
+    },
+    {
+        "id": 11,
+        "name": "Bài Tiếng nhật IT (1)",
+        "fileName": "lessonIT1"
+    },
+    {
+        "id": 12,
+        "name": "Bài Tiếng nhật IT (2)",
+        "fileName": "lessonIT2"
+    },
+    {
+        "id": 13,
+        "name": "Bài Tiếng nhật IT (3)",
+        "fileName": "lessonIT3"
+    },
+    {
+        "id": 14,
+        "name": "Bài Tiếng nhật IT (Tổng)",
+        "fileName": "lessonIT"
     }
 ]

@@ -1,0 +1,182 @@
+[
+  {
+    "jp": "エラー",
+    "kanji": null,
+    "sino": "erā",
+    "vi": "error (lỗi)"
+  },
+  {
+    "jp": "データ",
+    "kanji": null,
+    "sino": "dēta",
+    "vi": "data (dữ liệu)"
+  },
+  {
+    "jp": "コード",
+    "kanji": null,
+    "sino": "kōdo",
+    "vi": "code (mã nguồn)"
+  },
+  {
+    "jp": "ソース",
+    "kanji": null,
+    "sino": "sōsu",
+    "vi": "source (nguồn)"
+  },
+  {
+    "jp": "リスト",
+    "kanji": null,
+    "sino": "risuto",
+    "vi": "list (danh sách)"
+  },
+  {
+    "jp": "テスト",
+    "kanji": null,
+    "sino": "tesuto",
+    "vi": "test (kiểm tra)"
+  },
+  {
+    "jp": "マスタ",
+    "kanji": null,
+    "sino": "masuta",
+    "vi": "master (dữ liệu gốc)"
+  },
+  {
+    "jp": "フラグ",
+    "kanji": null,
+    "sino": "furagu",
+    "vi": "flag (cờ)"
+  },
+  {
+    "jp": "レベル",
+    "kanji": null,
+    "sino": "reberu",
+    "vi": "level (cấp độ)"
+  },
+  {
+    "jp": "ラベル",
+    "kanji": null,
+    "sino": "raberu",
+    "vi": "label (nhãn)"
+  },
+  {
+    "jp": "ユーザ",
+    "kanji": null,
+    "sino": "yūza",
+    "vi": "user (người dùng)"
+  },
+  {
+    "jp": "サーバー",
+    "kanji": null,
+    "sino": "sābā",
+    "vi": "server (máy chủ)"
+  },
+  {
+    "jp": "フロー",
+    "kanji": null,
+    "sino": "furō",
+    "vi": "flow (luồng)"
+  },
+  {
+    "jp": "サマリ",
+    "kanji": null,
+    "sino": "samari",
+    "vi": "summary (tóm tắt)"
+  },
+  {
+    "jp": "テーブル",
+    "kanji": null,
+    "sino": "tēburu",
+    "vi": "table (bảng)"
+  },
+  {
+    "jp": "タイトル",
+    "kanji": null,
+    "sino": "taitoru",
+    "vi": "title (tiêu đề)"
+  },
+  {
+    "jp": "ファイル",
+    "kanji": null,
+    "sino": "fairu",
+    "vi": "file (tệp)"
+  },
+  {
+    "jp": "フィールド",
+    "kanji": null,
+    "sino": "fīrudo",
+    "vi": "field (trường dữ liệu)"
+  },
+  {
+    "jp": "フォルダ",
+    "kanji": null,
+    "sino": "foruda",
+    "vi": "folder (thư mục)"
+  },
+  {
+    "jp": "チェック",
+    "kanji": null,
+    "sino": "chekku",
+    "vi": "check (kiểm tra)"
+  },
+  {
+    "jp": "レイアウト",
+    "kanji": null,
+    "sino": "reiauto",
+    "vi": "layout (bố cục)"
+  },
+  {
+    "jp": "システム",
+    "kanji": null,
+    "sino": "shisutemu",
+    "vi": "system (hệ thống)"
+  },
+  {
+    "jp": "プログラム",
+    "kanji": null,
+    "sino": "puroguramu",
+    "vi": "program (chương trình)"
+  },
+  {
+    "jp": "テキスト",
+    "kanji": null,
+    "sino": "tekisuto",
+    "vi": "text (văn bản)"
+  },
+  {
+    "jp": "ステータス",
+    "kanji": null,
+    "sino": "sutētasu",
+    "vi": "status (trạng thái)"
+  },
+  {
+    "jp": "ヘッダー",
+    "kanji": null,
+    "sino": "heddā",
+    "vi": "header (đầu trang)"
+  },
+  {
+    "jp": "プロセス",
+    "kanji": null,
+    "sino": "purosesu",
+    "vi": "process (tiến trình)"
+  },
+  {
+    "jp": "メッセージ",
+    "kanji": null,
+    "sino": "messēji",
+    "vi": "message (thông báo)"
+  },
+  {
+    "jp": "フォーマット",
+    "kanji": null,
+    "sino": "fōmatto",
+    "vi": "format (định dạng)"
+  },
+  {
+    "jp": "パターン",
+    "kanji": null,
+    "sino": "patān",
+    "vi": "pattern (mẫu)"
+  }
+]
