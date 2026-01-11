@@ -2,7 +2,7 @@ let words = [];
 let shownIndexes = [];
 let historyPos = -1;
 let isFlipped = false;
-let showLang = "vi"; // random sẽ hiển thị tiếng Việt hoặc Nhật
+let displayMode = "mix"; // mix, jp, vi
 
 const innerCard = document.getElementById("innerCard");
 const frontText = document.getElementById("frontText");
@@ -13,6 +13,8 @@ const counter = document.getElementById("counter");
 
 const lessonSelect = document.getElementById("lessonSelect");
 const tableBody = document.querySelector("#sidebar table tbody");
+
+const simpleSelect = document.getElementById("simple-select");
 
 async function loadLessonList() {
     const res = await fetch("/json/flashcard/lessonList.json");
@@ -77,7 +79,7 @@ function showWordByIndex(wordIndex) {
     const word = words[wordIndex];
     isFlipped = false;
     innerCard.classList.remove("flipped");
-    showLang = Math.random() > 0.5 ? "vi" : "jp";
+    const showLang = getShowLang(displayMode);
     frontText.textContent = showLang === "vi" ? word.vi : word.jp;
     backText.textContent = showLang === "vi" ? word.jp : word.vi;
     // counter dựa vào lịch sử (historyPos)
@@ -145,6 +147,22 @@ function renderTable(list) {
         tableBody.appendChild(row);
     });
 }
+
+function getShowLang(mode) {
+    switch (mode) {
+        case "jp":
+            return "jp";
+        case "vi":
+            return "vi";
+        case "mix":
+        default:
+            return Math.random() > 0.5 ? "vi" : "jp";
+    }
+}
+
+simpleSelect.addEventListener("change", (e) => {
+  displayMode = e.target.value;
+});
 
 // Sự kiện
 innerCard.addEventListener("click", flipCard);

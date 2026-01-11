@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Flashcard</title>
-        <link rel="icon" href="/assets/img/logo.png" />
-        <link href="/assets/css/flashcard.css" rel="stylesheet" />
-        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <select class="lesson-select" id="lessonSelect" tabindex="-1"></select>
-                <button id="vocabBtn" class="vocab-btn" tabindex="-1"><i class="bx bx-book"></i> Từ vựng</button>
-            </div>
 
-            <div class="card" id="card">
-                <div class="card-inner" id="innerCard">
-                    <div class="front" id="frontText">Đang tải dữ liệu...</div>
-                    <div class="back" id="backText"></div>
-                </div>
-            </div>
-            <div class="counter" id="counter"></div>
-            <div class="controls">
-                <button id="prevBtn" tabindex="-1">←</button>
-                <button id="nextBtn" tabindex="-1">→</button>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard</title>
+    <link rel="icon" href="/assets/img/logo.png" />
+    <link href="/assets/css/flashcard.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-            <!-- Sidebar -->
-            <div class="sidebar" id="sidebar">
-                <div class="sidebar-header">
-                    <h3>Từ vựng bài 1</h3>
-                    <button id="closeSidebar" class="close-sidebar">Close</button>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Từ Vựng</th>
-                            <th>Hán Tự</th>
-                            <th>Âm Hán</th>
-                            <th>Nghĩa</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
+<body>
+    <div class="container">
+        <div class="header">
+            <select class="lesson-select" id="lessonSelect" tabindex="-1"></select>
+            <button id="vocabBtn" class="vocab-btn" tabindex="-1"><i class="bx bx-book"></i> Từ vựng</button>
+
         </div>
 
-        <script src="/assets/scripts/flashcard.js"></script>
-    </body>
+        <div>
+            <select id="simple-select" class="simple-select">
+                <option value="mix">Nhật / Việt</option>
+                <option value="jp">Tiếng Nhật</option>
+                <option value="vi">Tiếng Việt</option>
+            </select>
+        </div>
+
+        <div class="card" id="card">
+            <div class="card-inner" id="innerCard">
+                <div class="front" id="frontText">Đang tải dữ liệu...</div>
+                <div class="back" id="backText"></div>
+            </div>
+        </div>
+        <div class="counter" id="counter"></div>
+        <div class="controls">
+            <button id="prevBtn" tabindex="-1">←</button>
+            <button id="nextBtn" tabindex="-1">→</button>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Từ vựng bài 1</h3>
+                <button id="closeSidebar" class="close-sidebar">Close</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Từ Vựng</th>
+                        <th>Hán Tự</th>
+                        <th>Âm Hán</th>
+                        <th>Nghĩa</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/assets/scripts/flashcard.js"></script>
+</body>
+
 </html>

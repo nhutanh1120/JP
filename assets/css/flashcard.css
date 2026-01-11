@@ -150,10 +150,12 @@ button:hover {
 .sidebar::-webkit-scrollbar {
     width: 4px;
 }
+
 .sidebar::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 10px;
 }
+
 .sidebar::-webkit-scrollbar-thumb:hover {
     background: #aaa;
 }
@@ -266,4 +268,13 @@ td[data-tooltip]::before {
 
 td[data-tooltip]:hover::before {
     opacity: 1;
+}
+
+.simple-select {
+    margin-top: 10px;
+    width: 320px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
 }
