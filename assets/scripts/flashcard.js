@@ -3,6 +3,8 @@ let shownIndexes = [];
 let historyPos = -1;
 let isFlipped = false;
 let displayMode = "mix"; // mix, jp, vi
+let isInputSoundOn = true; // bật / tắt đọc cho input
+let fileName = "";
 
 const innerCard = document.getElementById("innerCard");
 const frontText = document.getElementById("frontText");
@@ -15,6 +17,7 @@ const lessonSelect = document.getElementById("lessonSelect");
 const tableBody = document.querySelector("#sidebar table tbody");
 
 const simpleSelect = document.getElementById("simple-select");
+const inputSoundToggle = document.getElementById("inputSoundToggle");
 
 async function loadLessonList() {
     const res = await fetch("/json/flashcard/lessonList.json");
@@ -34,6 +37,7 @@ async function loadLessonList() {
     // khi người dùng chọn bài khác
     lessonSelect.addEventListener("change", (e) => {
         const selected = list.find((l) => l.fileName === e.target.value);
+        fileName = selected.fileName;
         loadLesson(selected.fileName, selected.name);
     });
 }
@@ -87,7 +91,9 @@ function showWordByIndex(wordIndex) {
     setTimeout(() => {
         backText.textContent = showLang === "vi" ? word.jp : word.vi;
     }, 500);
-
+    if (isInputSoundOn) {
+        playAudioFile(word?.audio);
+    }
     // counter dựa vào lịch sử (historyPos)
     counter.textContent = `${historyPos + 1}/${words.length}`;
 }
@@ -121,6 +127,13 @@ function prevWord() {
         const idx = shownIndexes[historyPos];
         showWordByIndex(idx);
     }
+}
+
+function playAudioFile(audioFile) {
+    if (!audioFile) return;
+
+    const audio = new Audio(`/audio/flashcard/${fileName}/${audioFile}`);
+    audio.play();
 }
 
 // Lật thẻ
@@ -179,6 +192,10 @@ simpleSelect.addEventListener("change", (e) => {
     displayMode = e.target.value;
     const idx = shownIndexes[historyPos];
     showWordByIndex(idx);
+});
+
+inputSoundToggle.addEventListener("change", (e) => {
+  isInputSoundOn = e.target.checked;
 });
 
 // Sự kiện
