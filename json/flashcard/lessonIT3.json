@@ -4,69 +4,69 @@
     "kanji": null,
     "sino": "kōshin shite yoroshii desu ka?",
     "vi": "Có update không?",
-    "audio": "koushin_shite_yoroshii_desu_ka.mp3"
+    "audio": "lessonIT3/koushin_shite_yoroshii_desu_ka.mp3"
   },
   {
     "jp": "実行してよろしいですか？",
     "kanji": null,
     "sino": "jikkō shite yoroshii desu ka?",
     "vi": "Có thực thi không?",
-    "audio": "jikkou_shite_yoroshii_desu_ka.mp3"
+    "audio": "lessonIT3/jikkou_shite_yoroshii_desu_ka.mp3"
   },
   {
     "jp": "データを削除してよろしいですか。",
     "kanji": null,
     "sino": "dēta o sakujo shite yoroshii desu ka?",
     "vi": "Có xóa data không?",
-    "audio": "deeta_o_sakujo_shite_yoroshii_desu_ka.mp3"
+    "audio": "lessonIT3/deeta_o_sakujo_shite_yoroshii_desu_ka.mp3"
   },
   {
     "jp": "この項目に入力できません。",
     "kanji": null,
     "sino": "kono kōmoku ni nyūryoku dekimasen.",
     "vi": "Không thể nhập vào item này",
-    "audio": "kono_koumoku_ni_nyuuryoku_dekimasen.mp3"
+    "audio": "lessonIT3/kono_koumoku_ni_nyuuryoku_dekimasen.mp3"
   },
   {
     "jp": "実行できません。",
     "kanji": null,
     "sino": "jikkō dekimasen.",
     "vi": "Không thể thực thi",
-    "audio": "jikkou_dekimasen.mp3"
+    "audio": "lessonIT3/jikkou_dekimasen.mp3"
   },
   {
     "jp": "製品ではありません。",
     "kanji": null,
     "sino": "seihin de wa arimasen.",
     "vi": "Không phải thành phẩm",
-    "audio": "seihin_de_wa_arimasen.mp3"
+    "audio": "lessonIT3/seihin_de_wa_arimasen.mp3"
   },
   {
     "jp": "データが存在しません。",
     "kanji": null,
     "sino": "dēta ga sonzai shimasen.",
     "vi": "Data không tồn tại",
-    "audio": "deeta_ga_sonzai_shimasen.mp3"
+    "audio": "lessonIT3/deeta_ga_sonzai_shimasen.mp3"
   },
   {
     "jp": "プリンターを確認してください。",
     "kanji": null,
     "sino": "purintā o kakunin shite kudasai.",
     "vi": "Hãy kiểm tra printer",
-    "audio": "purintaa_o_kakunin_shite_kudasai.mp3"
+    "audio": "lessonIT3/purintaa_o_kakunin_shite_kudasai.mp3"
   },
   {
     "jp": "文字を入力してください。",
     "kanji": null,
     "sino": "moji o nyūryoku shite kudasai.",
     "vi": "Hãy nhập ký tự",
-    "audio": "moji_o_nyuuryoku_shite_kudasai.mp3"
+    "audio": "lessonIT3/moji_o_nyuuryoku_shite_kudasai.mp3"
   },
   {
     "jp": "この項目に入力してください。",
     "kanji": null,
     "sino": "kono kōmoku ni nyūryoku shite kudasai.",
     "vi": "Hãy nhập vào item này",
-    "audio": "kono_koumoku_ni_nyuuryoku_shite_kudasai.mp3"
+    "audio": "lessonIT3/kono_koumoku_ni_nyuuryoku_shite_kudasai.mp3"
   }
 ]

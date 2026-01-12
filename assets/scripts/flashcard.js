@@ -3,8 +3,7 @@ let shownIndexes = [];
 let historyPos = -1;
 let isFlipped = false;
 let displayMode = "mix"; // mix, jp, vi
-let isInputSoundOn = true; // bật / tắt đọc cho input
-let fileName = "";
+let isInputSoundOn = false; // bật / tắt đọc cho input
 
 const innerCard = document.getElementById("innerCard");
 const frontText = document.getElementById("frontText");
@@ -37,7 +36,6 @@ async function loadLessonList() {
     // khi người dùng chọn bài khác
     lessonSelect.addEventListener("change", (e) => {
         const selected = list.find((l) => l.fileName === e.target.value);
-        fileName = selected.fileName;
         loadLesson(selected.fileName, selected.name);
     });
 }
@@ -91,8 +89,8 @@ function showWordByIndex(wordIndex) {
     setTimeout(() => {
         backText.textContent = showLang === "vi" ? word.jp : word.vi;
     }, 500);
-    if (isInputSoundOn) {
-        playAudioFile(word?.audio);
+    if (isInputSoundOn && word?.audio) {
+        playAudioFile(word.audio);
     }
     // counter dựa vào lịch sử (historyPos)
     counter.textContent = `${historyPos + 1}/${words.length}`;
@@ -132,7 +130,7 @@ function prevWord() {
 function playAudioFile(audioFile) {
     if (!audioFile) return;
 
-    const audio = new Audio(`/audio/flashcard/${fileName}/${audioFile}`);
+    const audio = new Audio(`/audio/flashcard/${audioFile}`);
     audio.play();
 }
 
