@@ -79,9 +79,15 @@ function showWordByIndex(wordIndex) {
     const word = words[wordIndex];
     isFlipped = false;
     innerCard.classList.remove("flipped");
+
     const showLang = getShowLang(displayMode);
+    // Front (hiện ngay)
     frontText.textContent = showLang === "vi" ? word.vi : word.jp;
-    backText.textContent = showLang === "vi" ? word.jp : word.vi;
+    // Back (delay 0.5s)
+    setTimeout(() => {
+        backText.textContent = showLang === "vi" ? word.jp : word.vi;
+    }, 500);
+
     // counter dựa vào lịch sử (historyPos)
     counter.textContent = `${historyPos + 1}/${words.length}`;
 }
@@ -161,7 +167,9 @@ function getShowLang(mode) {
 }
 
 simpleSelect.addEventListener("change", (e) => {
-  displayMode = e.target.value;
+    displayMode = e.target.value;
+    const idx = shownIndexes[historyPos];
+    showWordByIndex(idx);
 });
 
 // Sự kiện
