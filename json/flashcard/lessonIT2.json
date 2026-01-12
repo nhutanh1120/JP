@@ -1,62 +1,152 @@
 [
   {
-    "jp": "更新してよろしいですか？",
-    "kanji": null,
-    "sino": "kōshin shite yoroshii desu ka?",
-    "vi": "Có update không?"
+    "jp": "設計",
+    "kanji": "sekkei - thiết kế",
+    "sino": "sekkei",
+    "vi": "せっけい"
   },
   {
-    "jp": "実行してよろしいですか？",
-    "kanji": null,
-    "sino": "jikkō shite yoroshii desu ka?",
-    "vi": "Có thực thi không?"
+    "jp": "画面",
+    "kanji": "gamen - màn hình",
+    "sino": "gamen",
+    "vi": "がめん"
   },
   {
-    "jp": "データを削除してよろしいですか。",
-    "kanji": null,
-    "sino": "dēta o sakujo shite yoroshii desu ka?",
-    "vi": "Có xóa data không?"
+    "jp": "項目",
+    "kanji": "koumoku - item",
+    "sino": "koumoku",
+    "vi": "こうもく"
   },
   {
-    "jp": "この項目に入力できません。",
-    "kanji": null,
-    "sino": "kono kōmoku ni nyūryoku dekimasen.",
-    "vi": "Không thể nhập vào item này"
+    "jp": "説明",
+    "kanji": "setsumei - giải thích",
+    "sino": "setsumei",
+    "vi": "せつめい"
   },
   {
-    "jp": "実行できません。",
-    "kanji": null,
-    "sino": "jikkō dekimasen.",
-    "vi": "Không thể thực thi"
+    "jp": "初期",
+    "kanji": "shoki - khởi tạo, ban đầu",
+    "sino": "shoki",
+    "vi": "しょき"
   },
   {
-    "jp": "製品ではありません。",
-    "kanji": null,
-    "sino": "seihin de wa arimasen.",
-    "vi": "Không phải thành phẩm"
+    "jp": "使用",
+    "kanji": "shiyou - sử dụng",
+    "sino": "shiyou",
+    "vi": "しよう"
   },
   {
-    "jp": "データが存在しません。",
-    "kanji": null,
-    "sino": "dēta ga sonzai shimasen.",
-    "vi": "Data không tồn tại"
+    "jp": "実行",
+    "kanji": "jikkou - thực hiện",
+    "sino": "jikkou",
+    "vi": "じっこう"
   },
   {
-    "jp": "プリンターを確認してください。",
-    "kanji": null,
-    "sino": "purintā o kakunin shite kudasai.",
-    "vi": "Hãy kiểm tra printer"
+    "jp": "取得",
+    "kanji": "shutoku - lấy (get)",
+    "sino": "shutoku",
+    "vi": "しゅとく"
   },
   {
-    "jp": "文字を入力してください。",
-    "kanji": null,
-    "sino": "moji o nyūryoku shite kudasai.",
-    "vi": "Hãy nhập ký tự"
+    "jp": "取消",
+    "kanji": "torikesu - hủy bỏ",
+    "sino": "torikesu",
+    "vi": "とりけす"
   },
   {
-    "jp": "この項目に入力してください。",
-    "kanji": null,
-    "sino": "kono kōmoku ni nyūryoku shite kudasai.",
-    "vi": "Hãy nhập vào item này"
+    "jp": "変更",
+    "kanji": "henkou - thay đổi",
+    "sino": "henkou",
+    "vi": "へんこう"
+  },
+  {
+    "jp": "登録",
+    "kanji": "touroku - đăng ký",
+    "sino": "touroku",
+    "vi": "とうろく"
+  },
+  {
+    "jp": "確認",
+    "kanji": "kakunin - xác nhận",
+    "sino": "kakunin",
+    "vi": "かくにん"
+  },
+  {
+    "jp": "修正",
+    "kanji": "shuusei - chỉnh sửa",
+    "sino": "shuusei",
+    "vi": "しゅうせい"
+  },
+  {
+    "jp": "更新",
+    "kanji": "koushin - cập nhật",
+    "sino": "koushin",
+    "vi": "こうしん"
+  },
+  {
+    "jp": "新規",
+    "kanji": "shinki - làm mới",
+    "sino": "shinki",
+    "vi": "しんき"
+  },
+  {
+    "jp": "作成",
+    "kanji": "sakusei - tạo",
+    "sino": "sakusei",
+    "vi": "さくせい"
+  },
+  {
+    "jp": "追加",
+    "kanji": "tsuika - thêm vào",
+    "sino": "tsuika",
+    "vi": "ついか"
+  },
+  {
+    "jp": "入力",
+    "kanji": "nyuuryoku - nhập",
+    "sino": "nyuuryoku",
+    "vi": "にゅうりょく"
+  },
+  {
+    "jp": "出力",
+    "kanji": "shutsuryoku - xuất",
+    "sino": "shutsuryoku",
+    "vi": "しゅつりょく"
+  },
+  {
+    "jp": "押下",
+    "kanji": "ouka - nhấn (click)",
+    "sino": "ouka",
+    "vi": "おうか"
+  },
+  {
+    "jp": "処理",
+    "kanji": "shori - xử lý",
+    "sino": "shori",
+    "vi": "しょり"
+  },
+  {
+    "jp": "設定",
+    "kanji": "settei - thiết lập",
+    "sino": "settei",
+    "vi": "せってい"
+  },
+  {
+    "jp": "起動",
+    "kanji": "kidou - khởi động",
+    "sino": "kidou",
+    "vi": "きどう"
+  },
+  {
+    "jp": "行",
+    "kanji": "gyou - dòng",
+    "sino": "gyou",
+    "vi": "ぎょう"
+  },
+  {
+    "jp": "桁",
+    "kanji": "keta - số ký tự",
+    "sino": "keta",
+    "vi": "けた"
   }
 ]

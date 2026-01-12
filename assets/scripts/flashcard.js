@@ -135,6 +135,15 @@ function renderTable(list) {
     list.forEach((item) => {
         const row = document.createElement("tr");
 
+        if (item.type === "section") {
+            row.classList.add("highlight");
+            row.innerHTML = `
+                <td colspan="4">${item.label}</td>
+            `;
+            tableBody.appendChild(row);
+            return;
+        }
+
         // Nếu chỉ có jp và vi → jp chiếm 3 cột
         if (Object.keys(item).length <= 3) {
             row.classList.add("colspan");

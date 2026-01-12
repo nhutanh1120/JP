@@ -278,3 +278,7 @@ td[data-tooltip]:hover::before {
     border: 1px solid #e5e7eb;
     font-size: 14px;
 }
+
+.highlight {
+    font-weight: bold;
+}
