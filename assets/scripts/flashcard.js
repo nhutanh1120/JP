@@ -17,6 +17,8 @@ const tableBody = document.querySelector("#sidebar table tbody");
 
 const simpleSelect = document.getElementById("simple-select");
 const inputSoundToggle = document.getElementById("inputSoundToggle");
+const randomToggle = document.getElementById("inputRandomToggle");
+const shuffleBtn = document.getElementById("shuffleBtn");
 
 async function loadLessonList() {
     const res = await fetch("/json/flashcard/lessonList.json");
@@ -105,6 +107,26 @@ function nextWord() {
         return;
     }
 
+    // 2. Nếu KHÔNG random → đi tuần tự
+    if (!isRandomOn()) {
+        const nextIndex =
+            shownIndexes.length === 0
+                ? 0
+                : shownIndexes[shownIndexes.length - 1] + 1;
+
+        if (nextIndex >= words.length) {
+            frontText.textContent = "Đã hết từ!";
+            backText.textContent = "Đã hết từ!";
+            counter.textContent = "";
+            return;
+        }
+
+        shownIndexes.push(nextIndex);
+        historyPos = shownIndexes.length - 1;
+        showWordByIndex(nextIndex);
+        return;
+    }
+
     // nếu không có item tiếp theo => random mới và push vào history
     const randomIndex = pickRandomUnusedIndex();
     if (randomIndex === null) {
@@ -132,6 +154,10 @@ function playAudioFile(audioFile) {
 
     const audio = new Audio(`/audio/flashcard/${audioFile}`);
     audio.play();
+}
+
+function isRandomOn() {
+    return randomToggle?.checked;
 }
 
 // Lật thẻ
@@ -193,7 +219,7 @@ simpleSelect.addEventListener("change", (e) => {
 });
 
 inputSoundToggle.addEventListener("change", (e) => {
-  isInputSoundOn = e.target.checked;
+    isInputSoundOn = e.target.checked;
 });
 
 // Sự kiện
@@ -211,6 +237,12 @@ document.addEventListener("keydown", (e) => {
 const vocabBtn = document.getElementById("vocabBtn");
 const sidebar = document.getElementById("sidebar");
 const closeSidebar = document.getElementById("closeSidebar");
+
+shuffleBtn.onclick = () => {
+    const idx = shownIndexes[historyPos];
+    const word = words[idx];
+    playAudioFile(word.audio);
+};
 
 vocabBtn.onclick = () => {
     sidebar.classList.add("active");
