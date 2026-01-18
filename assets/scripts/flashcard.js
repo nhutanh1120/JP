@@ -237,11 +237,24 @@ document.addEventListener("keydown", (e) => {
 const vocabBtn = document.getElementById("vocabBtn");
 const sidebar = document.getElementById("sidebar");
 const closeSidebar = document.getElementById("closeSidebar");
+const resetBtn = document.getElementById("resetBtn");
+
+function resetFlashcard() {
+    shownIndexes = [];
+    historyPos = -1;
+    isFlipped = false;
+    innerCard.classList.remove("flipped");
+    nextWord();
+}
 
 shuffleBtn.onclick = () => {
     const idx = shownIndexes[historyPos];
     const word = words[idx];
     playAudioFile(word.audio);
+};
+
+resetBtn.onclick = () => {
+    resetFlashcard();
 };
 
 vocabBtn.onclick = () => {
