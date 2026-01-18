@@ -49,7 +49,7 @@ async function loadLesson(fileName, lessonName) {
         if (!res.ok) throw new Error("Không tìm thấy file data.json");
         const data = await res.json();
         if (Array.isArray(data)) {
-            words = data;
+            words = data.filter(item => item.type !== "section");
             // reset lịch sử
             shownIndexes = [];
             historyPos = -1;
