@@ -438,7 +438,7 @@ button:hover {
     max-width: 700px;
     height: 100vh;
     padding: 16px;
-    z-index: 100;
+    z-index: 1001;
     overflow-y: auto;
     background: white;
     transition: left 0.3s ease;
@@ -666,7 +666,6 @@ td[data-tooltip]:hover::before {
 
     .sidebar {
         width: 90%;
-        z-index: 1001;
     }
 
     .side-controls {
