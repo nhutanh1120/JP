@@ -12,64 +12,150 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <select class="lesson-select" id="lessonSelect" tabindex="-1"></select>
-            <button id="vocabBtn" class="vocab-btn" tabindex="-1"><i class="bx bx-book"></i> Từ vựng</button>
-
-        </div>
-
-        <div>
-            <select id="simple-select" class="simple-select">
-                <option value="mix">Nhật / Việt</option>
-                <option value="jp">Tiếng Nhật</option>
-                <option value="vi">Tiếng Việt</option>
-            </select>
-        </div>
-
-        <div style="margin-top: 10px;">
-            <label class="sound-toggle">
-                <input type="checkbox" id="inputRandomToggle" />
-                Random
-            </label>
-            <label class="sound-toggle">
-                <input type="checkbox" id="inputSoundToggle" />
-                Đọc
-            </label>
-            <button id="shuffleBtn" class="vocab-btn" tabindex="-1"><i class="bx bx-shuffle"></i> Âm thanh</button>
-            <button id="resetBtn" class="vocab-btn" tabindex="-1"><i class="bx bx-shuffle"></i> Reset</button>
-        </div>
-
-        <div class="card" id="card">
-            <div class="card-inner" id="innerCard">
-                <div class="front" id="frontText">Đang tải dữ liệu...</div>
-                <div class="back" id="backText"></div>
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <h1 class="app-title">📚 Flashcard Học Tiếng Nhật</h1>
             </div>
-        </div>
-        <div class="counter" id="counter"></div>
-        <div class="controls">
-            <button id="prevBtn" tabindex="-1">←</button>
-            <button id="nextBtn" tabindex="-1">→</button>
-        </div>
+            <div class="header-right">
+                <button id="vocabBtn" class="btn btn-primary" tabindex="-1">
+                    <i class="bx bx-book"></i>
+                    <span>Từ vựng</span>
+                </button>
+                <div class="setting-menu">
+                    <button id="toggleControlBtn" class="btn btn-secondary" title="Cài đặt" tabindex="-1">
+                        <i class="bx bx-slider-alt"></i>
+                    </button>
+                    <div class="setting-dropdown" id="settingDropdown">
+                        <div class="dropdown-content">
+                            <div class="control-row">
+                                <select class="lesson-select" id="lessonSelect" tabindex="-1"></select>
+                                <select id="simpleSelect" class="mode-select">
+                                    <option value="mix">Nhật / Việt</option>
+                                    <option value="jp">Tiếng Nhật</option>
+                                    <option value="vi">Tiếng Việt</option>
+                                </select>
+                            </div>
+                            <div class="control-row">
+                                <div class="card-size-group">
+                                    <label class="size-label">
+                                        <input type="radio" name="cardSize" value="small" />
+                                        <span>S</span>
+                                    </label>
+                                    <label class="size-label">
+                                        <input type="radio" name="cardSize" value="medium" checked />
+                                        <span>M</span>
+                                    </label>
+                                    <label class="size-label">
+                                        <input type="radio" name="cardSize" value="large" />
+                                        <span>L</span>
+                                    </label>
+                                    <label class="size-label">
+                                        <input type="radio" name="cardSize" value="xlarge" />
+                                        <span>XL</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="control-row">
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="inputRandomToggle" class="checkbox-input" />
+                                        <span class="checkbox-text">Random</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="control-row">
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="inputSoundToggle" class="checkbox-input" />
+                                        <span class="checkbox-text">Đọc tự động</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="control-row">
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="inputSideControlToggle" class="checkbox-input"
+                                            checked />
+                                        <span class="checkbox-text">Hiển thị nút điều khiển</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Flashcard with Side Controls -->
+                <div class="flashcard-wrapper">
+                    <!-- Flashcard -->
+                    <div class="flashcard-container">
+                        <div class="card" id="card">
+                            <div class="card-inner" id="innerCard">
+                                <div class="card-face front" id="frontText">Đang tải dữ liệu...</div>
+                                <div class="card-face back" id="backText"></div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Info -->
+                        <div class="progress-info">
+                            <div class="counter" id="counter"></div>
+                        </div>
+
+                        <!-- Navigation -->
+                        <div class="navigation">
+                            <button id="prevBtn" class="btn btn-nav" tabindex="-1">
+                                <i class="bx bx-left-arrow-alt"></i>
+                            </button>
+                            <button id="nextBtn" class="btn btn-nav" tabindex="-1">
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </button>
+                        </div>
+
+                        <!-- Side Controls -->
+                        <div class="side-controls" id="sideControls">
+                            <button id="shuffleBtn" class="btn btn-secondary" tabindex="-1" title="Xáo trộn">
+                                <i class="bx bx-volume-full"></i>
+                            </button>
+                            <button id="resetBtn" class="btn btn-secondary" tabindex="-1" title="Đặt lại">
+                                <i class="bx bx-refresh"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <!-- Sidebar -->
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <h3>Từ vựng bài 1</h3>
-                <button id="closeSidebar" class="close-sidebar">Close</button>
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <h2 id="sidebarTitle">Từ vựng bài 1</h2>
+                    <button id="closeSidebar" class="btn btn-close" title="Đóng">
+                        <i class="bx bx-x"></i>
+                    </button>
+                </div>
+                <div class="sidebar-body">
+                    <table class="vocab-table">
+                        <thead>
+                            <tr>
+                                <th>Từ Vựng</th>
+                                <th>Hán Tự</th>
+                                <th>Âm Hán</th>
+                                <th>Nghĩa</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Từ Vựng</th>
-                        <th>Hán Tự</th>
-                        <th>Âm Hán</th>
-                        <th>Nghĩa</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+        </aside>
     </div>
 
     <script src="/assets/scripts/flashcard.js"></script>

@@ -1,206 +1,81 @@
-let words = [];
-let shownIndexes = [];
-let historyPos = -1;
-let isFlipped = false;
-let displayMode = "mix"; // mix, jp, vi
-let isInputSoundOn = false; // bật / tắt đọc cho input
+/**
+ * Flashcard Application - Professional Edition
+ * Japanese language learning system with optimized performance
+ */
 
-const innerCard = document.getElementById("innerCard");
-const frontText = document.getElementById("frontText");
-const backText = document.getElementById("backText");
-const nextBtn = document.getElementById("nextBtn");
-const prevBtn = document.getElementById("prevBtn");
-const counter = document.getElementById("counter");
+// ============================================================================
+// STATE MANAGEMENT
+// ============================================================================
 
-const lessonSelect = document.getElementById("lessonSelect");
-const tableBody = document.querySelector("#sidebar table tbody");
+const state = {
+    words: [],
+    shownIndexes: [],
+    historyPos: -1,
+    isFlipped: false,
+    displayMode: "mix", // mix | jp | vi
+    isAudioOn: false,
+    cardSize: "medium", // small | medium | large | xlarge
+};
 
-const simpleSelect = document.getElementById("simple-select");
-const inputSoundToggle = document.getElementById("inputSoundToggle");
-const randomToggle = document.getElementById("inputRandomToggle");
-const shuffleBtn = document.getElementById("shuffleBtn");
+// ============================================================================
+// DOM ELEMENTS (Cached for performance)
+// ============================================================================
 
-async function loadLessonList() {
-    const res = await fetch("/json/flashcard/lessonList.json");
-    const list = await res.json();
+const DOM = {
+    // Card display
+    card: document.getElementById("card"),
+    innerCard: document.getElementById("innerCard"),
+    frontText: document.getElementById("frontText"),
+    backText: document.getElementById("backText"),
+    counter: document.getElementById("counter"),
 
-    list.forEach((lesson) => {
-        const option = document.createElement("option");
-        option.value = lesson.fileName;
-        option.textContent = lesson.name;
-        lessonSelect.appendChild(option);
-    });
-    lessonSelect.selectedIndex = list.length - 1;
+    // Navigation
+    nextBtn: document.getElementById("nextBtn"),
+    prevBtn: document.getElementById("prevBtn"),
 
-    // load bài đầu tiên mặc định
-    loadLesson(list.at(-1).fileName, list.at(-1).name);
+    // Dropdowns & selectors
+    lessonSelect: document.getElementById("lessonSelect"),
+    simpleSelect: document.getElementById("simpleSelect"),
+    cardSizeRadios: document.querySelectorAll('input[name="cardSize"]'),
 
-    // khi người dùng chọn bài khác
-    lessonSelect.addEventListener("change", (e) => {
-        const selected = list.find((l) => l.fileName === e.target.value);
-        loadLesson(selected.fileName, selected.name);
-    });
+    // Toggles
+    inputSoundToggle: document.getElementById("inputSoundToggle"),
+    randomToggle: document.getElementById("inputRandomToggle"),
+    inputSideControlToggle: document.getElementById("inputSideControlToggle"),
+
+    // Buttons
+    shuffleBtn: document.getElementById("shuffleBtn"),
+    toggleControlBtn: document.getElementById("toggleControlBtn"),
+    resetBtn: document.getElementById("resetBtn"),
+    vocabBtn: document.getElementById("vocabBtn"),
+    closeSidebar: document.getElementById("closeSidebar"),
+
+    // Containers
+    sideControls: document.getElementById("sideControls"),
+    settingDropdown: document.getElementById("settingDropdown"),
+    sidebar: document.getElementById("sidebar"),
+    tableBody: document.querySelector("#sidebar table tbody"),
+};
+
+
+// ============================================================================
+// UTILITY FUNCTIONS
+// ============================================================================
+
+/**
+ * Check if random mode is enabled
+ * @returns {boolean} Random mode state
+ */
+function isRandomEnabled() {
+    return DOM.randomToggle?.checked ?? false;
 }
 
-// Đọc file JSON có sẵn
-async function loadLesson(fileName, lessonName) {
-    try {
-        const res = await fetch(`/json/flashcard/${fileName}.json`);
-        if (!res.ok) throw new Error("Không tìm thấy file data.json");
-        const data = await res.json();
-        if (Array.isArray(data)) {
-            words = data.filter(item => item.type !== "section");
-            // reset lịch sử
-            shownIndexes = [];
-            historyPos = -1;
-
-            // Load dữ liệu cho card
-            nextWord();
-
-            // Load dữ liệu cho bảng
-            renderTable(data);
-
-            // Cập nhật tiêu đề bảng
-            document.querySelector("#sidebar .sidebar-header h3").textContent = `Từ vựng ${lessonName}`;
-        } else {
-            frontText.textContent = "Dữ liệu JSON không hợp lệ!";
-        }
-    } catch (err) {
-        frontText.textContent = "Lỗi khi đọc file JSON!";
-        console.error(err);
-    }
-}
-
-// Random 1 index chưa xuất hiện
-function pickRandomUnusedIndex() {
-    const available = words.map((_, i) => i).filter((i) => !shownIndexes.includes(i));
-    if (available.length === 0) return null;
-    return available[Math.floor(Math.random() * available.length)];
-}
-
-// Hiển thị từ
-function showWordByIndex(wordIndex) {
-    const word = words[wordIndex];
-    isFlipped = false;
-    innerCard.classList.remove("flipped");
-
-    const showLang = getShowLang(displayMode);
-    // Front (hiện ngay)
-    frontText.textContent = showLang === "vi" ? word.vi : word.jp;
-    // Back (delay 0.5s)
-    setTimeout(() => {
-        backText.textContent = showLang === "vi" ? word.jp : word.vi;
-    }, 500);
-    if (isInputSoundOn && word?.audio) {
-        playAudioFile(word.audio);
-    }
-    // counter dựa vào lịch sử (historyPos)
-    counter.textContent = `${historyPos + 1}/${words.length}`;
-}
-
-// Next từ: nếu đang ở giữa history -> đi tới item tiếp theo trong history; còn không -> random mới
-function nextWord() {
-    if (historyPos < shownIndexes.length - 1) {
-        historyPos += 1;
-        const idx = shownIndexes[historyPos];
-        showWordByIndex(idx);
-        return;
-    }
-
-    // 2. Nếu KHÔNG random → đi tuần tự
-    if (!isRandomOn()) {
-        const nextIndex =
-            shownIndexes.length === 0
-                ? 0
-                : shownIndexes[shownIndexes.length - 1] + 1;
-
-        if (nextIndex >= words.length) {
-            frontText.textContent = "Đã hết từ!";
-            backText.textContent = "Đã hết từ!";
-            counter.textContent = "";
-            return;
-        }
-
-        shownIndexes.push(nextIndex);
-        historyPos = shownIndexes.length - 1;
-        showWordByIndex(nextIndex);
-        return;
-    }
-
-    // nếu không có item tiếp theo => random mới và push vào history
-    const randomIndex = pickRandomUnusedIndex();
-    if (randomIndex === null) {
-        frontText.textContent = "Đã hết từ!";
-        backText.textContent = "Đã hết từ!";
-        counter.textContent = "";
-        return;
-    }
-    shownIndexes.push(randomIndex); // thêm vào lịch sử
-    historyPos = shownIndexes.length - 1;
-    showWordByIndex(randomIndex);
-}
-
-// Previous: lùi trong lịch sử nếu có
-function prevWord() {
-    if (historyPos > 0) {
-        historyPos -= 1;
-        const idx = shownIndexes[historyPos];
-        showWordByIndex(idx);
-    }
-}
-
-function playAudioFile(audioFile) {
-    if (!audioFile) return;
-
-    const audio = new Audio(`/audio/flashcard/${audioFile}`);
-    audio.play();
-}
-
-function isRandomOn() {
-    return randomToggle?.checked;
-}
-
-// Lật thẻ
-function flipCard() {
-    isFlipped = !isFlipped;
-    innerCard.classList.toggle("flipped", isFlipped);
-}
-
-// Render bảng danh sách từ
-function renderTable(list) {
-    tableBody.innerHTML = ""; // Xóa cũ
-    list.forEach((item) => {
-        const row = document.createElement("tr");
-
-        if (item.type === "section") {
-            row.classList.add("highlight");
-            row.innerHTML = `
-                <td colspan="4">${item.label}</td>
-            `;
-            tableBody.appendChild(row);
-            return;
-        }
-
-        // Nếu chỉ có jp và vi → jp chiếm 3 cột
-        if (Object.keys(item).length <= 3) {
-            row.classList.add("colspan");
-            row.innerHTML = `
-                <td colspan="3" ${item.hiragana ? `data-tooltip="${item.hiragana}"` : ""}>${item.jp}</td>
-                <td>${item.vi}</td>
-            `;
-        } else {
-            row.innerHTML = `
-            <td ${item.hiragana ? `data-tooltip="${item.hiragana}"` : ""}>${item.jp}</td>
-            <td>${item.kanji || ""}</td>
-            <td>${item.sino || ""}</td>
-            <td>${item.vi}</td>
-        `;
-        }
-        tableBody.appendChild(row);
-    });
-}
-
-function getShowLang(mode) {
+/**
+ * Get current display language for card front
+ * @param {string} mode - Display mode (mix, jp, vi)
+ * @returns {string} Language code (jp or vi)
+ */
+function getDisplayLanguage(mode) {
     switch (mode) {
         case "jp":
             return "jp";
@@ -212,58 +87,449 @@ function getShowLang(mode) {
     }
 }
 
-simpleSelect.addEventListener("change", (e) => {
-    displayMode = e.target.value;
-    const idx = shownIndexes[historyPos];
-    showWordByIndex(idx);
-});
+/**
+ * Play audio file with error handling
+ * @param {string} audioFile - Audio filename
+ */
+function playAudio(audioFile) {
+    if (!audioFile) return;
 
-inputSoundToggle.addEventListener("change", (e) => {
-    isInputSoundOn = e.target.checked;
-});
+    try {
+        const audio = new Audio(`/audio/flashcard/${audioFile}`);
+        audio.play().catch(err => {
+            if (err.name !== "NotAllowedError") {
+                console.error("Audio playback error:", err);
+            }
+        });
+    } catch (err) {
+        console.error("Audio loading error:", err);
+    }
+}
 
-// Sự kiện
-innerCard.addEventListener("click", flipCard);
-nextBtn.addEventListener("click", nextWord);
-prevBtn.addEventListener("click", prevWord);
-document.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") flipCard();
-    if (e.key === "ArrowUp") flipCard();
-    if (e.key === "ArrowDown") flipCard();
-    if (e.key === "ArrowRight") nextWord();
-    if (e.key === "ArrowLeft") prevWord();
-});
+/**
+ * Toggle card flip animation
+ */
+function flipCard() {
+    state.isFlipped = !state.isFlipped;
+    DOM.innerCard.classList.toggle("flipped", state.isFlipped);
+}
 
-const vocabBtn = document.getElementById("vocabBtn");
-const sidebar = document.getElementById("sidebar");
-const closeSidebar = document.getElementById("closeSidebar");
-const resetBtn = document.getElementById("resetBtn");
+/**
+ * Update counter display with current position
+ */
+function updateCounter() {
+    DOM.counter.textContent = `${state.historyPos + 1}/${state.words.length}`;
+}
 
+/**
+ * Update card size class
+ * @param {string} size - Size identifier
+ */
+function updateCardSize(size) {
+    state.cardSize = size;
+    DOM.card.classList.remove("size-small", "size-medium", "size-large", "size-xlarge");
+    DOM.card.classList.add(`size-${size}`);
+}
+
+// ============================================================================
+// CORE FLASHCARD LOGIC
+// ============================================================================
+
+/**
+ * Pick random word index from unused words
+ * @returns {number|null} Random index or null if all words shown
+ */
+function pickRandomIndex() {
+    const available = state.words
+        .map((_, idx) => idx)
+        .filter(idx => !state.shownIndexes.includes(idx));
+
+    return available.length === 0
+        ? null
+        : available[Math.floor(Math.random() * available.length)];
+}
+
+/**
+ * Display word at given index with flip reset
+ * @param {number} wordIndex - Index in words array
+ */
+function showWord(wordIndex) {
+    if (!state.words[wordIndex]) return;
+
+    const word = state.words[wordIndex];
+    state.isFlipped = false;
+    DOM.innerCard.classList.remove("flipped");
+
+    const lang = getDisplayLanguage(state.displayMode);
+    const frontText = lang === "vi" ? word.vi : word.jp;
+    const backText = lang === "vi" ? word.jp : word.vi;
+
+    // Set front immediately, back with delay for better UX
+    DOM.frontText.textContent = frontText;
+    setTimeout(() => {
+        DOM.backText.textContent = backText;
+    }, 400);
+
+    // Auto-play audio if enabled
+    if (state.isAudioOn && word?.audio) {
+        playAudio(word.audio);
+    }
+
+    updateCounter();
+}
+
+/**
+ * Navigate to next word (forward in history or new word)
+ */
+function nextWord() {
+    // If we're in middle of history, move forward
+    if (state.historyPos < state.shownIndexes.length - 1) {
+        state.historyPos += 1;
+        showWord(state.shownIndexes[state.historyPos]);
+        return;
+    }
+
+    // Sequential mode (random off)
+    if (!isRandomEnabled()) {
+        const nextIndex = state.shownIndexes.length === 0
+            ? 0
+            : state.shownIndexes[state.shownIndexes.length - 1] + 1;
+
+        if (nextIndex >= state.words.length) {
+            DOM.frontText.textContent = "Đã hết từ!";
+            DOM.backText.textContent = "Đã hết từ!";
+            DOM.counter.textContent = "";
+            return;
+        }
+
+        state.shownIndexes.push(nextIndex);
+        state.historyPos++;
+        showWord(nextIndex);
+        return;
+    }
+
+    // Random mode
+    const randomIndex = pickRandomIndex();
+    if (randomIndex === null) {
+        DOM.frontText.textContent = "Đã hết từ!";
+        DOM.backText.textContent = "Đã hết từ!";
+        DOM.counter.textContent = "";
+        return;
+    }
+
+    state.shownIndexes.push(randomIndex);
+    state.historyPos++;
+    showWord(randomIndex);
+}
+
+/**
+ * Navigate to previous word (backward in history)
+ */
+function prevWord() {
+    if (state.historyPos > 0) {
+        state.historyPos--;
+        showWord(state.shownIndexes[state.historyPos]);
+    }
+}
+
+/**
+ * Reset flashcard to initial state
+ */
 function resetFlashcard() {
-    shownIndexes = [];
-    historyPos = -1;
-    isFlipped = false;
-    innerCard.classList.remove("flipped");
+    state.shownIndexes = [];
+    state.historyPos = -1;
+    state.isFlipped = false;
+    DOM.innerCard.classList.remove("flipped");
     nextWord();
 }
 
-shuffleBtn.onclick = () => {
-    const idx = shownIndexes[historyPos];
-    const word = words[idx];
-    playAudioFile(word.audio);
-};
+// ============================================================================
+// DATA LOADING & RENDERING
+// ============================================================================
 
-resetBtn.onclick = () => {
-    resetFlashcard();
-};
+/**
+ * Load and populate lesson list from JSON
+ */
+async function loadLessonList() {
+    try {
+        const response = await fetch("/json/flashcard/lessonList.json");
+        if (!response.ok) throw new Error("Failed to load lesson list");
 
-vocabBtn.onclick = () => {
-    sidebar.classList.add("active");
-};
+        const lessons = await response.json();
 
-closeSidebar.onclick = () => {
-    sidebar.classList.remove("active");
-};
+        if (!Array.isArray(lessons) || lessons.length === 0) {
+            throw new Error("Invalid lesson data");
+        }
 
-// Khởi động
-loadLessonList();
+        // Populate dropdown
+        lessons.forEach(lesson => {
+            const option = document.createElement("option");
+            option.value = lesson.fileName;
+            option.textContent = lesson.name;
+            DOM.lessonSelect.appendChild(option);
+        });
+
+        // Load last lesson by default
+        DOM.lessonSelect.selectedIndex = lessons.length - 1;
+        const lastLesson = lessons[lessons.length - 1];
+        loadLesson(lastLesson.fileName, lastLesson.name);
+
+        // Listen for lesson changes
+        DOM.lessonSelect.addEventListener("change", (e) => {
+            const selected = lessons.find(l => l.fileName === e.target.value);
+            if (selected) {
+                loadLesson(selected.fileName, selected.name);
+            }
+        });
+    } catch (err) {
+        console.error("Error loading lessons:", err);
+        DOM.frontText.textContent = "Lỗi: Không tải được danh sách bài!";
+    }
+}
+
+/**
+ * Load specific lesson vocabulary from JSON
+ * @param {string} fileName - JSON file name (without .json extension)
+ * @param {string} lessonName - Display name of lesson
+ */
+async function loadLesson(fileName, lessonName) {
+    try {
+        const response = await fetch(`/json/flashcard/${fileName}.json`);
+        if (!response.ok) throw new Error(`File not found: ${fileName}`);
+
+        const data = await response.json();
+        if (!Array.isArray(data)) throw new Error("Invalid data format");
+
+        // Filter out section headers
+        state.words = data.filter(item => item.type !== "section");
+
+        if (state.words.length === 0) {
+            throw new Error("No vocabulary found in lesson");
+        }
+
+        // Reset history
+        state.shownIndexes = [];
+        state.historyPos = -1;
+        state.isFlipped = false;
+        DOM.innerCard.classList.remove("flipped");
+
+        // Display first word
+        nextWord();
+
+        // Render vocabulary table
+        renderTable(data);
+
+        // Update sidebar title
+        const sidebarHeader = document.querySelector("#sidebar .sidebar-header h2");
+        if (sidebarHeader) {
+            sidebarHeader.textContent = `Từ vựng ${lessonName}`;
+        }
+    } catch (err) {
+        console.error("Error loading lesson:", err);
+        DOM.frontText.textContent = "Lỗi tải bài!";
+        DOM.backText.textContent = err.message;
+    }
+}
+
+/**
+ * Render vocabulary table with sections and tooltips
+ * @param {Array} data - Full lesson data including sections
+ */
+function renderTable(data) {
+    DOM.tableBody.innerHTML = "";
+
+    data.forEach(item => {
+        const row = document.createElement("tr");
+
+        // Section headers
+        if (item.type === "section") {
+            row.classList.add("highlight");
+            row.innerHTML = `<td colspan="4">${item.label}</td>`;
+            DOM.tableBody.appendChild(row);
+            return;
+        }
+
+        // Vocabulary rows
+        const fieldCount = Object.keys(item).length;
+        const hiraganaAttr = item.hiragana ? `data-tooltip="${item.hiragana}"` : "";
+
+        if (fieldCount <= 3) {
+            // Simple format (jp + vi only)
+            row.classList.add("colspan");
+            row.innerHTML = `
+                <td colspan="3" ${hiraganaAttr}>${item.jp}</td>
+                <td>${item.vi}</td>
+            `;
+        } else {
+            // Full format (jp + kanji + sino + vi)
+            row.innerHTML = `
+                <td ${hiraganaAttr}>${item.jp}</td>
+                <td>${item.kanji || "-"}</td>
+                <td>${item.sino || "-"}</td>
+                <td>${item.vi}</td>
+            `;
+        }
+
+        DOM.tableBody.appendChild(row);
+    });
+}
+
+// ============================================================================
+// EVENT LISTENERS - DISPLAY & SETTINGS
+// ============================================================================
+
+/**
+ * Display mode selector change
+ */
+DOM.simpleSelect.addEventListener("change", (e) => {
+    state.displayMode = e.target.value;
+    if (state.shownIndexes.length > 0) {
+        showWord(state.shownIndexes[state.historyPos]);
+    }
+});
+
+/**
+ * Card size radio buttons
+ */
+DOM.cardSizeRadios.forEach(radio => {
+    radio.addEventListener("change", (e) => {
+        if (e.target.checked) {
+            updateCardSize(e.target.value);
+        }
+    });
+});
+
+/**
+ * Audio toggle
+ */
+DOM.inputSoundToggle.addEventListener("change", (e) => {
+    state.isAudioOn = e.target.checked;
+});
+
+/**
+ * Side controls visibility toggle
+ */
+DOM.inputSideControlToggle.addEventListener("change", (e) => {
+    state.sideControlsVisible = e.target.checked;
+    DOM.sideControls.classList.toggle("collapsed", !e.target.checked);
+});
+
+// ============================================================================
+// EVENT LISTENERS - CARD INTERACTION
+// ============================================================================
+
+/**
+ * Card flip on click
+ */
+DOM.innerCard.addEventListener("click", flipCard);
+
+/**
+ * Next button
+ */
+DOM.nextBtn.addEventListener("click", nextWord);
+
+/**
+ * Previous button
+ */
+DOM.prevBtn.addEventListener("click", prevWord);
+
+/**
+ * Keyboard shortcuts
+ * Enter/Up/Down: Flip card
+ * Right arrow: Next word
+ * Left arrow: Previous word
+ */
+document.addEventListener("keydown", (e) => {
+    // Don't trigger shortcuts when typing in inputs
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") {
+        return;
+    }
+
+    switch (e.key) {
+        case "Enter":
+        case "ArrowUp":
+        case "ArrowDown":
+            flipCard();
+            break;
+        case "ArrowRight":
+            nextWord();
+            break;
+        case "ArrowLeft":
+            prevWord();
+            break;
+    }
+});
+
+// ============================================================================
+// EVENT LISTENERS - SIDE CONTROLS
+// ============================================================================
+
+/**
+ * Settings dropdown toggle
+ */
+DOM.toggleControlBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    DOM.settingDropdown.classList.toggle("active");
+});
+
+/**
+ * Close dropdown when clicking outside
+ */
+document.addEventListener("click", (e) => {
+    if (!e.target.closest(".setting-menu")) {
+        DOM.settingDropdown.classList.remove("active");
+    }
+});
+
+/**
+ * Shuffle button - replay audio
+ */
+DOM.shuffleBtn.addEventListener("click", () => {
+    if (state.shownIndexes.length > 0) {
+        const word = state.words[state.shownIndexes[state.historyPos]];
+        if (word?.audio) {
+            playAudio(word.audio);
+        }
+    }
+});
+
+/**
+ * Reset button
+ */
+DOM.resetBtn.addEventListener("click", resetFlashcard);
+
+// ============================================================================
+// EVENT LISTENERS - SIDEBAR
+// ============================================================================
+
+/**
+ * Open vocabulary sidebar
+ */
+DOM.vocabBtn.addEventListener("click", () => {
+    DOM.sidebar.classList.add("active");
+});
+
+/**
+ * Close vocabulary sidebar
+ */
+DOM.closeSidebar.addEventListener("click", () => {
+    DOM.sidebar.classList.remove("active");
+});
+
+// ============================================================================
+// APPLICATION INITIALIZATION
+// ============================================================================
+
+/**
+ * Initialize application when DOM is ready
+ */
+function initializeApp() {
+    loadLessonList();
+}
+
+// Start on DOM ready or if already loaded
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeApp);
+} else {
+    initializeApp();
+}
