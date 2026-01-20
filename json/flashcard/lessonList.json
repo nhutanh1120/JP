@@ -1,72 +1,100 @@
 [
     {
-        "id": 1,
-        "name": "Bài 1 - Từ vựng cơ bản",
-        "fileName": "lesson1"
+        "group": "Tiếng nhật IT",
+        "groupKey": "it",
+        "lessons": [
+            {
+                "id": 11,
+                "name": "Bài IT (1)",
+                "fileName": "lessonIT1"
+            },
+            {
+                "id": 12,
+                "name": "Bài IT (2)",
+                "fileName": "lessonIT2"
+            },
+            {
+                "id": 13,
+                "name": "Bài IT (3)",
+                "fileName": "lessonIT3"
+            },
+            {
+                "id": 14,
+                "name": "Bài IT (Tổng)",
+                "fileName": "lessonIT"
+            }
+        ]
     },
     {
-        "id": 2,
-        "name": "Bài 2 - これから　お世話に　なります",
-        "fileName": "lesson2"
+        "group": "Từ vựng",
+        "groupKey": "vocabulary",
+        "lessons": [
+            {
+                "id": 1,
+                "name": "Bài 1 - Từ vựng cơ bản",
+                "fileName": "lesson1"
+            },
+            {
+                "id": 2,
+                "name": "Bài 2 - これから　お世話に　なります",
+                "fileName": "lesson2"
+            },
+            {
+                "id": 3,
+                "name": "Bài 3 - これを　ください",
+                "fileName": "lesson3"
+            },
+            {
+                "id": 4,
+                "name": "Bài 4 - そちらは　何時までですか",
+                "fileName": "lesson4"
+            },
+            {
+                "id": 5,
+                "name": "Bài 5 - この電車は　甲子園へ　行きますか",
+                "fileName": "lesson5"
+            },
+            {
+                "id": 6,
+                "name": "Bài 6 - いっしょに　行きませんか",
+                "fileName": "lesson6"
+            },
+            {
+                "id": 7,
+                "name": "Bài 7 - いらっしゃい",
+                "fileName": "lesson7"
+            },
+            {
+                "id": 8,
+                "name": "Bài 8 - そろそろ　失礼します",
+                "fileName": "lesson8"
+            },
+            {
+                "id": 9,
+                "name": "Bài 9 - 残念ですが",
+                "fileName": "lesson9"
+            },
+            {
+                "id": 10,
+                "name": "Bài 10 - ナンプラー、ありますか",
+                "fileName": "lesson10"
+            }
+        ]
     },
     {
-        "id": 3,
-        "name": "Bài 3 - これを　ください",
-        "fileName": "lesson3"
-    },
-    {
-        "id": 4,
-        "name": "Bài 4 - そちらは　何時までですか",
-        "fileName": "lesson5"
-    },
-    {
-        "id": 5,
-        "name": "Bài 5 - この電車は　甲子園へ　行きますか",
-        "fileName": "lesson5"
-    },
-    {
-        "id": 6,
-        "name": "Bài 6 - いっしょに　行きませんか",
-        "fileName": "lesson6"
-    },
-    {
-        "id": 7,
-        "name": "Bài 7 - いらっしゃい",
-        "fileName": "lesson7"
-    },
-    {
-        "id": 8,
-        "name": "Bài 8 - そろそろ　失礼します",
-        "fileName": "lesson8"
-    },
-    {
-        "id": 9,
-        "name": "Bài 9 - 残念ですが",
-        "fileName": "lesson9"
-    },
-    {
-        "id": 10,
-        "name": "Bài 10 - ナンプラー、ありますか",
-        "fileName": "lesson10"
-    },
-    {
-        "id": 11,
-        "name": "Bài Tiếng nhật IT (1)",
-        "fileName": "lessonIT1"
-    },
-    {
-        "id": 12,
-        "name": "Bài Tiếng nhật IT (2)",
-        "fileName": "lessonIT2"
-    },
-    {
-        "id": 13,
-        "name": "Bài Tiếng nhật IT (3)",
-        "fileName": "lessonIT3"
-    },
-    {
-        "id": 14,
-        "name": "Bài Tiếng nhật IT (Tổng)",
-        "fileName": "lessonIT"
+        "group": "Hán tự",
+        "groupKey": "kanji",
+        "lessons": [
+            {
+                "id": 21,
+                "name": "Bài 1 - Kanji from picture (Element)",
+                "fileName": "kanji1"
+            },
+            {
+                "id": 22,
+                "name": "Bài 2 - Kanji from picture (Nature)",
+                "fileName": "kanji2"
+            }
+        ]
     }
 ]

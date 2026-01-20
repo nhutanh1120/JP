@@ -1,0 +1,48 @@
+[
+    {
+        "type": "section",
+        "label": "Kanji made from picture 1 (element)"
+    },
+    {
+        "jp": "日",
+        "hiragana": "ひ、か、にち",
+        "vi": "Ngày / Mặt trời",
+        "audio": "kanji1_1.mp3"
+    },
+    {
+        "jp": "月",
+        "hiragana": "つき、げつ",
+        "vi": "Tháng / Mặt trăng",
+        "audio": "kanji1_2.mp3"
+    },
+    {
+        "jp": "金",
+        "hiragana": "かね、きん",
+        "vi": "Kim loại / Vàng",
+        "audio": "kanji1_3.mp3"
+    },
+    {
+        "jp": "水",
+        "hiragana": "みず、すい",
+        "vi": "Nước",
+        "audio": "kanji1_4.mp3"
+    },
+    {
+        "jp": "火",
+        "hiragana": "ひ、か",
+        "vi": "Lửa",
+        "audio": "kanji1_5.mp3"
+    },
+    {
+        "jp": "木",
+        "hiragana": "き、もく",
+        "vi": "Gỗ / Cây",
+        "audio": "kanji1_6.mp3"
+    },
+    {
+        "jp": "土",
+        "hiragana": "つち、ど",
+        "vi": "Đất",
+        "audio": "kanji1_7.mp3"
+    }
+]

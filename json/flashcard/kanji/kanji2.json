@@ -1,0 +1,54 @@
+[
+    {
+        "type": "section",
+        "label": "Kanji made from picture 2 (nature)"
+    },
+    {
+        "jp": "車",
+        "hiragana": "くるま、しゃ",
+        "vi": "Xe",
+        "audio": "kanji2_1.mp3"
+    },
+    {
+        "jp": "門",
+        "hiragana": "もん、かど",
+        "vi": "Cửa / Cổng",
+        "audio": "kanji2_2.mp3"
+    },
+    {
+        "jp": "田",
+        "hiragana": "た、でん",
+        "vi": "Ruộng",
+        "audio": "kanji2_3.mp3"
+    },
+    {
+        "jp": "山",
+        "hiragana": "やま、さん",
+        "vi": "Núi",
+        "audio": "kanji2_4.mp3"
+    },
+    {
+        "jp": "川",
+        "hiragana": "かわ、せん",
+        "vi": "Sông / Suối",
+        "audio": "kanji2_5.mp3"
+    },
+    {
+        "jp": "雨",
+        "hiragana": "あめ、う",
+        "vi": "Mưa",
+        "audio": "kanji2_6.mp3"
+    },
+    {
+        "jp": "天",
+        "hiragana": "てん、あめ",
+        "vi": "Trời / Thiên",
+        "audio": "kanji2_7.mp3"
+    },
+    {
+        "jp": "気",
+        "hiragana": "き、け",
+        "vi": "Khí / Cảm giác",
+        "audio": "kanji2_8.mp3"
+    }
+]

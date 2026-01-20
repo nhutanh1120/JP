@@ -248,39 +248,61 @@ function resetFlashcard() {
 // ============================================================================
 
 /**
- * Load and populate lesson list from JSON
+ * Load and populate lesson list from JSON with grouping
  */
 async function loadLessonList() {
     try {
         const response = await fetch("/json/flashcard/lessonList.json");
         if (!response.ok) throw new Error("Failed to load lesson list");
 
-        const lessons = await response.json();
+        const data = await response.json();
 
-        if (!Array.isArray(lessons) || lessons.length === 0) {
-            throw new Error("Invalid lesson data");
+        // Check if data is grouped or flat array
+        const isGrouped = data.length > 0 && data[0].group;
+
+        if (isGrouped) {
+            // Handle grouped structure
+            data.forEach(groupData => {
+                const optgroup = document.createElement("optgroup");
+                optgroup.label = groupData.group;
+
+                if (Array.isArray(groupData.lessons)) {
+                    groupData.lessons.forEach(lesson => {
+                        const option = document.createElement("option");
+                        option.value = lesson.fileName;
+                        option.textContent = lesson.name;
+                        option.dataset.groupKey = groupData.groupKey;
+                        option.dataset.lessonName = lesson.name;
+
+                        optgroup.appendChild(option);
+                    });
+                }
+
+                DOM.lessonSelect.appendChild(optgroup);
+            });
+
+            // Get all lessons (flatten)
+            const allLessons = data.flatMap(groupData =>
+                (groupData.lessons || []).map(lesson => ({
+                    ...lesson,
+                    groupKey: groupData.groupKey
+                }))
+            );
+            if (allLessons.length === 0) throw new Error("No lessons found");
+
+            // Load last lesson by default
+            const lastLesson = allLessons.at(-1);
+            DOM.lessonSelect.value = lastLesson.fileName;
+            loadLesson(lastLesson.groupKey, lastLesson.fileName, lastLesson.name);
+
+            // Listen for lesson changes
+            DOM.lessonSelect.addEventListener("change", (e) => {
+                const selected = allLessons.find(l => l.fileName === e.target.value);
+                if (selected) {
+                    loadLesson(selected.groupKey, selected.fileName, selected.name);
+                }
+            });
         }
-
-        // Populate dropdown
-        lessons.forEach(lesson => {
-            const option = document.createElement("option");
-            option.value = lesson.fileName;
-            option.textContent = lesson.name;
-            DOM.lessonSelect.appendChild(option);
-        });
-
-        // Load last lesson by default
-        DOM.lessonSelect.selectedIndex = lessons.length - 1;
-        const lastLesson = lessons[lessons.length - 1];
-        loadLesson(lastLesson.fileName, lastLesson.name);
-
-        // Listen for lesson changes
-        DOM.lessonSelect.addEventListener("change", (e) => {
-            const selected = lessons.find(l => l.fileName === e.target.value);
-            if (selected) {
-                loadLesson(selected.fileName, selected.name);
-            }
-        });
     } catch (err) {
         console.error("Error loading lessons:", err);
         DOM.frontText.textContent = "Lỗi: Không tải được danh sách bài!";
@@ -289,12 +311,13 @@ async function loadLessonList() {
 
 /**
  * Load specific lesson vocabulary from JSON
+ * @param {string} groupKey - Group key for the lesson
  * @param {string} fileName - JSON file name (without .json extension)
  * @param {string} lessonName - Display name of lesson
  */
-async function loadLesson(fileName, lessonName) {
+async function loadLesson(groupKey, fileName, lessonName) {
     try {
-        const response = await fetch(`/json/flashcard/${fileName}.json`);
+        const response = await fetch(`/json/flashcard/${groupKey}/${fileName}.json`);
         if (!response.ok) throw new Error(`File not found: ${fileName}`);
 
         const data = await response.json();
