@@ -41,6 +41,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
 }
 
 .header-left {
@@ -656,4 +657,19 @@ td[data-tooltip]:hover::before {
 
 .side-controls .btn-secondary i {
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .app-header {
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 90%;
+        z-index: 1001;
+    }
+
+    .side-controls {
+        right: -50px;
+    }
 }
