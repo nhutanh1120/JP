@@ -1,0 +1,128 @@
+[
+    {
+        "kanji": "土",
+        "han_viet": "THỔ",
+        "nghia": "đất",
+        "kunyomi": [
+            "つち"
+        ],
+        "onyomi": [
+            "ど",
+            "と"
+        ],
+        "audio": "kanji_soil.mp3"
+    },
+    {
+        "kanji": "曜",
+        "han_viet": "DIỆU",
+        "nghia": "các ngày trong tuần",
+        "kunyomi": [],
+        "onyomi": [
+            "よう"
+        ],
+        "audio": "kanji_weekday.mp3"
+    },
+    {
+        "kanji": "本",
+        "han_viet": "BẢN, BỔN",
+        "nghia": "sách / nguồn gốc",
+        "kunyomi": [
+            "ほん",
+            "ぼん",
+            "ぽん"
+        ],
+        "onyomi": [
+            "もと"
+        ],
+        "audio": "kanji_book.mp3"
+    },
+    {
+        "kanji": "人",
+        "han_viet": "NHÂN",
+        "nghia": "con người",
+        "kunyomi": [
+            "ひと"
+        ],
+        "onyomi": [
+            "じん",
+            "にん"
+        ],
+        "audio": "kanji_person.mp3"
+    },
+    {
+        "kanji": "今",
+        "han_viet": "KIM",
+        "nghia": "bây giờ",
+        "kunyomi": [
+            "いま"
+        ],
+        "onyomi": [
+            "こん",
+            "きん"
+        ],
+        "audio": "kanji_now.mp3"
+    },
+    {
+        "kanji": "寺",
+        "han_viet": "TỰ",
+        "nghia": "chùa",
+        "kunyomi": [
+            "てら"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_temple.mp3"
+    },
+    {
+        "kanji": "時",
+        "han_viet": "THỜI",
+        "nghia": "giờ",
+        "kunyomi": [
+            "とき"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_time.mp3"
+    },
+    {
+        "kanji": "半",
+        "han_viet": "BÁN",
+        "nghia": "một nửa",
+        "kunyomi": [
+            "なか"
+        ],
+        "onyomi": [
+            "はん"
+        ],
+        "audio": "kanji_half.mp3"
+    },
+    {
+        "kanji": "分",
+        "han_viet": "PHÂN",
+        "nghia": "phút",
+        "kunyomi": [
+            "わ"
+        ],
+        "onyomi": [
+            "ふん",
+            "ぶん",
+            "ぶ"
+        ],
+        "audio": "kanji_minute.mp3"
+    },
+    {
+        "kanji": "口",
+        "han_viet": "KHẨU",
+        "nghia": "miệng",
+        "kunyomi": [
+            "くち",
+            "ぐち"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_mouth.mp3"
+    }
+]

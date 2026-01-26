@@ -1,0 +1,123 @@
+[
+    {
+        "kanji": "目",
+        "han_viet": "MỤC",
+        "nghia": "mắt",
+        "kunyomi": [
+            "め"
+        ],
+        "onyomi": [
+            "もく"
+        ],
+        "audio": "kanji_eye.mp3"
+    },
+    {
+        "kanji": "上",
+        "han_viet": "THƯỢNG",
+        "nghia": "bên trên",
+        "kunyomi": [
+            "うえ"
+        ],
+        "onyomi": [
+            "じょう"
+        ],
+        "audio": "kanji_up.mp3"
+    },
+    {
+        "kanji": "下",
+        "han_viet": "HẠ",
+        "nghia": "bên dưới",
+        "kunyomi": [
+            "した"
+        ],
+        "onyomi": [
+            "か",
+            "げ"
+        ],
+        "audio": "kanji_down.mp3"
+    },
+    {
+        "kanji": "中",
+        "han_viet": "TRUNG",
+        "nghia": "bên trong",
+        "kunyomi": [
+            "なか"
+        ],
+        "onyomi": [
+            "ちゅう",
+            "じゅう"
+        ],
+        "audio": "kanji_inside.mp3"
+    },
+    {
+        "kanji": "外",
+        "han_viet": "NGOẠI",
+        "nghia": "bên ngoài",
+        "kunyomi": [
+            "そと"
+        ],
+        "onyomi": [
+            "がい"
+        ],
+        "audio": "kanji_outside.mp3"
+    },
+    {
+        "kanji": "右",
+        "han_viet": "HỮU",
+        "nghia": "bên phải",
+        "kunyomi": [
+            "みぎ"
+        ],
+        "onyomi": [
+            "ゆう"
+        ],
+        "audio": "kanji_right.mp3"
+    },
+    {
+        "kanji": "左",
+        "han_viet": "TẢ",
+        "nghia": "bên trái",
+        "kunyomi": [
+            "ひだり"
+        ],
+        "onyomi": [
+            "さ"
+        ],
+        "audio": "kanji_left.mp3"
+    },
+    {
+        "kanji": "前",
+        "han_viet": "TIỀN",
+        "nghia": "phía trước",
+        "kunyomi": [
+            "まえ"
+        ],
+        "onyomi": [
+            "ぜん"
+        ],
+        "audio": "kanji_front.mp3"
+    },
+    {
+        "kanji": "後",
+        "han_viet": "HẬU",
+        "nghia": "phía sau",
+        "kunyomi": [
+            "あと",
+            "うし"
+        ],
+        "onyomi": [
+            "ご"
+        ],
+        "audio": "kanji_back.mp3"
+    },
+    {
+        "kanji": "午",
+        "han_viet": "NGỌ",
+        "nghia": "giữa trưa",
+        "kunyomi": [],
+        "onyomi": [
+            "ご"
+        ],
+        "audio": "kanji_noon.mp3"
+    }
+]

@@ -1,0 +1,115 @@
+[
+    {
+        "kanji": "村",
+        "han_viet": "THÔN",
+        "nghia": "làng",
+        "kunyomi": [
+            "むら"
+        ],
+        "onyomi": [
+            "そん"
+        ],
+        "audio": "kanji_village.mp3"
+    },
+    {
+        "kanji": "雨",
+        "han_viet": "VŨ",
+        "nghia": "mưa",
+        "kunyomi": [
+            "あめ"
+        ],
+        "onyomi": [
+            "う"
+        ],
+        "audio": "kanji_rain.mp3"
+    },
+    {
+        "kanji": "電",
+        "han_viet": "ĐIỆN",
+        "nghia": "điện",
+        "kunyomi": [],
+        "onyomi": [
+            "でん"
+        ],
+        "audio": "kanji_electric.mp3"
+    },
+    {
+        "kanji": "車",
+        "han_viet": "XA",
+        "nghia": "xe",
+        "kunyomi": [
+            "くるま"
+        ],
+        "onyomi": [
+            "しゃ"
+        ],
+        "audio": "kanji_car.mp3"
+    },
+    {
+        "kanji": "駅",
+        "han_viet": "DỊCH",
+        "nghia": "nhà ga",
+        "kunyomi": [],
+        "onyomi": [
+            "えき"
+        ],
+        "audio": "kanji_station.mp3"
+    },
+    {
+        "kanji": "社",
+        "han_viet": "XÃ",
+        "nghia": "công ty, xã hội",
+        "kunyomi": [
+            "やしろ"
+        ],
+        "onyomi": [
+            "しゃ",
+            "じゃ"
+        ],
+        "audio": "kanji_company.mp3"
+    },
+    {
+        "kanji": "校",
+        "han_viet": "HIỆU",
+        "nghia": "trường học",
+        "kunyomi": [],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_school.mp3"
+    },
+    {
+        "kanji": "店",
+        "han_viet": "ĐIẾM",
+        "nghia": "cửa hàng",
+        "kunyomi": [
+            "みせ"
+        ],
+        "onyomi": [
+            "てん"
+        ],
+        "audio": "kanji_shop.mp3"
+    },
+    {
+        "kanji": "銀",
+        "han_viet": "NGÂN",
+        "nghia": "bạc, ngân hàng",
+        "kunyomi": [],
+        "onyomi": [
+            "ぎん"
+        ],
+        "audio": "kanji_silver.mp3"
+    },
+    {
+        "kanji": "病",
+        "han_viet": "BỆNH",
+        "nghia": "bệnh",
+        "kunyomi": [
+            "や"
+        ],
+        "onyomi": [
+            "びょう"
+        ],
+        "audio": "kanji_sick.mp3"
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "kanji": "青",
+        "han_viet": "THANH",
+        "nghia": "màu xanh",
+        "kunyomi": [
+            "あお"
+        ],
+        "onyomi": [],
+        "audio": "kanji_blue.mp3"
+    },
+    {
+        "kanji": "白",
+        "han_viet": "BẠCH",
+        "nghia": "màu trắng",
+        "kunyomi": [
+            "しろ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_white.mp3"
+    },
+    {
+        "kanji": "黒",
+        "han_viet": "HẮC",
+        "nghia": "màu đen",
+        "kunyomi": [
+            "くろ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_black.mp3"
+    },
+    {
+        "kanji": "色",
+        "han_viet": "SẮC",
+        "nghia": "màu sắc",
+        "kunyomi": [
+            "いろ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_color.mp3"
+    },
+    {
+        "kanji": "魚",
+        "han_viet": "NGƯ",
+        "nghia": "cá",
+        "kunyomi": [
+            "さかな"
+        ],
+        "onyomi": [],
+        "audio": "kanji_fish.mp3"
+    },
+    {
+        "kanji": "犬",
+        "han_viet": "KHUYỂN",
+        "nghia": "chó",
+        "kunyomi": [
+            "いぬ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_dog.mp3"
+    },
+    {
+        "kanji": "同",
+        "han_viet": "ĐỒNG",
+        "nghia": "giống nhau",
+        "kunyomi": [
+            "おな"
+        ],
+        "onyomi": [],
+        "audio": "kanji_same.mp3"
+    }
+]

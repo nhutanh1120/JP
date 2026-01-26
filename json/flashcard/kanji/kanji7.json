@@ -1,0 +1,125 @@
+[
+    {
+        "kanji": "見",
+        "han_viet": "KIẾN",
+        "nghia": "nhìn, ngắm, xem",
+        "kunyomi": [
+            "み"
+        ],
+        "onyomi": [
+            "けん"
+        ],
+        "audio": "kanji_see.mp3"
+    },
+    {
+        "kanji": "行",
+        "han_viet": "HÀNH",
+        "nghia": "đi",
+        "kunyomi": [
+            "い"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_go.mp3"
+    },
+    {
+        "kanji": "米",
+        "han_viet": "MỄ",
+        "nghia": "gạo",
+        "kunyomi": [
+            "こめ"
+        ],
+        "onyomi": [
+            "べい",
+            "まい"
+        ],
+        "audio": "kanji_rice.mp3"
+    },
+    {
+        "kanji": "来",
+        "han_viet": "LAI",
+        "nghia": "đến / tương lai",
+        "kunyomi": [
+            "く",
+            "き",
+            "こ"
+        ],
+        "onyomi": [
+            "らい"
+        ],
+        "audio": "kanji_come.mp3"
+    },
+    {
+        "kanji": "良",
+        "han_viet": "LƯƠNG",
+        "nghia": "tốt",
+        "kunyomi": [
+            "よ"
+        ],
+        "onyomi": [
+            "りょう"
+        ],
+        "audio": "kanji_good.mp3"
+    },
+    {
+        "kanji": "食",
+        "han_viet": "THỰC",
+        "nghia": "ăn",
+        "kunyomi": [
+            "た"
+        ],
+        "onyomi": [
+            "しょく"
+        ],
+        "audio": "kanji_eat.mp3"
+    },
+    {
+        "kanji": "飲",
+        "han_viet": "ẨM",
+        "nghia": "uống",
+        "kunyomi": [
+            "の"
+        ],
+        "onyomi": [
+            "いん"
+        ],
+        "audio": "kanji_drink.mp3"
+    },
+    {
+        "kanji": "会",
+        "han_viet": "HỘI",
+        "nghia": "gặp",
+        "kunyomi": [
+            "あ"
+        ],
+        "onyomi": [
+            "かい"
+        ],
+        "audio": "kanji_meet.mp3"
+    },
+    {
+        "kanji": "耳",
+        "han_viet": "NHĨ",
+        "nghia": "cái tai",
+        "kunyomi": [
+            "みみ"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_ear.mp3"
+    },
+    {
+        "kanji": "聞",
+        "han_viet": "VĂN",
+        "nghia": "nghe / hỏi",
+        "kunyomi": [
+            "き"
+        ],
+        "onyomi": [
+            "ぶん"
+        ],
+        "audio": "kanji_hear.mp3"
+    }
+]

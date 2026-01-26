@@ -1,0 +1,122 @@
+[
+    {
+        "kanji": "大",
+        "han_viet": "ĐẠI",
+        "nghia": "lớn, to",
+        "kunyomi": [
+            "おお"
+        ],
+        "onyomi": [
+            "たい",
+            "だい"
+        ],
+        "audio": "kanji_big.mp3"
+    },
+    {
+        "kanji": "小",
+        "han_viet": "TIỂU",
+        "nghia": "nhỏ, bé",
+        "kunyomi": [
+            "ちい"
+        ],
+        "onyomi": [
+            "しょう"
+        ],
+        "audio": "kanji_small.mp3"
+    },
+    {
+        "kanji": "高",
+        "han_viet": "CAO",
+        "nghia": "cao / đắt",
+        "kunyomi": [
+            "たか"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_high.mp3"
+    },
+    {
+        "kanji": "安",
+        "han_viet": "AN",
+        "nghia": "rẻ / an toàn",
+        "kunyomi": [
+            "やす"
+        ],
+        "onyomi": [
+            "あん"
+        ],
+        "audio": "kanji_safe.mp3"
+    },
+    {
+        "kanji": "新",
+        "han_viet": "TÂN",
+        "nghia": "mới",
+        "kunyomi": [
+            "あたら"
+        ],
+        "onyomi": [
+            "しん"
+        ],
+        "audio": "kanji_new.mp3"
+    },
+    {
+        "kanji": "古",
+        "han_viet": "CỔ",
+        "nghia": "cũ, cổ",
+        "kunyomi": [
+            "ふる"
+        ],
+        "onyomi": [
+            "こ"
+        ],
+        "audio": "kanji_old.mp3"
+    },
+    {
+        "kanji": "元",
+        "han_viet": "NGUYÊN",
+        "nghia": "nguồn gốc / bắt đầu",
+        "kunyomi": [
+            "もと"
+        ],
+        "onyomi": [
+            "げん"
+        ],
+        "audio": "kanji_origin.mp3"
+    },
+    {
+        "kanji": "気",
+        "han_viet": "KHÍ",
+        "nghia": "tinh thần",
+        "kunyomi": [],
+        "onyomi": [
+            "き"
+        ],
+        "audio": "kanji_spirit.mp3"
+    },
+    {
+        "kanji": "多",
+        "han_viet": "ĐA",
+        "nghia": "nhiều",
+        "kunyomi": [
+            "おお"
+        ],
+        "onyomi": [
+            "た"
+        ],
+        "audio": "kanji_many.mp3"
+    },
+    {
+        "kanji": "少",
+        "han_viet": "THIỂU",
+        "nghia": "ít",
+        "kunyomi": [
+            "すく",
+            "すこ"
+        ],
+        "onyomi": [
+            "しょう"
+        ],
+        "audio": "kanji_few.mp3"
+    }
+]

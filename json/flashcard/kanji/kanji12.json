@@ -1,0 +1,118 @@
+[
+    {
+        "kanji": "院",
+        "han_viet": "VIỆN",
+        "nghia": "nơi, viện",
+        "kunyomi": [],
+        "onyomi": [
+            "いん"
+        ],
+        "audio": "kanji_in.mp3"
+    },
+    {
+        "kanji": "休",
+        "han_viet": "HƯU",
+        "nghia": "nghỉ ngơi",
+        "kunyomi": [
+            "やす"
+        ],
+        "onyomi": [
+            "きゅう"
+        ],
+        "audio": "kanji_rest.mp3"
+    },
+    {
+        "kanji": "走",
+        "han_viet": "TẨU",
+        "nghia": "chạy",
+        "kunyomi": [
+            "はし"
+        ],
+        "onyomi": [
+            "そう"
+        ],
+        "audio": "kanji_run.mp3"
+    },
+    {
+        "kanji": "起",
+        "han_viet": "KHỞI",
+        "nghia": "thức dậy",
+        "kunyomi": [
+            "お"
+        ],
+        "onyomi": [
+            "き"
+        ],
+        "audio": "kanji_wake.mp3"
+    },
+    {
+        "kanji": "買",
+        "han_viet": "MÃI",
+        "nghia": "mua",
+        "kunyomi": [
+            "か"
+        ],
+        "onyomi": [
+            "ばい"
+        ],
+        "audio": "kanji_buy.mp3"
+    },
+    {
+        "kanji": "売",
+        "han_viet": "MAI",
+        "nghia": "bán",
+        "kunyomi": [
+            "う"
+        ],
+        "onyomi": [
+            "ばい"
+        ],
+        "audio": "kanji_sell.mp3"
+    },
+    {
+        "kanji": "読",
+        "han_viet": "ĐỘC",
+        "nghia": "đọc",
+        "kunyomi": [
+            "よ"
+        ],
+        "onyomi": [
+            "どく"
+        ],
+        "audio": "kanji_read.mp3"
+    },
+    {
+        "kanji": "書",
+        "han_viet": "THƯ",
+        "nghia": "viết",
+        "kunyomi": [
+            "か"
+        ],
+        "onyomi": [
+            "しょ"
+        ],
+        "audio": "kanji_write.mp3"
+    },
+    {
+        "kanji": "帰",
+        "han_viet": "QUY",
+        "nghia": "về",
+        "kunyomi": [
+            "かえ"
+        ],
+        "onyomi": [
+            "き"
+        ],
+        "audio": "kanji_return.mp3"
+    },
+    {
+        "kanji": "勉",
+        "han_viet": "MIỄN",
+        "nghia": "cố gắng, học",
+        "kunyomi": [],
+        "onyomi": [
+            "べん"
+        ],
+        "audio": "kanji_study.mp3"
+    }
+]

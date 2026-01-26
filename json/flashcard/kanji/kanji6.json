@@ -1,0 +1,123 @@
+[
+    {
+        "kanji": "学",
+        "han_viet": "HỌC",
+        "nghia": "học tập",
+        "kunyomi": [
+            "まな"
+        ],
+        "onyomi": [
+            "がく",
+            "がっ"
+        ],
+        "audio": "kanji_learn.mp3"
+    },
+    {
+        "kanji": "生",
+        "han_viet": "SINH",
+        "nghia": "sinh / sống / học sinh",
+        "kunyomi": [
+            "う",
+            "い"
+        ],
+        "onyomi": [
+            "せい"
+        ],
+        "audio": "kanji_life.mp3"
+    },
+    {
+        "kanji": "先",
+        "han_viet": "TIÊN",
+        "nghia": "trước",
+        "kunyomi": [
+            "さき"
+        ],
+        "onyomi": [
+            "せん"
+        ],
+        "audio": "kanji_before.mp3"
+    },
+    {
+        "kanji": "何",
+        "han_viet": "HÀ",
+        "nghia": "cái gì",
+        "kunyomi": [
+            "なに",
+            "なん"
+        ],
+        "onyomi": [
+            "か"
+        ],
+        "audio": "kanji_what.mp3"
+    },
+    {
+        "kanji": "父",
+        "han_viet": "PHỤ",
+        "nghia": "ba",
+        "kunyomi": [
+            "ちち"
+        ],
+        "onyomi": [
+            "ふ"
+        ],
+        "audio": "kanji_father.mp3"
+    },
+    {
+        "kanji": "母",
+        "han_viet": "MẪU",
+        "nghia": "mẹ",
+        "kunyomi": [
+            "はは"
+        ],
+        "onyomi": [
+            "ぼ"
+        ],
+        "audio": "kanji_mother.mp3"
+    },
+    {
+        "kanji": "年",
+        "han_viet": "NIÊN",
+        "nghia": "năm",
+        "kunyomi": [
+            "とし"
+        ],
+        "onyomi": [
+            "ねん"
+        ],
+        "audio": "kanji_year.mp3"
+    },
+    {
+        "kanji": "去",
+        "han_viet": "KHỨ",
+        "nghia": "quá khứ",
+        "kunyomi": [
+            "さ"
+        ],
+        "onyomi": [
+            "きょ"
+        ],
+        "audio": "kanji_past.mp3"
+    },
+    {
+        "kanji": "毎",
+        "han_viet": "MỖI",
+        "nghia": "mỗi ~",
+        "kunyomi": [],
+        "onyomi": [
+            "まい"
+        ],
+        "audio": "kanji_every.mp3"
+    },
+    {
+        "kanji": "国",
+        "han_viet": "QUỐC",
+        "nghia": "đất nước",
+        "kunyomi": [
+            "くに"
+        ],
+        "onyomi": [
+            "こく"
+        ],
+        "audio": "kanji_country.mp3"
+    }
+]

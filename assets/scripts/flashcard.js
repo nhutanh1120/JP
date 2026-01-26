@@ -15,6 +15,7 @@ const state = {
     displayMode: "mix", // mix | jp | vi
     isAudioOn: false,
     cardSize: "medium", // small | medium | large | xlarge
+    groupKey: null,
 };
 
 // ============================================================================
@@ -150,6 +151,67 @@ function pickRandomIndex() {
 }
 
 /**
+ * Render front side of flashcard
+ * @param {string} groupKey - vocabulary | kanji
+ * @param {string} lang - jp | vi
+ * @param {object} word
+ * @returns {string} HTML
+ */
+function renderFront(groupKey, lang, word) {
+    if (groupKey === "vocabulary") {
+        return `
+            <div class="fc-main">
+                ${lang === "vi" ? word.vi : word.jp}
+            </div>
+        `;
+    }
+
+    if (groupKey === "kanji") {
+        // Front luôn là Kanji
+        return `
+            <div class="fc-kanji">
+                ${word.kanji}
+            </div>
+        `;
+    }
+
+    return "";
+}
+
+/**
+ * Render back side of flashcard
+ * @param {string} groupKey - vocabulary | kanji
+ * @param {string} lang - jp | vi
+ * @param {object} word
+ * @returns {string} HTML
+ */
+function renderBack(groupKey, lang, word) {
+    if (groupKey === "vocabulary") {
+        return `
+            <div class="fc-main">
+                ${lang === "vi" ? word.jp : word.vi}
+            </div>
+        `;
+    }
+
+    if (groupKey === "kanji") {
+        return `
+            <div>
+                <div class="fc-meaning">${word.nghia}</div>
+                <div class="fc-hanviet">${word.han_viet}</div>
+                <div class="fc-reading">
+                    <div><strong>Onyomi:</strong> ${word.onyomi?.join(", ") || "-"}</div>
+                    <div><strong>Kunyomi:</strong> ${word.kunyomi?.join(", ") || "-"}</div>
+                </div>
+            </div>
+        `;
+    }
+
+    return "";
+}
+
+
+/**
  * Display word at given index with flip reset
  * @param {number} wordIndex - Index in words array
  */
@@ -161,13 +223,10 @@ function showWord(wordIndex) {
     DOM.innerCard.classList.remove("flipped");
 
     const lang = getDisplayLanguage(state.displayMode);
-    const frontText = lang === "vi" ? word.vi : word.jp;
-    const backText = lang === "vi" ? word.jp : word.vi;
-
     // Set front immediately, back with delay for better UX
-    DOM.frontText.textContent = frontText;
+    DOM.frontText.innerHTML = renderFront(state.groupKey, lang, word);
     setTimeout(() => {
-        DOM.backText.textContent = backText;
+        DOM.backText.innerHTML = renderBack(state.groupKey, lang, word);
     }, 400);
 
     // Auto-play audio if enabled
@@ -320,6 +379,7 @@ async function loadLesson(groupKey, fileName, lessonName) {
         const response = await fetch(`/json/flashcard/${groupKey}/${fileName}.json`);
         if (!response.ok) throw new Error(`File not found: ${fileName}`);
 
+        state.groupKey = groupKey;
         const data = await response.json();
         if (!Array.isArray(data)) throw new Error("Invalid data format");
 
@@ -340,7 +400,7 @@ async function loadLesson(groupKey, fileName, lessonName) {
         nextWord();
 
         // Render vocabulary table
-        renderTable(data);
+        renderTable(groupKey, data);
 
         // Update sidebar title
         const sidebarHeader = document.querySelector("#sidebar .sidebar-header h2");
@@ -354,45 +414,82 @@ async function loadLesson(groupKey, fileName, lessonName) {
     }
 }
 
+const TABLE_CONFIG = {
+    kanji: {
+        headers: ["Hán Tự", "Hán Việt", "Kunyomi", "Onyomi", "Nghĩa"],
+        renderRow(item) {
+            return `
+                <td class="w-10">${item.kanji || "-"}</td>
+                <td class="w-20">${item.han_viet || "-"}</td>
+                <td class="w-20">${item.kunyomi?.join(", ") || "-"}</td>
+                <td class="w-30">${item.onyomi?.join(", ") || "-"}</td>
+                <td class="w-20">${item.nghia || "-"}</td>
+            `;
+        }
+    },
+
+    vocabulary: {
+        headers: ["Từ Vựng", "Hán Tự", "Âm Hán", "Nghĩa"],
+        renderRow(item) {
+            const hiraganaAttr = item.hiragana
+                ? `data-tooltip="${item.hiragana}"`
+                : "";
+
+            // simple vocab: jp + vi
+            if (!item.kanji && !item.sino) {
+                return `
+                    <td class="text-left" colspan="3" ${hiraganaAttr}>${item.jp}</td>
+                    <td class="text-left">${item.vi}</td>
+                `;
+            }
+
+            // full vocab
+            return `
+                <td class="text-left w-30" ${hiraganaAttr}>${item.jp}</td>
+                <td class="w-15">${item.kanji || "-"}</td>
+                <td class="w-20">${item.sino || "-"}</td>
+                <td class="text-left w-35">${item.vi}</td>
+            `;
+        }
+    }
+};
+
+function renderTableHeader(headers) {
+    const thead = document.querySelector(".vocab-table thead tr");
+    thead.innerHTML = headers.map(h => `<th>${h}</th>`).join("");
+}
+
 /**
- * Render vocabulary table with sections and tooltips
- * @param {Array} data - Full lesson data including sections
+ * Render vocabulary / kanji table by group
+ * @param {string} groupKey
+ * @param {Array} data
  */
-function renderTable(data) {
+function renderTable(groupKey, data) {
+    const config = TABLE_CONFIG[groupKey];
+    if (!config) return;
+
     DOM.tableBody.innerHTML = "";
+
+    // render header theo group
+    renderTableHeader(config.headers);
 
     data.forEach(item => {
         const row = document.createElement("tr");
 
-        // Section headers
+        // Section row
         if (item.type === "section") {
             row.classList.add("highlight");
-            row.innerHTML = `<td colspan="4">${item.label}</td>`;
+            row.innerHTML = `
+                <td colspan="${config.headers.length}">
+                    ${item.label}
+                </td>
+            `;
             DOM.tableBody.appendChild(row);
             return;
         }
 
-        // Vocabulary rows
-        const fieldCount = Object.keys(item).length;
-        const hiraganaAttr = item.hiragana ? `data-tooltip="${item.hiragana}"` : "";
-
-        if (fieldCount <= 3) {
-            // Simple format (jp + vi only)
-            row.classList.add("colspan");
-            row.innerHTML = `
-                <td colspan="3" ${hiraganaAttr}>${item.jp}</td>
-                <td>${item.vi}</td>
-            `;
-        } else {
-            // Full format (jp + kanji + sino + vi)
-            row.innerHTML = `
-                <td ${hiraganaAttr}>${item.jp}</td>
-                <td>${item.kanji || "-"}</td>
-                <td>${item.sino || "-"}</td>
-                <td>${item.vi}</td>
-            `;
-        }
-
+        // Normal row
+        row.innerHTML = config.renderRow(item);
         DOM.tableBody.appendChild(row);
     });
 }

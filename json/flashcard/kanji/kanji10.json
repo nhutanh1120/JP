@@ -1,0 +1,125 @@
+[
+    {
+        "kanji": "広",
+        "han_viet": "QUẢNG",
+        "nghia": "rộng rãi",
+        "kunyomi": [
+            "ひろ"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_wide.mp3"
+    },
+    {
+        "kanji": "早",
+        "han_viet": "TẢO",
+        "nghia": "sớm",
+        "kunyomi": [
+            "はや"
+        ],
+        "onyomi": [
+            "そう",
+            "さつ"
+        ],
+        "audio": "kanji_early.mp3"
+    },
+    {
+        "kanji": "長",
+        "han_viet": "TRƯỜNG",
+        "nghia": "dài",
+        "kunyomi": [
+            "なが"
+        ],
+        "onyomi": [
+            "ちょう"
+        ],
+        "audio": "kanji_long.mp3"
+    },
+    {
+        "kanji": "明",
+        "han_viet": "MINH",
+        "nghia": "sáng",
+        "kunyomi": [
+            "あか"
+        ],
+        "onyomi": [
+            "めい"
+        ],
+        "audio": "kanji_bright.mp3"
+    },
+    {
+        "kanji": "好",
+        "han_viet": "HẢO",
+        "nghia": "thích",
+        "kunyomi": [
+            "す"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_like.mp3"
+    },
+    {
+        "kanji": "友",
+        "han_viet": "HỮU",
+        "nghia": "bạn bè",
+        "kunyomi": [
+            "とも"
+        ],
+        "onyomi": [
+            "ゆう"
+        ],
+        "audio": "kanji_friend.mp3"
+    },
+    {
+        "kanji": "入",
+        "han_viet": "NHẬP",
+        "nghia": "vào",
+        "kunyomi": [
+            "はい",
+            "い"
+        ],
+        "onyomi": [
+            "にゅう"
+        ],
+        "audio": "kanji_enter.mp3"
+    },
+    {
+        "kanji": "出",
+        "han_viet": "XUẤT",
+        "nghia": "ra",
+        "kunyomi": [
+            "で",
+            "だ"
+        ],
+        "onyomi": [
+            "しゅつ"
+        ],
+        "audio": "kanji_exit.mp3"
+    },
+    {
+        "kanji": "市",
+        "han_viet": "THỊ",
+        "nghia": "thành phố",
+        "kunyomi": [
+            "いち"
+        ],
+        "onyomi": [
+            "し"
+        ],
+        "audio": "kanji_city.mp3"
+    },
+    {
+        "kanji": "町",
+        "han_viet": "ĐINH",
+        "nghia": "khu phố, thị trấn",
+        "kunyomi": [
+            "まち"
+        ],
+        "onyomi": [
+            "ちょう"
+        ],
+        "audio": "kanji_town.mp3"
+    }
+]

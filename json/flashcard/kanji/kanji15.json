@@ -1,0 +1,114 @@
+[
+    {
+        "kanji": "道",
+        "han_viet": "ĐẠO",
+        "nghia": "con đường",
+        "kunyomi": [
+            "みち"
+        ],
+        "onyomi": [
+            "どう"
+        ],
+        "audio": "kanji_road.mp3"
+    },
+    {
+        "kanji": "山",
+        "han_viet": "SƠN",
+        "nghia": "núi",
+        "kunyomi": [
+            "やま"
+        ],
+        "onyomi": [
+            "さん"
+        ],
+        "audio": "kanji_mountain.mp3"
+    },
+    {
+        "kanji": "川",
+        "han_viet": "XUYÊN",
+        "nghia": "sông",
+        "kunyomi": [
+            "かわ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_river.mp3"
+    },
+    {
+        "kanji": "林",
+        "han_viet": "LÂM",
+        "nghia": "rừng",
+        "kunyomi": [
+            "はやし"
+        ],
+        "onyomi": [
+            "りん"
+        ],
+        "audio": "kanji_forest.mp3"
+    },
+    {
+        "kanji": "森",
+        "han_viet": "SÂM",
+        "nghia": "rừng rậm",
+        "kunyomi": [
+            "もり"
+        ],
+        "onyomi": [
+            "しん"
+        ],
+        "audio": "kanji_dense_forest.mp3"
+    },
+    {
+        "kanji": "空",
+        "han_viet": "KHÔNG",
+        "nghia": "bầu trời, không khí",
+        "kunyomi": [
+            "そら"
+        ],
+        "onyomi": [
+            "くう"
+        ],
+        "audio": "kanji_sky.mp3"
+    },
+    {
+        "kanji": "海",
+        "han_viet": "HẢI",
+        "nghia": "biển",
+        "kunyomi": [
+            "うみ"
+        ],
+        "onyomi": [
+            "かい"
+        ],
+        "audio": "kanji_sea.mp3"
+    },
+    {
+        "kanji": "花",
+        "han_viet": "HOA",
+        "nghia": "hoa",
+        "kunyomi": [
+            "はな"
+        ],
+        "onyomi": [],
+        "audio": "kanji_flower.mp3"
+    },
+    {
+        "kanji": "天",
+        "han_viet": "THIÊN",
+        "nghia": "trời",
+        "kunyomi": [],
+        "onyomi": [
+            "てん"
+        ],
+        "audio": "kanji_heaven.mp3"
+    },
+    {
+        "kanji": "赤",
+        "han_viet": "XÍCH",
+        "nghia": "màu đỏ",
+        "kunyomi": [
+            "あか"
+        ],
+        "onyomi": [],
+        "audio": "kanji_red.mp3"
+    }
+]

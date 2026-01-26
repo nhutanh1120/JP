@@ -1,54 +1,125 @@
 [
     {
-        "type": "section",
-        "label": "Kanji made from picture 2 (nature)"
+        "kanji": "百",
+        "han_viet": "BÁCH",
+        "nghia": "trăm",
+        "kunyomi": [],
+        "onyomi": [
+            "ひゃく",
+            "びゃく",
+            "ぴゃく"
+        ],
+        "audio": "kanji_100.mp3"
     },
     {
-        "jp": "車",
-        "hiragana": "くるま、しゃ",
-        "vi": "Xe",
-        "audio": "kanji2_1.mp3"
+        "kanji": "千",
+        "han_viet": "THIÊN",
+        "nghia": "nghìn",
+        "kunyomi": [
+            "ち"
+        ],
+        "onyomi": [
+            "せん"
+        ],
+        "audio": "kanji_1000.mp3"
     },
     {
-        "jp": "門",
-        "hiragana": "もん、かど",
-        "vi": "Cửa / Cổng",
-        "audio": "kanji2_2.mp3"
+        "kanji": "万",
+        "han_viet": "VẠN",
+        "nghia": "chục nghìn",
+        "kunyomi": [],
+        "onyomi": [
+            "まん",
+            "ばん"
+        ],
+        "audio": "kanji_10000.mp3"
     },
     {
-        "jp": "田",
-        "hiragana": "た、でん",
-        "vi": "Ruộng",
-        "audio": "kanji2_3.mp3"
+        "kanji": "円",
+        "han_viet": "VIÊN",
+        "nghia": "tròn / đơn vị tiền",
+        "kunyomi": [
+            "まる"
+        ],
+        "onyomi": [
+            "えん"
+        ],
+        "audio": "kanji_yen.mp3"
     },
     {
-        "jp": "山",
-        "hiragana": "やま、さん",
-        "vi": "Núi",
-        "audio": "kanji2_4.mp3"
+        "kanji": "日",
+        "han_viet": "NHẬT",
+        "nghia": "ngày / mặt trời",
+        "kunyomi": [
+            "ひ",
+            "び"
+        ],
+        "onyomi": [
+            "にち",
+            "にっ"
+        ],
+        "audio": "kanji_sun.mp3"
     },
     {
-        "jp": "川",
-        "hiragana": "かわ、せん",
-        "vi": "Sông / Suối",
-        "audio": "kanji2_5.mp3"
+        "kanji": "月",
+        "han_viet": "NGUYỆT",
+        "nghia": "tháng / mặt trăng",
+        "kunyomi": [
+            "つき"
+        ],
+        "onyomi": [
+            "がつ",
+            "げつ"
+        ],
+        "audio": "kanji_moon.mp3"
     },
     {
-        "jp": "雨",
-        "hiragana": "あめ、う",
-        "vi": "Mưa",
-        "audio": "kanji2_6.mp3"
+        "kanji": "火",
+        "han_viet": "HỎA",
+        "nghia": "lửa",
+        "kunyomi": [
+            "ひ",
+            "び"
+        ],
+        "onyomi": [
+            "か"
+        ],
+        "audio": "kanji_fire.mp3"
     },
     {
-        "jp": "天",
-        "hiragana": "てん、あめ",
-        "vi": "Trời / Thiên",
-        "audio": "kanji2_7.mp3"
+        "kanji": "水",
+        "han_viet": "THỦY",
+        "nghia": "nước",
+        "kunyomi": [
+            "みず"
+        ],
+        "onyomi": [
+            "すい"
+        ],
+        "audio": "kanji_water.mp3"
     },
     {
-        "jp": "気",
-        "hiragana": "き、け",
-        "vi": "Khí / Cảm giác",
-        "audio": "kanji2_8.mp3"
+        "kanji": "木",
+        "han_viet": "MỘC",
+        "nghia": "cây, gỗ",
+        "kunyomi": [
+            "き"
+        ],
+        "onyomi": [
+            "もく"
+        ],
+        "audio": "kanji_wood.mp3"
+    },
+    {
+        "kanji": "金",
+        "han_viet": "KIM",
+        "nghia": "tiền, vàng",
+        "kunyomi": [
+            "かね"
+        ],
+        "onyomi": [
+            "きん"
+        ],
+        "audio": "kanji_gold.mp3"
     }
 ]

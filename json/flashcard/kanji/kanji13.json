@@ -1,0 +1,118 @@
+[
+    {
+        "kanji": "虫",
+        "han_viet": "TRÙNG",
+        "nghia": "côn trùng",
+        "kunyomi": [
+            "むし"
+        ],
+        "onyomi": [],
+        "audio": "kanji_mushi.mp3"
+    },
+    {
+        "kanji": "強",
+        "han_viet": "CƯỜNG",
+        "nghia": "khỏe, mạnh",
+        "kunyomi": [
+            "つよ"
+        ],
+        "onyomi": [
+            "きょう"
+        ],
+        "audio": "kanji_strong.mp3"
+    },
+    {
+        "kanji": "持",
+        "han_viet": "TRÌ",
+        "nghia": "cầm, mang, sở hữu",
+        "kunyomi": [
+            "も"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_hold.mp3"
+    },
+    {
+        "kanji": "名",
+        "han_viet": "DANH",
+        "nghia": "tên, danh tiếng",
+        "kunyomi": [
+            "な"
+        ],
+        "onyomi": [
+            "めい"
+        ],
+        "audio": "kanji_name.mp3"
+    },
+    {
+        "kanji": "語",
+        "han_viet": "NGỮ",
+        "nghia": "ngôn ngữ",
+        "kunyomi": [],
+        "onyomi": [
+            "ご"
+        ],
+        "audio": "kanji_language.mp3"
+    },
+    {
+        "kanji": "春",
+        "han_viet": "XUÂN",
+        "nghia": "mùa xuân",
+        "kunyomi": [
+            "はる"
+        ],
+        "onyomi": [
+            "しゅん"
+        ],
+        "audio": "kanji_spring.mp3"
+    },
+    {
+        "kanji": "夏",
+        "han_viet": "HẠ",
+        "nghia": "mùa hè",
+        "kunyomi": [
+            "なつ"
+        ],
+        "onyomi": [
+            "か"
+        ],
+        "audio": "kanji_summer.mp3"
+    },
+    {
+        "kanji": "秋",
+        "han_viet": "THU",
+        "nghia": "mùa thu",
+        "kunyomi": [
+            "あき"
+        ],
+        "onyomi": [
+            "しゅう"
+        ],
+        "audio": "kanji_autumn.mp3"
+    },
+    {
+        "kanji": "冬",
+        "han_viet": "ĐÔNG",
+        "nghia": "mùa đông",
+        "kunyomi": [
+            "ふゆ"
+        ],
+        "onyomi": [
+            "とう"
+        ],
+        "audio": "kanji_winter.mp3"
+    },
+    {
+        "kanji": "朝",
+        "han_viet": "TRIỀU",
+        "nghia": "buổi sáng",
+        "kunyomi": [
+            "あさ"
+        ],
+        "onyomi": [
+            "ちょう"
+        ],
+        "audio": "kanji_morning.mp3"
+    }
+]

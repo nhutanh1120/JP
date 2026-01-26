@@ -1,0 +1,1813 @@
+[
+    {
+        "kanji": "一",
+        "han_viet": "NHẤT",
+        "nghia": "một",
+        "kunyomi": [
+            "ひと"
+        ],
+        "onyomi": [
+            "いち",
+            "いつ"
+        ],
+        "audio": "kanji_1.mp3"
+    },
+    {
+        "kanji": "二",
+        "han_viet": "NHỊ",
+        "nghia": "hai",
+        "kunyomi": [
+            "ふた"
+        ],
+        "onyomi": [
+            "に"
+        ],
+        "audio": "kanji_2.mp3"
+    },
+    {
+        "kanji": "三",
+        "han_viet": "TAM",
+        "nghia": "ba",
+        "kunyomi": [
+            "みっ"
+        ],
+        "onyomi": [
+            "さん"
+        ],
+        "audio": "kanji_3.mp3"
+    },
+    {
+        "kanji": "四",
+        "han_viet": "TỨ",
+        "nghia": "bốn",
+        "kunyomi": [
+            "よん",
+            "よっ"
+        ],
+        "onyomi": [
+            "し"
+        ],
+        "audio": "kanji_4.mp3"
+    },
+    {
+        "kanji": "五",
+        "han_viet": "NGŨ",
+        "nghia": "năm",
+        "kunyomi": [
+            "いつ"
+        ],
+        "onyomi": [
+            "ご"
+        ],
+        "audio": "kanji_5.mp3"
+    },
+    {
+        "kanji": "六",
+        "han_viet": "LỤC",
+        "nghia": "sáu",
+        "kunyomi": [
+            "むっ"
+        ],
+        "onyomi": [
+            "ろく",
+            "ろっ"
+        ],
+        "audio": "kanji_6.mp3"
+    },
+    {
+        "kanji": "七",
+        "han_viet": "THẤT",
+        "nghia": "bảy",
+        "kunyomi": [
+            "なな",
+            "なの"
+        ],
+        "onyomi": [
+            "しち"
+        ],
+        "audio": "kanji_7.mp3"
+    },
+    {
+        "kanji": "八",
+        "han_viet": "BÁT",
+        "nghia": "tám",
+        "kunyomi": [
+            "やっ"
+        ],
+        "onyomi": [
+            "はち",
+            "はっ"
+        ],
+        "audio": "kanji_8.mp3"
+    },
+    {
+        "kanji": "九",
+        "han_viet": "CỬU",
+        "nghia": "chín",
+        "kunyomi": [
+            "ここの"
+        ],
+        "onyomi": [
+            "きゅう",
+            "く"
+        ],
+        "audio": "kanji_9.mp3"
+    },
+    {
+        "kanji": "十",
+        "han_viet": "THẬP",
+        "nghia": "mười",
+        "kunyomi": [
+            "とお"
+        ],
+        "onyomi": [
+            "じゅう",
+            "じゅっ"
+        ],
+        "audio": "kanji_10.mp3"
+    },
+    {
+        "kanji": "百",
+        "han_viet": "BÁCH",
+        "nghia": "trăm",
+        "kunyomi": [],
+        "onyomi": [
+            "ひゃく",
+            "びゃく",
+            "ぴゃく"
+        ],
+        "audio": "kanji_100.mp3"
+    },
+    {
+        "kanji": "千",
+        "han_viet": "THIÊN",
+        "nghia": "nghìn",
+        "kunyomi": [
+            "ち"
+        ],
+        "onyomi": [
+            "せん"
+        ],
+        "audio": "kanji_1000.mp3"
+    },
+    {
+        "kanji": "万",
+        "han_viet": "VẠN",
+        "nghia": "chục nghìn",
+        "kunyomi": [],
+        "onyomi": [
+            "まん",
+            "ばん"
+        ],
+        "audio": "kanji_10000.mp3"
+    },
+    {
+        "kanji": "円",
+        "han_viet": "VIÊN",
+        "nghia": "tròn / đơn vị tiền",
+        "kunyomi": [
+            "まる"
+        ],
+        "onyomi": [
+            "えん"
+        ],
+        "audio": "kanji_yen.mp3"
+    },
+    {
+        "kanji": "日",
+        "han_viet": "NHẬT",
+        "nghia": "ngày / mặt trời",
+        "kunyomi": [
+            "ひ",
+            "び"
+        ],
+        "onyomi": [
+            "にち",
+            "にっ"
+        ],
+        "audio": "kanji_sun.mp3"
+    },
+    {
+        "kanji": "月",
+        "han_viet": "NGUYỆT",
+        "nghia": "tháng / mặt trăng",
+        "kunyomi": [
+            "つき"
+        ],
+        "onyomi": [
+            "がつ",
+            "げつ"
+        ],
+        "audio": "kanji_moon.mp3"
+    },
+    {
+        "kanji": "火",
+        "han_viet": "HỎA",
+        "nghia": "lửa",
+        "kunyomi": [
+            "ひ",
+            "び"
+        ],
+        "onyomi": [
+            "か"
+        ],
+        "audio": "kanji_fire.mp3"
+    },
+    {
+        "kanji": "水",
+        "han_viet": "THỦY",
+        "nghia": "nước",
+        "kunyomi": [
+            "みず"
+        ],
+        "onyomi": [
+            "すい"
+        ],
+        "audio": "kanji_water.mp3"
+    },
+    {
+        "kanji": "木",
+        "han_viet": "MỘC",
+        "nghia": "cây, gỗ",
+        "kunyomi": [
+            "き"
+        ],
+        "onyomi": [
+            "もく"
+        ],
+        "audio": "kanji_wood.mp3"
+    },
+    {
+        "kanji": "金",
+        "han_viet": "KIM",
+        "nghia": "tiền, vàng",
+        "kunyomi": [
+            "かね"
+        ],
+        "onyomi": [
+            "きん"
+        ],
+        "audio": "kanji_gold.mp3"
+    },
+    {
+        "kanji": "土",
+        "han_viet": "THỔ",
+        "nghia": "đất",
+        "kunyomi": [
+            "つち"
+        ],
+        "onyomi": [
+            "ど",
+            "と"
+        ],
+        "audio": "kanji_soil.mp3"
+    },
+    {
+        "kanji": "曜",
+        "han_viet": "DIỆU",
+        "nghia": "các ngày trong tuần",
+        "kunyomi": [],
+        "onyomi": [
+            "よう"
+        ],
+        "audio": "kanji_weekday.mp3"
+    },
+    {
+        "kanji": "本",
+        "han_viet": "BẢN, BỔN",
+        "nghia": "sách / nguồn gốc",
+        "kunyomi": [
+            "ほん",
+            "ぼん",
+            "ぽん"
+        ],
+        "onyomi": [
+            "もと"
+        ],
+        "audio": "kanji_book.mp3"
+    },
+    {
+        "kanji": "人",
+        "han_viet": "NHÂN",
+        "nghia": "con người",
+        "kunyomi": [
+            "ひと"
+        ],
+        "onyomi": [
+            "じん",
+            "にん"
+        ],
+        "audio": "kanji_person.mp3"
+    },
+    {
+        "kanji": "今",
+        "han_viet": "KIM",
+        "nghia": "bây giờ",
+        "kunyomi": [
+            "いま"
+        ],
+        "onyomi": [
+            "こん",
+            "きん"
+        ],
+        "audio": "kanji_now.mp3"
+    },
+    {
+        "kanji": "寺",
+        "han_viet": "TỰ",
+        "nghia": "chùa",
+        "kunyomi": [
+            "てら"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_temple.mp3"
+    },
+    {
+        "kanji": "時",
+        "han_viet": "THỜI",
+        "nghia": "giờ",
+        "kunyomi": [
+            "とき"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_time.mp3"
+    },
+    {
+        "kanji": "半",
+        "han_viet": "BÁN",
+        "nghia": "một nửa",
+        "kunyomi": [
+            "なか"
+        ],
+        "onyomi": [
+            "はん"
+        ],
+        "audio": "kanji_half.mp3"
+    },
+    {
+        "kanji": "分",
+        "han_viet": "PHÂN",
+        "nghia": "phút",
+        "kunyomi": [
+            "わ"
+        ],
+        "onyomi": [
+            "ふん",
+            "ぶん",
+            "ぶ"
+        ],
+        "audio": "kanji_minute.mp3"
+    },
+    {
+        "kanji": "口",
+        "han_viet": "KHẨU",
+        "nghia": "miệng",
+        "kunyomi": [
+            "くち",
+            "ぐち"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_mouth.mp3"
+    },
+    {
+        "kanji": "目",
+        "han_viet": "MỤC",
+        "nghia": "mắt",
+        "kunyomi": [
+            "め"
+        ],
+        "onyomi": [
+            "もく"
+        ],
+        "audio": "kanji_eye.mp3"
+    },
+    {
+        "kanji": "上",
+        "han_viet": "THƯỢNG",
+        "nghia": "bên trên",
+        "kunyomi": [
+            "うえ"
+        ],
+        "onyomi": [
+            "じょう"
+        ],
+        "audio": "kanji_up.mp3"
+    },
+    {
+        "kanji": "下",
+        "han_viet": "HẠ",
+        "nghia": "bên dưới",
+        "kunyomi": [
+            "した"
+        ],
+        "onyomi": [
+            "か",
+            "げ"
+        ],
+        "audio": "kanji_down.mp3"
+    },
+    {
+        "kanji": "中",
+        "han_viet": "TRUNG",
+        "nghia": "bên trong",
+        "kunyomi": [
+            "なか"
+        ],
+        "onyomi": [
+            "ちゅう",
+            "じゅう"
+        ],
+        "audio": "kanji_inside.mp3"
+    },
+    {
+        "kanji": "外",
+        "han_viet": "NGOẠI",
+        "nghia": "bên ngoài",
+        "kunyomi": [
+            "そと"
+        ],
+        "onyomi": [
+            "がい"
+        ],
+        "audio": "kanji_outside.mp3"
+    },
+    {
+        "kanji": "右",
+        "han_viet": "HỮU",
+        "nghia": "bên phải",
+        "kunyomi": [
+            "みぎ"
+        ],
+        "onyomi": [
+            "ゆう"
+        ],
+        "audio": "kanji_right.mp3"
+    },
+    {
+        "kanji": "左",
+        "han_viet": "TẢ",
+        "nghia": "bên trái",
+        "kunyomi": [
+            "ひだり"
+        ],
+        "onyomi": [
+            "さ"
+        ],
+        "audio": "kanji_left.mp3"
+    },
+    {
+        "kanji": "前",
+        "han_viet": "TIỀN",
+        "nghia": "phía trước",
+        "kunyomi": [
+            "まえ"
+        ],
+        "onyomi": [
+            "ぜん"
+        ],
+        "audio": "kanji_front.mp3"
+    },
+    {
+        "kanji": "後",
+        "han_viet": "HẬU",
+        "nghia": "phía sau",
+        "kunyomi": [
+            "あと",
+            "うし"
+        ],
+        "onyomi": [
+            "ご"
+        ],
+        "audio": "kanji_back.mp3"
+    },
+    {
+        "kanji": "午",
+        "han_viet": "NGỌ",
+        "nghia": "giữa trưa",
+        "kunyomi": [],
+        "onyomi": [
+            "ご"
+        ],
+        "audio": "kanji_noon.mp3"
+    },
+    {
+        "kanji": "門",
+        "han_viet": "MÔN",
+        "nghia": "cửa",
+        "kunyomi": [
+            "かど"
+        ],
+        "onyomi": [
+            "もん"
+        ],
+        "audio": "kanji_gate.mp3"
+    },
+    {
+        "kanji": "間",
+        "han_viet": "GIAN",
+        "nghia": "ở giữa / thời gian",
+        "kunyomi": [
+            "あいだ"
+        ],
+        "onyomi": [
+            "かん"
+        ],
+        "audio": "kanji_interval.mp3"
+    },
+    {
+        "kanji": "東",
+        "han_viet": "ĐÔNG",
+        "nghia": "phía Đông",
+        "kunyomi": [
+            "ひがし"
+        ],
+        "onyomi": [
+            "とう"
+        ],
+        "audio": "kanji_east.mp3"
+    },
+    {
+        "kanji": "西",
+        "han_viet": "TÂY",
+        "nghia": "phía Tây",
+        "kunyomi": [
+            "にし"
+        ],
+        "onyomi": [
+            "せい",
+            "さい",
+            "ざい"
+        ],
+        "audio": "kanji_west.mp3"
+    },
+    {
+        "kanji": "南",
+        "han_viet": "NAM",
+        "nghia": "phía Nam",
+        "kunyomi": [
+            "みなみ"
+        ],
+        "onyomi": [
+            "なん"
+        ],
+        "audio": "kanji_south.mp3"
+    },
+    {
+        "kanji": "北",
+        "han_viet": "BẮC",
+        "nghia": "phía Bắc",
+        "kunyomi": [
+            "きた"
+        ],
+        "onyomi": [
+            "ほく",
+            "ぼく",
+            "ほっ"
+        ],
+        "audio": "kanji_north.mp3"
+    },
+    {
+        "kanji": "田",
+        "han_viet": "ĐIỀN",
+        "nghia": "ruộng",
+        "kunyomi": [
+            "た",
+            "だ"
+        ],
+        "onyomi": [
+            "でん"
+        ],
+        "audio": "kanji_field.mp3"
+    },
+    {
+        "kanji": "男",
+        "han_viet": "NAM",
+        "nghia": "con trai",
+        "kunyomi": [
+            "おとこ"
+        ],
+        "onyomi": [
+            "だん",
+            "なん"
+        ],
+        "audio": "kanji_man.mp3"
+    },
+    {
+        "kanji": "女",
+        "han_viet": "NỮ",
+        "nghia": "con gái",
+        "kunyomi": [
+            "おんな"
+        ],
+        "onyomi": [
+            "じょ"
+        ],
+        "audio": "kanji_woman.mp3"
+    },
+    {
+        "kanji": "子",
+        "han_viet": "TỬ",
+        "nghia": "con nít, trẻ em",
+        "kunyomi": [
+            "こ"
+        ],
+        "onyomi": [
+            "し",
+            "す"
+        ],
+        "audio": "kanji_child.mp3"
+    },
+    {
+        "kanji": "学",
+        "han_viet": "HỌC",
+        "nghia": "học tập",
+        "kunyomi": [
+            "まな"
+        ],
+        "onyomi": [
+            "がく",
+            "がっ"
+        ],
+        "audio": "kanji_learn.mp3"
+    },
+    {
+        "kanji": "生",
+        "han_viet": "SINH",
+        "nghia": "sinh / sống / học sinh",
+        "kunyomi": [
+            "う",
+            "い"
+        ],
+        "onyomi": [
+            "せい"
+        ],
+        "audio": "kanji_life.mp3"
+    },
+    {
+        "kanji": "先",
+        "han_viet": "TIÊN",
+        "nghia": "trước",
+        "kunyomi": [
+            "さき"
+        ],
+        "onyomi": [
+            "せん"
+        ],
+        "audio": "kanji_before.mp3"
+    },
+    {
+        "kanji": "何",
+        "han_viet": "HÀ",
+        "nghia": "cái gì",
+        "kunyomi": [
+            "なに",
+            "なん"
+        ],
+        "onyomi": [
+            "か"
+        ],
+        "audio": "kanji_what.mp3"
+    },
+    {
+        "kanji": "父",
+        "han_viet": "PHỤ",
+        "nghia": "ba",
+        "kunyomi": [
+            "ちち"
+        ],
+        "onyomi": [
+            "ふ"
+        ],
+        "audio": "kanji_father.mp3"
+    },
+    {
+        "kanji": "母",
+        "han_viet": "MẪU",
+        "nghia": "mẹ",
+        "kunyomi": [
+            "はは"
+        ],
+        "onyomi": [
+            "ぼ"
+        ],
+        "audio": "kanji_mother.mp3"
+    },
+    {
+        "kanji": "年",
+        "han_viet": "NIÊN",
+        "nghia": "năm",
+        "kunyomi": [
+            "とし"
+        ],
+        "onyomi": [
+            "ねん"
+        ],
+        "audio": "kanji_year.mp3"
+    },
+    {
+        "kanji": "去",
+        "han_viet": "KHỨ",
+        "nghia": "quá khứ",
+        "kunyomi": [
+            "さ"
+        ],
+        "onyomi": [
+            "きょ"
+        ],
+        "audio": "kanji_past.mp3"
+    },
+    {
+        "kanji": "毎",
+        "han_viet": "MỖI",
+        "nghia": "mỗi ~",
+        "kunyomi": [],
+        "onyomi": [
+            "まい"
+        ],
+        "audio": "kanji_every.mp3"
+    },
+    {
+        "kanji": "国",
+        "han_viet": "QUỐC",
+        "nghia": "đất nước",
+        "kunyomi": [
+            "くに"
+        ],
+        "onyomi": [
+            "こく"
+        ],
+        "audio": "kanji_country.mp3"
+    },
+    {
+        "kanji": "見",
+        "han_viet": "KIẾN",
+        "nghia": "nhìn, ngắm, xem",
+        "kunyomi": [
+            "み"
+        ],
+        "onyomi": [
+            "けん"
+        ],
+        "audio": "kanji_see.mp3"
+    },
+    {
+        "kanji": "行",
+        "han_viet": "HÀNH",
+        "nghia": "đi",
+        "kunyomi": [
+            "い"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_go.mp3"
+    },
+    {
+        "kanji": "米",
+        "han_viet": "MỄ",
+        "nghia": "gạo",
+        "kunyomi": [
+            "こめ"
+        ],
+        "onyomi": [
+            "べい",
+            "まい"
+        ],
+        "audio": "kanji_rice.mp3"
+    },
+    {
+        "kanji": "来",
+        "han_viet": "LAI",
+        "nghia": "đến / tương lai",
+        "kunyomi": [
+            "く",
+            "き",
+            "こ"
+        ],
+        "onyomi": [
+            "らい"
+        ],
+        "audio": "kanji_come.mp3"
+    },
+    {
+        "kanji": "良",
+        "han_viet": "LƯƠNG",
+        "nghia": "tốt",
+        "kunyomi": [
+            "よ"
+        ],
+        "onyomi": [
+            "りょう"
+        ],
+        "audio": "kanji_good.mp3"
+    },
+    {
+        "kanji": "食",
+        "han_viet": "THỰC",
+        "nghia": "ăn",
+        "kunyomi": [
+            "た"
+        ],
+        "onyomi": [
+            "しょく"
+        ],
+        "audio": "kanji_eat.mp3"
+    },
+    {
+        "kanji": "飲",
+        "han_viet": "ẨM",
+        "nghia": "uống",
+        "kunyomi": [
+            "の"
+        ],
+        "onyomi": [
+            "いん"
+        ],
+        "audio": "kanji_drink.mp3"
+    },
+    {
+        "kanji": "会",
+        "han_viet": "HỘI",
+        "nghia": "gặp",
+        "kunyomi": [
+            "あ"
+        ],
+        "onyomi": [
+            "かい"
+        ],
+        "audio": "kanji_meet.mp3"
+    },
+    {
+        "kanji": "耳",
+        "han_viet": "NHĨ",
+        "nghia": "cái tai",
+        "kunyomi": [
+            "みみ"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_ear.mp3"
+    },
+    {
+        "kanji": "聞",
+        "han_viet": "VĂN",
+        "nghia": "nghe / hỏi",
+        "kunyomi": [
+            "き"
+        ],
+        "onyomi": [
+            "ぶん"
+        ],
+        "audio": "kanji_hear.mp3"
+    },
+    {
+        "kanji": "言",
+        "han_viet": "NGÔN",
+        "nghia": "nói",
+        "kunyomi": [
+            "い"
+        ],
+        "onyomi": [
+            "ごん",
+            "げん"
+        ],
+        "audio": "kanji_say.mp3"
+    },
+    {
+        "kanji": "話",
+        "han_viet": "THOẠI",
+        "nghia": "nói chuyện",
+        "kunyomi": [
+            "はな",
+            "はなし"
+        ],
+        "onyomi": [
+            "わ"
+        ],
+        "audio": "kanji_talk.mp3"
+    },
+    {
+        "kanji": "立",
+        "han_viet": "LẬP",
+        "nghia": "đứng",
+        "kunyomi": [
+            "た"
+        ],
+        "onyomi": [
+            "りつ"
+        ],
+        "audio": "kanji_stand.mp3"
+    },
+    {
+        "kanji": "待",
+        "han_viet": "ĐÃI",
+        "nghia": "chờ, đợi",
+        "kunyomi": [
+            "ま"
+        ],
+        "onyomi": [
+            "たい"
+        ],
+        "audio": "kanji_wait.mp3"
+    },
+    {
+        "kanji": "週",
+        "han_viet": "CHU",
+        "nghia": "tuần",
+        "kunyomi": [],
+        "onyomi": [
+            "しゅう"
+        ],
+        "audio": "kanji_week.mp3"
+    },
+    {
+        "kanji": "大",
+        "han_viet": "ĐẠI",
+        "nghia": "lớn, to",
+        "kunyomi": [
+            "おお"
+        ],
+        "onyomi": [
+            "たい",
+            "だい"
+        ],
+        "audio": "kanji_big.mp3"
+    },
+    {
+        "kanji": "小",
+        "han_viet": "TIỂU",
+        "nghia": "nhỏ, bé",
+        "kunyomi": [
+            "ちい"
+        ],
+        "onyomi": [
+            "しょう"
+        ],
+        "audio": "kanji_small.mp3"
+    },
+    {
+        "kanji": "高",
+        "han_viet": "CAO",
+        "nghia": "cao / đắt",
+        "kunyomi": [
+            "たか"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_high.mp3"
+    },
+    {
+        "kanji": "安",
+        "han_viet": "AN",
+        "nghia": "rẻ / an toàn",
+        "kunyomi": [
+            "やす"
+        ],
+        "onyomi": [
+            "あん"
+        ],
+        "audio": "kanji_safe.mp3"
+    },
+    {
+        "kanji": "新",
+        "han_viet": "TÂN",
+        "nghia": "mới",
+        "kunyomi": [
+            "あたら"
+        ],
+        "onyomi": [
+            "しん"
+        ],
+        "audio": "kanji_new.mp3"
+    },
+    {
+        "kanji": "古",
+        "han_viet": "CỔ",
+        "nghia": "cũ, cổ",
+        "kunyomi": [
+            "ふる"
+        ],
+        "onyomi": [
+            "こ"
+        ],
+        "audio": "kanji_old.mp3"
+    },
+    {
+        "kanji": "元",
+        "han_viet": "NGUYÊN",
+        "nghia": "nguồn gốc / bắt đầu",
+        "kunyomi": [
+            "もと"
+        ],
+        "onyomi": [
+            "げん"
+        ],
+        "audio": "kanji_origin.mp3"
+    },
+    {
+        "kanji": "気",
+        "han_viet": "KHÍ",
+        "nghia": "tinh thần",
+        "kunyomi": [],
+        "onyomi": [
+            "き"
+        ],
+        "audio": "kanji_spirit.mp3"
+    },
+    {
+        "kanji": "多",
+        "han_viet": "ĐA",
+        "nghia": "nhiều",
+        "kunyomi": [
+            "おお"
+        ],
+        "onyomi": [
+            "た"
+        ],
+        "audio": "kanji_many.mp3"
+    },
+    {
+        "kanji": "少",
+        "han_viet": "THIỂU",
+        "nghia": "ít",
+        "kunyomi": [
+            "すく",
+            "すこ"
+        ],
+        "onyomi": [
+            "しょう"
+        ],
+        "audio": "kanji_few.mp3"
+    },
+    {
+        "kanji": "広",
+        "han_viet": "QUẢNG",
+        "nghia": "rộng rãi",
+        "kunyomi": [
+            "ひろ"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_wide.mp3"
+    },
+    {
+        "kanji": "早",
+        "han_viet": "TẢO",
+        "nghia": "sớm",
+        "kunyomi": [
+            "はや"
+        ],
+        "onyomi": [
+            "そう",
+            "さつ"
+        ],
+        "audio": "kanji_early.mp3"
+    },
+    {
+        "kanji": "長",
+        "han_viet": "TRƯỜNG",
+        "nghia": "dài",
+        "kunyomi": [
+            "なが"
+        ],
+        "onyomi": [
+            "ちょう"
+        ],
+        "audio": "kanji_long.mp3"
+    },
+    {
+        "kanji": "明",
+        "han_viet": "MINH",
+        "nghia": "sáng",
+        "kunyomi": [
+            "あか"
+        ],
+        "onyomi": [
+            "めい"
+        ],
+        "audio": "kanji_bright.mp3"
+    },
+    {
+        "kanji": "好",
+        "han_viet": "HẢO",
+        "nghia": "thích",
+        "kunyomi": [
+            "す"
+        ],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_like.mp3"
+    },
+    {
+        "kanji": "友",
+        "han_viet": "HỮU",
+        "nghia": "bạn bè",
+        "kunyomi": [
+            "とも"
+        ],
+        "onyomi": [
+            "ゆう"
+        ],
+        "audio": "kanji_friend.mp3"
+    },
+    {
+        "kanji": "入",
+        "han_viet": "NHẬP",
+        "nghia": "vào",
+        "kunyomi": [
+            "はい",
+            "い"
+        ],
+        "onyomi": [
+            "にゅう"
+        ],
+        "audio": "kanji_enter.mp3"
+    },
+    {
+        "kanji": "出",
+        "han_viet": "XUẤT",
+        "nghia": "ra",
+        "kunyomi": [
+            "で",
+            "だ"
+        ],
+        "onyomi": [
+            "しゅつ"
+        ],
+        "audio": "kanji_exit.mp3"
+    },
+    {
+        "kanji": "市",
+        "han_viet": "THỊ",
+        "nghia": "thành phố",
+        "kunyomi": [
+            "いち"
+        ],
+        "onyomi": [
+            "し"
+        ],
+        "audio": "kanji_city.mp3"
+    },
+    {
+        "kanji": "町",
+        "han_viet": "ĐINH",
+        "nghia": "khu phố, thị trấn",
+        "kunyomi": [
+            "まち"
+        ],
+        "onyomi": [
+            "ちょう"
+        ],
+        "audio": "kanji_town.mp3"
+    },
+    {
+        "kanji": "村",
+        "han_viet": "THÔN",
+        "nghia": "làng",
+        "kunyomi": [
+            "むら"
+        ],
+        "onyomi": [
+            "そん"
+        ],
+        "audio": "kanji_village.mp3"
+    },
+    {
+        "kanji": "雨",
+        "han_viet": "VŨ",
+        "nghia": "mưa",
+        "kunyomi": [
+            "あめ"
+        ],
+        "onyomi": [
+            "う"
+        ],
+        "audio": "kanji_rain.mp3"
+    },
+    {
+        "kanji": "電",
+        "han_viet": "ĐIỆN",
+        "nghia": "điện",
+        "kunyomi": [],
+        "onyomi": [
+            "でん"
+        ],
+        "audio": "kanji_electric.mp3"
+    },
+    {
+        "kanji": "車",
+        "han_viet": "XA",
+        "nghia": "xe",
+        "kunyomi": [
+            "くるま"
+        ],
+        "onyomi": [
+            "しゃ"
+        ],
+        "audio": "kanji_car.mp3"
+    },
+    {
+        "kanji": "駅",
+        "han_viet": "DỊCH",
+        "nghia": "nhà ga",
+        "kunyomi": [],
+        "onyomi": [
+            "えき"
+        ],
+        "audio": "kanji_station.mp3"
+    },
+    {
+        "kanji": "社",
+        "han_viet": "XÃ",
+        "nghia": "công ty, xã hội",
+        "kunyomi": [
+            "やしろ"
+        ],
+        "onyomi": [
+            "しゃ",
+            "じゃ"
+        ],
+        "audio": "kanji_company.mp3"
+    },
+    {
+        "kanji": "校",
+        "han_viet": "HIỆU",
+        "nghia": "trường học",
+        "kunyomi": [],
+        "onyomi": [
+            "こう"
+        ],
+        "audio": "kanji_school.mp3"
+    },
+    {
+        "kanji": "店",
+        "han_viet": "ĐIẾM",
+        "nghia": "cửa hàng",
+        "kunyomi": [
+            "みせ"
+        ],
+        "onyomi": [
+            "てん"
+        ],
+        "audio": "kanji_shop.mp3"
+    },
+    {
+        "kanji": "銀",
+        "han_viet": "NGÂN",
+        "nghia": "bạc, ngân hàng",
+        "kunyomi": [],
+        "onyomi": [
+            "ぎん"
+        ],
+        "audio": "kanji_silver.mp3"
+    },
+    {
+        "kanji": "病",
+        "han_viet": "BỆNH",
+        "nghia": "bệnh",
+        "kunyomi": [
+            "や"
+        ],
+        "onyomi": [
+            "びょう"
+        ],
+        "audio": "kanji_sick.mp3"
+    },
+    {
+        "kanji": "院",
+        "han_viet": "VIỆN",
+        "nghia": "nơi, viện",
+        "kunyomi": [],
+        "onyomi": [
+            "いん"
+        ],
+        "audio": "kanji_in.mp3"
+    },
+    {
+        "kanji": "休",
+        "han_viet": "HƯU",
+        "nghia": "nghỉ ngơi",
+        "kunyomi": [
+            "やす"
+        ],
+        "onyomi": [
+            "きゅう"
+        ],
+        "audio": "kanji_rest.mp3"
+    },
+    {
+        "kanji": "走",
+        "han_viet": "TẨU",
+        "nghia": "chạy",
+        "kunyomi": [
+            "はし"
+        ],
+        "onyomi": [
+            "そう"
+        ],
+        "audio": "kanji_run.mp3"
+    },
+    {
+        "kanji": "起",
+        "han_viet": "KHỞI",
+        "nghia": "thức dậy",
+        "kunyomi": [
+            "お"
+        ],
+        "onyomi": [
+            "き"
+        ],
+        "audio": "kanji_wake.mp3"
+    },
+    {
+        "kanji": "買",
+        "han_viet": "MÃI",
+        "nghia": "mua",
+        "kunyomi": [
+            "か"
+        ],
+        "onyomi": [
+            "ばい"
+        ],
+        "audio": "kanji_buy.mp3"
+    },
+    {
+        "kanji": "売",
+        "han_viet": "MAI",
+        "nghia": "bán",
+        "kunyomi": [
+            "う"
+        ],
+        "onyomi": [
+            "ばい"
+        ],
+        "audio": "kanji_sell.mp3"
+    },
+    {
+        "kanji": "読",
+        "han_viet": "ĐỘC",
+        "nghia": "đọc",
+        "kunyomi": [
+            "よ"
+        ],
+        "onyomi": [
+            "どく"
+        ],
+        "audio": "kanji_read.mp3"
+    },
+    {
+        "kanji": "書",
+        "han_viet": "THƯ",
+        "nghia": "viết",
+        "kunyomi": [
+            "か"
+        ],
+        "onyomi": [
+            "しょ"
+        ],
+        "audio": "kanji_write.mp3"
+    },
+    {
+        "kanji": "帰",
+        "han_viet": "QUY",
+        "nghia": "về",
+        "kunyomi": [
+            "かえ"
+        ],
+        "onyomi": [
+            "き"
+        ],
+        "audio": "kanji_return.mp3"
+    },
+    {
+        "kanji": "勉",
+        "han_viet": "MIỄN",
+        "nghia": "cố gắng, học",
+        "kunyomi": [],
+        "onyomi": [
+            "べん"
+        ],
+        "audio": "kanji_study.mp3"
+    },
+    {
+        "kanji": "虫",
+        "han_viet": "TRÙNG",
+        "nghia": "côn trùng",
+        "kunyomi": [
+            "むし"
+        ],
+        "onyomi": [],
+        "audio": "kanji_mushi.mp3"
+    },
+    {
+        "kanji": "強",
+        "han_viet": "CƯỜNG",
+        "nghia": "khỏe, mạnh",
+        "kunyomi": [
+            "つよ"
+        ],
+        "onyomi": [
+            "きょう"
+        ],
+        "audio": "kanji_strong.mp3"
+    },
+    {
+        "kanji": "持",
+        "han_viet": "TRÌ",
+        "nghia": "cầm, mang, sở hữu",
+        "kunyomi": [
+            "も"
+        ],
+        "onyomi": [
+            "じ"
+        ],
+        "audio": "kanji_hold.mp3"
+    },
+    {
+        "kanji": "名",
+        "han_viet": "DANH",
+        "nghia": "tên, danh tiếng",
+        "kunyomi": [
+            "な"
+        ],
+        "onyomi": [
+            "めい"
+        ],
+        "audio": "kanji_name.mp3"
+    },
+    {
+        "kanji": "語",
+        "han_viet": "NGỮ",
+        "nghia": "ngôn ngữ",
+        "kunyomi": [],
+        "onyomi": [
+            "ご"
+        ],
+        "audio": "kanji_language.mp3"
+    },
+    {
+        "kanji": "春",
+        "han_viet": "XUÂN",
+        "nghia": "mùa xuân",
+        "kunyomi": [
+            "はる"
+        ],
+        "onyomi": [
+            "しゅん"
+        ],
+        "audio": "kanji_spring.mp3"
+    },
+    {
+        "kanji": "夏",
+        "han_viet": "HẠ",
+        "nghia": "mùa hè",
+        "kunyomi": [
+            "なつ"
+        ],
+        "onyomi": [
+            "か"
+        ],
+        "audio": "kanji_summer.mp3"
+    },
+    {
+        "kanji": "秋",
+        "han_viet": "THU",
+        "nghia": "mùa thu",
+        "kunyomi": [
+            "あき"
+        ],
+        "onyomi": [
+            "しゅう"
+        ],
+        "audio": "kanji_autumn.mp3"
+    },
+    {
+        "kanji": "冬",
+        "han_viet": "ĐÔNG",
+        "nghia": "mùa đông",
+        "kunyomi": [
+            "ふゆ"
+        ],
+        "onyomi": [
+            "とう"
+        ],
+        "audio": "kanji_winter.mp3"
+    },
+    {
+        "kanji": "朝",
+        "han_viet": "TRIỀU",
+        "nghia": "buổi sáng",
+        "kunyomi": [
+            "あさ"
+        ],
+        "onyomi": [
+            "ちょう"
+        ],
+        "audio": "kanji_morning.mp3"
+    },
+    {
+        "kanji": "昼",
+        "han_viet": "TRÚ",
+        "nghia": "buổi trưa",
+        "kunyomi": [
+            "ひる"
+        ],
+        "onyomi": [
+            "ちゅう"
+        ],
+        "audio": "kanji_noon.mp3"
+    },
+    {
+        "kanji": "夕",
+        "han_viet": "TỊCH",
+        "nghia": "buổi chiều tối",
+        "kunyomi": [
+            "ゆう"
+        ],
+        "onyomi": [],
+        "audio": "kanji_evening.mp3"
+    },
+    {
+        "kanji": "方",
+        "han_viet": "PHƯƠNG",
+        "nghia": "phương hướng, cách",
+        "kunyomi": [
+            "かた",
+            "がた"
+        ],
+        "onyomi": [],
+        "audio": "kanji_direction.mp3"
+    },
+    {
+        "kanji": "晩",
+        "han_viet": "VÃN",
+        "nghia": "buổi tối",
+        "kunyomi": [],
+        "onyomi": [
+            "ばん"
+        ],
+        "audio": "kanji_night.mp3"
+    },
+    {
+        "kanji": "夜",
+        "han_viet": "DẠ",
+        "nghia": "ban đêm",
+        "kunyomi": [
+            "よる",
+            "よ"
+        ],
+        "onyomi": [
+            "や"
+        ],
+        "audio": "kanji_nighttime.mp3"
+    },
+    {
+        "kanji": "心",
+        "han_viet": "TÂM",
+        "nghia": "trái tim, tâm trí",
+        "kunyomi": [
+            "こころ"
+        ],
+        "onyomi": [
+            "しん"
+        ],
+        "audio": "kanji_heart.mp3"
+    },
+    {
+        "kanji": "手",
+        "han_viet": "THỦ",
+        "nghia": "tay",
+        "kunyomi": [
+            "て"
+        ],
+        "onyomi": [
+            "しゅ"
+        ],
+        "audio": "kanji_hand.mp3"
+    },
+    {
+        "kanji": "足",
+        "han_viet": "TÚC",
+        "nghia": "chân",
+        "kunyomi": [
+            "あし",
+            "た"
+        ],
+        "onyomi": [],
+        "audio": "kanji_foot.mp3"
+    },
+    {
+        "kanji": "体",
+        "han_viet": "THỂ",
+        "nghia": "cơ thể",
+        "kunyomi": [
+            "からだ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_body.mp3"
+    },
+    {
+        "kanji": "首",
+        "han_viet": "THỦ",
+        "nghia": "cái cổ",
+        "kunyomi": [
+            "くび"
+        ],
+        "onyomi": [
+            "しゅ"
+        ],
+        "audio": "kanji_neck.mp3"
+    },
+    {
+        "kanji": "道",
+        "han_viet": "ĐẠO",
+        "nghia": "con đường",
+        "kunyomi": [
+            "みち"
+        ],
+        "onyomi": [
+            "どう"
+        ],
+        "audio": "kanji_road.mp3"
+    },
+    {
+        "kanji": "山",
+        "han_viet": "SƠN",
+        "nghia": "núi",
+        "kunyomi": [
+            "やま"
+        ],
+        "onyomi": [
+            "さん"
+        ],
+        "audio": "kanji_mountain.mp3"
+    },
+    {
+        "kanji": "川",
+        "han_viet": "XUYÊN",
+        "nghia": "sông",
+        "kunyomi": [
+            "かわ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_river.mp3"
+    },
+    {
+        "kanji": "林",
+        "han_viet": "LÂM",
+        "nghia": "rừng",
+        "kunyomi": [
+            "はやし"
+        ],
+        "onyomi": [
+            "りん"
+        ],
+        "audio": "kanji_forest.mp3"
+    },
+    {
+        "kanji": "森",
+        "han_viet": "SÂM",
+        "nghia": "rừng rậm",
+        "kunyomi": [
+            "もり"
+        ],
+        "onyomi": [
+            "しん"
+        ],
+        "audio": "kanji_dense_forest.mp3"
+    },
+    {
+        "kanji": "空",
+        "han_viet": "KHÔNG",
+        "nghia": "bầu trời, không khí",
+        "kunyomi": [
+            "そら"
+        ],
+        "onyomi": [
+            "くう"
+        ],
+        "audio": "kanji_sky.mp3"
+    },
+    {
+        "kanji": "海",
+        "han_viet": "HẢI",
+        "nghia": "biển",
+        "kunyomi": [
+            "うみ"
+        ],
+        "onyomi": [
+            "かい"
+        ],
+        "audio": "kanji_sea.mp3"
+    },
+    {
+        "kanji": "花",
+        "han_viet": "HOA",
+        "nghia": "hoa",
+        "kunyomi": [
+            "はな"
+        ],
+        "onyomi": [],
+        "audio": "kanji_flower.mp3"
+    },
+    {
+        "kanji": "天",
+        "han_viet": "THIÊN",
+        "nghia": "trời",
+        "kunyomi": [],
+        "onyomi": [
+            "てん"
+        ],
+        "audio": "kanji_heaven.mp3"
+    },
+    {
+        "kanji": "赤",
+        "han_viet": "XÍCH",
+        "nghia": "màu đỏ",
+        "kunyomi": [
+            "あか"
+        ],
+        "onyomi": [],
+        "audio": "kanji_red.mp3"
+    },
+    {
+        "kanji": "青",
+        "han_viet": "THANH",
+        "nghia": "màu xanh",
+        "kunyomi": [
+            "あお"
+        ],
+        "onyomi": [],
+        "audio": "kanji_blue.mp3"
+    },
+    {
+        "kanji": "白",
+        "han_viet": "BẠCH",
+        "nghia": "màu trắng",
+        "kunyomi": [
+            "しろ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_white.mp3"
+    },
+    {
+        "kanji": "黒",
+        "han_viet": "HẮC",
+        "nghia": "màu đen",
+        "kunyomi": [
+            "くろ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_black.mp3"
+    },
+    {
+        "kanji": "色",
+        "han_viet": "SẮC",
+        "nghia": "màu sắc",
+        "kunyomi": [
+            "いろ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_color.mp3"
+    },
+    {
+        "kanji": "魚",
+        "han_viet": "NGƯ",
+        "nghia": "cá",
+        "kunyomi": [
+            "さかな"
+        ],
+        "onyomi": [],
+        "audio": "kanji_fish.mp3"
+    },
+    {
+        "kanji": "犬",
+        "han_viet": "KHUYỂN",
+        "nghia": "chó",
+        "kunyomi": [
+            "いぬ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_dog.mp3"
+    },
+    {
+        "kanji": "同",
+        "han_viet": "ĐỒNG",
+        "nghia": "giống nhau",
+        "kunyomi": [
+            "おな"
+        ],
+        "onyomi": [],
+        "audio": "kanji_same.mp3"
+    }
+]

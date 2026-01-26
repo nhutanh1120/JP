@@ -1,0 +1,115 @@
+[
+    {
+        "kanji": "昼",
+        "han_viet": "TRÚ",
+        "nghia": "buổi trưa",
+        "kunyomi": [
+            "ひる"
+        ],
+        "onyomi": [
+            "ちゅう"
+        ],
+        "audio": "kanji_noon.mp3"
+    },
+    {
+        "kanji": "夕",
+        "han_viet": "TỊCH",
+        "nghia": "buổi chiều tối",
+        "kunyomi": [
+            "ゆう"
+        ],
+        "onyomi": [],
+        "audio": "kanji_evening.mp3"
+    },
+    {
+        "kanji": "方",
+        "han_viet": "PHƯƠNG",
+        "nghia": "phương hướng, cách",
+        "kunyomi": [
+            "かた",
+            "がた"
+        ],
+        "onyomi": [],
+        "audio": "kanji_direction.mp3"
+    },
+    {
+        "kanji": "晩",
+        "han_viet": "VÃN",
+        "nghia": "buổi tối",
+        "kunyomi": [],
+        "onyomi": [
+            "ばん"
+        ],
+        "audio": "kanji_night.mp3"
+    },
+    {
+        "kanji": "夜",
+        "han_viet": "DẠ",
+        "nghia": "ban đêm",
+        "kunyomi": [
+            "よる",
+            "よ"
+        ],
+        "onyomi": [
+            "や"
+        ],
+        "audio": "kanji_nighttime.mp3"
+    },
+    {
+        "kanji": "心",
+        "han_viet": "TÂM",
+        "nghia": "trái tim, tâm trí",
+        "kunyomi": [
+            "こころ"
+        ],
+        "onyomi": [
+            "しん"
+        ],
+        "audio": "kanji_heart.mp3"
+    },
+    {
+        "kanji": "手",
+        "han_viet": "THỦ",
+        "nghia": "tay",
+        "kunyomi": [
+            "て"
+        ],
+        "onyomi": [
+            "しゅ"
+        ],
+        "audio": "kanji_hand.mp3"
+    },
+    {
+        "kanji": "足",
+        "han_viet": "TÚC",
+        "nghia": "chân",
+        "kunyomi": [
+            "あし",
+            "た"
+        ],
+        "onyomi": [],
+        "audio": "kanji_foot.mp3"
+    },
+    {
+        "kanji": "体",
+        "han_viet": "THỂ",
+        "nghia": "cơ thể",
+        "kunyomi": [
+            "からだ"
+        ],
+        "onyomi": [],
+        "audio": "kanji_body.mp3"
+    },
+    {
+        "kanji": "首",
+        "han_viet": "THỦ",
+        "nghia": "cái cổ",
+        "kunyomi": [
+            "くび"
+        ],
+        "onyomi": [
+            "しゅ"
+        ],
+        "audio": "kanji_neck.mp3"
+    }
+]

@@ -1,0 +1,129 @@
+[
+    {
+        "kanji": "門",
+        "han_viet": "MÔN",
+        "nghia": "cửa",
+        "kunyomi": [
+            "かど"
+        ],
+        "onyomi": [
+            "もん"
+        ],
+        "audio": "kanji_gate.mp3"
+    },
+    {
+        "kanji": "間",
+        "han_viet": "GIAN",
+        "nghia": "ở giữa / thời gian",
+        "kunyomi": [
+            "あいだ"
+        ],
+        "onyomi": [
+            "かん"
+        ],
+        "audio": "kanji_interval.mp3"
+    },
+    {
+        "kanji": "東",
+        "han_viet": "ĐÔNG",
+        "nghia": "phía Đông",
+        "kunyomi": [
+            "ひがし"
+        ],
+        "onyomi": [
+            "とう"
+        ],
+        "audio": "kanji_east.mp3"
+    },
+    {
+        "kanji": "西",
+        "han_viet": "TÂY",
+        "nghia": "phía Tây",
+        "kunyomi": [
+            "にし"
+        ],
+        "onyomi": [
+            "せい",
+            "さい",
+            "ざい"
+        ],
+        "audio": "kanji_west.mp3"
+    },
+    {
+        "kanji": "南",
+        "han_viet": "NAM",
+        "nghia": "phía Nam",
+        "kunyomi": [
+            "みなみ"
+        ],
+        "onyomi": [
+            "なん"
+        ],
+        "audio": "kanji_south.mp3"
+    },
+    {
+        "kanji": "北",
+        "han_viet": "BẮC",
+        "nghia": "phía Bắc",
+        "kunyomi": [
+            "きた"
+        ],
+        "onyomi": [
+            "ほく",
+            "ぼく",
+            "ほっ"
+        ],
+        "audio": "kanji_north.mp3"
+    },
+    {
+        "kanji": "田",
+        "han_viet": "ĐIỀN",
+        "nghia": "ruộng",
+        "kunyomi": [
+            "た",
+            "だ"
+        ],
+        "onyomi": [
+            "でん"
+        ],
+        "audio": "kanji_field.mp3"
+    },
+    {
+        "kanji": "男",
+        "han_viet": "NAM",
+        "nghia": "con trai",
+        "kunyomi": [
+            "おとこ"
+        ],
+        "onyomi": [
+            "だん",
+            "なん"
+        ],
+        "audio": "kanji_man.mp3"
+    },
+    {
+        "kanji": "女",
+        "han_viet": "NỮ",
+        "nghia": "con gái",
+        "kunyomi": [
+            "おんな"
+        ],
+        "onyomi": [
+            "じょ"
+        ],
+        "audio": "kanji_woman.mp3"
+    },
+    {
+        "kanji": "子",
+        "han_viet": "TỬ",
+        "nghia": "con nít, trẻ em",
+        "kunyomi": [
+            "こ"
+        ],
+        "onyomi": [
+            "し",
+            "す"
+        ],
+        "audio": "kanji_child.mp3"
+    }
+]

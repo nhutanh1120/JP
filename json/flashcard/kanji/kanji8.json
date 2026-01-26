@@ -1,0 +1,62 @@
+[
+    {
+        "kanji": "言",
+        "han_viet": "NGÔN",
+        "nghia": "nói",
+        "kunyomi": [
+            "い"
+        ],
+        "onyomi": [
+            "ごん",
+            "げん"
+        ],
+        "audio": "kanji_say.mp3"
+    },
+    {
+        "kanji": "話",
+        "han_viet": "THOẠI",
+        "nghia": "nói chuyện",
+        "kunyomi": [
+            "はな",
+            "はなし"
+        ],
+        "onyomi": [
+            "わ"
+        ],
+        "audio": "kanji_talk.mp3"
+    },
+    {
+        "kanji": "立",
+        "han_viet": "LẬP",
+        "nghia": "đứng",
+        "kunyomi": [
+            "た"
+        ],
+        "onyomi": [
+            "りつ"
+        ],
+        "audio": "kanji_stand.mp3"
+    },
+    {
+        "kanji": "待",
+        "han_viet": "ĐÃI",
+        "nghia": "chờ, đợi",
+        "kunyomi": [
+            "ま"
+        ],
+        "onyomi": [
+            "たい"
+        ],
+        "audio": "kanji_wait.mp3"
+    },
+    {
+        "kanji": "週",
+        "han_viet": "CHU",
+        "nghia": "tuần",
+        "kunyomi": [],
+        "onyomi": [
+            "しゅう"
+        ],
+        "audio": "kanji_week.mp3"
+    }
+]
