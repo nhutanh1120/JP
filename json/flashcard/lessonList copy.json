@@ -1,0 +1,191 @@
+[
+    {
+        "group": "Tiếng nhật IT",
+        "groupKey": "it",
+        "lessons": [
+            {
+                "id": 11,
+                "name": "Bài IT (1)",
+                "fileName": "lessonIT1"
+            },
+            {
+                "id": 12,
+                "name": "Bài IT (2)",
+                "fileName": "lessonIT2"
+            },
+            {
+                "id": 13,
+                "name": "Bài IT (3)",
+                "fileName": "lessonIT3"
+            },
+            {
+                "id": 14,
+                "name": "Bài IT (Tổng)",
+                "fileName": "lessonIT"
+            }
+        ]
+    },
+    {
+        "group": "Từ vựng",
+        "groupKey": "vocabulary",
+        "lessons": [
+            {
+                "id": 1,
+                "name": "Bài 1 - Từ vựng cơ bản",
+                "fileName": "lesson1"
+            },
+            {
+                "id": 2,
+                "name": "Bài 2 - これから　お世話に　なります",
+                "fileName": "lesson2"
+            },
+            {
+                "id": 3,
+                "name": "Bài 3 - これを　ください",
+                "fileName": "lesson3"
+            },
+            {
+                "id": 4,
+                "name": "Bài 4 - そちらは　何時までですか",
+                "fileName": "lesson4"
+            },
+            {
+                "id": 5,
+                "name": "Bài 5 - この電車は　甲子園へ　行きますか",
+                "fileName": "lesson5"
+            },
+            {
+                "id": 6,
+                "name": "Bài 6 - いっしょに　行きませんか",
+                "fileName": "lesson6"
+            },
+            {
+                "id": 7,
+                "name": "Bài 7 - いらっしゃい",
+                "fileName": "lesson7"
+            },
+            {
+                "id": 8,
+                "name": "Bài 8 - そろそろ　失礼します",
+                "fileName": "lesson8"
+            },
+            {
+                "id": 9,
+                "name": "Bài 9 - 残念ですが",
+                "fileName": "lesson9"
+            },
+            {
+                "id": 10,
+                "name": "Bài 10 - ナンプラー、ありますか",
+                "fileName": "lesson10"
+            }
+        ]
+    },
+    {
+        "group": "Hán tự",
+        "groupKey": "kanji",
+        "lessons": [
+            {
+                "id": 1,
+                "name": "Bài 1",
+                "fileName": "kanji1"
+            },
+            {
+                "id": 2,
+                "name": "Bài 2",
+                "fileName": "kanji2"
+            },
+            {
+                "id": 3,
+                "name": "Bài 3",
+                "fileName": "kanji3"
+            },
+            {
+                "id": 4,
+                "name": "Bài 4",
+                "fileName": "kanji4"
+            },
+            {
+                "id": 5,
+                "name": "Bài 5",
+                "fileName": "kanji5"
+            },
+            {
+                "id": 6,
+                "name": "Bài 6",
+                "fileName": "kanji6"
+            },
+            {
+                "id": 7,
+                "name": "Bài 7",
+                "fileName": "kanji7"
+            },
+            {
+                "id": 8,
+                "name": "Bài 8",
+                "fileName": "kanji8"
+            },
+            {
+                "id": 9,
+                "name": "Bài 9",
+                "fileName": "kanji9"
+            },
+            {
+                "id": 10,
+                "name": "Bài 10",
+                "fileName": "kanji10"
+            },
+            {
+                "id": 11,
+                "name": "Bài 11",
+                "fileName": "kanji11"
+            },
+            {
+                "id": 12,
+                "name": "Bài 12",
+                "fileName": "kanji12"
+            },
+            {
+                "id": 13,
+                "name": "Bài 13",
+                "fileName": "kanji13"
+            },
+            {
+                "id": 14,
+                "name": "Bài 14",
+                "fileName": "kanji14"
+            },
+            {
+                "id": 15,
+                "name": "Bài 15",
+                "fileName": "kanji15"
+            },
+            {
+                "id": 16,
+                "name": "Bài 16",
+                "fileName": "kanji16"
+            },
+            {
+                "id": 16,
+                "name": "Bài tổng hợp",
+                "fileName": "kanji"
+            }
+        ]
+    },
+    {
+        "group": "Hán tự siêu cấp",
+        "groupKey": "kanji_super",
+        "lessons": [
+            {
+                "id": 1,
+                "name": "Bài 1",
+                "fileName": "kanji1"
+            },
+            {
+                "id": 5,
+                "name": "Bài 5",
+                "fileName": "kanji5"
+            }
+        ]
+    }
+]

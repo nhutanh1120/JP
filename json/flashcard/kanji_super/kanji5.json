@@ -16,7 +16,8 @@
         ],
         "kana": "どようび",
         "hanviet": "THỔ DIỆU NHẬT",
-        "vi": "thứ bảy"
+        "vi": "thứ bảy",
+        "audio": "kanji1.mp3"
     },
     {
         "parts": [
@@ -204,5 +205,31 @@
         "kana": "ふしぎ",
         "hanviet": "BẤT TƯ NGHỊ",
         "vi": "kì lạ, kì quái"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "石",
+                "furigana": "いし"
+            }
+        ],
+        "kana": "いし",
+        "hanviet": "THẠCH",
+        "vi": "hòn đá"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "石",
+                "furigana": "せき"
+            },
+            {
+                "kanji": "油",
+                "furigana": "ゆ"
+            }
+        ],
+        "kana": "せきゆ",
+        "hanviet": "THẠCH DU",
+        "vi": "dầu mỏ"
     }
 ]
