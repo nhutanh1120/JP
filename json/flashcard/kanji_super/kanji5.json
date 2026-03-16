@@ -1,0 +1,208 @@
+[
+    {
+        "parts": [
+            {
+                "kanji": "土",
+                "furigana": "ど"
+            },
+            {
+                "kanji": "曜",
+                "furigana": "よう"
+            },
+            {
+                "kanji": "日",
+                "furigana": "び"
+            }
+        ],
+        "kana": "どようび",
+        "hanviet": "THỔ DIỆU NHẬT",
+        "vi": "thứ bảy"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "お",
+                "furigana": ""
+            },
+            {
+                "kanji": "土",
+                "furigana": "みや"
+            },
+            {
+                "kanji": "産",
+                "furigana": "げ"
+            }
+        ],
+        "kana": "おみやげ",
+        "hanviet": "THỔ SẢN",
+        "vi": "quà lưu niệm"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "上",
+                "furigana": "うえ"
+            }
+        ],
+        "kana": "うえ",
+        "hanviet": "THƯỢNG",
+        "vi": "trên, bên trên"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "上",
+                "furigana": "あ"
+            }
+        ],
+        "kana": "あげます",
+        "hanviet": "THƯỢNG",
+        "vi": "cho, tặng"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "上",
+                "furigana": "うわ"
+            },
+            {
+                "kanji": "着",
+                "furigana": "ぎ"
+            }
+        ],
+        "kana": "うわぎ",
+        "hanviet": "THƯỢNG TRƯỚC",
+        "vi": "áo khoác"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "以",
+                "furigana": "い"
+            },
+            {
+                "kanji": "上",
+                "furigana": "じょう"
+            }
+        ],
+        "kana": "いじょう",
+        "hanviet": "DĨ THƯỢNG",
+        "vi": "hơn, trên (đi kèm một giá trị); trên đây"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "上",
+                "furigana": "じょう"
+            },
+            {
+                "kanji": "手",
+                "furigana": "ず"
+            }
+        ],
+        "kana": "じょうず",
+        "hanviet": "THƯỢNG THỦ",
+        "vi": "giỏi"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "下",
+                "furigana": "した"
+            }
+        ],
+        "kana": "した",
+        "hanviet": "HẠ",
+        "vi": "dưới, bên dưới"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "下",
+                "furigana": "お"
+            }
+        ],
+        "kana": "おろします",
+        "hanviet": "HẠ",
+        "vi": "rút (tiền); hạ xuống"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "地",
+                "furigana": "ち"
+            },
+            {
+                "kanji": "下",
+                "furigana": "か"
+            }
+        ],
+        "kana": "ちか",
+        "hanviet": "ĐỊA HẠ",
+        "vi": "dưới mặt đất, tầng hầm"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "以",
+                "furigana": "い"
+            },
+            {
+                "kanji": "下",
+                "furigana": "か"
+            }
+        ],
+        "kana": "いか",
+        "hanviet": "DĨ HẠ",
+        "vi": "dưới (đi kèm một giá trị); dưới đây"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "下",
+                "furigana": "へ"
+            },
+            {
+                "kanji": "手",
+                "furigana": "た"
+            }
+        ],
+        "kana": "へた",
+        "hanviet": "HẠ THỦ",
+        "vi": "kém, không giỏi"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "不",
+                "furigana": "ふ"
+            },
+            {
+                "kanji": "便",
+                "furigana": "べん"
+            }
+        ],
+        "kana": "ふべん",
+        "hanviet": "BẤT TIỆN",
+        "vi": "sự bất tiện"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "不",
+                "furigana": "ふ"
+            },
+            {
+                "kanji": "思",
+                "furigana": "し"
+            },
+            {
+                "kanji": "議",
+                "furigana": "ぎ"
+            }
+        ],
+        "kana": "ふしぎ",
+        "hanviet": "BẤT TƯ NGHỊ",
+        "vi": "kì lạ, kì quái"
+    }
+]

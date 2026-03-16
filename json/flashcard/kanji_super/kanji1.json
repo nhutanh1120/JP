@@ -1,0 +1,66 @@
+[
+    {
+        "parts": [
+            {
+                "kanji": "一",
+                "furigana": "ひと"
+            },
+            {
+                "kanji": "人",
+                "furigana": "り"
+            }
+        ],
+        "kana": "ひとりで",
+        "hanviet": "NHẤT NHÂN",
+        "vi": "một mình"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "一",
+                "furigana": "ひと"
+            }
+        ],
+        "kana": "ひとつ",
+        "hanviet": "NHẤT",
+        "vi": "một cái"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "一",
+                "furigana": "つい"
+            },
+            {
+                "kanji": "日",
+                "furigana": "たち"
+            }
+        ],
+        "kana": "ついたち",
+        "hanviet": "NHẤT NHẬT",
+        "vi": "mùng 1"
+    },
+    {
+        "parts": [
+            {
+                "kanji": "一",
+                "furigana": "いっ"
+            },
+            {
+                "kanji": "生",
+                "furigana": "しょう"
+            },
+            {
+                "kanji": "懸",
+                "furigana": "けん"
+            },
+            {
+                "kanji": "命",
+                "furigana": "めい"
+            }
+        ],
+        "kana": "いっしょうけんめい",
+        "hanviet": "NHẤT SINH HUYỀN MỆNH",
+        "vi": "chăm chỉ, hết mình"
+    }
+]

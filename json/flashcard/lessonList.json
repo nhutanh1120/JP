@@ -171,5 +171,21 @@
                 "fileName": "kanji"
             }
         ]
+    },
+    {
+        "group": "Hán tự siêu cấp",
+        "groupKey": "kanji_super",
+        "lessons": [
+            {
+                "id": 1,
+                "name": "Bài 1",
+                "fileName": "kanji1"
+            },
+            {
+                "id": 5,
+                "name": "Bài 5",
+                "fileName": "kanji5"
+            }
+        ]
     }
 ]

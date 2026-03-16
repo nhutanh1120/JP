@@ -716,6 +716,41 @@ td[data-tooltip]:hover::before {
     width: 90% !important;
 }
 
+.ruby-kanji {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0f766e;
+}
+
+.ruby-furigana {
+    font-size: 13px;
+    color: #f97316;
+    font-weight: 500;
+    margin-bottom: 6px;
+    opacity: 0;
+}
+
+
+.hidden-rt {
+    opacity: 1;
+}
+
+.fc-info {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.fc-meaning {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.fc-hanviet {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    margin-top: 6px;
+}
 
 @media (max-width: 768px) {
     .app-header {

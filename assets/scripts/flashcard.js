@@ -58,7 +58,6 @@ const DOM = {
     tableBody: document.querySelector("#sidebar table tbody"),
 };
 
-
 // ============================================================================
 // UTILITY FUNCTIONS
 // ============================================================================
@@ -175,7 +174,20 @@ function renderFront(groupKey, lang, word) {
         `;
     }
 
+    if (groupKey === "kanji_super") {
+        return renderWord(word.parts);
+    }
+
     return "";
+}
+
+function renderWord(parts) {
+    return parts.map(p => `
+    <ruby class="ruby-kanji">
+      ${p.kanji}
+      <rt class="ruby-furigana">${p.furigana}</rt>
+    </ruby>
+  `).join("");
 }
 
 /**
@@ -204,6 +216,16 @@ function renderBack(groupKey, lang, word) {
                     <div><strong>Kunyomi:</strong> ${word.kunyomi?.join(", ") || "-"}</div>
                 </div>
             </div>
+        `;
+    }
+
+    if (groupKey === "kanji_super") {
+        console.log("Rendering back for kanji_super:", word);
+        return `
+         <div class="fc-info">
+            <div class="fc-meaning">${word.vi}</div>
+            <div class="fc-hanviet">${word.hanviet}</div>
+        </div>
         `;
     }
 
@@ -451,6 +473,29 @@ const TABLE_CONFIG = {
                 <td class="text-left w-35">${item.vi}</td>
             `;
         }
+    },
+    kanji_super: {
+        headers: ["Hán Tự", "Furigana", "Hán Việt", "Nghĩa"],
+        renderRow(item) {
+
+            const kanjiHTML = item.parts
+                ? item.parts.map(p => `
+                <ruby>
+                    ${p.kanji}
+                    <rt>${p.furigana}</rt>
+                </ruby>
+            `).join("")
+                : "-";
+
+            const furigana = item.kana || "-";
+
+            return `
+            <td class="w-10">${kanjiHTML}</td>
+            <td class="w-10">${furigana}</td>
+            <td class="w-20">${item.hanviet || "-"}</td>
+            <td class="w-20">${item.vi || "-"}</td>
+        `;
+        }
     }
 };
 
@@ -653,3 +698,20 @@ if (document.readyState === "loading") {
 } else {
     initializeApp();
 }
+
+// Add event listener for toggle-furigana button
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("toggle-furigana")) {
+        const furiganaDiv = event.target.nextElementSibling;
+        if (furiganaDiv) {
+            furiganaDiv.style.display = furiganaDiv.style.display === "none" ? "block" : "none";
+        }
+    }
+});
+
+document.getElementById("toggleFuriganaBtn").addEventListener("click", () => {
+    const furiganaElements = document.querySelectorAll("rt");
+    furiganaElements.forEach(rt => {
+        rt.style.opacity = rt.style.opacity === "0" ? "1" : "0";
+    });
+});
