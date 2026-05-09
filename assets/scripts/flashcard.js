@@ -178,6 +178,14 @@ function renderFront(groupKey, lang, word) {
         return renderWord(word.parts);
     }
 
+    if (groupKey === "it") {
+        return `
+            <div class="fc-main">
+                ${word.jp}
+            </div>
+        `;
+    }
+
     return "";
 }
 
@@ -226,6 +234,15 @@ function renderBack(groupKey, lang, word) {
             <div class="fc-meaning">${word.vi}</div>
             <div class="fc-hanviet">${word.hanviet}</div>
         </div>
+        `;
+    }
+
+    if (groupKey === "it") {
+        return `
+            <div>
+                <div class="fc-main">${word.vi}</div>
+                <div class="fc-sino">(${word.sino || "-"})</div>
+            </div>
         `;
     }
 
@@ -495,6 +512,17 @@ const TABLE_CONFIG = {
             <td class="w-20">${item.hanviet || "-"}</td>
             <td class="w-20">${item.vi || "-"}</td>
         `;
+        }
+    },
+    it: {
+        headers: ["Từ Vựng", "Kanji", "Phiên Âm", "Nghĩa"],
+        renderRow(item) {
+            return `
+                <td class="text-left w-30">${item.jp}</td>
+                <td class="w-20">${item.kanji || "-"}</td>
+                <td class="w-20">${item.sino || "-"}</td>
+                <td class="text-left w-30">${item.vi}</td>
+            `;
         }
     }
 };

@@ -1,17 +1,27 @@
 [
     {
-        "group": "Hán tự siêu cấp",
-        "groupKey": "kanji_super",
+        "group": "Tiếng nhật IT",
+        "groupKey": "it",
         "lessons": [
             {
-                "id": 1,
-                "name": "Bài 1",
-                "fileName": "kanji1"
+                "id": 11,
+                "name": "Bài IT (1)",
+                "fileName": "lessonIT1"
             },
             {
-                "id": 5,
-                "name": "Bài 5",
-                "fileName": "kanji5"
+                "id": 12,
+                "name": "Bài IT (2)",
+                "fileName": "lessonIT2"
+            },
+            {
+                "id": 13,
+                "name": "Bài IT (3)",
+                "fileName": "lessonIT3"
+            },
+            {
+                "id": 14,
+                "name": "Bài IT (Tổng)",
+                "fileName": "lessonIT"
             }
         ]
     }
