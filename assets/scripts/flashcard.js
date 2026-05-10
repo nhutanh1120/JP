@@ -181,7 +181,7 @@ function renderFront(groupKey, lang, word) {
     if (groupKey === "it") {
         return `
             <div class="fc-main">
-                ${word.jp}
+                ${lang === "vi" ? word.vi : word.jp}
             </div>
         `;
     }
@@ -241,7 +241,8 @@ function renderBack(groupKey, lang, word) {
         return `
             <div>
                 <div class="fc-main">${word.vi}</div>
-                <div class="fc-sino">(${word.sino || "-"})</div>
+                <div class="fc-sino">(${word.sino || ""})</div>
+                ${word.kanji ? `<div class="fc-kanji">(${word.kanji})</div>` : ""}
             </div>
         `;
     }
