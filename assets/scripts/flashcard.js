@@ -239,11 +239,13 @@ function renderBack(groupKey, lang, word) {
 
     if (groupKey === "it") {
         return `
+          ${lang === "vi" ? word.jp : `
             <div>
                 <div class="fc-main">${word.vi}</div>
                 <div class="fc-sino">(${word.sino || ""})</div>
                 ${word.kanji ? `<div class="fc-kanji">(${word.kanji})</div>` : ""}
             </div>
+          `}
         `;
     }
 
